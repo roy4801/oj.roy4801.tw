@@ -104,11 +104,6 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
-
 ## hexo-excerpt
 ## https://chekun.me/post/hexo-excerpt/
 # https://twiceyuan.com/2014/05/25/hexo%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0readmore%E6%A0%87%E8%AE%B0/
@@ -145,3 +140,12 @@ sitemap:
   rel: false
   tags: true
   categories: true
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: https://github.com/roy4801/oj.roy4801.tw.git
+  token: $OJ_BLOG_GITHUB_TOKEN
+  name: roy4801
+  email: a82611141@gmail.com
