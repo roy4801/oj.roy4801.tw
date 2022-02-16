@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Roy 的解題紀錄</title>
+  <icon>http://oj.roy4801.tw/icon.png</icon>
+  
+  <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
+  
+  <link href="http://oj.roy4801.tw/"/>
+  <updated>2021-05-04T15:40:10.003Z</updated>
+  <id>http://oj.roy4801.tw/</id>
+  
+  <author>
+    <name>Roy</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Uva 1587 - Box</title>
+    <link href="http://oj.roy4801.tw/2019/09/11/uva/uva1587/"/>
+    <id>http://oj.roy4801.tw/2019/09/11/uva/uva1587/</id>
+    <published>2019-09-11T15:56:25.000Z</published>
+    <updated>2021-05-04T15:40:10.003Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=4462&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你6個寬$w_i$高$h_i$的紙板，問可不可以組成一個長方體&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;組成一個長方體的紙板可以分成三組（相對一組），有三種情況：相異、兩同ㄧ異、全部相同。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 202 - Repeating Decimals</title>
+    <link href="http://oj.roy4801.tw/2019/09/10/uva/uva202/"/>
+    <id>http://oj.roy4801.tw/2019/09/10/uva/uva202/</id>
+    <published>2019-09-10T14:22:48.000Z</published>
+    <updated>2021-05-04T15:40:10.004Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;略&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;跟&lt;a href=&quot;/2019/09/10/uva/uva202&quot;&gt;uva 275&lt;/a&gt;差不多，只是輸出更複雜了點&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 275 - Expanding Fractions</title>
+    <link href="http://oj.roy4801.tw/2019/09/10/uva/uva275/"/>
+    <id>http://oj.roy4801.tw/2019/09/10/uva/uva275/</id>
+    <published>2019-09-10T14:16:22.000Z</published>
+    <updated>2021-05-04T15:40:10.005Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=211&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;輸入兩個數字a, b，要算a/b的小數，如果有循環小數部分出現，則只輸出一次&lt;br&gt;
+每筆輸出最後要輸出循環小數的長度（如果沒有則輸出&lt;code&gt;This expansion terminates.&lt;/code&gt;)&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;模擬長除法，一位一位除&lt;br&gt;
+輸出很鳥（注意換行，每行最多50字，小數點也算）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 10226 - Hardwood Species</title>
+    <link href="http://oj.roy4801.tw/2019/06/26/uva/uva10226/"/>
+    <id>http://oj.roy4801.tw/2019/06/26/uva/uva10226/</id>
+    <published>2019-06-26T07:52:43.000Z</published>
+    <updated>2021-05-04T15:40:09.998Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;category=24&amp;amp;page=show_problem&amp;amp;problem=1167&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有多種樹的名字，你要輸出每種樹佔的比例（按名稱字典序）&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;map&lt;/code&gt;練習題&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 793 - Network Connections</title>
+    <link href="http://oj.roy4801.tw/2019/06/26/uva/uva793/"/>
+    <id>http://oj.roy4801.tw/2019/06/26/uva/uva793/</id>
+    <published>2019-06-26T07:43:05.000Z</published>
+    <updated>2021-05-04T15:40:10.009Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=734&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有一堆電腦用網路連著，今天你是網管，你想知道電腦 $i$ 跟電腦 $j$ 是否有相連（在同個網路內），並且你也可以將兩台電腦相連。有兩個操作：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;相連 &lt;code&gt;c i j&lt;/code&gt;&lt;br&gt;
+將電腦$i$和電腦$j$相連&lt;/li&gt;
+&lt;li&gt;查詢 &lt;code&gt;q i j&lt;/code&gt;&lt;br&gt;
+查詢電腦$i$和電腦$j$是否相連&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;程式最後輸出查詢&lt;code&gt;有相連,沒相連&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 10033 - Interpreter</title>
+    <link href="http://oj.roy4801.tw/2019/06/24/uva/uva10033/"/>
+    <id>http://oj.roy4801.tw/2019/06/24/uva/uva10033/</id>
+    <published>2019-06-24T07:23:00.000Z</published>
+    <updated>2021-05-04T15:40:09.997Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=974&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://rubyacm.blogspot.com/2010/08/10033-interpreter.html&quot;&gt;http://rubyacm.blogspot.com/2010/08/10033-interpreter.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;挺有趣的一題，要寫個小VM執行code，算出執行了幾個指令。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 10004 - Bicoloring</title>
+    <link href="http://oj.roy4801.tw/2019/06/23/uva/uva10004/"/>
+    <id>http://oj.roy4801.tw/2019/06/23/uva/uva10004/</id>
+    <published>2019-06-22T16:28:43.000Z</published>
+    <updated>2021-05-04T15:40:09.997Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=945&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給定任意的圖形，問可不可以在每個點上著不同兩種的顏色，並且相同顏色的點不相鄰。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;沒有自環&lt;/li&gt;
+&lt;li&gt;無向圖&lt;/li&gt;
+&lt;li&gt;強連通&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 1203 - Argus</title>
+    <link href="http://oj.roy4801.tw/2019/06/22/uva/uva1203/"/>
+    <id>http://oj.roy4801.tw/2019/06/22/uva/uva1203/</id>
+    <published>2019-06-22T15:54:21.000Z</published>
+    <updated>2021-05-04T15:40:10.002Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=3644&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有個程式要記錄眾多的事件，使用者可以輸入指令註冊要監測的事件，指令要包含事件的ID(Q_num)跟週期(Period)，格式如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Register Q_num Period&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;代表要註冊&lt;code&gt;Q_num&lt;/code&gt;事件，每&lt;code&gt;Period&lt;/code&gt;秒執行一次。而程式可以一次監測多個事件（用指令註冊），你要寫程式輸出前$k$個執行的事件。&lt;br&gt;
+(如果在同一秒有多個事件，則以&lt;code&gt;Q_num&lt;/code&gt;遞增排序)&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+    <category term="priority queue" scheme="http://oj.roy4801.tw/tags/priority-queue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 526 - String Distance and Transform Process</title>
+    <link href="http://oj.roy4801.tw/2019/06/14/uva/uva526/"/>
+    <id>http://oj.roy4801.tw/2019/06/14/uva/uva526/</id>
+    <published>2019-06-14T10:30:55.000Z</published>
+    <updated>2021-05-04T15:40:10.006Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=467&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;字串距離是一個代表兩個字串的非負整數。接著要轉換(transform)$a$字串至$b$字串，有三種操作：插入(Insert)、刪除(Delete)、及取代（Replace)。&lt;br&gt;
+字串距離就是轉換的數量，求任意$a$字串轉換至$b$字串的字串距離及如何轉換的。&lt;/p&gt;
+&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;
+&lt;p&gt;每筆case有兩行字串$a$、$b$，以EOF結尾，字串的長度不超過$80$&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+    <category term="DP" scheme="http://oj.roy4801.tw/tags/DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 11059 - Maximum Product</title>
+    <link href="http://oj.roy4801.tw/2019/05/18/uva/uva11059/"/>
+    <id>http://oj.roy4801.tw/2019/05/18/uva/uva11059/</id>
+    <published>2019-05-18T13:40:29.000Z</published>
+    <updated>2021-05-04T15:40:10.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;Itemid=99999999&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2000&amp;amp;mosmsg=Submission+received+with+ID+23356954&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給定一個序列 $S = {S_1, S_2, …, S_n}$ ，找一個連續的子序列使得相乘最大。&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;這題可以直接做，也可以DP&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 11078 - Open Credit System</title>
+    <link href="http://oj.roy4801.tw/2019/05/18/uva/uva11078/"/>
+    <id>http://oj.roy4801.tw/2019/05/18/uva/uva11078/</id>
+    <published>2019-05-18T07:29:18.000Z</published>
+    <updated>2021-05-04T15:40:10.001Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2019&amp;amp;mosmsg=Submission+received+with+ID+23355296&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;(簡化)&lt;br&gt;
+有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;$O(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。&lt;br&gt;
+只要掃一遍，就得到答案。($O(n)$)&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 10685 - Nature</title>
+    <link href="http://oj.roy4801.tw/2019/05/17/uva/uva10685/"/>
+    <id>http://oj.roy4801.tw/2019/05/17/uva/uva10685/</id>
+    <published>2019-05-17T15:37:37.000Z</published>
+    <updated>2021-05-04T15:40:09.999Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=1626&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;大自然存在著食物鏈，體型大的動物吃小動物，小動物吃植物，死亡的動物被分解，作為植物的養分。&lt;br&gt;
+而你的任務是給定一組動物，求出最大的食物鏈動物數量為何？假如A吃B，你可以認定它們在同個食物鏈裡。&lt;/p&gt;
+&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;
+&lt;p&gt;每筆測資開頭有兩個整數 $C$ 代表有幾隻動物和 $R$ 有幾組關係；接著 $C$ 列，每列有一個名字（字串、只有小寫、不超過30字）；再接著有 $R$ 列，每列有兩個名字，代表第二個動物吃第一個動物。&lt;br&gt;
+你可以認定沒有一隻動物是自己的獵食者。&lt;br&gt;
+輸入終止在 $C = R = 0$ ，每筆測資間有空白列。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 136 - Ugly Number</title>
+    <link href="http://oj.roy4801.tw/2019/02/24/uva/uva136/"/>
+    <id>http://oj.roy4801.tw/2019/02/24/uva/uva136/</id>
+    <published>2019-02-24T05:26:12.000Z</published>
+    <updated>2021-05-04T15:40:10.003Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=72&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Ulgy Number&lt;/code&gt;是只有$2$、$3$、$5$質因數的數字。前11項是：&lt;br&gt;
+$$&lt;br&gt;
+1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ …&lt;br&gt;
+$$&lt;br&gt;
+程式必須印出第1500項&lt;code&gt;ugly number&lt;/code&gt;&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;第$n$個數字一定是前$n-1$個數字中，乘$2$、乘$3$、乘$5$得來的。&lt;br&gt;
+找數字的時候不用每個都從頭開始找，要找第$n$個數字，而這個數字勢必$&amp;gt;$第${n-1}$個數字，所以第&lt;code&gt;i, j, k&lt;/code&gt;個數字（分別乘$2$、乘$3$、乘$5$），至少要$&amp;gt;$第$n-1$個數字才有可能成為第$n$個數字。在這三種可能中，挑最小的便是第$n$個數字。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+    <category term="DP" scheme="http://oj.roy4801.tw/tags/DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 12100 - Printer Queue</title>
+    <link href="http://oj.roy4801.tw/2019/02/08/uva/uva12100/"/>
+    <id>http://oj.roy4801.tw/2019/02/08/uva/uva12100/</id>
+    <published>2019-02-08T06:34:58.000Z</published>
+    <updated>2021-05-04T15:40:10.002Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=&amp;amp;problem=3252&amp;amp;mosmsg=Submission+received+with+ID+22756147&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有台印表機，有 $n$ 件工作等待列印($1 \le n \le 100$)，你排在第 $m$ 號位置($0 \le m \le {n-1}$)，位置從零開始。&lt;br&gt;
+由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。&lt;br&gt;
+對於是否要列印有特殊的規則：（假設佇列的頭是&lt;code&gt;job j&lt;/code&gt;）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果佇列裡頭有比&lt;code&gt;job j&lt;/code&gt;還高優先的工作，則把&lt;code&gt;job j&lt;/code&gt;放到佇列最後頭。&lt;/li&gt;
+&lt;li&gt;如果沒有，就執行&lt;code&gt;job j&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你需要計算你必須花多少時間才能完成你的工作。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 11995 - I Can Guess the Data Structure!</title>
+    <link href="http://oj.roy4801.tw/2019/02/07/uva/uva11995/"/>
+    <id>http://oj.roy4801.tw/2019/02/07/uva/uva11995/</id>
+    <published>2019-02-07T12:42:47.000Z</published>
+    <updated>2021-05-04T15:40:10.001Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=3146&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有種資料結構(你不知道是什麼）支援兩種操作：放入、拿出。給定一個操作的序列，你要寫支程式推測出是哪種資料結構（&lt;code&gt;stack&lt;/code&gt;, &lt;code&gt;queue&lt;/code&gt;, &lt;code&gt;priority queue&lt;/code&gt;），不確定則輸出不確定，不知道輸出不知道。&lt;/p&gt;
+&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;
+&lt;p&gt;每筆測資第一行有數字 $n$($1 \le n \le{1000}$)，代表有 $n$ 筆操作&lt;br&gt;
+接著 $n$ 行，每行有兩個數字，第一個數字是操作，&lt;code&gt;1&lt;/code&gt;是放入，後頭接著要放入的數字；&lt;code&gt;2&lt;/code&gt;是拿出，後頭接著要拿出的數字。&lt;br&gt;
+以&lt;code&gt;EOF&lt;/code&gt;結尾&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 10935 - Throwing cards away I</title>
+    <link href="http://oj.roy4801.tw/2019/02/03/uva/uva10935/"/>
+    <id>http://oj.roy4801.tw/2019/02/03/uva/uva10935/</id>
+    <published>2019-02-02T16:22:42.000Z</published>
+    <updated>2021-05-04T15:40:09.999Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=1876&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有一疊卡，有標數字從$1$到$n$（頂端是$1$），每次從頂端丟掉一張卡片，再把一張卡片放到底部，直到卡片只剩一張。&lt;/p&gt;
+&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;
+&lt;p&gt;每行代表卡片的數量($n \le{50} $)，以&lt;code&gt;0&lt;/code&gt;結尾。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 402 - M*A*S*H</title>
+    <link href="http://oj.roy4801.tw/2019/02/02/uva/uva402/"/>
+    <id>http://oj.roy4801.tw/2019/02/02/uva/uva402/</id>
+    <published>2019-02-02T15:54:28.000Z</published>
+    <updated>2021-05-04T15:40:10.006Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=343&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有一排人（長度$N$），每次從一疊卡（20張）頂端抽出一張卡，點數$i$ 代表 列隊每$i$個人要去除。&lt;/p&gt;
+&lt;p&gt;比如：列隊有&lt;code&gt;10&lt;/code&gt;人，抽到點數&lt;code&gt;3&lt;/code&gt;的卡，則：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1 2 3 4 5 6 7 8 9 10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    x     x     x&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;x 代表去除&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+</feed>
