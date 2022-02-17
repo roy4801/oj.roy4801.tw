@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://oj.roy4801.tw/2022/02/17/leetcode/104/</loc>
+    
+    <lastmod>2022-02-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://oj.roy4801.tw/2022/02/16/leetcode/24/</loc>
     
     <lastmod>2022-02-16</lastmod>
@@ -210,6 +217,13 @@
   
   <url>
     <loc>http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/</loc>
+    <lastmod>2022-02-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/</loc>
     <lastmod>2022-02-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
