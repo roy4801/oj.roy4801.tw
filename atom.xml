@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2021-05-04T15:40:10.003Z</updated>
+  <updated>2022-02-16T07:39:45.042Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,91 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 24 - Swap Nodes in Pairs</title>
+    <link href="http://oj.roy4801.tw/2022/02/16/leetcode/24/"/>
+    <id>http://oj.roy4801.tw/2022/02/16/leetcode/24/</id>
+    <published>2022-02-16T07:31:32.000Z</published>
+    <updated>2022-02-16T07:39:45.042Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/swap-nodes-in-pairs/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給一個 Singly linked list 要你把每兩個兩個 swap 一遍，但不能只 swap value&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;照做即可，注意邊界 e.g. list 沒有 node 的狀態、list 只有一個 node 的狀態&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 78 - Subsets</title>
+    <link href="http://oj.roy4801.tw/2022/02/13/leetcode/78/"/>
+    <id>http://oj.roy4801.tw/2022/02/13/leetcode/78/</id>
+    <published>2022-02-13T13:55:26.000Z</published>
+    <updated>2022-02-13T14:49:30.536Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/subsets/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給一個 array size = $N$ e.g. &lt;code&gt;[1, 2, 3]&lt;/code&gt; 要回傳它的所有可能的子集合(Power set) e.g. &lt;code&gt;[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]&lt;/code&gt;&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;如果用 bit 來表示位置 $i$ 是否有出現，則問題就是數數字 $[0, 2^N]$，每個數字代表一種子集合的狀態&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Uva 679 - Dropping Balls</title>
+    <link href="http://oj.roy4801.tw/2021/05/06/uva/uva679/"/>
+    <id>http://oj.roy4801.tw/2021/05/06/uva/uva679/</id>
+    <published>2021-05-06T15:03:09.000Z</published>
+    <updated>2021-05-06T15:53:11.060Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://onlinejudge.org/index.php?option=onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=620&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有 $K$ 顆球從一顆有高度 $D$ 的完全二元樹上落下，從根節點一直落到葉節點，其中「非葉節點」都儲存個 bool 值(一開始是 false)，當一顆球經過該節點時，就會反轉該 bool 值。當每顆球經過該「非葉節點」時，如果 bool 值是 false，則走左子樹；反之，如果 bool 值是 true，則走右子樹。 問你寫程式回答當第 $I$ 顆球最後停在的節點 $P$ 是多少?&lt;/p&gt;
+&lt;p&gt;$2 \le D \le 20\text{, and } 1 \le I \le 524288$&lt;/p&gt;
+&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
   
   <entry>
     <title>Uva 1587 - Box</title>
