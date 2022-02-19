@@ -90,6 +90,132 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-uva/uva136" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/02/24/uva/uva136/" class="article-date">
+  <time class="dt-published" datetime="2019-02-24T05:26:12.000Z" itemprop="datePublished">2019-02-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2019/02/24/uva/uva136/">Uva 136 - Ugly Number</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;page=show_problem&amp;problem=72">題目</a></p>
+<h1>Problem</h1>
+<p><code>Ulgy Number</code>是只有$2$、$3$、$5$質因數的數字。前11項是：<br>
+$$<br>
+1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ …<br>
+$$<br>
+程式必須印出第1500項<code>ugly number</code></p>
+<h1>想法</h1>
+<p>第$n$個數字一定是前$n-1$個數字中，乘$2$、乘$3$、乘$5$得來的。<br>
+找數字的時候不用每個都從頭開始找，要找第$n$個數字，而這個數字勢必$&gt;$第${n-1}$個數字，所以第<code>i, j, k</code>個數字（分別乘$2$、乘$3$、乘$5$），至少要$&gt;$第$n-1$個數字才有可能成為第$n$個數字。在這三種可能中，挑最小的便是第$n$個數字。</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/02/24/uva/uva136/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2019/02/24/uva/uva136/" data-id="ckod0d3jy000kxkw8d2w73six" data-title="Uva 136 - Ugly Number" class="article-share-link">Share</a>
+      
+      
+        <a href="/2019/02/24/uva/uva136/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2019/02/24/uva/uva136/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-uva/uva12100" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2019/02/08/uva/uva12100/" class="article-date">
+  <time class="dt-published" datetime="2019-02-08T06:34:58.000Z" itemprop="datePublished">2019-02-08</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2019/02/08/uva/uva12100/">Uva 12100 - Printer Queue</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;category=&amp;problem=3252&amp;mosmsg=Submission+received+with+ID+22756147">題目</a></p>
+<h1>Problem</h1>
+<p>有台印表機，有 $n$ 件工作等待列印($1 \le n \le 100$)，你排在第 $m$ 號位置($0 \le m \le {n-1}$)，位置從零開始。<br>
+由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。<br>
+對於是否要列印有特殊的規則：（假設佇列的頭是<code>job j</code>）</p>
+<ul>
+<li>如果佇列裡頭有比<code>job j</code>還高優先的工作，則把<code>job j</code>放到佇列最後頭。</li>
+<li>如果沒有，就執行<code>job j</code>。</li>
+</ul>
+<p>你需要計算你必須花多少時間才能完成你的工作。</p>
+        
+          <p class="article-more-link">
+            <a href="/2019/02/08/uva/uva12100/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2019/02/08/uva/uva12100/" data-id="ckod0d3jr000gxkw89mvp3shg" data-title="Uva 12100 - Printer Queue" class="article-share-link">Share</a>
+      
+      
+        <a href="/2019/02/08/uva/uva12100/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2019/02/08/uva/uva12100/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-uva/uva11995" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2019/02/07/uva/uva11995/" class="article-date">
@@ -281,7 +407,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/">Hard</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a></li></ul></li></ul>
     </div>
   </div>
 
@@ -291,7 +417,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bfs/" rel="tag">bfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/" rel="tag">graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
     </div>
   </div>
 
@@ -301,7 +427,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/DP/" style="font-size: 12.5px;">DP</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/Uva/" style="font-size: 17.5px;">Uva</a> <a href="/tags/backtracking/" style="font-size: 12.5px;">backtracking</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/priority-queue/" style="font-size: 10px;">priority queue</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a>
+      <a href="/tags/DP/" style="font-size: 12.5px;">DP</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/Uva/" style="font-size: 17.5px;">Uva</a> <a href="/tags/backtracking/" style="font-size: 12.5px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/greedy/" style="font-size: 10px;">greedy</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/priority-queue/" style="font-size: 12.5px;">priority queue</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a>
     </div>
   </div>
 
@@ -323,6 +449,14 @@
       <ul>
         
           <li>
+            <a href="/2022/02/20/leetcode/1675/">Leetcode 1675 - Minimize Deviation in Array</a>
+          </li>
+        
+          <li>
+            <a href="/2022/02/20/leetcode/127/">Leetcode 127 - Word Ladder</a>
+          </li>
+        
+          <li>
             <a href="/2022/02/19/leetcode/39/">Leetcode 39 - Combination Sum</a>
           </li>
         
@@ -332,14 +466,6 @@
         
           <li>
             <a href="/2022/02/17/leetcode/104/">Leetcode 104 - Maximum Depth of Binary Tree</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/16/leetcode/24/">Leetcode 24 - Swap Nodes in Pairs</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/13/leetcode/78/">Leetcode 78 - Subsets</a>
           </li>
         
       </ul>

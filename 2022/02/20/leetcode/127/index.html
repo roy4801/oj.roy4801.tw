@@ -15,20 +15,22 @@
 <!-- End Google Analytics -->
 
   
-  <title>Uva 11995 - I Can Guess the Data Structure! | Roy 的解題紀錄</title>
+  <title>Leetcode 127 - Word Ladder | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 有種資料結構(你不知道是什麼）支援兩種操作：放入、拿出。給定一個操作的序列，你要寫支程式推測出是哪種資料結構（stack, queue, priority queue），不確定則輸出不確定，不知道輸出不知道。 輸入 每筆測資第一行有數字 $n$($1 \le n \le{1000}$)，代表有 $n$ 筆操作 接著 $n$ 行，每行有兩個數字，第一個數字是操作，1是放入，後頭">
+  <meta name="description" content="題目 Problem 一個字串能夠從 beginWord 轉換成 endWord 稱作 transformation sequence e.g. beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk，今天題目給你一個 wordList 問你從 beginWord 到 endWord 總共幾個字串，並且要最短的。  其中每個字串只差一個字元 &#x3D;&gt; 相差一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uva 11995 - I Can Guess the Data Structure!">
-<meta property="og:url" content="http://oj.roy4801.tw/2019/02/07/uva/uva11995/index.html">
+<meta property="og:title" content="Leetcode 127 - Word Ladder">
+<meta property="og:url" content="http://oj.roy4801.tw/2022/02/20/leetcode/127/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 有種資料結構(你不知道是什麼）支援兩種操作：放入、拿出。給定一個操作的序列，你要寫支程式推測出是哪種資料結構（stack, queue, priority queue），不確定則輸出不確定，不知道輸出不知道。 輸入 每筆測資第一行有數字 $n$($1 \le n \le{1000}$)，代表有 $n$ 筆操作 接著 $n$ 行，每行有兩個數字，第一個數字是操作，1是放入，後頭">
+<meta property="og:description" content="題目 Problem 一個字串能夠從 beginWord 轉換成 endWord 稱作 transformation sequence e.g. beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk，今天題目給你一個 wordList 問你從 beginWord 到 endWord 總共幾個字串，並且要最短的。  其中每個字串只差一個字元 &#x3D;&gt; 相差一">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2019-02-07T12:42:47.000Z">
-<meta property="article:modified_time" content="2021-05-04T15:40:10.001Z">
+<meta property="article:published_time" content="2022-02-19T21:07:18.000Z">
+<meta property="article:modified_time" content="2022-02-19T21:47:31.730Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
-<meta property="article:tag" content="Uva">
+<meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="graph">
+<meta property="article:tag" content="bfs">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -90,14 +92,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-uva/uva11995" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-leetcode/127" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2019/02/07/uva/uva11995/" class="article-date">
-  <time class="dt-published" datetime="2019-02-07T12:42:47.000Z" itemprop="datePublished">2019-02-07</time>
+    <a href="/2022/02/20/leetcode/127/" class="article-date">
+  <time class="dt-published" datetime="2022-02-19T21:07:18.000Z" itemprop="datePublished">2022-02-20</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a>
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/">Hard</a>
   </div>
 
   </div>
@@ -108,7 +110,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Uva 11995 - I Can Guess the Data Structure!
+      Leetcode 127 - Word Ladder
     </h1>
   
 
@@ -116,63 +118,51 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=3146">題目</a></p>
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/word-ladder/">題目</a></p>
 <h1>Problem</h1>
-<p>有種資料結構(你不知道是什麼）支援兩種操作：放入、拿出。給定一個操作的序列，你要寫支程式推測出是哪種資料結構（<code>stack</code>, <code>queue</code>, <code>priority queue</code>），不確定則輸出不確定，不知道輸出不知道。</p>
-<h2 id="輸入">輸入</h2>
-<p>每筆測資第一行有數字 $n$($1 \le n \le{1000}$)，代表有 $n$ 筆操作<br>
-接著 $n$ 行，每行有兩個數字，第一個數字是操作，<code>1</code>是放入，後頭接著要放入的數字；<code>2</code>是拿出，後頭接著要拿出的數字。<br>
-以<code>EOF</code>結尾</p>
-<h2 id="輸出">輸出</h2>
-<table>
-<thead>
-<tr>
-<th>輸出</th>
-<th>意義</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>stack</code></td>
-<td>是stack</td>
-</tr>
-<tr>
-<td><code>queue</code></td>
-<td>是queue</td>
-</tr>
-<tr>
-<td><code>priority queue</code></td>
-<td>是priority queue</td>
-</tr>
-<tr>
-<td><code>not sure</code></td>
-<td>不確定（可能是以上多種）</td>
-</tr>
-<tr>
-<td><code>impossible</code></td>
-<td>不知道</td>
-</tr>
-</tbody>
-</table>
+<p>一個字串能夠從 <code>beginWord</code> 轉換成 <code>endWord</code> 稱作 <code>transformation sequence</code><br>
+e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目給你一個 <code>wordList</code> 問你從 <code>beginWord</code> 到 <code>endWord</code> 總共幾個字串，並且要<strong>最短</strong>的。</p>
+<ul>
+<li>其中每個字串只差一個字元 =&gt; 相差一個字元才能轉換</li>
+<li>轉換的字串都在 <code>wordList</code> 裏頭</li>
+<li><code>beginWord</code> 不一定要在 <code>wordList</code> 裏頭</li>
+</ul>
 <h1>想法</h1>
-<p>直接實作<code>stack</code>, <code>queue</code>, <code>priority queue</code>的功能(STL有)，跟著操作就好。<br>
-如果有錯就代表不是那種資料結構。</p>
-<h1>AC code</h1>
-<p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/uva/11995.cpp">https://github.com/roy4801/solved_problems/blob/master/uva/11995.cpp</a></p>
+<p>可以把每個 word 都想成圖上的 node，字串轉換就變成的從圖上的一個點移動到另一個點，<br>
+問題就變成想辦法建圖，從 <code>beginWord</code> 開始 bfs 即可。</p>
+<p>對於每個字來說 e.g. <code>dog</code>，有三條路可以走: <code>.og</code>, <code>d.g</code>, <code>do.</code>，可以先建個 dictionary 來方便查找 e.g. <code>.og = &#123;dog, log, cog&#125;</code>，<br>
+接著就遍歷 <code>wordList</code> 把圖建起來。</p>
+<p>小細節是 <code>beginWord</code> 要等圖建好之後，再連到圖上(單向)，這樣才不會走回去。</p>
+<ul>
+<li>時間複雜度: <code>N = wordList.size()</code>, <code>M = wordList[i].size()</code> (字串長度)
+<ul>
+<li>建字串表: $O(N)$</li>
+<li>建圖: $O(N^ \cdot M \cdot N)$</li>
+<li>BFS: $O(N^2)$ (網狀圖)</li>
+</ul>
+</li>
+<li>空間複雜度: $O(N^ \cdot M \cdot N)$</li>
+</ul>
+<h1>AC Code</h1>
+<p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/leetcode/127.cpp">https://github.com/roy4801/solved_problems/blob/master/leetcode/127.cpp</a></p>
+<h1>賞析</h1>
+<p>TODO</p>
+<h1>心得</h1>
+<p>一開始跟朋友討論時想複雜了= = (inspired by 祥恩)，後來看題解才知道有更簡單的解法</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2019/02/07/uva/uva11995/" data-id="ckod0d3je0009xkw88jioe2ja" data-title="Uva 11995 - I Can Guess the Data Structure!" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/02/20/leetcode/127/" data-id="ckzucki7m00002cu90xj14sfx" data-title="Leetcode 127 - Word Ladder" class="article-share-link">Share</a>
       
       
-        <a href="/2019/02/07/uva/uva11995/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2019/02/07/uva/uva11995/" itemprop="commentCount"></span>
+        <a href="/2022/02/20/leetcode/127/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/20/leetcode/127/" itemprop="commentCount"></span>
           Comments
         </a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bfs/" rel="tag">bfs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/graph/" rel="tag">graph</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -180,19 +170,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/02/08/uva/uva12100/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/02/20/leetcode/1675/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Uva 12100 - Printer Queue
+          Leetcode 1675 - Minimize Deviation in Array
         
       </div>
     </a>
   
   
-    <a href="/2019/02/03/uva/uva10935/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/02/19/leetcode/39/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Uva 10935 - Throwing cards away I</div>
+      <div class="article-nav-title">Leetcode 39 - Combination Sum</div>
     </a>
   
 </nav>

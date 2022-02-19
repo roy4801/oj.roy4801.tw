@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-02-19T20:29:35.823Z</updated>
+  <updated>2022-02-19T22:11:50.550Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1675 - Minimize Deviation in Array</title>
+    <link href="http://oj.roy4801.tw/2022/02/20/leetcode/1675/"/>
+    <id>http://oj.roy4801.tw/2022/02/20/leetcode/1675/</id>
+    <published>2022-02-19T21:33:33.000Z</published>
+    <updated>2022-02-19T22:11:50.550Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimize-deviation-in-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一列正整數 &lt;code&gt;N&lt;/code&gt; ，你可以對數列中的每個元素執行兩種操作:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果 &lt;code&gt;N[i]&lt;/code&gt; 是偶數，可以除 2&lt;/li&gt;
+&lt;li&gt;如果 &lt;code&gt;N[i]&lt;/code&gt; 是奇數，可以乘 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定義 &lt;code&gt;deviation&lt;/code&gt; 是數列中的最大和最小之差 &lt;code&gt;max(N) - min(N)&lt;/code&gt;&lt;br&gt;
+問你經過幾次操作後，最小的 &lt;code&gt;deviation&lt;/code&gt; 是多少?&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Hard" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="priority queue" scheme="http://oj.roy4801.tw/tags/priority-queue/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="greedy" scheme="http://oj.roy4801.tw/tags/greedy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 127 - Word Ladder</title>
+    <link href="http://oj.roy4801.tw/2022/02/20/leetcode/127/"/>
+    <id>http://oj.roy4801.tw/2022/02/20/leetcode/127/</id>
+    <published>2022-02-19T21:07:18.000Z</published>
+    <updated>2022-02-19T21:47:31.730Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/word-ladder/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;一個字串能夠從 &lt;code&gt;beginWord&lt;/code&gt; 轉換成 &lt;code&gt;endWord&lt;/code&gt; 稱作 &lt;code&gt;transformation sequence&lt;/code&gt;&lt;br&gt;
+e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&lt;/code&gt;，今天題目給你一個 &lt;code&gt;wordList&lt;/code&gt; 問你從 &lt;code&gt;beginWord&lt;/code&gt; 到 &lt;code&gt;endWord&lt;/code&gt; 總共幾個字串，並且要&lt;strong&gt;最短&lt;/strong&gt;的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;其中每個字串只差一個字元 =&amp;gt; 相差一個字元才能轉換&lt;/li&gt;
+&lt;li&gt;轉換的字串都在 &lt;code&gt;wordList&lt;/code&gt; 裏頭&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;beginWord&lt;/code&gt; 不一定要在 &lt;code&gt;wordList&lt;/code&gt; 裏頭&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Hard" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="graph" scheme="http://oj.roy4801.tw/tags/graph/"/>
+    
+    <category term="bfs" scheme="http://oj.roy4801.tw/tags/bfs/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 39 - Combination Sum</title>
