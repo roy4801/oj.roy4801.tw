@@ -15,18 +15,21 @@
 <!-- End Google Analytics -->
 
   
-  <title>Archives | Roy 的解題紀錄</title>
+  <title>Leetcode 39 - Combination Sum | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Roy 的解題紀錄">
-<meta property="og:url" content="http://oj.roy4801.tw/archives/page/3/index.html">
+  <meta name="description" content="題目 Problem 給你一組數字 candidates 和一個數字 target ，問你能用candidates中的元素組成不重複的組合，且相加要等於 T。相同的數字可以出現無限次  1 &lt;&#x3D; candidates.size() &lt;&#x3D; 30 1 &lt;&#x3D; candidates[i] &lt;&#x3D; 200 1 &lt;&#x3D; T &lt;&#x3D; 500  想法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leetcode 39 - Combination Sum">
+<meta property="og:url" content="http://oj.roy4801.tw/2022/02/19/leetcode/39/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
+<meta property="og:description" content="題目 Problem 給你一組數字 candidates 和一個數字 target ，問你能用candidates中的元素組成不重複的組合，且相加要等於 T。相同的數字可以出現無限次  1 &lt;&#x3D; candidates.size() &lt;&#x3D; 30 1 &lt;&#x3D; candidates[i] &lt;&#x3D; 200 1 &lt;&#x3D; T &lt;&#x3D; 500  想法">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-02-18T20:17:09.000Z">
+<meta property="article:modified_time" content="2022-02-19T20:29:35.823Z">
 <meta property="article:author" content="Roy">
-<meta property="article:tag" content="刷題">
-<meta property="article:tag" content="ACM">
-<meta property="article:tag" content="Uva">
 <meta property="article:tag" content="解題紀錄">
+<meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="backtracking">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -88,84 +91,92 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/02/07/uva/uva11995/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-02-07T12:42:47.000Z" itemprop="datePublished">Feb 7</time>
+        <section id="main"><article id="post-leetcode/39" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/02/19/leetcode/39/" class="article-date">
+  <time class="dt-published" datetime="2022-02-18T20:17:09.000Z" itemprop="datePublished">2022-02-19</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/07/uva/uva11995/">Uva 11995 - I Can Guess the Data Structure!</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Leetcode 39 - Combination Sum
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/02/03/uva/uva10935/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-02-02T16:22:42.000Z" itemprop="datePublished">Feb 3</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/03/uva/uva10935/">Uva 10935 - Throwing cards away I</a>
-    </h1>
-  
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/combination-sum/">題目</a></p>
+<h1>Problem</h1>
+<p>給你一組數字 <code>candidates</code> 和一個數字 <code>target</code> ，問你能用<code>candidates</code>中的元素組成<strong>不重複</strong>的組合，且相加要等於 <code>T</code>。相同的數字可以出現無限次</p>
+<ul>
+<li>1 &lt;= candidates.size() &lt;= 30</li>
+<li>1 &lt;= candidates[i] &lt;= 200</li>
+<li>1 &lt;= T &lt;= 500</li>
+</ul>
+<h1>想法</h1>
+<p>用 backtracking 去試數字的組合，終止點在總和等於 <code>target</code> 時</p>
+<ul>
+<li>時間複雜度: $O(N^{\frac{T}{M}})$
+<ul>
+<li><code>N = candidates.size()</code>, <code>T = target</code>, <code>M = minimum value of candidates</code></li>
+</ul>
+</li>
+<li>空間複雜度: $O(\frac{T}{M})$</li>
+</ul>
+<h1>AC Code</h1>
+<p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/leetcode/39.cpp">https://github.com/roy4801/solved_problems/blob/master/leetcode/39.cpp</a></p>
+<h1>賞析</h1>
+<p>TODO: DP</p>
+<p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/combination-sum/discuss/937255/Python-3-or-DFSBacktracking-and-Two-DP-methods-or-Explanations">https://leetcode.com/problems/combination-sum/discuss/937255/Python-3-or-DFSBacktracking-and-Two-DP-methods-or-Explanations</a></p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/02/02/uva/uva402/" class="archive-article-date">
-  <time class="dt-published" datetime="2019-02-02T15:54:28.000Z" itemprop="datePublished">Feb 2</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/02/uva/uva402/">Uva 402 - M*A*S*H</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/02/19/leetcode/39/" data-id="ckzsv1rxn0000s4u9c8u25slj" data-title="Leetcode 39 - Combination Sum" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/02/19/leetcode/39/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/19/leetcode/39/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
   
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/archives/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
+<nav id="article-nav">
+  
+  
+    <a href="/2022/02/19/leetcode/402/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Leetcode 402 - Remove K Digits</div>
+    </a>
+  
+</nav>
 
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
 </section>
         
           <aside id="sidebar">

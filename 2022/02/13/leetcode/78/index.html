@@ -25,10 +25,11 @@
 <meta property="og:description" content="題目 Problem 給一個 array size &#x3D; $N$ e.g. [1, 2, 3] 要回傳它的所有可能的子集合(Power set) e.g. [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]] 想法 如果用 bit 來表示位置 $i$ 是否有出現，則問題就是數數字 $[0, 2^N]$，每個數字代表一種子集合的狀態">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-13T13:55:26.000Z">
-<meta property="article:modified_time" content="2022-02-13T14:49:30.536Z">
+<meta property="article:modified_time" content="2022-02-18T20:13:41.725Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="backtracking">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -161,7 +162,7 @@
         </a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -212,7 +213,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
     </div>
   </div>
 
@@ -222,7 +223,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/DP/" style="font-size: 12.5px;">DP</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/Uva/" style="font-size: 17.5px;">Uva</a> <a href="/tags/priority-queue/" style="font-size: 10px;">priority queue</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a>
+      <a href="/tags/DP/" style="font-size: 12.5px;">DP</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/Uva/" style="font-size: 17.5px;">Uva</a> <a href="/tags/backtracking/" style="font-size: 12.5px;">backtracking</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/priority-queue/" style="font-size: 10px;">priority queue</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a>
     </div>
   </div>
 
@@ -244,6 +245,10 @@
       <ul>
         
           <li>
+            <a href="/2022/02/19/leetcode/39/">Leetcode 39 - Combination Sum</a>
+          </li>
+        
+          <li>
             <a href="/2022/02/19/leetcode/402/">Leetcode 402 - Remove K Digits</a>
           </li>
         
@@ -257,10 +262,6 @@
         
           <li>
             <a href="/2022/02/13/leetcode/78/">Leetcode 78 - Subsets</a>
-          </li>
-        
-          <li>
-            <a href="/2021/05/06/uva/uva679/">Uva 679 - Dropping Balls</a>
           </li>
         
       </ul>
