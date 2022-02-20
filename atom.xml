@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-02-19T22:11:50.550Z</updated>
+  <updated>2022-02-20T10:28:16.544Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1288 - Remove Covered Intervals</title>
+    <link href="http://oj.roy4801.tw/2022/02/20/leetcode/1288/"/>
+    <id>http://oj.roy4801.tw/2022/02/20/leetcode/1288/</id>
+    <published>2022-02-20T09:58:40.000Z</published>
+    <updated>2022-02-20T10:28:16.544Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/remove-covered-intervals/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個由正整數構成的區間，&lt;code&gt;intervals[i] = [li, ri]&lt;/code&gt;，如果區間 &lt;code&gt;[a, b)&lt;/code&gt; 被 &lt;code&gt;[c, d)&lt;/code&gt; 覆蓋，則代表 $c &amp;lt;= a$ 且 $b &amp;lt;= d$&lt;br&gt;
+要你回傳刪掉被覆蓋的區間後，剩下區間的個數。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;N = intervals.size()&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 \leq N \leq 1000$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;區間範圍: $0 \leq l_i \leq r_i \leq 10^5$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="sorting" scheme="http://oj.roy4801.tw/tags/sorting/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 1675 - Minimize Deviation in Array</title>
