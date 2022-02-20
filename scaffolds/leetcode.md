@@ -1,6 +1,6 @@
 ---
 title: Leetcode {{ title }}
-categories: [解題區, Leetcode, ]
+categories: [解題區, Leetcode, level]
 tags:
   - 解題紀錄
   - Leetcode
@@ -21,3 +21,7 @@ date: {{ date }}
 
 
 # 賞析
+
+
+# 心得
+
