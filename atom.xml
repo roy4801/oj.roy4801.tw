@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-02-20T10:28:16.544Z</updated>
+  <updated>2022-02-22T09:11:29.965Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 171 - Excel Sheet Column Number</title>
+    <link href="http://oj.roy4801.tw/2022/02/22/leetcode/171/"/>
+    <id>http://oj.roy4801.tw/2022/02/22/leetcode/171/</id>
+    <published>2022-02-22T09:01:42.000Z</published>
+    <updated>2022-02-22T09:11:29.965Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/excel-sheet-column-number/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個字串 &lt;code&gt;S&lt;/code&gt; 由大寫英文字母組成，令 &lt;code&gt;A=1, B=2, ..., Z=26, AA=27, AB=28, ...&lt;/code&gt; ，要你算出並回傳數值。&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;照做即可&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 1288 - Remove Covered Intervals</title>
