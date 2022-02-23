@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-02-23T15:18:20.599Z</updated>
+  <updated>2022-02-23T22:13:20.620Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Leetcode 169 - Majority Element</title>
+    <link href="http://oj.roy4801.tw/2022/02/24/leetcode/169/"/>
+    <id>http://oj.roy4801.tw/2022/02/24/leetcode/169/</id>
+    <published>2022-02-23T16:11:56.000Z</published>
+    <updated>2022-02-23T22:13:20.620Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/majority-element/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個陣列 &lt;code&gt;nums&lt;/code&gt;，回傳出現次數超過 $\lfloor \frac{n}{2} \rfloor$ 的的那個數字。&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;直覺做就是先建表紀錄每個數字出現的次數，接著排序拿最大即可&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Leetcode 133 - Clone Graph</title>
     <link href="http://oj.roy4801.tw/2022/02/23/leetcode/133/"/>
     <id>http://oj.roy4801.tw/2022/02/23/leetcode/133/</id>
     <published>2022-02-23T13:52:52.000Z</published>
-    <updated>2022-02-23T15:18:20.599Z</updated>
+    <updated>2022-02-23T15:54:13.715Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/clone-graph/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -42,6 +71,10 @@
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="Graph" scheme="http://oj.roy4801.tw/tags/Graph/"/>
+    
+    <category term="BFS" scheme="http://oj.roy4801.tw/tags/BFS/"/>
     
   </entry>
   

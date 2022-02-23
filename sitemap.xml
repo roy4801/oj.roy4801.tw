@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://oj.roy4801.tw/2022/02/24/leetcode/169/</loc>
+    
+    <lastmod>2022-02-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://oj.roy4801.tw/2022/02/23/leetcode/133/</loc>
     
     <lastmod>2022-02-23</lastmod>
@@ -299,6 +306,20 @@
   
   <url>
     <loc>http://oj.roy4801.tw/tags/sorting/</loc>
+    <lastmod>2022-02-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://oj.roy4801.tw/tags/Graph/</loc>
+    <lastmod>2022-02-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://oj.roy4801.tw/tags/BFS/</loc>
     <lastmod>2022-02-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
