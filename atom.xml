@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-03-02T12:43:38.692Z</updated>
+  <updated>2022-03-02T15:15:37.741Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 56 - Merge Intervals</title>
+    <link href="http://oj.roy4801.tw/2022/03/02/leetcode/56/"/>
+    <id>http://oj.roy4801.tw/2022/03/02/leetcode/56/</id>
+    <published>2022-03-02T14:23:14.000Z</published>
+    <updated>2022-03-02T15:15:37.741Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/merge-intervals/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一堆區間，要你重疊的區間合併並回傳整個陣列&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;把區間由小到大排序後，把相鄰重疊的區間合併&lt;br&gt;
+官方題解有為何排序後可以合併的區間是連續的證明 &lt;a href=&quot;https://leetcode-cn.com/problems/merge-intervals/solution/he-bing-qu-jian-by-leetcode-solution/&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="sorting" scheme="http://oj.roy4801.tw/tags/sorting/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 392 - Is Subsequence</title>
