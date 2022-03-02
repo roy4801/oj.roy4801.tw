@@ -90,6 +90,126 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/392" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/02/leetcode/392/" class="article-date">
+  <time class="dt-published" datetime="2022-03-02T12:21:52.000Z" itemprop="datePublished">2022-03-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/02/leetcode/392/">Leetcode 392 - Is Subsequence</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/is-subsequence/">題目</a></p>
+<h1>Problem</h1>
+<p>給兩個字串 <code>s</code> 和 <code>t</code> 問 <code>s</code> 是不是 <code>t</code> 的子序列(Subsequence)</p>
+<ul>
+<li><code>0 &lt;= s.length &lt;= 100</code></li>
+<li><code>0 &lt;= t.length &lt;= 104</code></li>
+</ul>
+<p>Follow-up: 當 s.length &gt;= 10^9 時要怎麼做</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/02/leetcode/392/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/02/leetcode/392/" data-id="cl09jyk3d0007y0u9fo7a71n3" data-title="Leetcode 392 - Is Subsequence" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/02/leetcode/392/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/02/leetcode/392/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" rel="tag">雙指標</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-leetcode/1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/01/leetcode/1/" class="article-date">
+  <time class="dt-published" datetime="2022-02-28T18:04:12.000Z" itemprop="datePublished">2022-03-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/01/leetcode/1/">Leetcode 1 - Two Sum</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/two-sum">題目</a></p>
+<h1>Problem</h1>
+<p>題目給你一個整數陣列 <code>nums</code> 和一個正數 <code>target</code>，問你哪兩個數字加起來等於 <code>target</code>。<br>
+每組輸入一定都會有解，回傳 index 即可。</p>
+<h1>想法</h1>
+<p>$O(N^2)$ 的解很簡單，直接做就好。$O(NlogN)$的解，先記錄數字對應到的位置(同個數字可能出現在多個位置)，接著遍歷每個數字 <code>i</code>，看看 <code>target - n[i]</code> 有沒有在裏頭，如果有且沒挑過的話，則找到答案</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/01/leetcode/1/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/01/leetcode/1/" data-id="cl09jyk330000y0u98az14aot" data-title="Leetcode 1 - Two Sum" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/01/leetcode/1/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/01/leetcode/1/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/228" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/02/28/leetcode/228/" class="article-date">
@@ -571,126 +691,6 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
 
 
   
-    <article id="post-leetcode/39" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/19/leetcode/39/" class="article-date">
-  <time class="dt-published" datetime="2022-02-18T20:17:09.000Z" itemprop="datePublished">2022-02-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/19/leetcode/39/">Leetcode 39 - Combination Sum</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/combination-sum/">題目</a></p>
-<h1>Problem</h1>
-<p>給你一組數字 <code>candidates</code> 和一個數字 <code>target</code> ，問你能用<code>candidates</code>中的元素組成<strong>不重複</strong>的組合，且相加要等於 <code>T</code>。相同的數字可以出現無限次</p>
-<ul>
-<li>1 &lt;= candidates.size() &lt;= 30</li>
-<li>1 &lt;= candidates[i] &lt;= 200</li>
-<li>1 &lt;= T &lt;= 500</li>
-</ul>
-<h1>想法</h1>
-        
-          <p class="article-more-link">
-            <a href="/2022/02/19/leetcode/39/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/19/leetcode/39/" data-id="ckzsv1rxn0000s4u9c8u25slj" data-title="Leetcode 39 - Combination Sum" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/02/19/leetcode/39/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/19/leetcode/39/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/402" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/19/leetcode/402/" class="article-date">
-  <time class="dt-published" datetime="2022-02-18T18:10:49.000Z" itemprop="datePublished">2022-02-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/19/leetcode/402/">Leetcode 402 - Remove K Digits</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/remove-k-digits/">題目</a></p>
-<h1>Problem</h1>
-<p>給你一個只有非負整數的字串 <code>num</code> 和整數 <code>k</code>，要你回傳刪掉 <code>k</code> 個數字後，之中最小的整數</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: num &#x3D; &quot;1432219&quot;, k &#x3D; 3</span><br><span class="line">Output: &quot;1219&quot;</span><br><span class="line">Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.</span><br></pre></td></tr></table></figure>
-<h1>想法</h1>
-        
-          <p class="article-more-link">
-            <a href="/2022/02/19/leetcode/402/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/19/leetcode/402/" data-id="ckzsqq7n100004gu95o4vgt6w" data-title="Leetcode 402 - Remove K Digits" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/02/19/leetcode/402/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/19/leetcode/402/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -716,7 +716,7 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BFS/" rel="tag">BFS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Graph/" rel="tag">Graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/" rel="tag">array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bfs/" rel="tag">bfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/" rel="tag">graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sorting/" rel="tag">sorting</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string/" rel="tag">string</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BFS/" rel="tag">BFS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Graph/" rel="tag">Graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/" rel="tag">array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bfs/" rel="tag">bfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/" rel="tag">graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sorting/" rel="tag">sorting</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string/" rel="tag">string</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" rel="tag">雙指標</a></li></ul>
     </div>
   </div>
 
@@ -726,7 +726,7 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/DP/" style="font-size: 12.5px;">DP</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Leetcode/" style="font-size: 15px;">Leetcode</a> <a href="/tags/Uva/" style="font-size: 17.5px;">Uva</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/backtracking/" style="font-size: 12.5px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/greedy/" style="font-size: 10px;">greedy</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/priority-queue/" style="font-size: 12.5px;">priority queue</a> <a href="/tags/sorting/" style="font-size: 10px;">sorting</a> <a href="/tags/string/" style="font-size: 10px;">string</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a>
+      <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/DP/" style="font-size: 15px;">DP</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Leetcode/" style="font-size: 17.5px;">Leetcode</a> <a href="/tags/Uva/" style="font-size: 17.5px;">Uva</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/backtracking/" style="font-size: 12.5px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/greedy/" style="font-size: 10px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 10px;">hashmap</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/priority-queue/" style="font-size: 12.5px;">priority queue</a> <a href="/tags/sorting/" style="font-size: 10px;">sorting</a> <a href="/tags/string/" style="font-size: 10px;">string</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 12.5px;">雙指標</a>
     </div>
   </div>
 
@@ -735,7 +735,7 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
     </div>
   </div>
 
@@ -748,6 +748,14 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
       <ul>
         
           <li>
+            <a href="/2022/03/02/leetcode/392/">Leetcode 392 - Is Subsequence</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/01/leetcode/1/">Leetcode 1 - Two Sum</a>
+          </li>
+        
+          <li>
             <a href="/2022/02/28/leetcode/228/">Leetcode 228 - Summary Ranges</a>
           </li>
         
@@ -757,14 +765,6 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
         
           <li>
             <a href="/2022/02/24/leetcode/169/">Leetcode 169 - Majority Element</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/23/leetcode/133/">Leetcode 133 - Clone Graph</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/22/leetcode/171/">Leetcode 171 - Excel Sheet Column Number</a>
           </li>
         
       </ul>

@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-02-28T10:35:56.712Z</updated>
+  <updated>2022-03-02T12:43:38.692Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,74 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 392 - Is Subsequence</title>
+    <link href="http://oj.roy4801.tw/2022/03/02/leetcode/392/"/>
+    <id>http://oj.roy4801.tw/2022/03/02/leetcode/392/</id>
+    <published>2022-03-02T12:21:52.000Z</published>
+    <updated>2022-03-02T12:43:38.692Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/is-subsequence/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給兩個字串 &lt;code&gt;s&lt;/code&gt; 和 &lt;code&gt;t&lt;/code&gt; 問 &lt;code&gt;s&lt;/code&gt; 是不是 &lt;code&gt;t&lt;/code&gt; 的子序列(Subsequence)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= s.length &amp;lt;= 100&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= t.length &amp;lt;= 104&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Follow-up: 當 s.length &amp;gt;= 10^9 時要怎麼做&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="DP" scheme="http://oj.roy4801.tw/tags/DP/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="雙指標" scheme="http://oj.roy4801.tw/tags/%E9%9B%99%E6%8C%87%E6%A8%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1 - Two Sum</title>
+    <link href="http://oj.roy4801.tw/2022/03/01/leetcode/1/"/>
+    <id>http://oj.roy4801.tw/2022/03/01/leetcode/1/</id>
+    <published>2022-02-28T18:04:12.000Z</published>
+    <updated>2022-03-02T12:21:40.349Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/two-sum&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個整數陣列 &lt;code&gt;nums&lt;/code&gt; 和一個正數 &lt;code&gt;target&lt;/code&gt;，問你哪兩個數字加起來等於 &lt;code&gt;target&lt;/code&gt;。&lt;br&gt;
+每組輸入一定都會有解，回傳 index 即可。&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;$O(N^2)$ 的解很簡單，直接做就好。$O(NlogN)$的解，先記錄數字對應到的位置(同個數字可能出現在多個位置)，接著遍歷每個數字 &lt;code&gt;i&lt;/code&gt;，看看 &lt;code&gt;target - n[i]&lt;/code&gt; 有沒有在裏頭，如果有且沒挑過的話，則找到答案&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="hashmap" scheme="http://oj.roy4801.tw/tags/hashmap/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 228 - Summary Ranges</title>
@@ -469,6 +537,102 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 977 - Squares of a Sorted Array</title>
+    <link href="http://oj.roy4801.tw/2021/03/03/leetcode/977/"/>
+    <id>http://oj.roy4801.tw/2021/03/03/leetcode/977/</id>
+    <published>2021-03-02T19:42:12.000Z</published>
+    <updated>2022-03-02T12:21:40.350Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/squares-of-a-sorted-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個遞增排序的&lt;/p&gt;
+&lt;p&gt;follow-up: 用 $O(N)$ 實作&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="雙指標" scheme="http://oj.roy4801.tw/tags/%E9%9B%99%E6%8C%87%E6%A8%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1295 - Find Numbers with Even Number of Digits</title>
+    <link href="http://oj.roy4801.tw/2021/03/03/leetcode/1295/"/>
+    <id>http://oj.roy4801.tw/2021/03/03/leetcode/1295/</id>
+    <published>2021-03-02T19:26:28.000Z</published>
+    <updated>2022-03-02T12:21:40.349Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-numbers-with-even-number-of-digits/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個整數陣列，問你裏頭有幾個數字是偶數個位數。&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;時間複雜度: $O(NM)$
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;N=nums.size()&lt;/code&gt;, &lt;code&gt;M=nums[i].length()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;空間複雜度: $O(1)$&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 485 - Max Consecutive Ones</title>
+    <link href="http://oj.roy4801.tw/2021/03/03/leetcode/485/"/>
+    <id>http://oj.roy4801.tw/2021/03/03/leetcode/485/</id>
+    <published>2021-03-02T16:17:00.000Z</published>
+    <updated>2022-03-02T12:21:40.349Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/max-consecutive-ones/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給一個由 &lt;code&gt;0&lt;/code&gt; 和 &lt;code&gt;1&lt;/code&gt; 組成的陣列 &lt;code&gt;nums&lt;/code&gt;，問最長連續的 1 是多少&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;掃一遍，遇到 0 就把 counter 歸零，找最大&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
     
   </entry>
   
