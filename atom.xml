@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-03-02T15:15:37.741Z</updated>
+  <updated>2022-03-04T19:09:13.849Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 799 - Champagne Tower</title>
+    <link href="http://oj.roy4801.tw/2022/03/04/leetcode/799/"/>
+    <id>http://oj.roy4801.tw/2022/03/04/leetcode/799/</id>
+    <published>2022-03-04T13:53:59.000Z</published>
+    <updated>2022-03-04T19:09:13.849Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/champagne-tower/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pGB4eNJ.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;題目說有 &lt;code&gt;n&lt;/code&gt; 個杯子，從最上面的那個杯子開始倒水，總共倒 &lt;code&gt;p&lt;/code&gt; 杯水，每個杯子只要到一杯就滿，往滿的水杯中倒水會往兩側溢出 &lt;code&gt;1/2&lt;/code&gt; 的水，&lt;br&gt;
+給你倒水的總杯數 &lt;code&gt;p&lt;/code&gt; 問你第 &lt;code&gt;r&lt;/code&gt; 列第 &lt;code&gt;c&lt;/code&gt; 個的水杯的狀態。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= p &amp;lt;= 109&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= r &amp;lt;= c &amp;lt; 100&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="DP" scheme="http://oj.roy4801.tw/tags/DP/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 56 - Merge Intervals</title>
