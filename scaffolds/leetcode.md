@@ -1,6 +1,7 @@
 ---
-title: Leetcode {{ title }}
-categories: [解題區, Leetcode, level]
+title: Leetcode {{ title }} - PNAME
+categories:
+  - CATEGORY
 tags:
   - 解題紀錄
   - Leetcode
