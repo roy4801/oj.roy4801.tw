@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-03-08T18:50:20.359Z</updated>
+  <updated>2022-03-12T14:34:05.335Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 138 - Copy List with Random Pointer</title>
+    <link href="http://oj.roy4801.tw/2022/03/12/leetcode/138/"/>
+    <id>http://oj.roy4801.tw/2022/03/12/leetcode/138/</id>
+    <published>2022-03-12T14:13:34.000Z</published>
+    <updated>2022-03-12T14:34:05.335Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/copy-list-with-random-pointer/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給一個 singly linked list 但是每個 node 除了 &lt;code&gt;val&lt;/code&gt; 之外，還有一個 &lt;code&gt;random&lt;/code&gt; pointer 指向其他 node&lt;br&gt;
+要你回傳 deep copy&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;用 dictionary 把舊的 node 映射到新的 node&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="hashmap" scheme="http://oj.roy4801.tw/tags/hashmap/"/>
+    
+    <category term="linked-list" scheme="http://oj.roy4801.tw/tags/linked-list/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 141 - Linked List Cycle</title>
