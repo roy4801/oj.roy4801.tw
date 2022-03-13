@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-03-12T14:34:05.335Z</updated>
+  <updated>2022-03-13T17:19:33.834Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 2200 - Find All K-Distant Indices in an Array</title>
+    <link href="http://oj.roy4801.tw/2022/03/14/leetcode/2200/"/>
+    <id>http://oj.roy4801.tw/2022/03/14/leetcode/2200/</id>
+    <published>2022-03-13T16:43:24.000Z</published>
+    <updated>2022-03-13T17:19:33.834Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個整數陣列 &lt;code&gt;num&lt;/code&gt; 和兩個整數 &lt;code&gt;key&lt;/code&gt;, &lt;code&gt;k&lt;/code&gt;。數列中所有是 &lt;code&gt;key&lt;/code&gt; 的數字的前後 &lt;code&gt;k&lt;/code&gt; 個數字所包含的區間是 k-distant index&lt;br&gt;
+e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&lt;/code&gt;，題目要你回傳 k-distant index&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums.length &amp;lt;= 1000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums[i] &amp;lt;= 1000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= k &amp;lt;= nums.length&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 138 - Copy List with Random Pointer</title>
