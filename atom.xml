@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-03-13T17:19:33.834Z</updated>
+  <updated>2022-03-17T02:25:15.944Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,134 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 946 - Validate Stack Sequences</title>
+    <link href="http://oj.roy4801.tw/2022/03/17/leetcode/946/"/>
+    <id>http://oj.roy4801.tw/2022/03/17/leetcode/946/</id>
+    <published>2022-03-17T02:03:35.000Z</published>
+    <updated>2022-03-17T02:25:15.944Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/validate-stack-sequences/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你兩個整數陣列 &lt;code&gt;pushed&lt;/code&gt; 和 &lt;code&gt;popped&lt;/code&gt;，問你 &lt;code&gt;pushed&lt;/code&gt; 能不能透過 stack 操作後轉成 &lt;code&gt;popped&lt;/code&gt;&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;用一個 stack 模擬 &lt;code&gt;pushed&lt;/code&gt; 如何被 push 和 pop 轉成 &lt;code&gt;popped&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="Stack" scheme="http://oj.roy4801.tw/tags/Stack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 35 - Search Insert Position</title>
+    <link href="http://oj.roy4801.tw/2022/03/15/leetcode/35/"/>
+    <id>http://oj.roy4801.tw/2022/03/15/leetcode/35/</id>
+    <published>2022-03-15T03:42:25.000Z</published>
+    <updated>2022-03-17T02:03:10.771Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/search-insert-position/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你排序好的陣列 &lt;code&gt;nums&lt;/code&gt; 和整數 &lt;code&gt;target&lt;/code&gt;，問你如果 &lt;code&gt;target&lt;/code&gt; 存在於 &lt;code&gt;nums&lt;/code&gt; 中則回傳 index；反之，回傳他可能插入的第一個 index&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;其實是問你陣列中第一個 &amp;gt;= target 的數字之位置，二分搜裸題&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="binary search" scheme="http://oj.roy4801.tw/tags/binary-search/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1249 - Minimum Remove to Make Valid Parentheses</title>
+    <link href="http://oj.roy4801.tw/2022/03/15/leetcode/1249/"/>
+    <id>http://oj.roy4801.tw/2022/03/15/leetcode/1249/</id>
+    <published>2022-03-15T03:04:50.000Z</published>
+    <updated>2022-03-17T02:03:10.770Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個字串，其中包含了 &lt;code&gt;(&lt;/code&gt; 和 &lt;code&gt;)&lt;/code&gt;，問你刪除不定數量的括弧後使得括弧平衡(每個 &lt;code&gt;(&lt;/code&gt; 都有其對應的 &lt;code&gt;)&lt;/code&gt;)，字串長怎樣。&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;先掃一遍，用 stack 匹配括弧，遇到 &lt;code&gt;(&lt;/code&gt; push、遇到 &lt;code&gt;)&lt;/code&gt; pop (如果不是空)，最後 stack 剩下的會是沒匹配到的&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="stack" scheme="http://oj.roy4801.tw/tags/stack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 2201 - Count Artifacts That Can Be Extracted</title>
+    <link href="http://oj.roy4801.tw/2022/03/14/leetcode/2201/"/>
+    <id>http://oj.roy4801.tw/2022/03/14/leetcode/2201/</id>
+    <published>2022-03-13T17:25:41.000Z</published>
+    <updated>2022-03-13T17:40:26.206Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你一個 n x n 的 grid 並給你一堆寶藏的地點 &lt;code&gt;artifact[i] = [r1_i, c1_i, r2_i, c2_i]&lt;/code&gt; 其中 &lt;code&gt;(r1, c1)&lt;/code&gt; 與 &lt;code&gt;(r2, c2)&lt;/code&gt; 代表寶藏的左上到右下&lt;br&gt;
+接著給你挖掘的座標 &lt;code&gt;dig[i] = [r_i, c_i]&lt;/code&gt; 問你最後挖了幾個寶藏(一個寶藏要被挖出 &amp;lt;=&amp;gt; 挖出寶藏所佔的所有格子)&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;時間複雜度: $\mathcal{O}(n^2)$&lt;/li&gt;
+&lt;li&gt;空間複雜度: $\mathcal{O}(n^2)$&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="2D 格子" scheme="http://oj.roy4801.tw/tags/2D-%E6%A0%BC%E5%AD%90/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 2200 - Find All K-Distant Indices in an Array</title>
@@ -283,6 +411,42 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
     
     <category term="雙指標" scheme="http://oj.roy4801.tw/tags/%E9%9B%99%E6%8C%87%E6%A8%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 338 - Counting Bits</title>
+    <link href="http://oj.roy4801.tw/2022/03/01/leetcode/338/"/>
+    <id>http://oj.roy4801.tw/2022/03/01/leetcode/338/</id>
+    <published>2022-03-01T05:16:41.000Z</published>
+    <updated>2022-03-17T02:03:10.770Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/counting-bits/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個整數 &lt;code&gt;n&lt;/code&gt; 問你從 $[0, n]$ binary 中一的個數，輸出在 list 中。限制: $0 \leq n \leq 10^5$&lt;/p&gt;
+&lt;p&gt;follow-up:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在時間複雜度 $O(N)$ 下做到且掃一次就完成&lt;/li&gt;
+&lt;li&gt;避免使用 builtin function e.g. &lt;code&gt;__builtin_popcount()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="DP" scheme="http://oj.roy4801.tw/tags/DP/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="Bit Manipulation" scheme="http://oj.roy4801.tw/tags/Bit-Manipulation/"/>
     
   </entry>
   
