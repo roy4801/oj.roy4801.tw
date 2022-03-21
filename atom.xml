@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-03-21T02:11:54.374Z</updated>
+  <updated>2022-03-21T13:14:43.996Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 2212 - Maximum Points in an Archery Competition</title>
+    <link href="http://oj.roy4801.tw/2022/03/21/leetcode/2212/"/>
+    <id>http://oj.roy4801.tw/2022/03/21/leetcode/2212/</id>
+    <published>2022-03-21T08:34:59.000Z</published>
+    <updated>2022-03-21T13:14:43.996Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-points-in-an-archery-competition/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有 Alice 和 Bob 比賽射箭，每個人有 &lt;code&gt;numArrows&lt;/code&gt; 支箭 ，一人各射 12 局，規則是: 如果第 $i$ 局的分數比另一個人大，$A_i \ge B_i$ 則 A 得到 $i$ 分。&lt;br&gt;
+今天 Alice 先射完了，他的結果是 &lt;code&gt;[aliceArrows_0, aliceArrows_11]&lt;/code&gt; ，問你 Bob 的結果長怎樣，他的得分才會是最大的&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;這題有兩種做法: 爆搜和 DP。&lt;br&gt;
+之所以可以爆搜是因為局數 只有 12 局，所以能在 $\mathcal{O}(2^12)$ 內做完，bitwise 枚舉也是一樣。DP 則是把箭數當重量、得分當價值的話，問題就變成了 0/1 背包 $\mathcal{O}(nm), n=\text{12}, m=10^5$&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="DP" scheme="http://oj.roy4801.tw/tags/DP/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="backtracking" scheme="http://oj.roy4801.tw/tags/backtracking/"/>
+    
+    <category term="bitwise 枚舉" scheme="http://oj.roy4801.tw/tags/bitwise-%E6%9E%9A%E8%88%89/"/>
+    
+    <category term="背包" scheme="http://oj.roy4801.tw/tags/%E8%83%8C%E5%8C%85/"/>
+    
+    <category term="暴搜" scheme="http://oj.roy4801.tw/tags/%E6%9A%B4%E6%90%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 2211 - Count Collisions on a Road</title>
