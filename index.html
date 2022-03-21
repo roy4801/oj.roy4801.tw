@@ -90,6 +90,122 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/2211" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/21/leetcode/2211/" class="article-date">
+  <time class="dt-published" datetime="2022-03-21T01:57:53.000Z" itemprop="datePublished">2022-03-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/21/leetcode/2211/">Leetcode 2211 - Count Collisions on a Road</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/count-collisions-on-a-road/">題目</a></p>
+<h1>Problem</h1>
+<p>一條路上有 $n$ 台車，每台車可以有三種方向: <code>S</code>, <code>L</code>, <code>R</code> 分別是靜止、左、右。今天每台車都朝其方向駛去，當相撞時車子留在原地，問你給定一個 <code>directions</code> 序列，有幾台車會撞車。</p>
+<h1>想法</h1>
+<p>可以觀察到 <code>RS</code>, <code>SL</code>, <code>RL</code> 這三種狀況一定會撞到，但如果序列是 <code>RRL</code> 則最一開始的 R 不會算到，所以必須要記錄 <code>R</code> 的數量，當遇到前面三種撞車的狀況時，就將目前算到 `R 的數量也加到答案中(那些 R 的車也會撞到)</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/21/leetcode/2211/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2211/" data-id="cl102jisg0000b8u95l9m7525" data-title="Leetcode 2211 - Count Collisions on a Road" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/21/leetcode/2211/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/21/leetcode/2211/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-leetcode/895" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/20/leetcode/895/" class="article-date">
+  <time class="dt-published" datetime="2022-03-19T20:55:18.000Z" itemprop="datePublished">2022-03-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/">Hard</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/20/leetcode/895/">Leetcode 895 - Maximum Frequency Stack</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/maximum-frequency-stack/">題目</a></p>
+<h1>Problem</h1>
+<p>題目要你實作一個像 stack 的資料結構，但與單純的 stack 不同的是: pop 是看當前元素個數最多的決定的，如果個數相同則越靠近 top 越先被 pop 出來，例如: <code>[5,7,5,7,4,5]</code> 則 pop 順序會是 <code>[5,7,5,4,7,5]</code></p>
+<h1>想法</h1>
+<p>用一個 heap 維護 <code>(數字個數, 位置, 數字值)</code> 的結構，另外還要維護一個 數字對到個數的結構，和當前的位置。</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/20/leetcode/895/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/20/leetcode/895/" data-id="cl102jism0007b8u9fk5p19ly" data-title="Leetcode 895 - Maximum Frequency Stack" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/20/leetcode/895/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/20/leetcode/895/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ordered-set/" rel="tag">ordered set</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/stack/" rel="tag">stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/946" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/17/leetcode/946/" class="article-date">
@@ -478,7 +594,7 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
 <h1>Problem</h1>
 <p><img src="https://i.imgur.com/nqGryLZ.png" alt></p>
 <p>題目給你一個單向鏈結串列(Singly linked-list)，問你有沒有存在環(Cycle)?</p>
-<p>follow-up: 可以在 $O(1)$ 空間複雜度達成?</p>
+<p>follow-up: 可以在 $\mathcal{O}(1)$ 空間複雜度達成?</p>
         
           <p class="article-more-link">
             <a href="/2022/03/09/leetcode/141/#more">Read More</a>
@@ -571,131 +687,6 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
 
 
   
-    <article id="post-leetcode/2194" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/07/leetcode/2194/" class="article-date">
-  <time class="dt-published" datetime="2022-03-06T22:51:30.000Z" itemprop="datePublished">2022-03-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/03/07/leetcode/2194/">Leetcode 2194 - Cells in a Range on an Excel Sheet</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://i.imgur.com/HDknepz.png" alt></p>
-<p>題目給你一組excel 的表格字串 e.g. <code>&quot;K1:L2&quot;</code> 問你能不能像 excel 那樣輸出表格順序 e.g. <code>[&quot;K1&quot;,&quot;K2&quot;,&quot;L1&quot;,&quot;L2&quot;]</code><br>
-行由一個大寫英文字母表示；列由一個正整數表示。題目要求回傳表格的陣列</p>
-<ul>
-<li><code>s.length == 5</code></li>
-<li><code>'A' &lt;= s[0] &lt;= s[3] &lt;= 'Z'</code></li>
-<li><code>'1' &lt;= s[1] &lt;= s[4] &lt;= '9'</code></li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2022/03/07/leetcode/2194/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/07/leetcode/2194/" data-id="cl0fvr2k50000mgu9ffuogtkn" data-title="Leetcode 2194 - Cells in a Range on an Excel Sheet" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/03/07/leetcode/2194/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/07/leetcode/2194/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/799" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/04/leetcode/799/" class="article-date">
-  <time class="dt-published" datetime="2022-03-04T13:53:59.000Z" itemprop="datePublished">2022-03-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/03/04/leetcode/799/">Leetcode 799 - Champagne Tower</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/champagne-tower/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://i.imgur.com/pGB4eNJ.png" alt></p>
-<p>題目說有 <code>n</code> 個杯子，從最上面的那個杯子開始倒水，總共倒 <code>p</code> 杯水，每個杯子只要到一杯就滿，往滿的水杯中倒水會往兩側溢出 <code>1/2</code> 的水，<br>
-給你倒水的總杯數 <code>p</code> 問你第 <code>r</code> 列第 <code>c</code> 個的水杯的狀態。</p>
-<ul>
-<li><code>0 &lt;= p &lt;= 109</code></li>
-<li><code>0 &lt;= r &lt;= c &lt; 100</code></li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2022/03/04/leetcode/799/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/04/leetcode/799/" data-id="cl0chfx1y0000y8u9dqdwcsln" data-title="Leetcode 799 - Champagne Tower" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/03/04/leetcode/799/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/04/leetcode/799/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -721,7 +712,7 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2D-%E6%A0%BC%E5%AD%90/" rel="tag">2D 格子</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BFS/" rel="tag">BFS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bit-Manipulation/" rel="tag">Bit Manipulation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Graph/" rel="tag">Graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack/" rel="tag">Stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/" rel="tag">array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bfs/" rel="tag">bfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/binary-search/" rel="tag">binary search</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/" rel="tag">graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked-list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sorting/" rel="tag">sorting</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stack/" rel="tag">stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string/" rel="tag">string</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" rel="tag">雙指標</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2D-%E6%A0%BC%E5%AD%90/" rel="tag">2D 格子</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BFS/" rel="tag">BFS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bit-Manipulation/" rel="tag">Bit Manipulation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Graph/" rel="tag">Graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack/" rel="tag">Stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/" rel="tag">array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bfs/" rel="tag">bfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/binary-search/" rel="tag">binary search</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/" rel="tag">graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked-list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ordered-set/" rel="tag">ordered set</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sorting/" rel="tag">sorting</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stack/" rel="tag">stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string/" rel="tag">string</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" rel="tag">雙指標</a></li></ul>
     </div>
   </div>
 
@@ -731,7 +722,7 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 10px;">Bit Manipulation</a> <a href="/tags/DP/" style="font-size: 14px;">DP</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Leetcode/" style="font-size: 18px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 16px;">Uva</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/backtracking/" style="font-size: 12px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/greedy/" style="font-size: 10px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 12px;">hashmap</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/priority-queue/" style="font-size: 12px;">priority queue</a> <a href="/tags/sorting/" style="font-size: 12px;">sorting</a> <a href="/tags/stack/" style="font-size: 10px;">stack</a> <a href="/tags/string/" style="font-size: 10px;">string</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 12px;">雙指標</a>
+      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 10px;">Bit Manipulation</a> <a href="/tags/DP/" style="font-size: 15px;">DP</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Leetcode/" style="font-size: 18.33px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 16.67px;">Uva</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/backtracking/" style="font-size: 11.67px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 10px;">binary search</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/greedy/" style="font-size: 11.67px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 11.67px;">hashmap</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/ordered-set/" style="font-size: 10px;">ordered set</a> <a href="/tags/priority-queue/" style="font-size: 13.33px;">priority queue</a> <a href="/tags/sorting/" style="font-size: 11.67px;">sorting</a> <a href="/tags/stack/" style="font-size: 11.67px;">stack</a> <a href="/tags/string/" style="font-size: 10px;">string</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 11.67px;">雙指標</a>
     </div>
   </div>
 
@@ -753,6 +744,14 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       <ul>
         
           <li>
+            <a href="/2022/03/21/leetcode/2211/">Leetcode 2211 - Count Collisions on a Road</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/20/leetcode/895/">Leetcode 895 - Maximum Frequency Stack</a>
+          </li>
+        
+          <li>
             <a href="/2022/03/17/leetcode/946/">Leetcode 946 - Validate Stack Sequences</a>
           </li>
         
@@ -762,14 +761,6 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
         
           <li>
             <a href="/2022/03/15/leetcode/1249/">Leetcode 1249 - Minimum Remove to Make Valid Parentheses</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/14/leetcode/2201/">Leetcode 2201 - Count Artifacts That Can Be Extracted</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/14/leetcode/2200/">Leetcode 2200 - Find All K-Distant Indices in an Array</a>
           </li>
         
       </ul>
