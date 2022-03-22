@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-03-21T13:14:43.996Z</updated>
+  <updated>2022-03-22T03:21:53.051Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1663 - Smallest String With A Given Numeric Value</title>
+    <link href="http://oj.roy4801.tw/2022/03/22/leetcode/1663/"/>
+    <id>http://oj.roy4801.tw/2022/03/22/leetcode/1663/</id>
+    <published>2022-03-22T02:59:20.000Z</published>
+    <updated>2022-03-22T03:21:53.051Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;題目給你兩個數字 &lt;code&gt;n&lt;/code&gt; 和 &lt;code&gt;k&lt;/code&gt; 問你: 由 &lt;code&gt;n&lt;/code&gt; 個字母組成，所有字母加起來總和為 &lt;code&gt;k&lt;/code&gt; 且字串&lt;strong&gt;字典序最小&lt;/strong&gt;。&lt;br&gt;
+a=1, b=2, …, z=26&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;最優的答案是後面都是 &lt;code&gt;z&lt;/code&gt; 前面都是 &lt;code&gt;a&lt;/code&gt;，先貪心找最後的 &lt;code&gt;z&lt;/code&gt; 長度: 對於字串 &lt;code&gt;Z = aa...z = 1*(a長度) + 26&lt;/code&gt; 假如 k 大於 &lt;code&gt;Z&lt;/code&gt; 的話，則最後一定可以擺一個 &lt;code&gt;z&lt;/code&gt;，亦即 &lt;code&gt;k &amp;gt;= 1*(n-1) + 26&lt;/code&gt;。&lt;br&gt;
+接下來就都擺 &lt;code&gt;a&lt;/code&gt; ，中間的字母(夾在 &lt;code&gt;a&lt;/code&gt; 和 &lt;code&gt;z&lt;/code&gt; 中間 e.g. “aa…x…zz”)，就擺 &lt;code&gt;&#39;a&#39;+(k-1)&lt;/code&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="greedy" scheme="http://oj.roy4801.tw/tags/greedy/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 2212 - Maximum Points in an Archery Competition</title>
