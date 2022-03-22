@@ -24,13 +24,13 @@
     <updated>2022-03-22T03:21:53.051Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你兩個數字 &lt;code&gt;n&lt;/code&gt; 和 &lt;code&gt;k&lt;/code&gt; 問你: 由 &lt;code&gt;n&lt;/code&gt; 個字母組成，所有字母加起來總和為 &lt;code&gt;k&lt;/code&gt; 且字串&lt;strong&gt;字典序最小&lt;/strong&gt;。&lt;br&gt;
-a=1, b=2, …, z=26&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;最優的答案是後面都是 &lt;code&gt;z&lt;/code&gt; 前面都是 &lt;code&gt;a&lt;/code&gt;，先貪心找最後的 &lt;code&gt;z&lt;/code&gt; 長度: 對於字串 &lt;code&gt;Z = aa...z = 1*(a長度) + 26&lt;/code&gt; 假如 k 大於 &lt;code&gt;Z&lt;/code&gt; 的話，則最後一定可以擺一個 &lt;code&gt;z&lt;/code&gt;，亦即 &lt;code&gt;k &amp;gt;= 1*(n-1) + 26&lt;/code&gt;。&lt;br&gt;
-接下來就都擺 &lt;code&gt;a&lt;/code&gt; ，中間的字母(夾在 &lt;code&gt;a&lt;/code&gt; 和 &lt;code&gt;z&lt;/code&gt; 中間 e.g. “aa…x…zz”)，就擺 &lt;code&gt;&#39;a&#39;+(k-1)&lt;/code&gt;&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -57,13 +57,13 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <updated>2022-03-21T13:14:43.996Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-points-in-an-archery-competition/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有 Alice 和 Bob 比賽射箭，每個人有 &lt;code&gt;numArrows&lt;/code&gt; 支箭 ，一人各射 12 局，規則是: 如果第 $i$ 局的分數比另一個人大，$A_i \ge B_i$ 則 A 得到 $i$ 分。&lt;br&gt;
-今天 Alice 先射完了，他的結果是 &lt;code&gt;[aliceArrows_0, aliceArrows_11]&lt;/code&gt; ，問你 Bob 的結果長怎樣，他的得分才會是最大的&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;這題有兩種做法: 爆搜和 DP。&lt;br&gt;
-之所以可以爆搜是因為局數 只有 12 局，所以能在 $\mathcal{O}(2^12)$ 內做完，bitwise 枚舉也是一樣。DP 則是把箭數當重量、得分當價值的話，問題就變成了 0/1 背包 $\mathcal{O}(nm), n=\text{12}, m=10^5$&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -98,11 +98,13 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <updated>2022-03-21T02:11:54.374Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-collisions-on-a-road/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;一條路上有 $n$ 台車，每台車可以有三種方向: &lt;code&gt;S&lt;/code&gt;, &lt;code&gt;L&lt;/code&gt;, &lt;code&gt;R&lt;/code&gt; 分別是靜止、左、右。今天每台車都朝其方向駛去，當相撞時車子留在原地，問你給定一個 &lt;code&gt;directions&lt;/code&gt; 序列，有幾台車會撞車。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;可以觀察到 &lt;code&gt;RS&lt;/code&gt;, &lt;code&gt;SL&lt;/code&gt;, &lt;code&gt;RL&lt;/code&gt; 這三種狀況一定會撞到，但如果序列是 &lt;code&gt;RRL&lt;/code&gt; 則最一開始的 R 不會算到，所以必須要記錄 &lt;code&gt;R&lt;/code&gt; 的數量，當遇到前面三種撞車的狀況時，就將目前算到 `R 的數量也加到答案中(那些 R 的車也會撞到)&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -129,11 +131,13 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <updated>2022-03-20T01:10:24.033Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-frequency-stack/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目要你實作一個像 stack 的資料結構，但與單純的 stack 不同的是: pop 是看當前元素個數最多的決定的，如果個數相同則越靠近 top 越先被 pop 出來，例如: &lt;code&gt;[5,7,5,7,4,5]&lt;/code&gt; 則 pop 順序會是 &lt;code&gt;[5,7,5,4,7,5]&lt;/code&gt;&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;用一個 heap 維護 &lt;code&gt;(數字個數, 位置, 數字值)&lt;/code&gt; 的結構，另外還要維護一個 數字對到個數的結構，和當前的位置。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -164,11 +168,13 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <updated>2022-03-17T02:25:15.944Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/validate-stack-sequences/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你兩個整數陣列 &lt;code&gt;pushed&lt;/code&gt; 和 &lt;code&gt;popped&lt;/code&gt;，問你 &lt;code&gt;pushed&lt;/code&gt; 能不能透過 stack 操作後轉成 &lt;code&gt;popped&lt;/code&gt;&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;用一個 stack 模擬 &lt;code&gt;pushed&lt;/code&gt; 如何被 push 和 pop 轉成 &lt;code&gt;popped&lt;/code&gt;&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -195,11 +201,13 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <updated>2022-03-17T02:03:10.771Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/search-insert-position/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你排序好的陣列 &lt;code&gt;nums&lt;/code&gt; 和整數 &lt;code&gt;target&lt;/code&gt;，問你如果 &lt;code&gt;target&lt;/code&gt; 存在於 &lt;code&gt;nums&lt;/code&gt; 中則回傳 index；反之，回傳他可能插入的第一個 index&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;其實是問你陣列中第一個 &amp;gt;= target 的數字之位置，二分搜裸題&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -226,11 +234,13 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <updated>2022-03-17T02:03:10.770Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個字串，其中包含了 &lt;code&gt;(&lt;/code&gt; 和 &lt;code&gt;)&lt;/code&gt;，問你刪除不定數量的括弧後使得括弧平衡(每個 &lt;code&gt;(&lt;/code&gt; 都有其對應的 &lt;code&gt;)&lt;/code&gt;)，字串長怎樣。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;先掃一遍，用 stack 匹配括弧，遇到 &lt;code&gt;(&lt;/code&gt; push、遇到 &lt;code&gt;)&lt;/code&gt; pop (如果不是空)，最後 stack 剩下的會是沒匹配到的&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -257,15 +267,13 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <updated>2022-03-13T17:40:26.206Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個 n x n 的 grid 並給你一堆寶藏的地點 &lt;code&gt;artifact[i] = [r1_i, c1_i, r2_i, c2_i]&lt;/code&gt; 其中 &lt;code&gt;(r1, c1)&lt;/code&gt; 與 &lt;code&gt;(r2, c2)&lt;/code&gt; 代表寶藏的左上到右下&lt;br&gt;
-接著給你挖掘的座標 &lt;code&gt;dig[i] = [r_i, c_i]&lt;/code&gt; 問你最後挖了幾個寶藏(一個寶藏要被挖出 &amp;lt;=&amp;gt; 挖出寶藏所佔的所有格子)&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;時間複雜度: $\mathcal{O}(n^2)$&lt;/li&gt;
-&lt;li&gt;空間複雜度: $\mathcal{O}(n^2)$&lt;/li&gt;
-&lt;/ul&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -292,16 +300,13 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <updated>2022-03-13T17:19:33.834Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個整數陣列 &lt;code&gt;num&lt;/code&gt; 和兩個整數 &lt;code&gt;key&lt;/code&gt;, &lt;code&gt;k&lt;/code&gt;。數列中所有是 &lt;code&gt;key&lt;/code&gt; 的數字的前後 &lt;code&gt;k&lt;/code&gt; 個數字所包含的區間是 k-distant index&lt;br&gt;
-e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&lt;/code&gt;，題目要你回傳 k-distant index&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums.length &amp;lt;= 1000&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums[i] &amp;lt;= 1000&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;1 &amp;lt;= k &amp;lt;= nums.length&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;想法&lt;/h1&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -326,12 +331,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-12T14:34:05.335Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/copy-list-with-random-pointer/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給一個 singly linked list 但是每個 node 除了 &lt;code&gt;val&lt;/code&gt; 之外，還有一個 &lt;code&gt;random&lt;/code&gt; pointer 指向其他 node&lt;br&gt;
-要你回傳 deep copy&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;用 dictionary 把舊的 node 映射到新的 node&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -360,11 +366,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.023Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/linked-list-cycle/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nqGryLZ.png&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;題目給你一個單向鏈結串列(Singly linked-list)，問你有沒有存在環(Cycle)?&lt;/p&gt;
-&lt;p&gt;follow-up: 可以在 $\mathcal{O}(1)$ 空間複雜度達成?&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -389,18 +397,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.026Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/create-binary-tree-from-descriptions/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一堆邊 &lt;code&gt;edges = [parent, child, isLeft]&lt;/code&gt; 要你回傳建出來的圖。&lt;br&gt;
-&lt;code&gt;isLeft==1&lt;/code&gt; 代表 child 是 parent 的左子節點；反之 &lt;code&gt;isLeft==0&lt;/code&gt;，代表 child 是 parent 的右子節點。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;E = edges&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;1 &amp;lt;= E.length &amp;lt;= 104&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;E[i].length == 3&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;1 &amp;lt;= parent, child &amp;lt;= 105&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;0 &amp;lt;= isLeft &amp;lt;= 1&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;想法&lt;/h1&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -425,16 +428,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-06T23:02:46.218Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/HDknepz.png&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;題目給你一組excel 的表格字串 e.g. &lt;code&gt;&amp;quot;K1:L2&amp;quot;&lt;/code&gt; 問你能不能像 excel 那樣輸出表格順序 e.g. &lt;code&gt;[&amp;quot;K1&amp;quot;,&amp;quot;K2&amp;quot;,&amp;quot;L1&amp;quot;,&amp;quot;L2&amp;quot;]&lt;/code&gt;&lt;br&gt;
-行由一個大寫英文字母表示；列由一個正整數表示。題目要求回傳表格的陣列&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;s.length == 5&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&#39;A&#39; &amp;lt;= s[0] &amp;lt;= s[3] &amp;lt;= &#39;Z&#39;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&#39;1&#39; &amp;lt;= s[1] &amp;lt;= s[4] &amp;lt;= &#39;9&#39;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -459,15 +459,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.032Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/champagne-tower/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pGB4eNJ.png&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;題目說有 &lt;code&gt;n&lt;/code&gt; 個杯子，從最上面的那個杯子開始倒水，總共倒 &lt;code&gt;p&lt;/code&gt; 杯水，每個杯子只要到一杯就滿，往滿的水杯中倒水會往兩側溢出 &lt;code&gt;1/2&lt;/code&gt; 的水，&lt;br&gt;
-給你倒水的總杯數 &lt;code&gt;p&lt;/code&gt; 問你第 &lt;code&gt;r&lt;/code&gt; 列第 &lt;code&gt;c&lt;/code&gt; 個的水杯的狀態。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;0 &amp;lt;= p &amp;lt;= 109&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;0 &amp;lt;= r &amp;lt;= c &amp;lt; 100&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -494,12 +492,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.031Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/merge-intervals/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一堆區間，要你重疊的區間合併並回傳整個陣列&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;把區間由小到大排序後，把相鄰重疊的區間合併&lt;br&gt;
-官方題解有為何排序後可以合併的區間是連續的證明 &lt;a href=&quot;https://leetcode-cn.com/problems/merge-intervals/solution/he-bing-qu-jian-by-leetcode-solution/&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -526,14 +525,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.029Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/is-subsequence/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給兩個字串 &lt;code&gt;s&lt;/code&gt; 和 &lt;code&gt;t&lt;/code&gt; 問 &lt;code&gt;s&lt;/code&gt; 是不是 &lt;code&gt;t&lt;/code&gt; 的子序列(Subsequence)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;0 &amp;lt;= s.length &amp;lt;= 100&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;0 &amp;lt;= t.length &amp;lt;= 104&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Follow-up: 當 s.length &amp;gt;= 10^9 時要怎麼做&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -562,14 +560,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.028Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/counting-bits/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給你一個整數 &lt;code&gt;n&lt;/code&gt; 問你從 $[0, n]$ binary 中一的個數，輸出在 list 中。限制: $0 \leq n \leq 10^5$&lt;/p&gt;
-&lt;p&gt;follow-up:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在時間複雜度 $\mathcal{O}(N)$ 下做到且掃一次就完成&lt;/li&gt;
-&lt;li&gt;避免使用 builtin function e.g. &lt;code&gt;__builtin_popcount()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -598,12 +595,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.018Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/two-sum&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個整數陣列 &lt;code&gt;nums&lt;/code&gt; 和一個正數 &lt;code&gt;target&lt;/code&gt;，問你哪兩個數字加起來等於 &lt;code&gt;target&lt;/code&gt;。&lt;br&gt;
-每組輸入一定都會有解，回傳 index 即可。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;$\mathcal{O}(N^2)$ 的解很簡單，直接做就好。$\mathcal{O}(N\log{N})$的解，先記錄數字對應到的位置(同個數字可能出現在多個位置)，接著遍歷每個數字 &lt;code&gt;i&lt;/code&gt;，看看 &lt;code&gt;target - n[i]&lt;/code&gt; 有沒有在裏頭，如果有且沒挑過的話，則找到答案&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -630,11 +628,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.026Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/summary-ranges/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個&lt;strong&gt;排序過&lt;/strong&gt;的整數陣列，要你回傳覆蓋整個陣列的所有區間。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;掃一遍，檢查當前跟前一個是否只差一，如果是代表區間繼續；不是則輸出區間並更新目前區間左界。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -661,11 +661,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.023Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/compare-version-numbers/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你兩個版本號，要你比較大小&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;照做即可&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -692,11 +694,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.025Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/majority-element/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個陣列 &lt;code&gt;nums&lt;/code&gt;，回傳出現次數超過 $\lfloor \frac{n}{2} \rfloor$ 的的那個數字。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;直覺做就是先建表紀錄每個數字出現的次數，接著排序拿最大即可&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -721,11 +725,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.022Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/clone-graph/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給你一張圖，要你 Deep copy 一份並回傳。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;BFS 遍歷一次，邊走邊複製。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -754,11 +760,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.025Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/excel-sheet-column-number/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個字串 &lt;code&gt;S&lt;/code&gt; 由大寫英文字母組成，令 &lt;code&gt;A=1, B=2, ..., Z=26, AA=27, AB=28, ...&lt;/code&gt; ，要你算出並回傳數值。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;照做即可&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -783,19 +791,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.021Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/remove-covered-intervals/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個由正整數構成的區間，&lt;code&gt;intervals[i] = [li, ri]&lt;/code&gt;，如果區間 &lt;code&gt;[a, b)&lt;/code&gt; 被 &lt;code&gt;[c, d)&lt;/code&gt; 覆蓋，則代表 $c &amp;lt;= a$ 且 $b &amp;lt;= d$&lt;br&gt;
-要你回傳刪掉被覆蓋的區間後，剩下區間的個數。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;N = intervals.size()&lt;/code&gt;
-&lt;ul&gt;
-&lt;li&gt;$1 \leq N \leq 1000$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;區間範圍: $0 \leq l_i \leq r_i \leq 10^5$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;想法&lt;/h1&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -822,15 +824,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.024Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimize-deviation-in-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一列正整數 &lt;code&gt;N&lt;/code&gt; ，你可以對數列中的每個元素執行兩種操作:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如果 &lt;code&gt;N[i]&lt;/code&gt; 是偶數，可以除 2&lt;/li&gt;
-&lt;li&gt;如果 &lt;code&gt;N[i]&lt;/code&gt; 是奇數，可以乘 2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;定義 &lt;code&gt;deviation&lt;/code&gt; 是數列中的最大和最小之差 &lt;code&gt;max(N) - min(N)&lt;/code&gt;&lt;br&gt;
-問你經過幾次操作後，最小的 &lt;code&gt;deviation&lt;/code&gt; 是多少?&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -859,16 +859,13 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <updated>2022-03-20T01:10:24.020Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/word-ladder/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;一個字串能夠從 &lt;code&gt;beginWord&lt;/code&gt; 轉換成 &lt;code&gt;endWord&lt;/code&gt; 稱作 &lt;code&gt;transformation sequence&lt;/code&gt;&lt;br&gt;
-e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&lt;/code&gt;，今天題目給你一個 &lt;code&gt;wordList&lt;/code&gt; 問你從 &lt;code&gt;beginWord&lt;/code&gt; 到 &lt;code&gt;endWord&lt;/code&gt; 總共幾個字串，並且要&lt;strong&gt;最短&lt;/strong&gt;的。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;其中每個字串只差一個字元 =&amp;gt; 相差一個字元才能轉換&lt;/li&gt;
-&lt;li&gt;轉換的字串都在 &lt;code&gt;wordList&lt;/code&gt; 裏頭&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;beginWord&lt;/code&gt; 不一定要在 &lt;code&gt;wordList&lt;/code&gt; 裏頭&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;想法&lt;/h1&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -897,15 +894,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.028Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給你一組數字 &lt;code&gt;candidates&lt;/code&gt; 和一個數字 &lt;code&gt;target&lt;/code&gt; ，問你能用&lt;code&gt;candidates&lt;/code&gt;中的元素組成&lt;strong&gt;不重複&lt;/strong&gt;的組合，且相加要等於 &lt;code&gt;T&lt;/code&gt;。相同的數字可以出現無限次&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 &amp;lt;= candidates.size() &amp;lt;= 30&lt;/li&gt;
-&lt;li&gt;1 &amp;lt;= candidates[i] &amp;lt;= 200&lt;/li&gt;
-&lt;li&gt;1 &amp;lt;= T &amp;lt;= 500&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;想法&lt;/h1&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -932,11 +927,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.030Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/remove-k-digits/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給你一個只有非負整數的字串 &lt;code&gt;num&lt;/code&gt; 和整數 &lt;code&gt;k&lt;/code&gt;，要你回傳刪掉 &lt;code&gt;k&lt;/code&gt; 個數字後，之中最小的整數&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Input: num &amp;#x3D; &amp;quot;1432219&amp;quot;, k &amp;#x3D; 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Output: &amp;quot;1219&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1&gt;想法&lt;/h1&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -963,12 +960,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.019Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-depth-of-binary-tree&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給一個二元樹，要你回傳樹高&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;DFS 遍歷整顆樹，可用 backtracking 到 leaf 時紀錄走了多深，找最大即可&lt;br&gt;
-遍歷時可拆成，&lt;code&gt;max( dfs(左子樹), dfs(右子樹) )&lt;/code&gt;&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -997,11 +995,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.027Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/swap-nodes-in-pairs/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給一個 Singly linked list 要你把每兩個兩個 swap 一遍，但不能只 swap value&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;照做即可，注意邊界 e.g. list 沒有 node 的狀態、list 只有一個 node 的狀態&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1028,11 +1028,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.032Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/subsets/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給一個 array size = $N$ e.g. &lt;code&gt;[1, 2, 3]&lt;/code&gt; 要回傳它的所有可能的子集合(Power set) e.g. &lt;code&gt;[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]&lt;/code&gt;&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;如果用 bit 來表示位置 $i$ 是否有出現，則問題就是數數字 $[0, 2^N]$，每個數字代表一種子集合的狀態&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1059,11 +1061,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-06T15:53:11.060Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://onlinejudge.org/index.php?option=onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=620&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有 $K$ 顆球從一顆有高度 $D$ 的完全二元樹上落下，從根節點一直落到葉節點，其中「非葉節點」都儲存個 bool 值(一開始是 false)，當一顆球經過該節點時，就會反轉該 bool 值。當每顆球經過該「非葉節點」時，如果 bool 值是 false，則走左子樹；反之，如果 bool 值是 true，則走右子樹。 問你寫程式回答當第 $I$ 顆球最後停在的節點 $P$ 是多少?&lt;/p&gt;
-&lt;p&gt;$2 \le D \le 20\text{, and } 1 \le I \le 524288$&lt;/p&gt;
-&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1086,11 +1090,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.033Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/squares-of-a-sorted-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個遞增排序的&lt;/p&gt;
-&lt;p&gt;follow-up: 用 $\mathcal{O}(N)$ 實作&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1117,18 +1123,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.021Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-numbers-with-even-number-of-digits/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;題目給你一個整數陣列，問你裏頭有幾個數字是偶數個位數。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;時間複雜度: $\mathcal{O}(NM)$
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;N=nums.size()&lt;/code&gt;, &lt;code&gt;M=nums[i].length()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;空間複雜度: $\mathcal{O}(1)$&lt;/li&gt;
-&lt;/ul&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1153,11 +1154,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.031Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/max-consecutive-ones/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給一個由 &lt;code&gt;0&lt;/code&gt; 和 &lt;code&gt;1&lt;/code&gt; 組成的陣列 &lt;code&gt;nums&lt;/code&gt;，問最長連續的 1 是多少&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;掃一遍，遇到 0 就把 counter 歸零，找最大&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1182,11 +1185,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:10.003Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=4462&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給你6個寬$w_i$高$h_i$的紙板，問可不可以組成一個長方體&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;組成一個長方體的紙板可以分成三組（相對一組），有三種情況：相異、兩同ㄧ異、全部相同。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1209,11 +1214,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:10.004Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;略&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;跟&lt;a href=&quot;/2019/09/10/uva/uva202&quot;&gt;uva 275&lt;/a&gt;差不多，只是輸出更複雜了點&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1236,13 +1243,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:10.005Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=211&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;輸入兩個數字a, b，要算a/b的小數，如果有循環小數部分出現，則只輸出一次&lt;br&gt;
-每筆輸出最後要輸出循環小數的長度（如果沒有則輸出&lt;code&gt;This expansion terminates.&lt;/code&gt;)&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;模擬長除法，一位一位除&lt;br&gt;
-輸出很鳥（注意換行，每行最多50字，小數點也算）&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1265,11 +1272,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:09.998Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;category=24&amp;amp;page=show_problem&amp;amp;problem=1167&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有多種樹的名字，你要輸出每種樹佔的比例（按名稱字典序）&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;map&lt;/code&gt;練習題&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1292,16 +1301,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:10.009Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=734&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有一堆電腦用網路連著，今天你是網管，你想知道電腦 $i$ 跟電腦 $j$ 是否有相連（在同個網路內），並且你也可以將兩台電腦相連。有兩個操作：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;相連 &lt;code&gt;c i j&lt;/code&gt;&lt;br&gt;
-將電腦$i$和電腦$j$相連&lt;/li&gt;
-&lt;li&gt;查詢 &lt;code&gt;q i j&lt;/code&gt;&lt;br&gt;
-查詢電腦$i$和電腦$j$是否相連&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;程式最後輸出查詢&lt;code&gt;有相連,沒相連&lt;/code&gt;&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1324,11 +1330,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:09.997Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=974&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;http://rubyacm.blogspot.com/2010/08/10033-interpreter.html&quot;&gt;http://rubyacm.blogspot.com/2010/08/10033-interpreter.html&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;挺有趣的一題，要寫個小VM執行code，算出執行了幾個指令。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1351,15 +1359,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:09.997Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=945&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給定任意的圖形，問可不可以在每個點上著不同兩種的顏色，並且相同顏色的點不相鄰。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;沒有自環&lt;/li&gt;
-&lt;li&gt;無向圖&lt;/li&gt;
-&lt;li&gt;強連通&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;想法&lt;/h1&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1382,12 +1388,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:10.002Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=3644&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有個程式要記錄眾多的事件，使用者可以輸入指令註冊要監測的事件，指令要包含事件的ID(Q_num)跟週期(Period)，格式如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Register Q_num Period&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;代表要註冊&lt;code&gt;Q_num&lt;/code&gt;事件，每&lt;code&gt;Period&lt;/code&gt;秒執行一次。而程式可以一次監測多個事件（用指令註冊），你要寫程式輸出前$k$個執行的事件。&lt;br&gt;
-(如果在同一秒有多個事件，則以&lt;code&gt;Q_num&lt;/code&gt;遞增排序)&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1412,12 +1419,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:10.006Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=467&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;字串距離是一個代表兩個字串的非負整數。接著要轉換(transform)$a$字串至$b$字串，有三種操作：插入(Insert)、刪除(Delete)、及取代（Replace)。&lt;br&gt;
-字串距離就是轉換的數量，求任意$a$字串轉換至$b$字串的字串距離及如何轉換的。&lt;/p&gt;
-&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;
-&lt;p&gt;每筆case有兩行字串$a$、$b$，以EOF結尾，字串的長度不超過$80$&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1442,11 +1450,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:10.000Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;Itemid=99999999&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2000&amp;amp;mosmsg=Submission+received+with+ID+23356954&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給定一個序列 $S = {S_1, S_2, …, S_n}$ ，找一個連續的子序列使得相乘最大。&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;這題可以直接做，也可以DP&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1469,13 +1479,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2022-03-20T01:10:24.034Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2019&amp;amp;mosmsg=Submission+received+with+ID+23355296&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;(簡化)&lt;br&gt;
-有一組數列($a_i$)，對所有$i&amp;lt;j$，求最大的$a_i - a_j$&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;$\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。&lt;br&gt;
-只要掃一遍，就得到答案。($\mathcal{O}(n)$)&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1498,14 +1508,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:09.999Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=1626&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;大自然存在著食物鏈，體型大的動物吃小動物，小動物吃植物，死亡的動物被分解，作為植物的養分。&lt;br&gt;
-而你的任務是給定一組動物，求出最大的食物鏈動物數量為何？假如A吃B，你可以認定它們在同個食物鏈裡。&lt;/p&gt;
-&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;
-&lt;p&gt;每筆測資開頭有兩個整數 $C$ 代表有幾隻動物和 $R$ 有幾組關係；接著 $C$ 列，每列有一個名字（字串、只有小寫、不超過30字）；再接著有 $R$ 列，每列有兩個名字，代表第二個動物吃第一個動物。&lt;br&gt;
-你可以認定沒有一隻動物是自己的獵食者。&lt;br&gt;
-輸入終止在 $C = R = 0$ ，每筆測資間有空白列。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1528,16 +1537,13 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <updated>2021-05-04T15:40:10.003Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=72&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;Ulgy Number&lt;/code&gt;是只有$2$、$3$、$5$質因數的數字。前11項是：&lt;br&gt;
-$$&lt;br&gt;
-1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ …&lt;br&gt;
-$$&lt;br&gt;
-程式必須印出第1500項&lt;code&gt;ugly number&lt;/code&gt;&lt;/p&gt;
-&lt;h1&gt;想法&lt;/h1&gt;
-&lt;p&gt;第$n$個數字一定是前$n-1$個數字中，乘$2$、乘$3$、乘$5$得來的。&lt;br&gt;
-找數字的時候不用每個都從頭開始找，要找第$n$個數字，而這個數字勢必$&amp;gt;$第${n-1}$個數字，所以第&lt;code&gt;i, j, k&lt;/code&gt;個數字（分別乘$2$、乘$3$、乘$5$），至少要$&amp;gt;$第$n-1$個數字才有可能成為第$n$個數字。在這三種可能中，挑最小的便是第$n$個數字。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1562,16 +1568,13 @@ $$&lt;br&gt;
     <updated>2021-05-04T15:40:10.002Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=&amp;amp;problem=3252&amp;amp;mosmsg=Submission+received+with+ID+22756147&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有台印表機，有 $n$ 件工作等待列印($1 \le n \le 100$)，你排在第 $m$ 號位置($0 \le m \le {n-1}$)，位置從零開始。&lt;br&gt;
-由於實在是太多人印了，所以把每件工作都加上優先權，從1~9代表低到高。&lt;br&gt;
-對於是否要列印有特殊的規則：（假設佇列的頭是&lt;code&gt;job j&lt;/code&gt;）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;如果佇列裡頭有比&lt;code&gt;job j&lt;/code&gt;還高優先的工作，則把&lt;code&gt;job j&lt;/code&gt;放到佇列最後頭。&lt;/li&gt;
-&lt;li&gt;如果沒有，就執行&lt;code&gt;job j&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;你需要計算你必須花多少時間才能完成你的工作。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1594,13 +1597,13 @@ $$&lt;br&gt;
     <updated>2021-05-04T15:40:10.001Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=3146&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有種資料結構(你不知道是什麼）支援兩種操作：放入、拿出。給定一個操作的序列，你要寫支程式推測出是哪種資料結構（&lt;code&gt;stack&lt;/code&gt;, &lt;code&gt;queue&lt;/code&gt;, &lt;code&gt;priority queue&lt;/code&gt;），不確定則輸出不確定，不知道輸出不知道。&lt;/p&gt;
-&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;
-&lt;p&gt;每筆測資第一行有數字 $n$($1 \le n \le{1000}$)，代表有 $n$ 筆操作&lt;br&gt;
-接著 $n$ 行，每行有兩個數字，第一個數字是操作，&lt;code&gt;1&lt;/code&gt;是放入，後頭接著要放入的數字；&lt;code&gt;2&lt;/code&gt;是拿出，後頭接著要拿出的數字。&lt;br&gt;
-以&lt;code&gt;EOF&lt;/code&gt;結尾&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1623,11 +1626,13 @@ $$&lt;br&gt;
     <updated>2021-05-04T15:40:09.999Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=1876&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有一疊卡，有標數字從$1$到$n$（頂端是$1$），每次從頂端丟掉一張卡片，再把一張卡片放到底部，直到卡片只剩一張。&lt;/p&gt;
-&lt;h2 id=&quot;輸入&quot;&gt;輸入&lt;/h2&gt;
-&lt;p&gt;每行代表卡片的數量($n \le{50} $)，以&lt;code&gt;0&lt;/code&gt;結尾。&lt;/p&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
@@ -1650,11 +1655,13 @@ $$&lt;br&gt;
     <updated>2021-05-04T15:40:10.006Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=343&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;有一排人（長度$N$），每次從一疊卡（20張）頂端抽出一張卡，點數$i$ 代表 列隊每$i$個人要去除。&lt;/p&gt;
-&lt;p&gt;比如：列隊有&lt;code&gt;10&lt;/code&gt;人，抽到點數&lt;code&gt;3&lt;/code&gt;的卡，則：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1 2 3 4 5 6 7 8 9 10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    x     x     x&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;x 代表去除&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
     
     
     
