@@ -92,6 +92,131 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/2201" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/14/leetcode/2201/" class="article-date">
+  <time class="dt-published" datetime="2022-03-13T17:25:41.000Z" itemprop="datePublished">2022-03-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/14/leetcode/2201/">Leetcode 2201 - Count Artifacts That Can Be Extracted</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/count-artifacts-that-can-be-extracted/">題目</a></p>
+<h1>Problem</h1>
+<p>題目給你一個 n x n 的 grid 並給你一堆寶藏的地點 <code>artifact[i] = [r1_i, c1_i, r2_i, c2_i]</code> 其中 <code>(r1, c1)</code> 與 <code>(r2, c2)</code> 代表寶藏的左上到右下<br>
+接著給你挖掘的座標 <code>dig[i] = [r_i, c_i]</code> 問你最後挖了幾個寶藏(一個寶藏要被挖出 &lt;=&gt; 挖出寶藏所佔的所有格子)</p>
+<h1>想法</h1>
+<ul>
+<li>時間複雜度: $\mathcal{O}(n^2)$</li>
+<li>空間複雜度: $\mathcal{O}(n^2)$</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/14/leetcode/2201/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2201/" data-id="cl0pkbid50000r0u99c6g3n3i" data-title="Leetcode 2201 - Count Artifacts That Can Be Extracted" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/14/leetcode/2201/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/14/leetcode/2201/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2D-%E6%A0%BC%E5%AD%90/" rel="tag">2D 格子</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-leetcode/2200" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/14/leetcode/2200/" class="article-date">
+  <time class="dt-published" datetime="2022-03-13T16:43:24.000Z" itemprop="datePublished">2022-03-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/14/leetcode/2200/">Leetcode 2200 - Find All K-Distant Indices in an Array</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/">題目</a></p>
+<h1>Problem</h1>
+<p>題目給你一個整數陣列 <code>num</code> 和兩個整數 <code>key</code>, <code>k</code>。數列中所有是 <code>key</code> 的數字的前後 <code>k</code> 個數字所包含的區間是 k-distant index<br>
+e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，題目要你回傳 k-distant index</p>
+<ul>
+<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
+<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
+<li><code>1 &lt;= k &lt;= nums.length</code></li>
+</ul>
+<h1>想法</h1>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/14/leetcode/2200/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2200/" data-id="cl0pjg4vj0000w0u937sx5svw" data-title="Leetcode 2200 - Find All K-Distant Indices in an Array" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/14/leetcode/2200/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/14/leetcode/2200/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/138" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/12/leetcode/138/" class="article-date">
@@ -580,123 +705,6 @@
 
 
   
-    <article id="post-leetcode/1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/01/leetcode/1/" class="article-date">
-  <time class="dt-published" datetime="2022-02-28T18:04:12.000Z" itemprop="datePublished">2022-03-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/03/01/leetcode/1/">Leetcode 1 - Two Sum</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/two-sum">題目</a></p>
-<h1>Problem</h1>
-<p>題目給你一個整數陣列 <code>nums</code> 和一個正數 <code>target</code>，問你哪兩個數字加起來等於 <code>target</code>。<br>
-每組輸入一定都會有解，回傳 index 即可。</p>
-<h1>想法</h1>
-<p>$\mathcal{O}(N^2)$ 的解很簡單，直接做就好。$\mathcal{O}(N\log{N})$的解，先記錄數字對應到的位置(同個數字可能出現在多個位置)，接著遍歷每個數字 <code>i</code>，看看 <code>target - n[i]</code> 有沒有在裏頭，如果有且沒挑過的話，則找到答案</p>
-        
-          <p class="article-more-link">
-            <a href="/2022/03/01/leetcode/1/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/01/leetcode/1/" data-id="cl09jyk330000y0u98az14aot" data-title="Leetcode 1 - Two Sum" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/03/01/leetcode/1/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/01/leetcode/1/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/228" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/28/leetcode/228/" class="article-date">
-  <time class="dt-published" datetime="2022-02-28T10:28:52.000Z" itemprop="datePublished">2022-02-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/28/leetcode/228/">Leetcode 228 - Summary Ranges</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/summary-ranges/">題目</a></p>
-<h1>Problem</h1>
-<p>題目給你一個<strong>排序過</strong>的整數陣列，要你回傳覆蓋整個陣列的所有區間。</p>
-<h1>想法</h1>
-<p>掃一遍，檢查當前跟前一個是否只差一，如果是代表區間繼續；不是則輸出區間並更新目前區間左界。</p>
-        
-          <p class="article-more-link">
-            <a href="/2022/02/28/leetcode/228/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/28/leetcode/228/" data-id="cl06kfl3u00005ou95p3khj2u" data-title="Leetcode 228 - Summary Ranges" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/02/28/leetcode/228/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/28/leetcode/228/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/array/" rel="tag">array</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -732,7 +740,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 10px;">Bit Manipulation</a> <a href="/tags/DP/" style="font-size: 15px;">DP</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Leetcode/" style="font-size: 18.33px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 16.67px;">Uva</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/backtracking/" style="font-size: 13.33px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 11.67px;">binary search</a> <a href="/tags/bitwise-%E6%9E%9A%E8%88%89/" style="font-size: 10px;">bitwise 枚舉</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/greedy/" style="font-size: 13.33px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 11.67px;">hashmap</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/ordered-set/" style="font-size: 10px;">ordered set</a> <a href="/tags/priority-queue/" style="font-size: 13.33px;">priority queue</a> <a href="/tags/sorting/" style="font-size: 11.67px;">sorting</a> <a href="/tags/stack/" style="font-size: 11.67px;">stack</a> <a href="/tags/string/" style="font-size: 10px;">string</a> <a href="/tags/%E6%9A%B4%E6%90%9C/" style="font-size: 10px;">暴搜</a> <a href="/tags/%E8%83%8C%E5%8C%85/" style="font-size: 10px;">背包</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 11.67px;">雙指標</a>
+      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 10px;">Bit Manipulation</a> <a href="/tags/DP/" style="font-size: 15.71px;">DP</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Leetcode/" style="font-size: 18.57px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 17.14px;">Uva</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/backtracking/" style="font-size: 12.86px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 11.43px;">binary search</a> <a href="/tags/bitwise-%E6%9E%9A%E8%88%89/" style="font-size: 10px;">bitwise 枚舉</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/greedy/" style="font-size: 14.29px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 11.43px;">hashmap</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/ordered-set/" style="font-size: 10px;">ordered set</a> <a href="/tags/priority-queue/" style="font-size: 12.86px;">priority queue</a> <a href="/tags/sorting/" style="font-size: 11.43px;">sorting</a> <a href="/tags/stack/" style="font-size: 11.43px;">stack</a> <a href="/tags/string/" style="font-size: 10px;">string</a> <a href="/tags/%E6%9A%B4%E6%90%9C/" style="font-size: 10px;">暴搜</a> <a href="/tags/%E8%83%8C%E5%8C%85/" style="font-size: 10px;">背包</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 12.86px;">雙指標</a>
     </div>
   </div>
 
@@ -754,6 +762,14 @@
       <ul>
         
           <li>
+            <a href="/2022/03/24/leetcode/881/">Leetcode 881 - Boats to Save People</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/leetcode/763/">Leetcode 763 - Partition Labels</a>
+          </li>
+        
+          <li>
             <a href="/2022/03/22/leetcode/167/">Leetcode 167 - Two Sum II - Input Array Is Sorted</a>
           </li>
         
@@ -763,14 +779,6 @@
         
           <li>
             <a href="/2022/03/21/leetcode/2212/">Leetcode 2212 - Maximum Points in an Archery Competition</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/21/leetcode/2211/">Leetcode 2211 - Count Collisions on a Road</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/20/leetcode/895/">Leetcode 895 - Maximum Frequency Stack</a>
           </li>
         
       </ul>
