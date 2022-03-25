@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-03-24T03:54:14.481Z</updated>
+  <updated>2022-03-25T16:42:46.294Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1029 - Two City Scheduling</title>
+    <link href="http://oj.roy4801.tw/2022/03/26/leetcode/1029/"/>
+    <id>http://oj.roy4801.tw/2022/03/26/leetcode/1029/</id>
+    <published>2022-03-25T16:33:12.000Z</published>
+    <updated>2022-03-25T16:42:46.294Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/two-city-scheduling/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有 2n 組數對 &lt;code&gt;[a_i, b_i]&lt;/code&gt; 今天挑 $n$ 個 $a_i$ 相加，剩下的 $n$ 的 $b_i$ 相加，問你出來值最小多少?&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;直覺想法 按照大小 sort 接著從小的開始挑，但是 $b$ 就不保證是小的，有個想法是把每組 $(a_i, b_i)$ 變成 $x_i = a_i - b_i$，如果 $x$ 比較小，代表該數對的 $a$ 較大；如果 $x$ 比較大，代表該數對的 $b$ 較大。&lt;br&gt;
+按照 $a_i - b_i$ sort 之後，從小的開始挑 $n$ 個 + a，接著再挑 $n$ 個 + b 即可。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="greedy" scheme="http://oj.roy4801.tw/tags/greedy/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 881 - Boats to Save People</title>

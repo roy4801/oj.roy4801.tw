@@ -92,6 +92,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/338" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/01/leetcode/338/" class="article-date">
+  <time class="dt-published" datetime="2022-03-01T05:16:41.000Z" itemprop="datePublished">2022-03-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/01/leetcode/338/">Leetcode 338 - Counting Bits</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/counting-bits/">題目</a></p>
+<h1>Problem</h1>
+<p>給你一個整數 <code>n</code> 問你從 $[0, n]$ binary 中一的個數，輸出在 list 中。限制: $0 \leq n \leq 10^5$</p>
+<p>follow-up:</p>
+<ul>
+<li>在時間複雜度 $\mathcal{O}(N)$ 下做到且掃一次就完成</li>
+<li>避免使用 builtin function e.g. <code>__builtin_popcount()</code></li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/01/leetcode/338/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/01/leetcode/338/" data-id="cl0udb6zd00033cu99h5dbikz" data-title="Leetcode 338 - Counting Bits" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/01/leetcode/338/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/01/leetcode/338/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bit-Manipulation/" rel="tag">Bit Manipulation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/01/leetcode/1/" class="article-date">
@@ -632,68 +693,6 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
 
 
   
-    <article id="post-leetcode/39" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/19/leetcode/39/" class="article-date">
-  <time class="dt-published" datetime="2022-02-18T20:17:09.000Z" itemprop="datePublished">2022-02-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/19/leetcode/39/">Leetcode 39 - Combination Sum</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/combination-sum/">題目</a></p>
-<h1>Problem</h1>
-<p>給你一組數字 <code>candidates</code> 和一個數字 <code>target</code> ，問你能用<code>candidates</code>中的元素組成<strong>不重複</strong>的組合，且相加要等於 <code>T</code>。相同的數字可以出現無限次</p>
-<ul>
-<li>1 &lt;= candidates.size() &lt;= 30</li>
-<li>1 &lt;= candidates[i] &lt;= 200</li>
-<li>1 &lt;= T &lt;= 500</li>
-</ul>
-<h1>想法</h1>
-        
-          <p class="article-more-link">
-            <a href="/2022/02/19/leetcode/39/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/19/leetcode/39/" data-id="ckzsv1rxn0000s4u9c8u25slj" data-title="Leetcode 39 - Combination Sum" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/02/19/leetcode/39/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/19/leetcode/39/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -751,6 +750,10 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
       <ul>
         
           <li>
+            <a href="/2022/03/26/leetcode/1029/">Leetcode 1029 - Two City Scheduling</a>
+          </li>
+        
+          <li>
             <a href="/2022/03/24/leetcode/881/">Leetcode 881 - Boats to Save People</a>
           </li>
         
@@ -764,10 +767,6 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
         
           <li>
             <a href="/2022/03/22/leetcode/1663/">Leetcode 1663 - Smallest String With A Given Numeric Value</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/21/leetcode/2212/">Leetcode 2212 - Maximum Points in an Archery Competition</a>
           </li>
         
       </ul>

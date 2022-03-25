@@ -15,21 +15,21 @@
 <!-- End Google Analytics -->
 
   
-  <title>Leetcode 39 - Combination Sum | Roy 的解題紀錄</title>
+  <title>Leetcode 1029 - Two City Scheduling | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你一組數字 candidates 和一個數字 target ，問你能用candidates中的元素組成不重複的組合，且相加要等於 T。相同的數字可以出現無限次  1 &lt;&#x3D; candidates.size() &lt;&#x3D; 30 1 &lt;&#x3D; candidates[i] &lt;&#x3D; 200 1 &lt;&#x3D; T &lt;&#x3D; 500  想法">
+  <meta name="description" content="題目 Problem 有 2n 組數對 [a_i, b_i] 今天挑 $n$ 個 $a_i$ 相加，剩下的 $n$ 的 $b_i$ 相加，問你出來值最小多少? 想法 直覺想法 按照大小 sort 接著從小的開始挑，但是 $b$ 就不保證是小的，有個想法是把每組 $(a_i, b_i)$ 變成 $x_i &#x3D; a_i - b_i$，如果 $x$ 比較小，代表該數對的 $a$ 較大；如果 $x$ 比較大">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode 39 - Combination Sum">
-<meta property="og:url" content="http://oj.roy4801.tw/2022/02/19/leetcode/39/index.html">
+<meta property="og:title" content="Leetcode 1029 - Two City Scheduling">
+<meta property="og:url" content="http://oj.roy4801.tw/2022/03/26/leetcode/1029/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你一組數字 candidates 和一個數字 target ，問你能用candidates中的元素組成不重複的組合，且相加要等於 T。相同的數字可以出現無限次  1 &lt;&#x3D; candidates.size() &lt;&#x3D; 30 1 &lt;&#x3D; candidates[i] &lt;&#x3D; 200 1 &lt;&#x3D; T &lt;&#x3D; 500  想法">
+<meta property="og:description" content="題目 Problem 有 2n 組數對 [a_i, b_i] 今天挑 $n$ 個 $a_i$ 相加，剩下的 $n$ 的 $b_i$ 相加，問你出來值最小多少? 想法 直覺想法 按照大小 sort 接著從小的開始挑，但是 $b$ 就不保證是小的，有個想法是把每組 $(a_i, b_i)$ 變成 $x_i &#x3D; a_i - b_i$，如果 $x$ 比較小，代表該數對的 $a$ 較大；如果 $x$ 比較大">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-02-18T20:17:09.000Z">
-<meta property="article:modified_time" content="2022-03-20T01:10:24.028Z">
+<meta property="article:published_time" content="2022-03-25T16:33:12.000Z">
+<meta property="article:modified_time" content="2022-03-25T16:42:46.294Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
-<meta property="article:tag" content="backtracking">
+<meta property="article:tag" content="greedy">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -93,10 +93,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-leetcode/39" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-leetcode/1029" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/02/19/leetcode/39/" class="article-date">
-  <time class="dt-published" datetime="2022-02-18T20:17:09.000Z" itemprop="datePublished">2022-02-19</time>
+    <a href="/2022/03/26/leetcode/1029/" class="article-date">
+  <time class="dt-published" datetime="2022-03-25T16:33:12.000Z" itemprop="datePublished">2022-03-26</time>
 </a>
     
   <div class="article-category">
@@ -111,7 +111,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Leetcode 39 - Combination Sum
+      Leetcode 1029 - Two City Scheduling
     </h1>
   
 
@@ -119,43 +119,34 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/combination-sum/">題目</a></p>
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/two-city-scheduling/">題目</a></p>
 <h1>Problem</h1>
-<p>給你一組數字 <code>candidates</code> 和一個數字 <code>target</code> ，問你能用<code>candidates</code>中的元素組成<strong>不重複</strong>的組合，且相加要等於 <code>T</code>。相同的數字可以出現無限次</p>
-<ul>
-<li>1 &lt;= candidates.size() &lt;= 30</li>
-<li>1 &lt;= candidates[i] &lt;= 200</li>
-<li>1 &lt;= T &lt;= 500</li>
-</ul>
+<p>有 2n 組數對 <code>[a_i, b_i]</code> 今天挑 $n$ 個 $a_i$ 相加，剩下的 $n$ 的 $b_i$ 相加，問你出來值最小多少?</p>
 <h1>想法</h1>
-<p>用 backtracking 去試數字的組合，終止點在總和等於 <code>target</code> 時</p>
+<p>直覺想法 按照大小 sort 接著從小的開始挑，但是 $b$ 就不保證是小的，有個想法是把每組 $(a_i, b_i)$ 變成 $x_i = a_i - b_i$，如果 $x$ 比較小，代表該數對的 $a$ 較大；如果 $x$ 比較大，代表該數對的 $b$ 較大。<br>
+按照 $a_i - b_i$ sort 之後，從小的開始挑 $n$ 個 + a，接著再挑 $n$ 個 + b 即可。</p>
 <ul>
-<li>時間複雜度: $\mathcal{O}(N^{\frac{T}{M}})$
-<ul>
-<li><code>N = candidates.size()</code>, <code>T = target</code>, <code>M = minimum value of candidates</code></li>
-</ul>
-</li>
-<li>空間複雜度: $\mathcal{O}(\frac{T}{M})$</li>
+<li>時間複雜度: $\mathcal{O}(n\log{n})$ (sort)</li>
+<li>空間複雜度: $\mathcal{O}(1)$</li>
 </ul>
 <h1>AC Code</h1>
-<p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/leetcode/39.cpp">https://github.com/roy4801/solved_problems/blob/master/leetcode/39.cpp</a></p>
-<h1>賞析</h1>
-<p>TODO: DP</p>
-<p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/combination-sum/discuss/937255/Python-3-or-DFSBacktracking-and-Two-DP-methods-or-Explanations">https://leetcode.com/problems/combination-sum/discuss/937255/Python-3-or-DFSBacktracking-and-Two-DP-methods-or-Explanations</a></p>
+<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F1029.cpp%23L17-L35&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
+<h1>心得</h1>
+<p>一開始沒想到可以用相差來化簡大小比較，看了題解才有想法QQ</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/19/leetcode/39/" data-id="ckzsv1rxn0000s4u9c8u25slj" data-title="Leetcode 39 - Combination Sum" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/26/leetcode/1029/" data-id="cl16ni5ax0000p0u98aflhpd3" data-title="Leetcode 1029 - Two City Scheduling" class="article-share-link">Share</a>
       
       
-        <a href="/2022/02/19/leetcode/39/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/19/leetcode/39/" itemprop="commentCount"></span>
+        <a href="/2022/03/26/leetcode/1029/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/26/leetcode/1029/" itemprop="commentCount"></span>
           Comments
         </a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -163,19 +154,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/02/20/leetcode/127/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Leetcode 127 - Word Ladder
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/02/19/leetcode/402/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/03/24/leetcode/881/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Leetcode 402 - Remove K Digits</div>
+      <div class="article-nav-title">Leetcode 881 - Boats to Save People</div>
     </a>
   
 </nav>
