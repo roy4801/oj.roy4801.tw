@@ -87,17 +87,14 @@
     <link href="http://oj.roy4801.tw/2022/03/26/leetcode/991/"/>
     <id>http://oj.roy4801.tw/2022/03/26/leetcode/991/</id>
     <published>2022-03-26T15:20:26.000Z</published>
-    <updated>2022-03-26T15:22:05.669Z</updated>
+    <updated>2022-03-26T16:00:45.810Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/broken-calculator/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem&lt;/h1&gt;
 &lt;p&gt;有一個壞掉的計算機，只能做兩種操作:乘二、減一。給你 &lt;code&gt;startValue&lt;/code&gt; 和 &lt;code&gt;target&lt;/code&gt; 問你最少幾步驟可以將 &lt;code&gt;startValue&lt;/code&gt; 轉成 &lt;code&gt;target&lt;/code&gt;&lt;/p&gt;
 &lt;h1&gt;想法&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;時間複雜度: $\mathcal{O}()$&lt;/li&gt;
-&lt;li&gt;空間複雜度: $\mathcal{O}()$&lt;/li&gt;
-&lt;/ul&gt;</summary>
+&lt;p&gt;TODO&lt;/p&gt;</summary>
     
     
     
