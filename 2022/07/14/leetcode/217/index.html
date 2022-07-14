@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8LHEED5SFH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8LHEED5SFH');
+</script>
+<!-- End Google Analytics -->
+
+  
+  <title>Leetcode 217 - Contains Duplicate | Roy 的解題紀錄</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="題目 Problem 給你一個陣列 n 問你有沒有重複的元素，有的話輸出 true，反之 false。 想法 直覺 sort 後判斷前後有沒有一樣即可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leetcode 217 - Contains Duplicate">
+<meta property="og:url" content="http://oj.roy4801.tw/2022/07/14/leetcode/217/index.html">
+<meta property="og:site_name" content="Roy 的解題紀錄">
+<meta property="og:description" content="題目 Problem 給你一個陣列 n 問你有沒有重複的元素，有的話輸出 true，反之 false。 想法 直覺 sort 後判斷前後有沒有一樣即可">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-07-14T08:48:04.000Z">
+<meta property="article:modified_time" content="2022-07-14T10:26:00.390Z">
+<meta property="article:author" content="Roy">
+<meta property="article:tag" content="解題紀錄">
+<meta property="article:tag" content="Leetcode">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/./favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Roy 的解題紀錄</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" target="_blank" rel="noopener" href="http://blog.roy4801.tw/about/">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://oj.roy4801.tw"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-leetcode/217" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/07/14/leetcode/217/" class="article-date">
+  <time class="dt-published" datetime="2022-07-14T08:48:04.000Z" itemprop="datePublished">2022-07-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Leetcode 217 - Contains Duplicate
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/contains-duplicate/">題目</a></p>
+<h1>Problem</h1>
+<p>給你一個陣列 <code>n</code> 問你有沒有重複的元素，有的話輸出 true，反之 false。</p>
+<h1>想法</h1>
+<p>直覺 sort 後判斷前後有沒有一樣即可</p>
+<ul>
+<li>時間複雜度: $\mathcal{O}(n\log{}n)$</li>
+<li>空間複雜度: $\mathcal{O}(1)$</li>
+</ul>
+<h1>AC Code</h1>
+<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F217.cpp%23L17-L29&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
+<h1>賞析</h1>
+<p>可以使用 set 直接過濾掉重複的元素，接著看個數是否一樣就好</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">containsDuplicate</span><span class="params">(vector&lt;<span class="keyword">int</span>&gt;&amp; n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="function">unordered_set&lt;<span class="keyword">int</span>&gt; <span class="title">s</span><span class="params">(n.begin(), n.end())</span></span>;</span><br><span class="line">    <span class="keyword">return</span> s.<span class="built_in">size</span>() != n.<span class="built_in">size</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/07/14/leetcode/217/" data-id="cl5ksw60o0000r8u98v7x463s" data-title="Leetcode 217 - Contains Duplicate" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/07/14/leetcode/217/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/07/14/leetcode/217/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/03/26/leetcode/557/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Leetcode 557 - Reverse Words in a String III</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+  <section id="comments" class="vcomment">
+
+  </section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/">Hard</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2D-%E6%A0%BC%E5%AD%90/" rel="tag">2D 格子</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/BFS/" rel="tag">BFS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bit-Manipulation/" rel="tag">Bit Manipulation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Graph/" rel="tag">Graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Stack/" rel="tag">Stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/array/" rel="tag">array</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bfs/" rel="tag">bfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/binary-search/" rel="tag">binary search</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bitwise-%E6%9E%9A%E8%88%89/" rel="tag">bitwise 枚舉</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/graph/" rel="tag">graph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linked-list/" rel="tag">linked-list</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ordered-set/" rel="tag">ordered set</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/priority-queue/" rel="tag">priority queue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sorting/" rel="tag">sorting</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stack/" rel="tag">stack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/string/" rel="tag">string</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9A%B4%E6%90%9C/" rel="tag">暴搜</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%83%8C%E5%8C%85/" rel="tag">背包</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" rel="tag">雙指標</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 10px;">Bit Manipulation</a> <a href="/tags/DP/" style="font-size: 15.71px;">DP</a> <a href="/tags/Graph/" style="font-size: 10px;">Graph</a> <a href="/tags/Leetcode/" style="font-size: 18.57px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 17.14px;">Uva</a> <a href="/tags/array/" style="font-size: 10px;">array</a> <a href="/tags/backtracking/" style="font-size: 12.86px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 11.43px;">binary search</a> <a href="/tags/bitwise-%E6%9E%9A%E8%88%89/" style="font-size: 10px;">bitwise 枚舉</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 10px;">dfs</a> <a href="/tags/graph/" style="font-size: 10px;">graph</a> <a href="/tags/greedy/" style="font-size: 15.71px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 11.43px;">hashmap</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/monotonic-stack/" style="font-size: 10px;">monotonic stack</a> <a href="/tags/ordered-set/" style="font-size: 10px;">ordered set</a> <a href="/tags/priority-queue/" style="font-size: 12.86px;">priority queue</a> <a href="/tags/sorting/" style="font-size: 11.43px;">sorting</a> <a href="/tags/stack/" style="font-size: 11.43px;">stack</a> <a href="/tags/string/" style="font-size: 12.86px;">string</a> <a href="/tags/%E6%9A%B4%E6%90%9C/" style="font-size: 10px;">暴搜</a> <a href="/tags/%E8%83%8C%E5%8C%85/" style="font-size: 10px;">背包</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 14.29px;">雙指標</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/07/14/leetcode/217/">Leetcode 217 - Contains Duplicate</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/26/leetcode/557/">Leetcode 557 - Reverse Words in a String III</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/26/leetcode/344/">Leetcode 344 - Reverse String</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/26/leetcode/991/">Leetcode 991 - Broken Calculator</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/26/leetcode/1029/">Leetcode 1029 - Two City Scheduling</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 Roy<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a target="_blank" rel="noopener" href="http://blog.roy4801.tw/about/" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "TCAVGsncG9dGxX3wctTFQA9b-MdYXbMMI",
+        appKey: "HqwwqzDsSDyM1uP0732jvxHU",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'en'
+    });
+</script>
+
+  </div>
+</body>
+</html>
