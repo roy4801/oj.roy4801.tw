@@ -92,6 +92,123 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/01/leetcode/1/" class="article-date">
+  <time class="dt-published" datetime="2022-02-28T18:04:12.000Z" itemprop="datePublished">2022-03-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/01/leetcode/1/">Leetcode 1 - Two Sum</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/two-sum">題目</a></p>
+<h1>Problem</h1>
+<p>題目給你一個整數陣列 <code>nums</code> 和一個正數 <code>target</code>，問你哪兩個數字加起來等於 <code>target</code>。<br>
+每組輸入一定都會有解，回傳 index 即可。</p>
+<h1>想法</h1>
+<p>$\mathcal{O}(N^2)$ 的解很簡單，直接做就好。$\mathcal{O}(N\log{N})$的解，先記錄數字對應到的位置(同個數字可能出現在多個位置)，接著遍歷每個數字 <code>i</code>，看看 <code>target - n[i]</code> 有沒有在裏頭，如果有且沒挑過的話，則找到答案</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/01/leetcode/1/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/01/leetcode/1/" data-id="cl09jyk330000y0u98az14aot" data-title="Leetcode 1 - Two Sum" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/01/leetcode/1/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/01/leetcode/1/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-leetcode/228" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/02/28/leetcode/228/" class="article-date">
+  <time class="dt-published" datetime="2022-02-28T10:28:52.000Z" itemprop="datePublished">2022-02-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/02/28/leetcode/228/">Leetcode 228 - Summary Ranges</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/summary-ranges/">題目</a></p>
+<h1>Problem</h1>
+<p>題目給你一個<strong>排序過</strong>的整數陣列，要你回傳覆蓋整個陣列的所有區間。</p>
+<h1>想法</h1>
+<p>掃一遍，檢查當前跟前一個是否只差一，如果是代表區間繼續；不是則輸出區間並更新目前區間左界。</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/02/28/leetcode/228/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/02/28/leetcode/228/" data-id="cl06kfl3u00005ou95p3khj2u" data-title="Leetcode 228 - Summary Ranges" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/02/28/leetcode/228/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/28/leetcode/228/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/array/" rel="tag">array</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/165" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/02/25/leetcode/165/" class="article-date">
@@ -577,123 +694,6 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
 
 
   
-    <article id="post-leetcode/402" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/19/leetcode/402/" class="article-date">
-  <time class="dt-published" datetime="2022-02-18T18:10:49.000Z" itemprop="datePublished">2022-02-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/19/leetcode/402/">Leetcode 402 - Remove K Digits</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/remove-k-digits/">題目</a></p>
-<h1>Problem</h1>
-<p>給你一個只有非負整數的字串 <code>num</code> 和整數 <code>k</code>，要你回傳刪掉 <code>k</code> 個數字後，之中最小的整數</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: num &#x3D; &quot;1432219&quot;, k &#x3D; 3</span><br><span class="line">Output: &quot;1219&quot;</span><br><span class="line">Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.</span><br></pre></td></tr></table></figure>
-<h1>想法</h1>
-        
-          <p class="article-more-link">
-            <a href="/2022/02/19/leetcode/402/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/19/leetcode/402/" data-id="ckzsqq7n100004gu95o4vgt6w" data-title="Leetcode 402 - Remove K Digits" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/02/19/leetcode/402/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/19/leetcode/402/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/104" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/02/17/leetcode/104/" class="article-date">
-  <time class="dt-published" datetime="2022-02-17T07:34:14.000Z" itemprop="datePublished">2022-02-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/02/17/leetcode/104/">Leetcode 104 - Maximum Depth of Binary Tree</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/maximum-depth-of-binary-tree">題目</a></p>
-<h1>Problem</h1>
-<p>給一個二元樹，要你回傳樹高</p>
-<h1>想法</h1>
-<p>DFS 遍歷整顆樹，可用 backtracking 到 leaf 時紀錄走了多深，找最大即可<br>
-遍歷時可拆成，<code>max( dfs(左子樹), dfs(右子樹) )</code></p>
-        
-          <p class="article-more-link">
-            <a href="/2022/02/17/leetcode/104/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/17/leetcode/104/" data-id="ckzqog03e0000uku9cubtdsol" data-title="Leetcode 104 - Maximum Depth of Binary Tree" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/02/17/leetcode/104/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/17/leetcode/104/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bst/" rel="tag">bst</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dfs/" rel="tag">dfs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -751,6 +751,14 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
       <ul>
         
           <li>
+            <a href="/2022/07/20/leetcode/36/">Leetcode 36 - Valid Sudoku</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/20/leetcode/2221/">Leetcode 2221 - Find Triangular Sum of an Array</a>
+          </li>
+        
+          <li>
             <a href="/2022/07/20/leetcode/119/">Leetcode 119 - Pascal&#39;s Triangle II</a>
           </li>
         
@@ -760,14 +768,6 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
         
           <li>
             <a href="/2022/07/19/leetcode/566/">Leetcode 566 - Reshape the Matrix</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/14/leetcode/217/">Leetcode 217 - Contains Duplicate</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/26/leetcode/557/">Leetcode 557 - Reverse Words in a String III</a>
           </li>
         
       </ul>
