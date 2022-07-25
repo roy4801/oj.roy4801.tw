@@ -92,6 +92,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/1249" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/15/leetcode/1249/" class="article-date">
+  <time class="dt-published" datetime="2022-03-15T03:04:50.000Z" itemprop="datePublished">2022-03-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/15/leetcode/1249/">Leetcode 1249 - Minimum Remove to Make Valid Parentheses</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/">題目</a></p>
+<h1>Problem</h1>
+<p>題目給你一個字串，其中包含了 <code>(</code> 和 <code>)</code>，問你刪除不定數量的括弧後使得括弧平衡(每個 <code>(</code> 都有其對應的 <code>)</code>)，字串長怎樣。</p>
+<h1>想法</h1>
+<p>先掃一遍，用 stack 匹配括弧，遇到 <code>(</code> push、遇到 <code>)</code> pop (如果不是空)，最後 stack 剩下的會是沒匹配到的</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/15/leetcode/1249/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/1249/" data-id="cl0udb6z300003cu91ak5a7eg" data-title="Leetcode 1249 - Minimum Remove to Make Valid Parentheses" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/15/leetcode/1249/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/15/leetcode/1249/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/stack/" rel="tag">stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/2201" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/14/leetcode/2201/" class="article-date">
@@ -644,67 +702,6 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
 
 
   
-    <article id="post-leetcode/338" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/01/leetcode/338/" class="article-date">
-  <time class="dt-published" datetime="2022-03-01T05:16:41.000Z" itemprop="datePublished">2022-03-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/03/01/leetcode/338/">Leetcode 338 - Counting Bits</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/counting-bits/">題目</a></p>
-<h1>Problem</h1>
-<p>給你一個整數 <code>n</code> 問你從 $[0, n]$ binary 中一的個數，輸出在 list 中。限制: $0 \leq n \leq 10^5$</p>
-<p>follow-up:</p>
-<ul>
-<li>在時間複雜度 $\mathcal{O}(N)$ 下做到且掃一次就完成</li>
-<li>避免使用 builtin function e.g. <code>__builtin_popcount()</code></li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2022/03/01/leetcode/338/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/01/leetcode/338/" data-id="cl0udb6zd00033cu99h5dbikz" data-title="Leetcode 338 - Counting Bits" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/03/01/leetcode/338/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/01/leetcode/338/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bit-Manipulation/" rel="tag">Bit Manipulation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -762,6 +759,10 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       <ul>
         
           <li>
+            <a href="/2022/07/26/leetcode/242/">Leetcode 242 - Valid Anagram</a>
+          </li>
+        
+          <li>
             <a href="/2022/07/20/leetcode/36/">Leetcode 36 - Valid Sudoku</a>
           </li>
         
@@ -775,10 +776,6 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
         
           <li>
             <a href="/2022/07/20/leetcode/118/">Leetcode 118 - Pascal&#39;s Triangle</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/19/leetcode/566/">Leetcode 566 - Reshape the Matrix</a>
           </li>
         
       </ul>
