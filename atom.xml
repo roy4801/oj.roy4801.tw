@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-07-25T16:56:18.854Z</updated>
+  <updated>2022-12-05T14:10:34.127Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 876 - Middle of the Linked List</title>
+    <link href="http://oj.roy4801.tw/2022/12/05/leetcode/876/"/>
+    <id>http://oj.roy4801.tw/2022/12/05/leetcode/876/</id>
+    <published>2022-12-05T13:58:54.000Z</published>
+    <updated>2022-12-05T14:10:34.127Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/middle-of-the-linked-list/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個 linked-list 問你能不能回傳中間的 node，如果有兩個中間的，則回傳後者。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 \le N[i] \le 100$&lt;/li&gt;
+&lt;li&gt;$1 \le N.size() \le 100$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="linked list" scheme="http://oj.roy4801.tw/tags/linked-list/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1207 - Unique Number of Occurrences</title>
+    <link href="http://oj.roy4801.tw/2022/11/30/leetcode/1207/"/>
+    <id>http://oj.roy4801.tw/2022/11/30/leetcode/1207/</id>
+    <published>2022-11-30T15:09:36.000Z</published>
+    <updated>2022-11-30T15:23:04.704Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/unique-number-of-occurrences/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個陣列 &lt;code&gt;n&lt;/code&gt; 其中 &lt;code&gt;1 &amp;lt;= n.size() &amp;lt;= 1000&lt;/code&gt; 且 &lt;code&gt;-1000 &amp;lt;= n[i] &amp;lt;= 1000&lt;/code&gt; 問你陣列數字&lt;strong&gt;出現的次數&lt;/strong&gt;有沒有重複，沒有重複輸出 &lt;code&gt;true&lt;/code&gt; 反之輸出 &lt;code&gt;false&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;e.g. &lt;code&gt;[1,2,2,1,1,3] = true&lt;/code&gt; =&amp;gt; 1 出現 3 次，2 出現 2 次，3 出現 1 次，出現的次數都不重複&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 242 - Valid Anagram</title>
