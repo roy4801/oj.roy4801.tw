@@ -92,6 +92,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/217" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/07/14/leetcode/217/" class="article-date">
+  <time class="dt-published" datetime="2022-07-14T08:48:04.000Z" itemprop="datePublished">2022-07-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/07/14/leetcode/217/">Leetcode 217 - Contains Duplicate</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/contains-duplicate/">題目</a></p>
+<h1>Problem</h1>
+<p>給你一個陣列 <code>n</code> 問你有沒有重複的元素，有的話輸出 true，反之 false。</p>
+<h1>想法</h1>
+<p>直覺 sort 後判斷前後有沒有一樣即可</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/07/14/leetcode/217/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/07/14/leetcode/217/" data-id="cl5ksw60o0000r8u98v7x463s" data-title="Leetcode 217 - Contains Duplicate" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/07/14/leetcode/217/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/07/14/leetcode/217/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/557" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/26/leetcode/557/" class="article-date">
@@ -623,64 +681,6 @@ a=1, b=2, …, z=26</p>
 
 
   
-    <article id="post-leetcode/2211" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/21/leetcode/2211/" class="article-date">
-  <time class="dt-published" datetime="2022-03-21T01:57:53.000Z" itemprop="datePublished">2022-03-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/03/21/leetcode/2211/">Leetcode 2211 - Count Collisions on a Road</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/count-collisions-on-a-road/">題目</a></p>
-<h1>Problem</h1>
-<p>一條路上有 $n$ 台車，每台車可以有三種方向: <code>S</code>, <code>L</code>, <code>R</code> 分別是靜止、左、右。今天每台車都朝其方向駛去，當相撞時車子留在原地，問你給定一個 <code>directions</code> 序列，有幾台車會撞車。</p>
-<h1>想法</h1>
-<p>可以觀察到 <code>RS</code>, <code>SL</code>, <code>RL</code> 這三種狀況一定會撞到，但如果序列是 <code>RRL</code> 則最一開始的 R 不會算到，所以必須要記錄 <code>R</code> 的數量，當遇到前面三種撞車的狀況時，就將目前算到 `R 的數量也加到答案中(那些 R 的車也會撞到)</p>
-        
-          <p class="article-more-link">
-            <a href="/2022/03/21/leetcode/2211/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2211/" data-id="cl102jisg0000b8u95l9m7525" data-title="Leetcode 2211 - Count Collisions on a Road" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/03/21/leetcode/2211/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/21/leetcode/2211/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -738,6 +738,10 @@ a=1, b=2, …, z=26</p>
       <ul>
         
           <li>
+            <a href="/2022/12/12/leetcode/70/">Leetcode 70 - Climbing Stairs</a>
+          </li>
+        
+          <li>
             <a href="/2022/12/07/leetcode/938/">Leetcode 938 - Range Sum of BST</a>
           </li>
         
@@ -751,10 +755,6 @@ a=1, b=2, …, z=26</p>
         
           <li>
             <a href="/2022/07/26/leetcode/242/">Leetcode 242 - Valid Anagram</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/20/leetcode/36/">Leetcode 36 - Valid Sudoku</a>
           </li>
         
       </ul>

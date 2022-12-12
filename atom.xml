@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-12-07T13:56:31.896Z</updated>
+  <updated>2022-12-12T14:52:51.946Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 70 - Climbing Stairs</title>
+    <link href="http://oj.roy4801.tw/2022/12/12/leetcode/70/"/>
+    <id>http://oj.roy4801.tw/2022/12/12/leetcode/70/</id>
+    <published>2022-12-12T14:31:20.000Z</published>
+    <updated>2022-12-12T14:52:51.946Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/climbing-stairs/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有一個 &lt;code&gt;n&lt;/code&gt; 階的樓梯，每次可以走 &lt;code&gt;1&lt;/code&gt; 階或 &lt;code&gt;2&lt;/code&gt; 階，問你有幾種不同的走法&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;當前的走法 $i$ 可以是 $i-1$ 走 1 或是 $i-2$ 走 2 的總和，總共 0 階和 1 階的方法數是 1&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 938 - Range Sum of BST</title>
