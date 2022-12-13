@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-12-12T14:52:51.946Z</updated>
+  <updated>2022-12-13T17:29:58.072Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 931 - Minimum Falling Path Sum</title>
+    <link href="http://oj.roy4801.tw/2022/12/14/leetcode/931/"/>
+    <id>http://oj.roy4801.tw/2022/12/14/leetcode/931/</id>
+    <published>2022-12-13T17:09:59.000Z</published>
+    <updated>2022-12-13T17:29:58.072Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-falling-path-sum/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://assets.leetcode.com/uploads/2021/11/03/failing1-grid.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;給你一個 &lt;code&gt;nxn&lt;/code&gt; 的陣列，問你從上面走到最下面&lt;strong&gt;最短路徑總和&lt;/strong&gt;為多少?&lt;br&gt;
+可以左右斜著走，但只能往下走，意即對於位置 $(i, j)$ 可以往 $(i+1, j-1)$ (左下),  $(i+1, j)$ (下方),  $(i+1, j-1)$ (右下) 走&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="DP" scheme="http://oj.roy4801.tw/tags/DP/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 70 - Climbing Stairs</title>
