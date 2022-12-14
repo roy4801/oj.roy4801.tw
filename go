@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./addcommit.sh $1
+./addcommit.sh $*
 ./deploy.sh
