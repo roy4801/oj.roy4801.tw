@@ -92,6 +92,66 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/1663" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/22/leetcode/1663/" class="article-date">
+  <time class="dt-published" datetime="2022-03-22T02:59:20.000Z" itemprop="datePublished">2022-03-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/22/leetcode/1663/">Leetcode 1663 - Smallest String With A Given Numeric Value</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/">題目</a></p>
+<h1>Problem</h1>
+<p>題目給你兩個數字 <code>n</code> 和 <code>k</code> 問你: 由 <code>n</code> 個字母組成，所有字母加起來總和為 <code>k</code> 且字串<strong>字典序最小</strong>。<br>
+a=1, b=2, …, z=26</p>
+<h1>想法</h1>
+<p>最優的答案是後面都是 <code>z</code> 前面都是 <code>a</code>，先貪心找最後的 <code>z</code> 長度: 對於字串 <code>Z = aa...z = 1*(a長度) + 26</code> 假如 k 大於 <code>Z</code> 的話，則最後一定可以擺一個 <code>z</code>，亦即 <code>k &gt;= 1*(n-1) + 26</code>。<br>
+接下來就都擺 <code>a</code> ，中間的字母(夾在 <code>a</code> 和 <code>z</code> 中間 e.g. “aa…x…zz”)，就擺 <code>'a'+(k-1)</code></p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/22/leetcode/1663/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/22/leetcode/1663/" data-id="cl11jwkla00007cu9fleu3x62" data-title="Leetcode 1663 - Smallest String With A Given Numeric Value" class="article-share-link">Share</a>
+      
+      
+        <a href="/2022/03/22/leetcode/1663/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/22/leetcode/1663/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/2212" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/21/leetcode/2212/" class="article-date">
@@ -626,64 +686,6 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
 
 
   
-    <article id="post-leetcode/141" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/09/leetcode/141/" class="article-date">
-  <time class="dt-published" datetime="2022-03-08T18:21:54.000Z" itemprop="datePublished">2022-03-09</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/03/09/leetcode/141/">Leetcode 141 - Linked List Cycle</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/linked-list-cycle/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://i.imgur.com/nqGryLZ.png" alt></p>
-<p>題目給你一個單向鏈結串列(Singly linked-list)，問你有沒有存在環(Cycle)?</p>
-<p>follow-up: 可以在 $\mathcal{O}(1)$ 空間複雜度達成?</p>
-        
-          <p class="article-more-link">
-            <a href="/2022/03/09/leetcode/141/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/09/leetcode/141/" data-id="cl0iglrri000078u9f0jec657" data-title="Leetcode 141 - Linked List Cycle" class="article-share-link">Share</a>
-      
-      
-        <a href="/2022/03/09/leetcode/141/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/03/09/leetcode/141/" itemprop="commentCount"></span>
-          Comments
-        </a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -741,6 +743,10 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       <ul>
         
           <li>
+            <a href="/2022/12/14/leetcode/198/">Leetcode 198 - House Robber</a>
+          </li>
+        
+          <li>
             <a href="/2022/12/14/leetcode/931/">Leetcode 931 - Minimum Falling Path Sum</a>
           </li>
         
@@ -754,10 +760,6 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
         
           <li>
             <a href="/2022/12/05/leetcode/876/">Leetcode 876 - Middle of the Linked List</a>
-          </li>
-        
-          <li>
-            <a href="/2022/11/30/leetcode/1207/">Leetcode 1207 - Unique Number of Occurrences</a>
           </li>
         
       </ul>

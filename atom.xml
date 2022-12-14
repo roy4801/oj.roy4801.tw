@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-12-13T17:29:58.072Z</updated>
+  <updated>2022-12-14T15:28:51.789Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 198 - House Robber</title>
+    <link href="http://oj.roy4801.tw/2022/12/14/leetcode/198/"/>
+    <id>http://oj.roy4801.tw/2022/12/14/leetcode/198/</id>
+    <published>2022-12-14T14:07:20.000Z</published>
+    <updated>2022-12-14T15:28:51.789Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/house-robber/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個整數陣列 &lt;code&gt;M[i]&lt;/code&gt; 代表 第 $i$ 間房子的價值，你今天是小偷要去偷錢，但是有個限制是不能連續偷(偷第 $i$ 間，第 $i-1$ 和 $i+1$ 都不能偷)，否則會被抓到，問你最大能偷多少?&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;對於 $1$ 到 $i$ 能偷的總價值，假如你挑了第 $i$ 間房子，那一定是和第 $i-2$ 間的房子加總起來($W[i]+W[i-2]$)；如果不挑 $i$ 那必定是 $i-1$ ($W[i-1]$)，而要求兩者最大，所以取 max&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 931 - Minimum Falling Path Sum</title>
