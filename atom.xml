@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-12-14T16:03:45.473Z</updated>
+  <updated>2022-12-15T13:30:44.340Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1143 - Longest Common Subsequence Medium</title>
+    <link href="http://oj.roy4801.tw/2022/12/15/leetcode/1143/"/>
+    <id>http://oj.roy4801.tw/2022/12/15/leetcode/1143/</id>
+    <published>2022-12-15T13:11:27.000Z</published>
+    <updated>2022-12-15T13:30:44.340Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-common-subsequence/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你兩個字串 &lt;code&gt;s1&lt;/code&gt; 和 &lt;code&gt;s2&lt;/code&gt; 問你最常共同子序列(LCS)長度多少?&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1 &amp;lt;= s1.size(), s2.size() &amp;lt;= 1000&lt;/code&gt;&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="DP" scheme="http://oj.roy4801.tw/tags/DP/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="LCS" scheme="http://oj.roy4801.tw/tags/LCS/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 198 - House Robber</title>
@@ -84,7 +117,7 @@
     <link href="http://oj.roy4801.tw/2022/12/12/leetcode/70/"/>
     <id>http://oj.roy4801.tw/2022/12/12/leetcode/70/</id>
     <published>2022-12-12T14:31:20.000Z</published>
-    <updated>2022-12-12T14:52:51.946Z</updated>
+    <updated>2022-12-15T13:31:21.732Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/climbing-stairs/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -98,6 +131,8 @@
     <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
     
     
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
