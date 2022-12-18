@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-12-15T13:30:44.340Z</updated>
+  <updated>2022-12-18T16:15:53.745Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 739 - Daily Temperatures</title>
+    <link href="http://oj.roy4801.tw/2022/12/18/leetcode/739/"/>
+    <id>http://oj.roy4801.tw/2022/12/18/leetcode/739/</id>
+    <published>2022-12-18T14:52:40.000Z</published>
+    <updated>2022-12-18T16:15:53.745Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/daily-temperatures/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個整數陣列 $T[i]$ 要你回答一個整數陣列 $ans$ ，其中 $ans[i]$ 代表對於第 $i$ 天的溫度 $T[i]$ 會存在一個溫度 $T[j]$ 且 $j = i + ans[i]$ 使得 $T[i] &amp;lt; T[j]$&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;維護一個 monotonic stack 代表等待比他大的溫度的列表(可以用 &lt;code&gt;pair&amp;lt;int,int&amp;gt;&lt;/code&gt; 一起存 &lt;code&gt;(idx, temp)&lt;/code&gt;)，接著遍歷 &lt;code&gt;temp[i]&lt;/code&gt; 如果大於 stack 頂端的溫度，就代表裏頭的溫度遇到比它大的，所以就計算 &lt;code&gt;ans[i]&lt;/code&gt; 接著 pop stack；接著把目前的 idx 和 temp[idx] 堆進 stack 中 (找比它大的溫度距離它多少)&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="monotonic-stack" scheme="http://oj.roy4801.tw/tags/monotonic-stack/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 1143 - Longest Common Subsequence Medium</title>

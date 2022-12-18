@@ -15,20 +15,21 @@
 <!-- End Google Analytics -->
 
   
-  <title>Leetcode 70 - Climbing Stairs | Roy 的解題紀錄</title>
+  <title>Leetcode 739 - Daily Temperatures | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 有一個 n 階的樓梯，每次可以走 1 階或 2 階，問你有幾種不同的走法 想法 當前的走法 $i$ 可以是 $i-1$ 走 1 或是 $i-2$ 走 2 的總和，總共 0 階和 1 階的方法數是 1">
+  <meta name="description" content="題目 Problem 給你一個整數陣列 $T[i]$ 要你回答一個整數陣列 $ans$ ，其中 $ans[i]$ 代表對於第 $i$ 天的溫度 $T[i]$ 會存在一個溫度 $T[j]$ 且 $j &#x3D; i + ans[i]$ 使得 $T[i] &lt; T[j]$ 想法 維護一個 monotonic stack 代表等待比他大的溫度的列表(可以用 pair&lt;int,int&gt; 一起存 (">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode 70 - Climbing Stairs">
-<meta property="og:url" content="http://oj.roy4801.tw/2022/12/12/leetcode/70/index.html">
+<meta property="og:title" content="Leetcode 739 - Daily Temperatures">
+<meta property="og:url" content="http://oj.roy4801.tw/2022/12/18/leetcode/739/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 有一個 n 階的樓梯，每次可以走 1 階或 2 階，問你有幾種不同的走法 想法 當前的走法 $i$ 可以是 $i-1$ 走 1 或是 $i-2$ 走 2 的總和，總共 0 階和 1 階的方法數是 1">
+<meta property="og:description" content="題目 Problem 給你一個整數陣列 $T[i]$ 要你回答一個整數陣列 $ans$ ，其中 $ans[i]$ 代表對於第 $i$ 天的溫度 $T[i]$ 會存在一個溫度 $T[j]$ 且 $j &#x3D; i + ans[i]$ 使得 $T[i] &lt; T[j]$ 想法 維護一個 monotonic stack 代表等待比他大的溫度的列表(可以用 pair&lt;int,int&gt; 一起存 (">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-12-12T14:31:20.000Z">
-<meta property="article:modified_time" content="2022-12-15T13:31:21.732Z">
+<meta property="article:published_time" content="2022-12-18T14:52:40.000Z">
+<meta property="article:modified_time" content="2022-12-18T16:15:53.745Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="monotonic-stack">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -92,14 +93,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-leetcode/70" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-leetcode/739" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/12/12/leetcode/70/" class="article-date">
-  <time class="dt-published" datetime="2022-12-12T14:31:20.000Z" itemprop="datePublished">2022-12-12</time>
+    <a href="/2022/12/18/leetcode/739/" class="article-date">
+  <time class="dt-published" datetime="2022-12-18T14:52:40.000Z" itemprop="datePublished">2022-12-18</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
   </div>
 
   </div>
@@ -110,7 +111,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Leetcode 70 - Climbing Stairs
+      Leetcode 739 - Daily Temperatures
     </h1>
   
 
@@ -118,33 +119,37 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/climbing-stairs/description/">題目</a></p>
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/daily-temperatures/description/">題目</a></p>
 <h1>Problem</h1>
-<p>有一個 <code>n</code> 階的樓梯，每次可以走 <code>1</code> 階或 <code>2</code> 階，問你有幾種不同的走法</p>
+<p>給你一個整數陣列 $T[i]$ 要你回答一個整數陣列 $ans$ ，其中 $ans[i]$ 代表對於第 $i$ 天的溫度 $T[i]$ 會存在一個溫度 $T[j]$ 且 $j = i + ans[i]$ 使得 $T[i] &lt; T[j]$</p>
 <h1>想法</h1>
-<p>當前的走法 $i$ 可以是 $i-1$ 走 1 或是 $i-2$ 走 2 的總和，總共 0 階和 1 階的方法數是 1</p>
-<p>(第 i 階可以是 i-1 走 1 階，或是 i-2 階走2階)</p>
+<p>維護一個 monotonic stack 代表等待比他大的溫度的列表(可以用 <code>pair&lt;int,int&gt;</code> 一起存 <code>(idx, temp)</code>)，接著遍歷 <code>temp[i]</code> 如果大於 stack 頂端的溫度，就代表裏頭的溫度遇到比它大的，所以就計算 <code>ans[i]</code> 接著 pop stack；接著把目前的 idx 和 temp[idx] 堆進 stack 中 (找比它大的溫度距離它多少)</p>
 <ul>
-<li>時間複雜度: $\mathcal{O}(1)$</li>
+<li>時間複雜度: $\mathcal{O}(n)$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
 <h1>AC Code</h1>
-<p>$dp[i] = dp[i-1] + dp[i-2]$</p>
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F70.cpp%23L11-L22&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F739.cpp%23L16-L38&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<h1>賞析</h1>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/grandyang/p/8097513.html">https://www.cnblogs.com/grandyang/p/8097513.html</a><br>
+<a target="_blank" rel="noopener" href="https://oi-wiki.org/ds/monotonous-stack/">https://oi-wiki.org/ds/monotonous-stack/</a><br>
+<a target="_blank" rel="noopener" href="https://leetcode.com/problems/daily-temperatures/solutions/1516538/daily-temperatures/?orderBy=hot">https://leetcode.com/problems/daily-temperatures/solutions/1516538/daily-temperatures/?orderBy=hot</a></p>
+<h1>心得</h1>
+<p>這種我一開始都沒想到要怎麼做= = ，要多寫一點這種題目</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/12/leetcode/70/" data-id="clbkwzgxh0000nsu91yrrfpi3" data-title="Leetcode 70 - Climbing Stairs" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/18/leetcode/739/" data-id="clbtjk57i0000u4u96zoq6wb7" data-title="Leetcode 739 - Daily Temperatures" class="article-share-link">Share</a>
       
       
-        <a href="/2022/12/12/leetcode/70/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/12/12/leetcode/70/" itemprop="commentCount"></span>
+        <a href="/2022/12/18/leetcode/739/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2022/12/18/leetcode/739/" itemprop="commentCount"></span>
           Comments
         </a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic-stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -152,19 +157,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/12/14/leetcode/931/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Leetcode 931 - Minimum Falling Path Sum
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/12/07/leetcode/938/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/12/15/leetcode/1143/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Leetcode 938 - Range Sum of BST</div>
+      <div class="article-nav-title">Leetcode 1143 - Longest Common Subsequence Medium</div>
     </a>
   
 </nav>
