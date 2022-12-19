@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-12-18T16:25:12.277Z</updated>
+  <updated>2022-12-19T15:20:06.101Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -17,16 +17,51 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Leetcode 1971 - Find if Path Exists in Graph</title>
+    <link href="http://oj.roy4801.tw/2022/12/19/leetcode/1971/"/>
+    <id>http://oj.roy4801.tw/2022/12/19/leetcode/1971/</id>
+    <published>2022-12-19T15:07:19.000Z</published>
+    <updated>2022-12-19T15:20:06.101Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-if-path-exists-in-graph/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個雙向圖有 $n$ 個點 $m$ 條邊，從 $0$ 到 $n-1$，問你能不能從 &lt;code&gt;src&lt;/code&gt; 走到 &lt;code&gt;dst&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 \le n \le 2e5$&lt;/li&gt;
+&lt;li&gt;$0 \le m \le 2e5$&lt;/li&gt;
+&lt;li&gt;沒有重複的邊 or 自環&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="disjoint set" scheme="http://oj.roy4801.tw/tags/disjoint-set/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Leetcode 150 - Evaluate Reverse Polish Notation</title>
     <link href="http://oj.roy4801.tw/2022/12/19/leetcode/150/"/>
     <id>http://oj.roy4801.tw/2022/12/19/leetcode/150/</id>
     <published>2022-12-18T16:20:32.000Z</published>
-    <updated>2022-12-18T16:25:12.277Z</updated>
+    <updated>2022-12-18T16:33:16.880Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/evaluate-reverse-polish-notation/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem&lt;/h1&gt;
-&lt;p&gt;給你一個&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E9%80%86%E6%B3%A2%E5%85%B0%E8%A1%A8%E7%A4%BA%E6%B3%95&quot;&gt;逆波蘭表達式(Reverse Polish notation)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;給你一個&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E9%80%86%E6%B3%A2%E5%85%B0%E8%A1%A8%E7%A4%BA%E6%B3%95&quot;&gt;逆波蘭表達式(Reverse Polish notation)&lt;/a&gt; 要你求值&lt;/p&gt;
 &lt;h1&gt;想法&lt;/h1&gt;
 &lt;p&gt;用一個 stack 即可，遇到數字 push 到 stack 中，遇到 op 則 pop 兩個數字然後計算後再 push 回去&lt;/p&gt;</summary>
     
@@ -52,7 +87,7 @@
     <link href="http://oj.roy4801.tw/2022/12/18/leetcode/739/"/>
     <id>http://oj.roy4801.tw/2022/12/18/leetcode/739/</id>
     <published>2022-12-18T14:52:40.000Z</published>
-    <updated>2022-12-18T16:15:53.745Z</updated>
+    <updated>2022-12-18T16:32:58.873Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/daily-temperatures/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -74,7 +109,7 @@
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
     
-    <category term="monotonic-stack" scheme="http://oj.roy4801.tw/tags/monotonic-stack/"/>
+    <category term="monotonic stack" scheme="http://oj.roy4801.tw/tags/monotonic-stack/"/>
     
   </entry>
   
