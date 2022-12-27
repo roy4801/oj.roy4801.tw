@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-12-26T15:07:32.583Z</updated>
+  <updated>2022-12-27T15:10:06.270Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Leetcode 2279 - Maximum Bags With Full Capacity of Rocks1</title>
+    <link href="http://oj.roy4801.tw/2022/12/27/leetcode/2279/"/>
+    <id>http://oj.roy4801.tw/2022/12/27/leetcode/2279/</id>
+    <published>2022-12-27T15:05:40.000Z</published>
+    <updated>2022-12-27T15:10:06.270Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有 &lt;code&gt;n&lt;/code&gt; 個包包，每個包包的容量是 &lt;code&gt;A[i]&lt;/code&gt; 裡面已經裝了 &lt;code&gt;B[i]&lt;/code&gt; 個石頭，你身上有 &lt;code&gt;m&lt;/code&gt; 顆石頭，問你最多可以放滿幾個包包&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;貪心&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="greedy" scheme="http://oj.roy4801.tw/tags/greedy/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Leetcode 55 - Jump Game</title>
     <link href="http://oj.roy4801.tw/2022/12/26/leetcode/55/"/>
     <id>http://oj.roy4801.tw/2022/12/26/leetcode/55/</id>
     <published>2022-12-26T14:52:56.000Z</published>
-    <updated>2022-12-26T15:07:32.583Z</updated>
+    <updated>2022-12-26T15:11:08.435Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/jump-game/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -44,6 +75,8 @@
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="greedy" scheme="http://oj.roy4801.tw/tags/greedy/"/>
     
   </entry>
   
