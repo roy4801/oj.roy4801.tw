@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2022-12-27T15:10:06.270Z</updated>
+  <updated>2022-12-28T14:38:25.716Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1962 - Remove Stones to Minimize the Total</title>
+    <link href="http://oj.roy4801.tw/2022/12/28/leetcode/1962/"/>
+    <id>http://oj.roy4801.tw/2022/12/28/leetcode/1962/</id>
+    <published>2022-12-28T14:28:10.000Z</published>
+    <updated>2022-12-28T14:38:25.716Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/remove-stones-to-minimize-the-total/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個整數陣列 &lt;code&gt;N[i]&lt;/code&gt; 代表石頭的個數，再給你一個數字 &lt;code&gt;k&lt;/code&gt; 代表操作數，操作方法如下:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;選一堆石頭 &lt;code&gt;N[i]&lt;/code&gt; 然後從裡面拿走 &lt;code&gt;floor(N[i]/2.0)&lt;/code&gt;&lt;br&gt;
+問你最後拿完石頭的總和&lt;strong&gt;最小&lt;/strong&gt;為多少?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$1 \le N.size() \le 10^5$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$1 \le N[i] \le 10^4$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$1 \le k \le 10^5$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="priority queue" scheme="http://oj.roy4801.tw/tags/priority-queue/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 2279 - Maximum Bags With Full Capacity of Rocks1</title>
