@@ -25,7 +25,7 @@
 <meta property="og:description" content="題目 Problem 題目給你一個字串，其中包含了 ( 和 )，問你刪除不定數量的括弧後使得括弧平衡(每個 ( 都有其對應的 ))，字串長怎樣。 想法 先掃一遍，用 stack 匹配括弧，遇到 ( push、遇到 ) pop (如果不是空)，最後 stack 剩下的會是沒匹配到的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-15T03:04:50.000Z">
-<meta property="article:modified_time" content="2022-03-17T02:03:10.770Z">
+<meta property="article:modified_time" content="2022-12-30T14:28:04.888Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -129,7 +129,7 @@
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
 <h1>AC Code</h1>
-<p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/leetcode/1249.cpp">https://github.com/roy4801/solved_problems/blob/master/leetcode/1249.cpp</a></p>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F1249.cpp%23L17-L53&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 <h1>賞析</h1>
 <ul>
 <li>其實我們並不在乎左括弧的位置，只在乎數量，那 stack 大可以退化成一個 counter，然後 <code>vis</code> 可以用不再字串輸入集合裡的文字取代，這樣就優化掉了
