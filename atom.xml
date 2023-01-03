@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-01-02T11:33:43.672Z</updated>
+  <updated>2023-01-03T15:48:13.917Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 944 - Delete Columns to Make Sorted</title>
+    <link href="http://oj.roy4801.tw/2023/01/03/leetcode/944/"/>
+    <id>http://oj.roy4801.tw/2023/01/03/leetcode/944/</id>
+    <published>2023-01-03T15:40:14.000Z</published>
+    <updated>2023-01-03T15:48:13.917Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/delete-columns-to-make-sorted/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你 &lt;code&gt;n&lt;/code&gt; 個字串 e.g. &lt;code&gt;&amp;#123;&amp;quot;abc&amp;quot;, &amp;quot;bce&amp;quot;, &amp;quot;cae&amp;quot;&amp;#125;&lt;/code&gt;，把字串排成一直排，問你每一行是不是字典序排好的，如果不是則刪掉那一個直排，最多能刪掉多少行?&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;a b c&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;b c e&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;c a e&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;v x v &amp;#x3D; 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;測資範圍:
+&lt;ul&gt;
+&lt;li&gt;$1 \le n \le 100$&lt;/li&gt;
+&lt;li&gt;$1 \le str.size() \le 1000$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="string" scheme="http://oj.roy4801.tw/tags/string/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 290 - Word Pattern</title>

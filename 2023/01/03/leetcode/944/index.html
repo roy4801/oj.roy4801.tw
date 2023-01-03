@@ -15,22 +15,21 @@
 <!-- End Google Analytics -->
 
   
-  <title>Leetcode 127 - Word Ladder | Roy 的解題紀錄</title>
+  <title>Leetcode 944 - Delete Columns to Make Sorted | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 一個字串能夠從 beginWord 轉換成 endWord 稱作 transformation sequence e.g. beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk，今天題目給你一個 wordList 問你從 beginWord 到 endWord 總共幾個字串，並且要最短的。  其中每個字串只差一個字元 &#x3D;&gt; 相差一">
+  <meta name="description" content="題目 Problem 給你 n 個字串 e.g. &amp;#123;&quot;abc&quot;, &quot;bce&quot;, &quot;cae&quot;&amp;#125;，把字串排成一直排，問你每一行是不是字典序排好的，如果不是則刪掉那一個直排，最多能刪掉多少行? 1234a b cb c ec a ev x v &#x3D; 1  測資範圍:  $1 \le n \le 100$ $1 \le">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode 127 - Word Ladder">
-<meta property="og:url" content="http://oj.roy4801.tw/2022/02/20/leetcode/127/index.html">
+<meta property="og:title" content="Leetcode 944 - Delete Columns to Make Sorted">
+<meta property="og:url" content="http://oj.roy4801.tw/2023/01/03/leetcode/944/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 一個字串能夠從 beginWord 轉換成 endWord 稱作 transformation sequence e.g. beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk，今天題目給你一個 wordList 問你從 beginWord 到 endWord 總共幾個字串，並且要最短的。  其中每個字串只差一個字元 &#x3D;&gt; 相差一">
+<meta property="og:description" content="題目 Problem 給你 n 個字串 e.g. &amp;#123;&quot;abc&quot;, &quot;bce&quot;, &quot;cae&quot;&amp;#125;，把字串排成一直排，問你每一行是不是字典序排好的，如果不是則刪掉那一個直排，最多能刪掉多少行? 1234a b cb c ec a ev x v &#x3D; 1  測資範圍:  $1 \le n \le 100$ $1 \le">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-02-19T21:07:18.000Z">
-<meta property="article:modified_time" content="2022-12-30T13:44:44.062Z">
+<meta property="article:published_time" content="2023-01-03T15:40:14.000Z">
+<meta property="article:modified_time" content="2023-01-03T15:48:13.917Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
-<meta property="article:tag" content="graph">
-<meta property="article:tag" content="bfs">
+<meta property="article:tag" content="string">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -94,14 +93,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-leetcode/127" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-leetcode/944" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/02/20/leetcode/127/" class="article-date">
-  <time class="dt-published" datetime="2022-02-19T21:07:18.000Z" itemprop="datePublished">2022-02-20</time>
+    <a href="/2023/01/03/leetcode/944/" class="article-date">
+  <time class="dt-published" datetime="2023-01-03T15:40:14.000Z" itemprop="datePublished">2023-01-03</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/">Hard</a>
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
   </div>
 
   </div>
@@ -112,7 +111,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Leetcode 127 - Word Ladder
+      Leetcode 944 - Delete Columns to Make Sorted
     </h1>
   
 
@@ -120,51 +119,42 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/word-ladder/">題目</a></p>
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/delete-columns-to-make-sorted/">題目</a></p>
 <h1>Problem</h1>
-<p>一個字串能夠從 <code>beginWord</code> 轉換成 <code>endWord</code> 稱作 <code>transformation sequence</code><br>
-e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目給你一個 <code>wordList</code> 問你從 <code>beginWord</code> 到 <code>endWord</code> 總共幾個字串，並且要<strong>最短</strong>的。</p>
+<p>給你 <code>n</code> 個字串 e.g. <code>&#123;&quot;abc&quot;, &quot;bce&quot;, &quot;cae&quot;&#125;</code>，把字串排成一直排，問你每一行是不是字典序排好的，如果不是則刪掉那一個直排，最多能刪掉多少行?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a b c</span><br><span class="line">b c e</span><br><span class="line">c a e</span><br><span class="line">v x v &#x3D; 1</span><br></pre></td></tr></table></figure>
 <ul>
-<li>其中每個字串只差一個字元 =&gt; 相差一個字元才能轉換</li>
-<li>轉換的字串都在 <code>wordList</code> 裏頭</li>
-<li><code>beginWord</code> 不一定要在 <code>wordList</code> 裏頭</li>
-</ul>
-<h1>想法</h1>
-<p>可以把每個 word 都想成圖上的 node，字串轉換就變成的從圖上的一個點移動到另一個點，<br>
-問題就變成想辦法建圖，從 <code>beginWord</code> 開始 bfs 即可。</p>
-<p>對於每個字來說 e.g. <code>dog</code>，有三條路可以走: <code>.og</code>, <code>d.g</code>, <code>do.</code>，可以先建個 dictionary 來方便查找 e.g. <code>.og = &#123;dog, log, cog&#125;</code>，<br>
-接著就遍歷 <code>wordList</code> 把圖建起來。</p>
-<p>小細節是 <code>beginWord</code> 要等圖建好之後，再連到圖上(單向)，這樣才不會走回去。</p>
+<li>測資範圍:
 <ul>
-<li>時間複雜度: <code>N = wordList.size()</code>, <code>M = wordList[i].size()</code> (字串長度)
-<ul>
-<li>建字串表: $\mathcal{O}(N)$</li>
-<li>建圖: $\mathcal{O}(N^ \cdot M \cdot N)$</li>
-<li>BFS: $\mathcal{O}(N^2)$ (網狀圖)</li>
+<li>$1 \le n \le 100$</li>
+<li>$1 \le str.size() \le 1000$</li>
 </ul>
 </li>
-<li>空間複雜度: $\mathcal{O}(N^ \cdot M \cdot N)$</li>
+</ul>
+<h1>想法</h1>
+<p>掃過一輪，看該直排的字元是否都是下面大於等於上面，如果不是則刪掉(<code>counter++</code>)。</p>
+<ul>
+<li>時間複雜度: $\mathcal{O}(nm)$</li>
+<li>空間複雜度: $\mathcal{O}(1)$</li>
 </ul>
 <h1>AC Code</h1>
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F127.cpp%23L10-L189&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
-<p>TODO</p>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F944.cpp%23L17-L37&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 <h1>心得</h1>
-<p>一開始跟朋友討論時想複雜了= = (inspired by 祥恩)，後來看題解才知道有更簡單的解法</p>
+<p>一開始看半天，還以為刪除是指要刪掉該字串，結果是 column = =</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/20/leetcode/127/" data-id="ckzucki7m00002cu90xj14sfx" data-title="Leetcode 127 - Word Ladder" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/01/03/leetcode/944/" data-id="clcgek0ap0000e0u920d2abqy" data-title="Leetcode 944 - Delete Columns to Make Sorted" class="article-share-link">Share</a>
       
       
-        <a href="/2022/02/20/leetcode/127/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2022/02/20/leetcode/127/" itemprop="commentCount"></span>
+        <a href="/2023/01/03/leetcode/944/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2023/01/03/leetcode/944/" itemprop="commentCount"></span>
           Comments
         </a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bfs/" rel="tag">bfs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/graph/" rel="tag">graph</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/string/" rel="tag">string</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -172,19 +162,10 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
     
 <nav id="article-nav">
   
-    <a href="/2022/02/20/leetcode/1675/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Leetcode 1675 - Minimize Deviation in Array
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/02/19/leetcode/39/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/01/02/leetcode/290/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Leetcode 39 - Combination Sum</div>
+      <div class="article-nav-title">Leetcode 290 - Word Pattern</div>
     </a>
   
 </nav>
