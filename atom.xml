@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-01-03T15:48:13.917Z</updated>
+  <updated>2023-01-04T16:07:55.022Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 2244 - Minimum Rounds to Complete All Tasks</title>
+    <link href="http://oj.roy4801.tw/2023/01/04/leetcode/2244/"/>
+    <id>http://oj.roy4801.tw/2023/01/04/leetcode/2244/</id>
+    <published>2023-01-04T14:58:16.000Z</published>
+    <updated>2023-01-04T16:07:55.022Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個整數陣列 &lt;code&gt;N&lt;/code&gt; 其中 &lt;code&gt;N[i]&lt;/code&gt; 代表工作的困難度，每回合可以完成兩個或三個同等級的工作，問你最少要幾回合?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資範圍:
+&lt;ul&gt;
+&lt;li&gt;$1 \le N.size() \le 10^5$&lt;/li&gt;
+&lt;li&gt;$1 \le N[i] \le 10^9$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="greedy" scheme="http://oj.roy4801.tw/tags/greedy/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 944 - Delete Columns to Make Sorted</title>

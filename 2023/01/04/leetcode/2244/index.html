@@ -15,20 +15,21 @@
 <!-- End Google Analytics -->
 
   
-  <title>Uva 11078 - Open Credit System | Roy 的解題紀錄</title>
+  <title>Leetcode 2244 - Minimum Rounds to Complete All Tasks | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem (簡化) 有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$ 想法 $\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。 只要掃一遍，就得到答案。($\mathcal{O}(n)$)">
+  <meta name="description" content="題目 Problem 給你一個整數陣列 N 其中 N[i] 代表工作的困難度，每回合可以完成兩個或三個同等級的工作，問你最少要幾回合?  測資範圍:  $1 \le N.size() \le 10^5$ $1 \le N[i] \le 10^9$    想法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uva 11078 - Open Credit System">
-<meta property="og:url" content="http://oj.roy4801.tw/2019/05/18/uva/uva11078/index.html">
+<meta property="og:title" content="Leetcode 2244 - Minimum Rounds to Complete All Tasks">
+<meta property="og:url" content="http://oj.roy4801.tw/2023/01/04/leetcode/2244/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem (簡化) 有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$ 想法 $\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。 只要掃一遍，就得到答案。($\mathcal{O}(n)$)">
+<meta property="og:description" content="題目 Problem 給你一個整數陣列 N 其中 N[i] 代表工作的困難度，每回合可以完成兩個或三個同等級的工作，問你最少要幾回合?  測資範圍:  $1 \le N.size() \le 10^5$ $1 \le N[i] \le 10^9$    想法">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2019-05-18T07:29:18.000Z">
-<meta property="article:modified_time" content="2022-03-20T01:10:24.034Z">
+<meta property="article:published_time" content="2023-01-04T14:58:16.000Z">
+<meta property="article:modified_time" content="2023-01-04T16:07:55.022Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
-<meta property="article:tag" content="Uva">
+<meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="greedy">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -92,14 +93,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-uva/uva11078" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-leetcode/2244" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2019/05/18/uva/uva11078/" class="article-date">
-  <time class="dt-published" datetime="2019-05-18T07:29:18.000Z" itemprop="datePublished">2019-05-18</time>
+    <a href="/2023/01/04/leetcode/2244/" class="article-date">
+  <time class="dt-published" datetime="2023-01-04T14:58:16.000Z" itemprop="datePublished">2023-01-04</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a>
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
   </div>
 
   </div>
@@ -110,7 +111,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Uva 11078 - Open Credit System
+      Leetcode 2244 - Minimum Rounds to Complete All Tasks
     </h1>
   
 
@@ -118,33 +119,46 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;category=0&amp;problem=2019&amp;mosmsg=Submission+received+with+ID+23355296">題目</a></p>
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/description/">題目</a></p>
 <h1>Problem</h1>
-<p>(簡化)<br>
-有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$</p>
+<p>給你一個整數陣列 <code>N</code> 其中 <code>N[i]</code> 代表工作的困難度，每回合可以完成兩個或三個同等級的工作，問你最少要幾回合?</p>
+<ul>
+<li>測資範圍:
+<ul>
+<li>$1 \le N.size() \le 10^5$</li>
+<li>$1 \le N[i] \le 10^9$</li>
+</ul>
+</li>
+</ul>
 <h1>想法</h1>
-<p>$\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。<br>
-只要掃一遍，就得到答案。($\mathcal{O}(n)$)</p>
+<p>先 sort 一次，接著數相同的數字個數存成陣列，直接模擬完成工作 $O(nm)$ (<code>m=N[i]</code>)<br>
+觀察:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1 -&gt; -1</span><br><span class="line">2 -&gt;  1 (2)</span><br><span class="line">3 -&gt;  1 (3)</span><br><span class="line">4 -&gt;  2 (2+2)</span><br><span class="line">5 -&gt;  2 (3+2)</span><br><span class="line">6 -&gt;  2 (3+3)</span><br><span class="line">7 -&gt;  3 (3+2+2)</span><br><span class="line">8 -&gt;  3 (3+3+2)</span><br><span class="line">9 -&gt;  3 (3+3+3)</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>可以得出規則: <code>ans = ans + (i / 3) + (i % 3 != 0)</code></p>
+<ul>
+<li>時間複雜度: $\mathcal{O}(n\log{n})$</li>
+<li>空間複雜度: $\mathcal{O}(n)$</li>
+</ul>
 <h1>AC Code</h1>
-<p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp">https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp</a></p>
-<h2 id="其他解法">其他解法</h2>
-<p>單調隊列<br>
-<a target="_blank" rel="noopener" href="https://csy54.github.io/2019/02/UVa-11078/">https://csy54.github.io/2019/02/UVa-11078/</a></p>
-<p><a target="_blank" rel="noopener" href="https://gist.github.com/roy4801/b417a1a65d2e43f3534f580a3bacd78d">https://gist.github.com/roy4801/b417a1a65d2e43f3534f580a3bacd78d</a></p>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F2244.cpp%23L17-L51&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<h1>賞析</h1>
+<p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2996569/ruby-solution-3-lines/?orderBy=most_votes">https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/solutions/2996569/ruby-solution-3-lines/?orderBy=most_votes</a></p>
+<h1>心得</h1>
+<p>貪心規則感覺明明自己可以想到，太快看提示了，之後要像打比賽那樣先給自己時間練習QQ (下班就好懶QQ)</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2019/05/18/uva/uva11078/" data-id="ckod0d3j70006xkw81ppcgcd4" data-title="Uva 11078 - Open Credit System" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/01/04/leetcode/2244/" data-id="clchusp1h0000m8u9g0tp7m2k" data-title="Leetcode 2244 - Minimum Rounds to Complete All Tasks" class="article-share-link">Share</a>
       
       
-        <a href="/2019/05/18/uva/uva11078/#comments" class="article-comment-link">
-          <span class="post-comments-count valine-comment-count" data-xid="/2019/05/18/uva/uva11078/" itemprop="commentCount"></span>
+        <a href="/2023/01/04/leetcode/2244/#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count" data-xid="/2023/01/04/leetcode/2244/" itemprop="commentCount"></span>
           Comments
         </a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -152,19 +166,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/05/18/uva/uva11059/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Uva 11059 - Maximum Product
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/05/17/uva/uva10685/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/01/03/leetcode/944/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Uva 10685 - Nature</div>
+      <div class="article-nav-title">Leetcode 944 - Delete Columns to Make Sorted</div>
     </a>
   
 </nav>
