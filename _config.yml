@@ -16,6 +16,8 @@ author: Roy
 language: en
 timezone: ''
 
+disqus_shortname: oj-roy4801-tw
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://oj.roy4801.tw
