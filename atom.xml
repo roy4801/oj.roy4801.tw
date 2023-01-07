@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-01-06T13:48:17.905Z</updated>
+  <updated>2023-01-07T21:18:29.418Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 134 - Gas Station</title>
+    <link href="http://oj.roy4801.tw/2023/01/08/leetcode/134/"/>
+    <id>http://oj.roy4801.tw/2023/01/08/leetcode/134/</id>
+    <published>2023-01-07T20:24:02.000Z</published>
+    <updated>2023-01-07T21:18:29.418Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/gas-station/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;有 &lt;code&gt;n&lt;/code&gt; 個排成圓形的加油站，每個加油站有 &lt;code&gt;gas[i]&lt;/code&gt; 的油，從第 &lt;code&gt;i&lt;/code&gt; 個加油站到第 &lt;code&gt;i+1&lt;/code&gt; 個加油站要花 &lt;code&gt;cost[i]&lt;/code&gt; 的油&lt;br&gt;
+問你如果順時針走完所有的加油站，要從哪個加油站出發? (從 &lt;code&gt;0&lt;/code&gt; 開始)，如果不能走完回傳 &lt;code&gt;-1&lt;/code&gt;&lt;/p&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;p&gt;貪心，從第 0 個加油站開始走，如果當前油量小於 0 ，就 reset 從下個加油站開始走，直到路徑總共走完 &lt;code&gt;n&lt;/code&gt; 個加油站&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="greedy" scheme="http://oj.roy4801.tw/tags/greedy/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 1833 - Maximum Ice Cream Bars</title>
