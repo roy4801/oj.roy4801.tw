@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-01-09T14:58:10.331Z</updated>
+  <updated>2023-01-15T15:40:53.995Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1061 - Lexicographically Smallest Equivalent String</title>
+    <link href="http://oj.roy4801.tw/2023/01/15/leetcode/1061/"/>
+    <id>http://oj.roy4801.tw/2023/01/15/leetcode/1061/</id>
+    <published>2023-01-15T14:47:35.000Z</published>
+    <updated>2023-01-15T15:40:53.995Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你兩個字串 &lt;code&gt;s1&lt;/code&gt; 和 &lt;code&gt;s2&lt;/code&gt; 還有一個 &lt;code&gt;baseStr&lt;/code&gt;，其中 &lt;code&gt;s1[i]&lt;/code&gt; 和 &lt;code&gt;s2[i]&lt;/code&gt; 是 equivalent characters，今天給你 &lt;code&gt;baseStr&lt;/code&gt; 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Equivalence relation:
+&lt;ul&gt;
+&lt;li&gt;Reflexivity: &lt;code&gt;&#39;a&#39; == &#39;a&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Symmetry: &lt;code&gt;&#39;a&#39; == &#39;b&#39;&lt;/code&gt; $\rightarrow$ &lt;code&gt;&#39;b&#39; == &#39;a&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Transitivity: &lt;code&gt;&#39;a&#39; == &#39;b&#39;&lt;/code&gt;, &lt;code&gt;&#39;b&#39; == &#39;c&#39;&lt;/code&gt; 代表 &lt;code&gt;&#39;a&#39; == &#39;c&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="disjoint set" scheme="http://oj.roy4801.tw/tags/disjoint-set/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 144 - Binary Tree Preorder Traversal</title>
