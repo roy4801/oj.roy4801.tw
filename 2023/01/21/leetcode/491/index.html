@@ -15,21 +15,22 @@
 <!-- End Google Analytics -->
 
   
-  <title>Leetcode 1061 - Lexicographically Smallest Equivalent String | Roy 的解題紀錄</title>
+  <title>Leetcode 491 - Non-decreasing Subsequences | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你兩個字串 s1 和 s2 還有一個 baseStr，其中 s1[i] 和 s2[i] 是 equivalent characters，今天給你 baseStr 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?  Equivalence relation:  Reflexivity: &#39;a&#39; &#x3D;&#x3D; &#39;a&#39; Symmetry: &#39;a&#39;">
+  <meta name="description" content="題目 Problem 給你一個 nums 要你回傳所有大於兩個元素的非遞減子序列，回傳不用管順序。  測資限制:  $1 \le nums.size() \le 15$ $-100 \le nums[i] \le 100$    想法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode 1061 - Lexicographically Smallest Equivalent String">
-<meta property="og:url" content="http://oj.roy4801.tw/2023/01/15/leetcode/1061/index.html">
+<meta property="og:title" content="Leetcode 491 - Non-decreasing Subsequences">
+<meta property="og:url" content="http://oj.roy4801.tw/2023/01/21/leetcode/491/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你兩個字串 s1 和 s2 還有一個 baseStr，其中 s1[i] 和 s2[i] 是 equivalent characters，今天給你 baseStr 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?  Equivalence relation:  Reflexivity: &#39;a&#39; &#x3D;&#x3D; &#39;a&#39; Symmetry: &#39;a&#39;">
+<meta property="og:description" content="題目 Problem 給你一個 nums 要你回傳所有大於兩個元素的非遞減子序列，回傳不用管順序。  測資限制:  $1 \le nums.size() \le 15$ $-100 \le nums[i] \le 100$    想法">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-01-15T14:47:35.000Z">
-<meta property="article:modified_time" content="2023-01-15T15:40:53.995Z">
+<meta property="article:published_time" content="2023-01-20T19:02:53.000Z">
+<meta property="article:modified_time" content="2023-01-20T19:42:25.160Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
-<meta property="article:tag" content="disjoint set">
+<meta property="article:tag" content="backtracking">
+<meta property="article:tag" content="Bit Manipulation">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -93,10 +94,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-leetcode/1061" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-leetcode/491" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/01/15/leetcode/1061/" class="article-date">
-  <time class="dt-published" datetime="2023-01-15T14:47:35.000Z" itemprop="datePublished">2023-01-15</time>
+    <a href="/2023/01/21/leetcode/491/" class="article-date">
+  <time class="dt-published" datetime="2023-01-20T19:02:53.000Z" itemprop="datePublished">2023-01-21</time>
 </a>
     
   <div class="article-category">
@@ -111,7 +112,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Leetcode 1061 - Lexicographically Smallest Equivalent String
+      Leetcode 491 - Non-decreasing Subsequences
     </h1>
   
 
@@ -119,43 +120,46 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/">題目</a></p>
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/non-decreasing-subsequences/description/">題目</a></p>
 <h1>Problem</h1>
-<p>給你兩個字串 <code>s1</code> 和 <code>s2</code> 還有一個 <code>baseStr</code>，其中 <code>s1[i]</code> 和 <code>s2[i]</code> 是 equivalent characters，今天給你 <code>baseStr</code> 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?</p>
+<p>給你一個 <code>nums</code> 要你回傳所有大於兩個元素的<strong>非遞減子序列</strong>，回傳不用管順序。</p>
 <ul>
-<li>Equivalence relation:
+<li>測資限制:
 <ul>
-<li>Reflexivity: <code>'a' == 'a'</code></li>
-<li>Symmetry: <code>'a' == 'b'</code> $\rightarrow$ <code>'b' == 'a'</code></li>
-<li>Transitivity: <code>'a' == 'b'</code>, <code>'b' == 'c'</code> 代表 <code>'a' == 'c'</code></li>
+<li>$1 \le nums.size() \le 15$</li>
+<li>$-100 \le nums[i] \le 100$</li>
 </ul>
 </li>
 </ul>
 <h1>想法</h1>
-<p><code>s1[i] == s2[i]</code> 代表 <code>s1[i]</code> 和 <code>s2[i]</code> 是同一組的，維護分組的資料結構，同時遍歷 <code>s1</code> 和 <code>s2</code> 儲存組資訊，接著遍歷一次 <code>baseStr</code> 去找最小字典序的字元即可(利用剛剛維護的資料結構去查詢同組)</p>
+<p>因為 <code>N</code> 蠻小的所以直接窮舉 $\mathcal{O}(2^n)$ 最後確認該子序列是否為<strong>非遞減子序列</strong> $\mathcal{O}(n)$<br>
+至於要怎麼窮舉則有蠻多方法: 直接用 bit 當作要or不要；或是用 backtracking (比較麻煩)</p>
 <ul>
-<li>時間複雜度: $\mathcal{O}(26(n+m))$
-<ul>
-<li><code>n = s1.size()</code></li>
-<li><code>m = baseStr.size()</code></li>
-<li><code>26 = a ~ z</code></li>
-</ul>
-</li>
-<li>空間複雜度: $\mathcal{O}(26)$</li>
+<li>時間複雜度: $\mathcal{O}(2^{n}n)$</li>
+<li>空間複雜度: $\mathcal{O}(2^{n}n)$</li>
 </ul>
 <h1>AC Code</h1>
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F1061.cpp%23L17-L67&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<ul>
+<li>bit</li>
+</ul>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F491.cpp%23L17-L58&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<ul>
+<li>backtracking</li>
+</ul>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F491.cpp%23L60-L106&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<h1>賞析</h1>
+<p><a target="_blank" rel="noopener" href="https://hackmd.io/behvpvOeQk65FseKmOWrhA?view">https://hackmd.io/behvpvOeQk65FseKmOWrhA?view</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/01/15/leetcode/1061/" data-id="clcxjobuf0000k8u9bqc934f2" data-title="Leetcode 1061 - Lexicographically Smallest Equivalent String" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/01/21/leetcode/491/" data-id="cld4wh1460000ssu98olmdck1" data-title="Leetcode 491 - Non-decreasing Subsequences" class="article-share-link">Share</a>
       
-        <a href="http://oj.roy4801.tw/2023/01/15/leetcode/1061/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://oj.roy4801.tw/2023/01/21/leetcode/491/#disqus_thread" class="article-comment-link">Comments</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disjoint-set/" rel="tag">disjoint set</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bit-Manipulation/" rel="tag">Bit Manipulation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -163,19 +167,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2023/01/17/leetcode/57/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Leetcode 57 - Insert Interval
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023/01/09/leetcode/144/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/01/17/leetcode/57/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Leetcode 144 - Binary Tree Preorder Traversal</div>
+      <div class="article-nav-title">Leetcode 57 - Insert Interval</div>
     </a>
   
 </nav>
@@ -292,7 +287,7 @@
 <script>
   var disqus_shortname = 'oj-roy4801-tw';
   
-  var disqus_url = 'http://oj.roy4801.tw/2023/01/15/leetcode/1061/';
+  var disqus_url = 'http://oj.roy4801.tw/2023/01/21/leetcode/491/';
   
   (function(){
     var dsq = document.createElement('script');
