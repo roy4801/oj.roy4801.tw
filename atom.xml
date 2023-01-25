@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-01-20T19:42:25.160Z</updated>
+  <updated>2023-01-25T15:23:25.258Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 2359 - Find Closest Node to Given Two Nodes</title>
+    <link href="http://oj.roy4801.tw/2023/01/25/leetcode/2359/"/>
+    <id>http://oj.roy4801.tw/2023/01/25/leetcode/2359/</id>
+    <published>2023-01-25T14:53:04.000Z</published>
+    <updated>2023-01-25T15:23:25.258Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-closest-node-to-given-two-nodes/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-2.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;給你一個有 $n$ 個點的&lt;strong&gt;有向圖&lt;/strong&gt;，每個點只有一條邊，並且給你兩個整數 &lt;code&gt;node1&lt;/code&gt; 和 &lt;code&gt;node2&lt;/code&gt;，要你回傳一個 &lt;code&gt;node i&lt;/code&gt; (&lt;code&gt;node1&lt;/code&gt; 和 &lt;code&gt;node2&lt;/code&gt; 都到得了) ，其 index 使得 “&lt;code&gt;node1&lt;/code&gt; 到 &lt;code&gt;node i&lt;/code&gt; 的距離” 和 “&lt;code&gt;node2&lt;/code&gt; 到 &lt;code&gt;node i&lt;/code&gt; 的距離” 的最大值越小越好&lt;br&gt;
+如果有多種解，回傳 index 最小的即可；無解回傳 &lt;code&gt;-1&lt;/code&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$2 \le n \le 10^5$&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;edge.size() = n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;可能有出現環，但一定沒有自環&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="dfs" scheme="http://oj.roy4801.tw/tags/dfs/"/>
+    
+    <category term="graph" scheme="http://oj.roy4801.tw/tags/graph/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 491 - Non-decreasing Subsequences</title>
@@ -136,7 +178,7 @@
     <link href="http://oj.roy4801.tw/2023/01/09/leetcode/144/"/>
     <id>http://oj.roy4801.tw/2023/01/09/leetcode/144/</id>
     <published>2023-01-09T14:31:48.000Z</published>
-    <updated>2023-01-09T14:58:10.331Z</updated>
+    <updated>2023-01-25T14:53:39.206Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/binary-tree-preorder-traversal/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -157,6 +199,8 @@
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="dfs" scheme="http://oj.roy4801.tw/tags/dfs/"/>
     
   </entry>
   
@@ -367,7 +411,7 @@
     <link href="http://oj.roy4801.tw/2022/12/30/leetcode/797/"/>
     <id>http://oj.roy4801.tw/2022/12/30/leetcode/797/</id>
     <published>2022-12-30T15:44:39.000Z</published>
-    <updated>2022-12-30T16:27:26.458Z</updated>
+    <updated>2023-01-25T14:53:43.602Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/all-paths-from-source-to-target/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -389,9 +433,9 @@
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
     
-    <category term="backtracking" scheme="http://oj.roy4801.tw/tags/backtracking/"/>
+    <category term="dfs" scheme="http://oj.roy4801.tw/tags/dfs/"/>
     
-    <category term="DFS" scheme="http://oj.roy4801.tw/tags/DFS/"/>
+    <category term="backtracking" scheme="http://oj.roy4801.tw/tags/backtracking/"/>
     
   </entry>
   
@@ -509,7 +553,7 @@
     <link href="http://oj.roy4801.tw/2022/12/25/leetcode/886/"/>
     <id>http://oj.roy4801.tw/2022/12/25/leetcode/886/</id>
     <published>2022-12-25T15:22:36.000Z</published>
-    <updated>2022-12-25T15:47:05.629Z</updated>
+    <updated>2023-01-25T14:53:56.192Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/possible-bipartition/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -531,6 +575,8 @@
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="dfs" scheme="http://oj.roy4801.tw/tags/dfs/"/>
     
     <category term="graph" scheme="http://oj.roy4801.tw/tags/graph/"/>
     
@@ -577,7 +623,7 @@
     <link href="http://oj.roy4801.tw/2022/12/19/leetcode/1971/"/>
     <id>http://oj.roy4801.tw/2022/12/19/leetcode/1971/</id>
     <published>2022-12-19T15:07:19.000Z</published>
-    <updated>2022-12-19T15:40:01.741Z</updated>
+    <updated>2023-01-25T14:54:14.708Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-if-path-exists-in-graph/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -602,6 +648,8 @@
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="dfs" scheme="http://oj.roy4801.tw/tags/dfs/"/>
     
     <category term="disjoint set" scheme="http://oj.roy4801.tw/tags/disjoint-set/"/>
     
@@ -799,7 +847,7 @@
     <link href="http://oj.roy4801.tw/2022/12/07/leetcode/938/"/>
     <id>http://oj.roy4801.tw/2022/12/07/leetcode/938/</id>
     <published>2022-12-07T13:50:30.000Z</published>
-    <updated>2022-12-07T13:56:31.896Z</updated>
+    <updated>2023-01-25T14:54:07.441Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/range-sum-of-bst/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -820,6 +868,8 @@
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="dfs" scheme="http://oj.roy4801.tw/tags/dfs/"/>
     
   </entry>
   
@@ -2649,7 +2699,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/06/23/uva/uva10004/"/>
     <id>http://oj.roy4801.tw/2019/06/23/uva/uva10004/</id>
     <published>2019-06-22T16:28:43.000Z</published>
-    <updated>2021-05-04T15:40:09.997Z</updated>
+    <updated>2023-01-25T14:54:19.686Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=945&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2672,6 +2722,8 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Uva" scheme="http://oj.roy4801.tw/tags/Uva/"/>
+    
+    <category term="dfs" scheme="http://oj.roy4801.tw/tags/dfs/"/>
     
   </entry>
   
