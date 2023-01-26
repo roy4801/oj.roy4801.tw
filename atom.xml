@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-01-25T15:23:25.258Z</updated>
+  <updated>2023-01-26T17:15:36.838Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 787 - Cheapest Flights Within K Stops</title>
+    <link href="http://oj.roy4801.tw/2023/01/26/leetcode/787/"/>
+    <id>http://oj.roy4801.tw/2023/01/26/leetcode/787/</id>
+    <published>2023-01-26T10:43:58.000Z</published>
+    <updated>2023-01-26T17:15:36.838Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/cheapest-flights-within-k-stops/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-3drawio.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;有 $n$ 座城市由 &lt;code&gt;flights[i] = [fromi, toi, pricei]&lt;/code&gt; 個班機來往，給你起始點&lt;code&gt;src&lt;/code&gt;和結束點&lt;code&gt;dst&lt;/code&gt;以及整數 &lt;code&gt;k&lt;/code&gt; (代表最多停留 &lt;code&gt;k&lt;/code&gt; 個城市)，問你最便宜要花多少錢，如果沒有這種路徑則回傳 &lt;code&gt;-1&lt;/code&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le n \le 100$&lt;/li&gt;
+&lt;li&gt;$0 \le flights.length \le (n * (n - 1) / 2)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="graph" scheme="http://oj.roy4801.tw/tags/graph/"/>
+    
+    <category term="dijkstra" scheme="http://oj.roy4801.tw/tags/dijkstra/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 2359 - Find Closest Node to Given Two Nodes</title>
@@ -2069,7 +2109,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/23/leetcode/133/"/>
     <id>http://oj.roy4801.tw/2022/02/23/leetcode/133/</id>
     <published>2022-02-23T13:52:52.000Z</published>
-    <updated>2022-12-30T14:17:09.994Z</updated>
+    <updated>2023-01-26T10:44:32.491Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/clone-graph/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2091,7 +2131,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
     
-    <category term="Graph" scheme="http://oj.roy4801.tw/tags/Graph/"/>
+    <category term="graph" scheme="http://oj.roy4801.tw/tags/graph/"/>
     
     <category term="BFS" scheme="http://oj.roy4801.tw/tags/BFS/"/>
     
