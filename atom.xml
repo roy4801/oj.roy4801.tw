@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-02-04T21:08:19.071Z</updated>
+  <updated>2023-02-05T13:00:00.985Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -17,11 +17,52 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Leetcode 438 - Find All Anagrams in a String</title>
+    <link href="http://oj.roy4801.tw/2023/02/05/leetcode/438/"/>
+    <id>http://oj.roy4801.tw/2023/02/05/leetcode/438/</id>
+    <published>2023-02-05T12:40:30.000Z</published>
+    <updated>2023-02-05T13:00:00.985Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-all-anagrams-in-a-string/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你兩個字串 &lt;code&gt;s1&lt;/code&gt; 和 &lt;code&gt;s2&lt;/code&gt;，問你 &lt;code&gt;s1&lt;/code&gt; 的排列組合是不是 &lt;code&gt;s2&lt;/code&gt; 的子字串，回傳所有的 index&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;s &amp;#x3D; &amp;quot;cbaebabacd&amp;quot;, p &amp;#x3D; &amp;quot;abc&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#x2F;&amp;#x2F; output [0, 6]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le len \le 3\cdot10^4$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="string" scheme="http://oj.roy4801.tw/tags/string/"/>
+    
+    <category term="hashmap" scheme="http://oj.roy4801.tw/tags/hashmap/"/>
+    
+    <category term="sliding window" scheme="http://oj.roy4801.tw/tags/sliding-window/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Leetcode 567 - Permutation in String</title>
     <link href="http://oj.roy4801.tw/2023/02/05/leetcode/567/"/>
     <id>http://oj.roy4801.tw/2023/02/05/leetcode/567/</id>
     <published>2023-02-04T16:11:58.000Z</published>
-    <updated>2023-02-04T21:08:19.071Z</updated>
+    <updated>2023-02-05T12:59:50.629Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/permutation-in-string/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -52,6 +93,8 @@
     <category term="string" scheme="http://oj.roy4801.tw/tags/string/"/>
     
     <category term="hashmap" scheme="http://oj.roy4801.tw/tags/hashmap/"/>
+    
+    <category term="sliding window" scheme="http://oj.roy4801.tw/tags/sliding-window/"/>
     
   </entry>
   

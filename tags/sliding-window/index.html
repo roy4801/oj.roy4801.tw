@@ -15,23 +15,19 @@
 <!-- End Google Analytics -->
 
   
-  <title>Leetcode 2194 - Cells in a Range on an Excel Sheet | Roy 的解題紀錄</title>
+  <title>Tag: sliding window | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem  題目給你一組excel 的表格字串 e.g. &quot;K1:L2&quot; 問你能不能像 excel 那樣輸出表格順序 e.g. [&quot;K1&quot;,&quot;K2&quot;,&quot;L1&quot;,&quot;L2&quot;] 行由一個大寫英文字母表示；列由一個正整數表示。題目要求回傳表格的陣列  s.length &#x3D;&#x3D; 5 &#39;A&#39; &lt;">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode 2194 - Cells in a Range on an Excel Sheet">
-<meta property="og:url" content="http://oj.roy4801.tw/2022/03/07/leetcode/2194/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Roy 的解題紀錄">
+<meta property="og:url" content="http://oj.roy4801.tw/tags/sliding-window/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem  題目給你一組excel 的表格字串 e.g. &quot;K1:L2&quot; 問你能不能像 excel 那樣輸出表格順序 e.g. [&quot;K1&quot;,&quot;K2&quot;,&quot;L1&quot;,&quot;L2&quot;] 行由一個大寫英文字母表示；列由一個正整數表示。題目要求回傳表格的陣列  s.length &#x3D;&#x3D; 5 &#39;A&#39; &lt;">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.imgur.com/HDknepz.png">
-<meta property="article:published_time" content="2022-03-06T22:51:30.000Z">
-<meta property="article:modified_time" content="2022-12-30T14:26:38.881Z">
 <meta property="article:author" content="Roy">
+<meta property="article:tag" content="刷題">
+<meta property="article:tag" content="ACM">
+<meta property="article:tag" content="Uva">
 <meta property="article:tag" content="解題紀錄">
-<meta property="article:tag" content="Leetcode">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.imgur.com/HDknepz.png">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
   
@@ -94,94 +90,59 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-leetcode/2194" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/07/leetcode/2194/" class="article-date">
-  <time class="dt-published" datetime="2022-03-06T22:51:30.000Z" itemprop="datePublished">2022-03-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+        <section id="main">
   
-    <h1 class="p-name article-title" itemprop="headline name">
-      Leetcode 2194 - Cells in a Range on an Excel Sheet
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2023" class="archive-year">2023</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2023/02/05/leetcode/438/" class="archive-article-date">
+  <time class="dt-published" datetime="2023-02-05T12:40:30.000Z" itemprop="datePublished">Feb 5</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2023/02/05/leetcode/438/">Leetcode 438 - Find All Anagrams in a String</a>
     </h1>
   
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://i.imgur.com/HDknepz.png" alt=""></p>
-<p>題目給你一組excel 的表格字串 e.g. <code>&quot;K1:L2&quot;</code> 問你能不能像 excel 那樣輸出表格順序 e.g. <code>[&quot;K1&quot;,&quot;K2&quot;,&quot;L1&quot;,&quot;L2&quot;]</code><br>
-行由一個大寫英文字母表示；列由一個正整數表示。題目要求回傳表格的陣列</p>
-<ul>
-<li><code>s.length == 5</code></li>
-<li><code>'A' &lt;= s[0] &lt;= s[3] &lt;= 'Z'</code></li>
-<li><code>'1' &lt;= s[1] &lt;= s[4] &lt;= '9'</code></li>
-</ul>
-<h1>想法</h1>
-<p>兩層 for 迴圈解決</p>
-<ul>
-<li>時間複雜度: <code>O(N)</code></li>
-<li>空間複雜度: <code>O(N)</code></li>
-</ul>
-<h1>AC Code</h1>
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F2194.cpp%23L10-L33&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/07/leetcode/2194/" data-id="cl0fvr2k50000mgu9ffuogtkn" data-title="Leetcode 2194 - Cells in a Range on an Excel Sheet" class="article-share-link">Share</a>
-      
-        <a href="http://oj.roy4801.tw/2022/03/07/leetcode/2194/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2022/03/07/leetcode/2196/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Leetcode 2196 - Create Binary Tree From Descriptions
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2022/03/04/leetcode/799/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Leetcode 799 - Champagne Tower</div>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2023/02/05/leetcode/567/" class="archive-article-date">
+  <time class="dt-published" datetime="2023-02-04T16:11:58.000Z" itemprop="datePublished">Feb 5</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2023/02/05/leetcode/567/">Leetcode 567 - Permutation in String</a>
+    </h1>
+  
 
-
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </header>
   </div>
-</section>
+</article>
+  
+  
+    </div></section>
+  
+
 
 </section>
         
@@ -285,12 +246,10 @@
 <script>
   var disqus_shortname = 'oj-roy4801-tw';
   
-  var disqus_url = 'http://oj.roy4801.tw/2022/03/07/leetcode/2194/';
-  
   (function(){
     var dsq = document.createElement('script');
     dsq.async = true;
-    dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

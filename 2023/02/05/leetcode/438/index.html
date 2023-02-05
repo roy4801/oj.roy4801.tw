@@ -15,23 +15,24 @@
 <!-- End Google Analytics -->
 
   
-  <title>Leetcode 2194 - Cells in a Range on an Excel Sheet | Roy 的解題紀錄</title>
+  <title>Leetcode 438 - Find All Anagrams in a String | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem  題目給你一組excel 的表格字串 e.g. &quot;K1:L2&quot; 問你能不能像 excel 那樣輸出表格順序 e.g. [&quot;K1&quot;,&quot;K2&quot;,&quot;L1&quot;,&quot;L2&quot;] 行由一個大寫英文字母表示；列由一個正整數表示。題目要求回傳表格的陣列  s.length &#x3D;&#x3D; 5 &#39;A&#39; &lt;">
+  <meta name="description" content="題目 Problem 給你兩個字串 s1 和 s2，問你 s1 的排列組合是不是 s2 的子字串，回傳所有的 index 12s &#x3D; &quot;cbaebabacd&quot;, p &#x3D; &quot;abc&quot;&#x2F;&#x2F; output [0, 6]  測資限制:  $1 \le len \le 3\cdot10^4$">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode 2194 - Cells in a Range on an Excel Sheet">
-<meta property="og:url" content="http://oj.roy4801.tw/2022/03/07/leetcode/2194/index.html">
+<meta property="og:title" content="Leetcode 438 - Find All Anagrams in a String">
+<meta property="og:url" content="http://oj.roy4801.tw/2023/02/05/leetcode/438/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem  題目給你一組excel 的表格字串 e.g. &quot;K1:L2&quot; 問你能不能像 excel 那樣輸出表格順序 e.g. [&quot;K1&quot;,&quot;K2&quot;,&quot;L1&quot;,&quot;L2&quot;] 行由一個大寫英文字母表示；列由一個正整數表示。題目要求回傳表格的陣列  s.length &#x3D;&#x3D; 5 &#39;A&#39; &lt;">
+<meta property="og:description" content="題目 Problem 給你兩個字串 s1 和 s2，問你 s1 的排列組合是不是 s2 的子字串，回傳所有的 index 12s &#x3D; &quot;cbaebabacd&quot;, p &#x3D; &quot;abc&quot;&#x2F;&#x2F; output [0, 6]  測資限制:  $1 \le len \le 3\cdot10^4$">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.imgur.com/HDknepz.png">
-<meta property="article:published_time" content="2022-03-06T22:51:30.000Z">
-<meta property="article:modified_time" content="2022-12-30T14:26:38.881Z">
+<meta property="article:published_time" content="2023-02-05T12:40:30.000Z">
+<meta property="article:modified_time" content="2023-02-05T13:00:00.985Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="string">
+<meta property="article:tag" content="hashmap">
+<meta property="article:tag" content="sliding window">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.imgur.com/HDknepz.png">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
   
@@ -94,14 +95,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-leetcode/2194" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-leetcode/438" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/03/07/leetcode/2194/" class="article-date">
-  <time class="dt-published" datetime="2022-03-06T22:51:30.000Z" itemprop="datePublished">2022-03-07</time>
+    <a href="/2023/02/05/leetcode/438/" class="article-date">
+  <time class="dt-published" datetime="2023-02-05T12:40:30.000Z" itemprop="datePublished">2023-02-05</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
   </div>
 
   </div>
@@ -112,7 +113,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Leetcode 2194 - Cells in a Range on an Excel Sheet
+      Leetcode 438 - Find All Anagrams in a String
     </h1>
   
 
@@ -120,35 +121,41 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/">題目</a></p>
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-all-anagrams-in-a-string/description/">題目</a></p>
 <h1>Problem</h1>
-<p><img src="https://i.imgur.com/HDknepz.png" alt=""></p>
-<p>題目給你一組excel 的表格字串 e.g. <code>&quot;K1:L2&quot;</code> 問你能不能像 excel 那樣輸出表格順序 e.g. <code>[&quot;K1&quot;,&quot;K2&quot;,&quot;L1&quot;,&quot;L2&quot;]</code><br>
-行由一個大寫英文字母表示；列由一個正整數表示。題目要求回傳表格的陣列</p>
+<p>給你兩個字串 <code>s1</code> 和 <code>s2</code>，問你 <code>s1</code> 的排列組合是不是 <code>s2</code> 的子字串，回傳所有的 index</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s &#x3D; &quot;cbaebabacd&quot;, p &#x3D; &quot;abc&quot;</span><br><span class="line">&#x2F;&#x2F; output [0, 6]</span><br></pre></td></tr></table></figure>
 <ul>
-<li><code>s.length == 5</code></li>
-<li><code>'A' &lt;= s[0] &lt;= s[3] &lt;= 'Z'</code></li>
-<li><code>'1' &lt;= s[1] &lt;= s[4] &lt;= '9'</code></li>
+<li>測資限制:
+<ul>
+<li>$1 \le len \le 3\cdot10^4$</li>
+</ul>
+</li>
 </ul>
 <h1>想法</h1>
-<p>兩層 for 迴圈解決</p>
+<p>枚舉任意排列 $\mathcal{O}(n!)$ 一定 TLE 所以不行這樣做。<br>
+考慮字串 <code>s</code> 的所有 permutation 的字元個數都相同，例如: <code>s = &quot;ABC&quot; perm(s) = &#123;&quot;ABC&quot;, &quot;BAC&quot;, &quot;CAB&quot;, &quot;ACB&quot;, &quot;BCA&quot;, &quot;CBA&quot;&#125;</code> 不論是哪個排序都是由 1個a, 1個b, 1個c 組成<br>
+所以就不用真的去求出 permutation ，只要看 <code>s2</code> 的子字串的字元個數是不是和 <code>s1</code> 的字元個數相同即可</p>
 <ul>
-<li>時間複雜度: <code>O(N)</code></li>
-<li>空間複雜度: <code>O(N)</code></li>
+<li>時間複雜度: $\mathcal{O}(n^2)$</li>
+<li>空間複雜度: $\mathcal{O}(1)$</li>
 </ul>
 <h1>AC Code</h1>
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F2194.cpp%23L10-L33&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F438.cpp%23L17-L51&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<h1>賞析</h1>
+<h1>心得</h1>
+<p>跟 <a href="">Leetcode 567 - Permutation in String</a> 一樣，只是這題要存 index</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/07/leetcode/2194/" data-id="cl0fvr2k50000mgu9ffuogtkn" data-title="Leetcode 2194 - Cells in a Range on an Excel Sheet" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/02/05/leetcode/438/" data-id="cldre7lsa000014u9gi7o05pa" data-title="Leetcode 438 - Find All Anagrams in a String" class="article-share-link">Share</a>
       
-        <a href="http://oj.roy4801.tw/2022/03/07/leetcode/2194/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://oj.roy4801.tw/2023/02/05/leetcode/438/#disqus_thread" class="article-comment-link">Comments</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sliding-window/" rel="tag">sliding window</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/string/" rel="tag">string</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -156,19 +163,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/03/07/leetcode/2196/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Leetcode 2196 - Create Binary Tree From Descriptions
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/03/04/leetcode/799/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/02/05/leetcode/567/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Leetcode 799 - Champagne Tower</div>
+      <div class="article-nav-title">Leetcode 567 - Permutation in String</div>
     </a>
   
 </nav>
@@ -285,7 +283,7 @@
 <script>
   var disqus_shortname = 'oj-roy4801-tw';
   
-  var disqus_url = 'http://oj.roy4801.tw/2022/03/07/leetcode/2194/';
+  var disqus_url = 'http://oj.roy4801.tw/2023/02/05/leetcode/438/';
   
   (function(){
     var dsq = document.createElement('script');
