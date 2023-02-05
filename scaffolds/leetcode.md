@@ -13,6 +13,9 @@ date: {{ date }}
 # Problem
 
 
+
+- 測資限制:
+
 # 想法
 
 - 時間複雜度: $\mathcal{O}()$
