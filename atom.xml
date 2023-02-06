@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-02-05T13:03:01.383Z</updated>
+  <updated>2023-02-06T14:14:27.639Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1470 - Shuffle the Array</title>
+    <link href="http://oj.roy4801.tw/2023/02/06/leetcode/1470/"/>
+    <id>http://oj.roy4801.tw/2023/02/06/leetcode/1470/</id>
+    <published>2023-02-06T12:58:33.000Z</published>
+    <updated>2023-02-06T14:14:27.639Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/shuffle-the-array/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個陣列 &lt;code&gt;nums&lt;/code&gt; 有 &lt;code&gt;2n&lt;/code&gt; 個元素 &lt;code&gt;[x1, x2, ..., xn, y1, y2, ..., yn]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;要你回傳 &lt;code&gt;[x1, y1, x2, y2, ..., xn, yn]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le n \le 500$&lt;/li&gt;
+&lt;li&gt;$1 \le nums[i] \le 10^3$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 438 - Find All Anagrams in a String</title>
