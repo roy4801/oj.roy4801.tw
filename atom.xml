@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-04-08T19:20:11.429Z</updated>
+  <updated>2023-04-08T19:26:05.471Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Leetcode 1523 - Count Odd Numbers in an Interval Range</title>
-    <link href="http://oj.roy4801.tw/2023/04/08/leetcode/1523/"/>
-    <id>http://oj.roy4801.tw/2023/04/08/leetcode/1523/</id>
-    <published>2023-04-08T15:23:04.000Z</published>
-    <updated>2023-04-08T19:20:11.429Z</updated>
+    <link href="http://oj.roy4801.tw/2023/03/13/leetcode/1523/"/>
+    <id>http://oj.roy4801.tw/2023/03/13/leetcode/1523/</id>
+    <published>2023-03-13T15:23:04.000Z</published>
+    <updated>2023-04-08T19:26:05.471Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -44,6 +44,8 @@
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="math" scheme="http://oj.roy4801.tw/tags/math/"/>
     
   </entry>
   
