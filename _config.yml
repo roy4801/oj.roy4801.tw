@@ -147,7 +147,7 @@ sitemap:
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:roy4801/hexo-theme-landscape.git
+  repo: git@github.com:roy4801/oj.roy4801.tw.git
   token: $OJ_BLOG_GITHUB_TOKEN
   name: roy4801
   email: a82611141@gmail.com
