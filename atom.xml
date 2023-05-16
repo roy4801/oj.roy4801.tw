@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-04-08T19:26:05.471Z</updated>
+  <updated>2023-05-16T15:00:07.806Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,191 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 59 - Spiral Matrix II</title>
+    <link href="http://oj.roy4801.tw/2023/05/10/leetcode/59/"/>
+    <id>http://oj.roy4801.tw/2023/05/10/leetcode/59/</id>
+    <published>2023-05-10T11:47:37.000Z</published>
+    <updated>2023-05-16T15:00:07.806Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/spiral-matrix-ii/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個 $n \times n$ 的矩陣，要你按照螺旋順序填數字並回傳&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le n \le 20$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="array" scheme="http://oj.roy4801.tw/tags/array/"/>
+    
+    <category term="simulation" scheme="http://oj.roy4801.tw/tags/simulation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 54 - Spiral Matrix</title>
+    <link href="http://oj.roy4801.tw/2023/05/09/leetcode/54/"/>
+    <id>http://oj.roy4801.tw/2023/05/09/leetcode/54/</id>
+    <published>2023-05-09T15:22:04.000Z</published>
+    <updated>2023-05-16T15:00:07.805Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/spiral-matrix/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://assets.leetcode.com/uploads/2020/11/13/spiral1.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;給你一個 $n \cross m$ 的矩陣，要你以迴旋順序回傳&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le m, n \le 10$&lt;/li&gt;
+&lt;li&gt;$-100 \le M[i] \le 100$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="array" scheme="http://oj.roy4801.tw/tags/array/"/>
+    
+    <category term="simulation" scheme="http://oj.roy4801.tw/tags/simulation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1572 - Matrix Diagonal Sum</title>
+    <link href="http://oj.roy4801.tw/2023/05/08/leetcode/1572/"/>
+    <id>http://oj.roy4801.tw/2023/05/08/leetcode/1572/</id>
+    <published>2023-05-08T01:09:26.000Z</published>
+    <updated>2023-05-09T15:21:38.347Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/matrix-diagonal-sum/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://assets.leetcode.com/uploads/2020/08/14/sample_1911.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;給你一個矩陣 &lt;code&gt;mat&lt;/code&gt; 要你回傳對角的總和，重複的只要加一次就好&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le n \le 100$&lt;/li&gt;
+&lt;li&gt;$mat = nxn$&lt;/li&gt;
+&lt;li&gt;$1 \le mat[i][j] \le 100$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1456 - Maximum Number of Vowels in a Substring of Given Length</title>
+    <link href="http://oj.roy4801.tw/2023/05/05/leetcode/1456/"/>
+    <id>http://oj.roy4801.tw/2023/05/05/leetcode/1456/</id>
+    <published>2023-05-05T13:19:47.000Z</published>
+    <updated>2023-05-09T15:21:38.347Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個字串 &lt;code&gt;s&lt;/code&gt; 和一個正整數 &lt;code&gt;k&lt;/code&gt; ，問你 &lt;code&gt;s&lt;/code&gt; 的長度 &lt;code&gt;k&lt;/code&gt; 的所有子字串中，其中母音的數量最大是多少？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le s, k \le 10^5$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="sliding window" scheme="http://oj.roy4801.tw/tags/sliding-window/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 2215 - Find the Difference of Two Arrays</title>
+    <link href="http://oj.roy4801.tw/2023/05/03/leetcode/2215/"/>
+    <id>http://oj.roy4801.tw/2023/05/03/leetcode/2215/</id>
+    <published>2023-05-03T12:30:30.000Z</published>
+    <updated>2023-05-09T15:21:38.348Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-the-difference-of-two-arrays/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你兩個 array &lt;code&gt;nums1&lt;/code&gt;, &lt;code&gt;nums2&lt;/code&gt;，要你回傳長度 2 的 &lt;code&gt;vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt;&lt;/code&gt; 答案陣列&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ans[0]&lt;/code&gt; 是 &lt;code&gt;nums1&lt;/code&gt; 中&lt;strong&gt;不重複&lt;/strong&gt;且沒出現在 &lt;code&gt;nums2&lt;/code&gt; 中的數字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ans[1]&lt;/code&gt; 是 &lt;code&gt;nums2&lt;/code&gt; 中&lt;strong&gt;不重複&lt;/strong&gt;且沒出現在 &lt;code&gt;nums1&lt;/code&gt; 中的數字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;測資限制：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 1523 - Count Odd Numbers in an Interval Range</title>
@@ -2608,7 +2793,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2022/02/16/leetcode/24/"/>
     <id>http://oj.roy4801.tw/2022/02/16/leetcode/24/</id>
     <published>2022-02-16T07:31:32.000Z</published>
-    <updated>2022-12-30T13:39:04.848Z</updated>
+    <updated>2023-05-16T15:10:42.288Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/swap-nodes-in-pairs/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
