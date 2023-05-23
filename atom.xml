@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-05-16T15:14:00.220Z</updated>
+  <updated>2023-05-23T14:05:49.845Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,160 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 703 - Kth Largest Element in a Stream</title>
+    <link href="http://oj.roy4801.tw/2023/05/23/leetcode/703/"/>
+    <id>http://oj.roy4801.tw/2023/05/23/leetcode/703/</id>
+    <published>2023-05-23T13:13:10.000Z</published>
+    <updated>2023-05-23T14:05:49.845Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/kth-largest-element-in-a-stream/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;問你能不能設計一個 class 來在一個 stream 中找到第 &lt;code&gt;k&lt;/code&gt; 大的元素。&lt;/p&gt;
+&lt;p&gt;你要實作兩個 function:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;KthLargest(int k, int[] nums)&lt;/code&gt; ctor 用來初始化 &lt;code&gt;k&lt;/code&gt; 和一開始的數字 &lt;code&gt;nums&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int add(int val)&lt;/code&gt; 將 &lt;code&gt;val&lt;/code&gt; 加到資料中，你的 class 應能維護現在第 &lt;code&gt;k&lt;/code&gt; 大的數字並回傳&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="priority queue" scheme="http://oj.roy4801.tw/tags/priority-queue/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="Design" scheme="http://oj.roy4801.tw/tags/Design/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 347 - Top K Frequent Elements</title>
+    <link href="http://oj.roy4801.tw/2023/05/22/leetcode/347/"/>
+    <id>http://oj.roy4801.tw/2023/05/22/leetcode/347/</id>
+    <published>2023-05-22T09:05:49.000Z</published>
+    <updated>2023-05-23T13:57:25.215Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/top-k-frequent-elements/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個整數陣列 &lt;code&gt;nums&lt;/code&gt; 和整數 &lt;code&gt;k&lt;/code&gt; ，要你回傳前 &lt;code&gt;k&lt;/code&gt; 多出現次數的數字，回傳任意順序即可&lt;/p&gt;
+&lt;p&gt;follow-up: 請實作時間複雜度在 $O(n\log{n})$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le N \le 10^5$ (&lt;code&gt;N=nums.size()&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;$-10^4 \le N[i] \le 10^4$&lt;/li&gt;
+&lt;li&gt;$1 \le k \le N$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 399 - Evaluate Division</title>
+    <link href="http://oj.roy4801.tw/2023/05/20/leetcode/399/"/>
+    <id>http://oj.roy4801.tw/2023/05/20/leetcode/399/</id>
+    <published>2023-05-20T10:22:15.000Z</published>
+    <updated>2023-05-20T13:03:23.889Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/evaluate-division/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個 string 陣列 &lt;code&gt;equations&lt;/code&gt; 和 double 陣列 &lt;code&gt;value&lt;/code&gt;，其中 &lt;code&gt;equations[i] = &amp;#123;A_i, B_i&amp;#125;&lt;/code&gt; 和 &lt;code&gt;values[i]&lt;/code&gt; 代表 &lt;code&gt;A_i / B_i = values[i]&lt;/code&gt;&lt;br&gt;
+接著給你 &lt;code&gt;query&lt;/code&gt; 陣列，其中 &lt;code&gt;query[j] = &amp;#123;C_j, D_j&amp;#125;&lt;/code&gt; 代表要查詢 &lt;code&gt;C_j / D_j&lt;/code&gt; 是多少?&lt;br&gt;
+你要寫程式計算回傳所有的答案，如果答案找不到則回傳 &lt;code&gt;-1.0&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$1 \le \text{len(equations)} = \text{len(values)} \le 20$&lt;/li&gt;
+&lt;li&gt;$0.0 \le values[i] \le 20.0$&lt;/li&gt;
+&lt;li&gt;$1 \le \text{len(queries)} \le 20$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="dfs" scheme="http://oj.roy4801.tw/tags/dfs/"/>
+    
+    <category term="graph" scheme="http://oj.roy4801.tw/tags/graph/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 2130 - Maximum Twin Sum of a Linked List</title>
+    <link href="http://oj.roy4801.tw/2023/05/17/leetcode/2130/"/>
+    <id>http://oj.roy4801.tw/2023/05/17/leetcode/2130/</id>
+    <published>2023-05-17T12:02:38.000Z</published>
+    <updated>2023-05-20T12:27:18.560Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://assets.leetcode.com/uploads/2021/12/03/eg1drawio.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;給你一個 linked-list 有 &lt;code&gt;n&lt;/code&gt; 個點，切一半兩兩配對相加，問你相加最大多少？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:
+&lt;ul&gt;
+&lt;li&gt;$n$ is even number&lt;/li&gt;
+&lt;li&gt;$2 \le n \le 10^5$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="linked list" scheme="http://oj.roy4801.tw/tags/linked-list/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 59 - Spiral Matrix II</title>
