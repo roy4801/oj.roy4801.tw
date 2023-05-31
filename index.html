@@ -92,6 +92,256 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/1396" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/31/leetcode/1396/" class="article-date">
+  <time class="dt-published" datetime="2023-05-31T13:07:08.000Z" itemprop="datePublished">2023-05-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/31/leetcode/1396/">Leetcode 1396 - Design Underground System</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/design-underground-system/description/">題目</a></p>
+<h1>Problem</h1>
+<p>問你能不能實作一個地鐵乘客系統，紀錄乘客上、下車時間，並可以用來統計站與站之間的平均搭乘時間。</p>
+<ul>
+<li><code>void checkIn(int id, string stationName, int t)</code>
+<ul>
+<li>乘客 <code>id</code> 在時間 <code>t</code> 在 <code>stationName</code> 上車</li>
+</ul>
+</li>
+<li><code>void checkOut(int id, string stationName, int t)</code>
+<ul>
+<li>乘客 <code>id</code> 在時間 <code>t</code> 在 <code>stationName</code> 下車</li>
+</ul>
+</li>
+<li><code>double getAverageTime(string startStation, string endStation)</code>
+<ul>
+<li>回傳從 <code>startStation</code> 到 <code>endStation</code> 的平均搭乘時間</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>從 <code>start</code> 到 <code>end</code> 與 <code>end</code> 到 <code>start</code> 的時間可能不同</li>
+<li>在 <code>getAverageTime()</code> 呼叫前一定至少會有一組 <code>start</code> 與 <code>end</code></li>
+<li>成對的 <code>checkIn</code> 與 <code>checkOut</code> 才會被算進平均時間中</li>
+</ol>
+        
+          <p class="article-more-link">
+            <a href="/2023/05/31/leetcode/1396/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2023/05/31/leetcode/1396/" data-id="clibrmdp80000b4u9h5li8s4a" data-title="Leetcode 1396 - Design Underground System" class="article-share-link">Share</a>
+      
+        <a href="http://oj.roy4801.tw/2023/05/31/leetcode/1396/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-leetcode/1603" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/29/leetcode/1603/" class="article-date">
+  <time class="dt-published" datetime="2023-05-29T01:04:53.000Z" itemprop="datePublished">2023-05-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/29/leetcode/1603/">Leetcode 1603 - Design Parking System</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/design-parking-system/description/">題目</a></p>
+<h1>Problem</h1>
+<p>要你實作一個 class 叫做 <code>ParkingSystem</code> 代表個停車場，可以停三種大小的車：大、中、小，並有個 function 可以把車停入<br>
+如果停得進去則回傳 <code>true</code> 反之回傳 <code>false</code>。</p>
+<ul>
+<li><code>ParkingSystem(int big, int medium, int small)</code>: 大、中、小車位數量</li>
+<li><code>bool addCar(int carType)</code>: 停車，<code>carType</code> 代表車子大小: 大1, 中2, 小3</li>
+</ul>
+<h2 id="測資限制">測資限制</h2>
+        
+          <p class="article-more-link">
+            <a href="/2023/05/29/leetcode/1603/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2023/05/29/leetcode/1603/" data-id="clibrmdpd0003b4u9gm59bwso" data-title="Leetcode 1603 - Design Parking System" class="article-share-link">Share</a>
+      
+        <a href="http://oj.roy4801.tw/2023/05/29/leetcode/1603/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Design/" rel="tag">Design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/simulation/" rel="tag">simulation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-leetcode/1547" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/28/leetcode/1547/" class="article-date">
+  <time class="dt-published" datetime="2023-05-28T10:32:45.000Z" itemprop="datePublished">2023-05-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/">Hard</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/28/leetcode/1547/">Leetcode 1547 - Minimum Cost to Cut a Stick</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/">題目</a></p>
+<h1>Problem</h1>
+<p><img src="https://assets.leetcode.com/uploads/2020/07/21/statement.jpg" alt></p>
+<p>給你一個長度 <code>n</code> 的木棍，從 <code>0</code> 到 <code>n</code> ，接著給你一個整數陣列 <code>cuts</code> 其中 <code>cuts[i]</code> 代表要切的位置，你可以按照任何順序切割木棍<br>
+每次切割花費<strong>被切割木棍長度</strong>的費用 (e.g. 長度 5 的木棍，在 3 切一刀，花 5 點，得到 3, 2 長度的木棍)，問你切割完所有 <code>cuts[i]</code> <strong>最小的花費</strong>是多少?</p>
+<h2 id="測資限制">測資限制</h2>
+        
+          <p class="article-more-link">
+            <a href="/2023/05/28/leetcode/1547/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2023/05/28/leetcode/1547/" data-id="clibrmdpb0001b4u96tvvceu5" data-title="Leetcode 1547 - Minimum Cost to Cut a Stick" class="article-share-link">Share</a>
+      
+        <a href="http://oj.roy4801.tw/2023/05/28/leetcode/1547/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-leetcode/2542" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/24/leetcode/2542/" class="article-date">
+  <time class="dt-published" datetime="2023-05-24T14:17:38.000Z" itemprop="datePublished">2023-05-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/24/leetcode/2542/">Leetcode 2542 - Maximum Subsequence Score</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/maximum-subsequence-score/description/">題目</a></p>
+<h1>Problem</h1>
+<ul>
+<li>測資限制:</li>
+</ul>
+<h1>想法</h1>
+<ul>
+<li>時間複雜度: $\mathcal{O}()$</li>
+<li>空間複雜度: $\mathcal{O}()$</li>
+</ul>
+        
+          <p class="article-more-link">
+            <a href="/2023/05/24/leetcode/2542/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2023/05/24/leetcode/2542/" data-id="clibrmdpe0005b4u946zubf60" data-title="Leetcode 2542 - Maximum Subsequence Score" class="article-share-link">Share</a>
+      
+        <a href="http://oj.roy4801.tw/2023/05/24/leetcode/2542/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/703" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/05/23/leetcode/703/" class="article-date">
@@ -463,250 +713,11 @@
 
 
   
-    <article id="post-leetcode/1572" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/05/08/leetcode/1572/" class="article-date">
-  <time class="dt-published" datetime="2023-05-08T01:09:26.000Z" itemprop="datePublished">2023-05-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/05/08/leetcode/1572/">Leetcode 1572 - Matrix Diagonal Sum</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/matrix-diagonal-sum/description/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://assets.leetcode.com/uploads/2020/08/14/sample_1911.png" alt></p>
-<p>給你一個矩陣 <code>mat</code> 要你回傳對角的總和，重複的只要加一次就好</p>
-<ul>
-<li>測資限制:
-<ul>
-<li>$1 \le n \le 100$</li>
-<li>$mat = nxn$</li>
-<li>$1 \le mat[i][j] \le 100$</li>
-</ul>
-</li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2023/05/08/leetcode/1572/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/05/08/leetcode/1572/" data-id="clhqevfvs0000ncu9aj9w8eul" data-title="Leetcode 1572 - Matrix Diagonal Sum" class="article-share-link">Share</a>
-      
-        <a href="http://oj.roy4801.tw/2023/05/08/leetcode/1572/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/1456" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/05/05/leetcode/1456/" class="article-date">
-  <time class="dt-published" datetime="2023-05-05T13:19:47.000Z" itemprop="datePublished">2023-05-05</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/05/05/leetcode/1456/">Leetcode 1456 - Maximum Number of Vowels in a Substring of Given Length</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/">題目</a></p>
-<h1>Problem</h1>
-<p>給你一個字串 <code>s</code> 和一個正整數 <code>k</code> ，問你 <code>s</code> 的長度 <code>k</code> 的所有子字串中，其中母音的數量最大是多少？</p>
-<ul>
-<li>測資限制:
-<ul>
-<li>$1 \le s, k \le 10^5$</li>
-</ul>
-</li>
-</ul>
-<h1>想法</h1>
-        
-          <p class="article-more-link">
-            <a href="/2023/05/05/leetcode/1456/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/05/05/leetcode/1456/" data-id="clhqevfvw0001ncu98zbjam6h" data-title="Leetcode 1456 - Maximum Number of Vowels in a Substring of Given Length" class="article-share-link">Share</a>
-      
-        <a href="http://oj.roy4801.tw/2023/05/05/leetcode/1456/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sliding-window/" rel="tag">sliding window</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/2215" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/05/03/leetcode/2215/" class="article-date">
-  <time class="dt-published" datetime="2023-05-03T12:30:30.000Z" itemprop="datePublished">2023-05-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/05/03/leetcode/2215/">Leetcode 2215 - Find the Difference of Two Arrays</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-the-difference-of-two-arrays/description/">題目</a></p>
-<h1>Problem</h1>
-<p>給你兩個 array <code>nums1</code>, <code>nums2</code>，要你回傳長度 2 的 <code>vector&lt;vector&lt;int&gt;&gt;</code> 答案陣列</p>
-<ul>
-<li><code>ans[0]</code> 是 <code>nums1</code> 中<strong>不重複</strong>且沒出現在 <code>nums2</code> 中的數字</li>
-<li><code>ans[1]</code> 是 <code>nums2</code> 中<strong>不重複</strong>且沒出現在 <code>nums1</code> 中的數字</li>
-</ul>
-<p>測資限制：</p>
-        
-          <p class="article-more-link">
-            <a href="/2023/05/03/leetcode/2215/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/05/03/leetcode/2215/" data-id="clhqevfvz0003ncu9cms8f1r7" data-title="Leetcode 2215 - Find the Difference of Two Arrays" class="article-share-link">Share</a>
-      
-        <a href="http://oj.roy4801.tw/2023/05/03/leetcode/2215/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/1523" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/13/leetcode/1523/" class="article-date">
-  <time class="dt-published" datetime="2023-03-13T15:23:04.000Z" itemprop="datePublished">2023-03-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/03/13/leetcode/1523/">Leetcode 1523 - Count Odd Numbers in an Interval Range</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/count-odd-numbers-in-an-interval-range">題目</a></p>
-<h1>Problem</h1>
-<p>給你兩個非負整數 <code>low</code>, <code>high</code> 問你介於兩者之間的奇數有多少個(包含)</p>
-<ul>
-<li>測資限制: $0 \le low \le high \le 10^9$</li>
-</ul>
-<h1>想法</h1>
-        
-          <p class="article-more-link">
-            <a href="/2023/03/13/leetcode/1523/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/03/13/leetcode/1523/" data-id="clg8d16ps0000hsu9fu2g9nfi" data-title="Leetcode 1523 - Count Odd Numbers in an Interval Range" class="article-share-link">Share</a>
-      
-        <a href="http://oj.roy4801.tw/2023/03/13/leetcode/1523/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/math/" rel="tag">math</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -737,7 +748,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 10.91px;">Bit Manipulation</a> <a href="/tags/DP/" style="font-size: 16.36px;">DP</a> <a href="/tags/Design/" style="font-size: 10px;">Design</a> <a href="/tags/LCS/" style="font-size: 10px;">LCS</a> <a href="/tags/Leetcode/" style="font-size: 19.09px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 18.18px;">Uva</a> <a href="/tags/array/" style="font-size: 12.73px;">array</a> <a href="/tags/backtracking/" style="font-size: 13.64px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 10.91px;">binary search</a> <a href="/tags/bitwise-%E6%9E%9A%E8%88%89/" style="font-size: 10px;">bitwise 枚舉</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 16.36px;">dfs</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/disjoint-set/" style="font-size: 10.91px;">disjoint set</a> <a href="/tags/graph/" style="font-size: 14.55px;">graph</a> <a href="/tags/greedy/" style="font-size: 17.27px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 12.73px;">hashmap</a> <a href="/tags/linked-list/" style="font-size: 11.82px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/monotonic-stack/" style="font-size: 10.91px;">monotonic stack</a> <a href="/tags/ordered-set/" style="font-size: 10px;">ordered set</a> <a href="/tags/priority-queue/" style="font-size: 13.64px;">priority queue</a> <a href="/tags/simulation/" style="font-size: 10.91px;">simulation</a> <a href="/tags/sliding-window/" style="font-size: 11.82px;">sliding window</a> <a href="/tags/sorting/" style="font-size: 10.91px;">sorting</a> <a href="/tags/stack/" style="font-size: 11.82px;">stack</a> <a href="/tags/string/" style="font-size: 15.45px;">string</a> <a href="/tags/%E4%BA%8C%E5%88%86%E5%9C%96/" style="font-size: 10px;">二分圖</a> <a href="/tags/%E6%9A%B4%E6%90%9C/" style="font-size: 10px;">暴搜</a> <a href="/tags/%E8%83%8C%E5%8C%85/" style="font-size: 10px;">背包</a> <a href="/tags/%E8%91%97%E8%89%B2%E5%95%8F%E9%A1%8C/" style="font-size: 10px;">著色問題</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 13.64px;">雙指標</a>
+      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 10px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 10.91px;">Bit Manipulation</a> <a href="/tags/DP/" style="font-size: 16.36px;">DP</a> <a href="/tags/Design/" style="font-size: 10.91px;">Design</a> <a href="/tags/LCS/" style="font-size: 10px;">LCS</a> <a href="/tags/Leetcode/" style="font-size: 19.09px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 18.18px;">Uva</a> <a href="/tags/array/" style="font-size: 12.73px;">array</a> <a href="/tags/backtracking/" style="font-size: 13.64px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 10px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 10.91px;">binary search</a> <a href="/tags/bitwise-%E6%9E%9A%E8%88%89/" style="font-size: 10px;">bitwise 枚舉</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/dfs/" style="font-size: 16.36px;">dfs</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/disjoint-set/" style="font-size: 10.91px;">disjoint set</a> <a href="/tags/graph/" style="font-size: 14.55px;">graph</a> <a href="/tags/greedy/" style="font-size: 17.27px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 12.73px;">hashmap</a> <a href="/tags/linked-list/" style="font-size: 11.82px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/math/" style="font-size: 10px;">math</a> <a href="/tags/monotonic-stack/" style="font-size: 10.91px;">monotonic stack</a> <a href="/tags/ordered-set/" style="font-size: 10px;">ordered set</a> <a href="/tags/priority-queue/" style="font-size: 13.64px;">priority queue</a> <a href="/tags/simulation/" style="font-size: 11.82px;">simulation</a> <a href="/tags/sliding-window/" style="font-size: 11.82px;">sliding window</a> <a href="/tags/sorting/" style="font-size: 10.91px;">sorting</a> <a href="/tags/stack/" style="font-size: 11.82px;">stack</a> <a href="/tags/string/" style="font-size: 15.45px;">string</a> <a href="/tags/%E4%BA%8C%E5%88%86%E5%9C%96/" style="font-size: 10px;">二分圖</a> <a href="/tags/%E6%9A%B4%E6%90%9C/" style="font-size: 10px;">暴搜</a> <a href="/tags/%E8%83%8C%E5%8C%85/" style="font-size: 10px;">背包</a> <a href="/tags/%E8%91%97%E8%89%B2%E5%95%8F%E9%A1%8C/" style="font-size: 10px;">著色問題</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 13.64px;">雙指標</a>
     </div>
   </div>
 
@@ -759,23 +770,23 @@
       <ul>
         
           <li>
+            <a href="/2023/05/31/leetcode/1396/">Leetcode 1396 - Design Underground System</a>
+          </li>
+        
+          <li>
+            <a href="/2023/05/29/leetcode/1603/">Leetcode 1603 - Design Parking System</a>
+          </li>
+        
+          <li>
+            <a href="/2023/05/28/leetcode/1547/">Leetcode 1547 - Minimum Cost to Cut a Stick</a>
+          </li>
+        
+          <li>
+            <a href="/2023/05/24/leetcode/2542/">Leetcode 2542 - Maximum Subsequence Score</a>
+          </li>
+        
+          <li>
             <a href="/2023/05/23/leetcode/703/">Leetcode 703 - Kth Largest Element in a Stream</a>
-          </li>
-        
-          <li>
-            <a href="/2023/05/22/leetcode/347/">Leetcode 347 - Top K Frequent Elements</a>
-          </li>
-        
-          <li>
-            <a href="/2023/05/20/leetcode/399/">Leetcode 399 - Evaluate Division</a>
-          </li>
-        
-          <li>
-            <a href="/2023/05/17/leetcode/2130/">Leetcode 2130 - Maximum Twin Sum of a Linked List</a>
-          </li>
-        
-          <li>
-            <a href="/2023/05/10/leetcode/59/">Leetcode 59 - Spiral Matrix II</a>
           </li>
         
       </ul>

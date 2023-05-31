@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-05-23T14:05:49.845Z</updated>
+  <updated>2023-05-31T13:50:15.849Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,156 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1396 - Design Underground System</title>
+    <link href="http://oj.roy4801.tw/2023/05/31/leetcode/1396/"/>
+    <id>http://oj.roy4801.tw/2023/05/31/leetcode/1396/</id>
+    <published>2023-05-31T13:07:08.000Z</published>
+    <updated>2023-05-31T13:50:15.849Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/design-underground-system/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;問你能不能實作一個地鐵乘客系統，紀錄乘客上、下車時間，並可以用來統計站與站之間的平均搭乘時間。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;void checkIn(int id, string stationName, int t)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;乘客 &lt;code&gt;id&lt;/code&gt; 在時間 &lt;code&gt;t&lt;/code&gt; 在 &lt;code&gt;stationName&lt;/code&gt; 上車&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void checkOut(int id, string stationName, int t)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;乘客 &lt;code&gt;id&lt;/code&gt; 在時間 &lt;code&gt;t&lt;/code&gt; 在 &lt;code&gt;stationName&lt;/code&gt; 下車&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;double getAverageTime(string startStation, string endStation)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;回傳從 &lt;code&gt;startStation&lt;/code&gt; 到 &lt;code&gt;endStation&lt;/code&gt; 的平均搭乘時間&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;從 &lt;code&gt;start&lt;/code&gt; 到 &lt;code&gt;end&lt;/code&gt; 與 &lt;code&gt;end&lt;/code&gt; 到 &lt;code&gt;start&lt;/code&gt; 的時間可能不同&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;getAverageTime()&lt;/code&gt; 呼叫前一定至少會有一組 &lt;code&gt;start&lt;/code&gt; 與 &lt;code&gt;end&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;成對的 &lt;code&gt;checkIn&lt;/code&gt; 與 &lt;code&gt;checkOut&lt;/code&gt; 才會被算進平均時間中&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1603 - Design Parking System</title>
+    <link href="http://oj.roy4801.tw/2023/05/29/leetcode/1603/"/>
+    <id>http://oj.roy4801.tw/2023/05/29/leetcode/1603/</id>
+    <published>2023-05-29T01:04:53.000Z</published>
+    <updated>2023-05-31T13:50:40.833Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/design-parking-system/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;要你實作一個 class 叫做 &lt;code&gt;ParkingSystem&lt;/code&gt; 代表個停車場，可以停三種大小的車：大、中、小，並有個 function 可以把車停入&lt;br&gt;
+如果停得進去則回傳 &lt;code&gt;true&lt;/code&gt; 反之回傳 &lt;code&gt;false&lt;/code&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ParkingSystem(int big, int medium, int small)&lt;/code&gt;: 大、中、小車位數量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bool addCar(int carType)&lt;/code&gt;: 停車，&lt;code&gt;carType&lt;/code&gt; 代表車子大小: 大1, 中2, 小3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;測資限制&quot;&gt;測資限制&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="simulation" scheme="http://oj.roy4801.tw/tags/simulation/"/>
+    
+    <category term="Design" scheme="http://oj.roy4801.tw/tags/Design/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1547 - Minimum Cost to Cut a Stick</title>
+    <link href="http://oj.roy4801.tw/2023/05/28/leetcode/1547/"/>
+    <id>http://oj.roy4801.tw/2023/05/28/leetcode/1547/</id>
+    <published>2023-05-28T10:32:45.000Z</published>
+    <updated>2023-05-29T15:51:28.141Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://assets.leetcode.com/uploads/2020/07/21/statement.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;給你一個長度 &lt;code&gt;n&lt;/code&gt; 的木棍，從 &lt;code&gt;0&lt;/code&gt; 到 &lt;code&gt;n&lt;/code&gt; ，接著給你一個整數陣列 &lt;code&gt;cuts&lt;/code&gt; 其中 &lt;code&gt;cuts[i]&lt;/code&gt; 代表要切的位置，你可以按照任何順序切割木棍&lt;br&gt;
+每次切割花費&lt;strong&gt;被切割木棍長度&lt;/strong&gt;的費用 (e.g. 長度 5 的木棍，在 3 切一刀，花 5 點，得到 3, 2 長度的木棍)，問你切割完所有 &lt;code&gt;cuts[i]&lt;/code&gt; &lt;strong&gt;最小的花費&lt;/strong&gt;是多少?&lt;/p&gt;
+&lt;h2 id=&quot;測資限制&quot;&gt;測資限制&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Hard" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Hard/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 2542 - Maximum Subsequence Score</title>
+    <link href="http://oj.roy4801.tw/2023/05/24/leetcode/2542/"/>
+    <id>http://oj.roy4801.tw/2023/05/24/leetcode/2542/</id>
+    <published>2023-05-24T14:17:38.000Z</published>
+    <updated>2023-05-24T14:18:20.106Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-subsequence-score/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;測資限制:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;想法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;時間複雜度: $\mathcal{O}()$&lt;/li&gt;
+&lt;li&gt;空間複雜度: $\mathcal{O}()$&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 703 - Kth Largest Element in a Stream</title>
