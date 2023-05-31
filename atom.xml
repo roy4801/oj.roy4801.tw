@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-05-31T13:50:15.849Z</updated>
+  <updated>2023-05-31T13:51:45.512Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://oj.roy4801.tw/2023/05/31/leetcode/1396/"/>
     <id>http://oj.roy4801.tw/2023/05/31/leetcode/1396/</id>
     <published>2023-05-31T13:07:08.000Z</published>
-    <updated>2023-05-31T13:50:15.849Z</updated>
+    <updated>2023-05-31T13:51:45.512Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/design-underground-system/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -62,6 +62,8 @@
     <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
     
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="hashmap" scheme="http://oj.roy4801.tw/tags/hashmap/"/>
     
   </entry>
   
