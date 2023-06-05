@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-06-05T13:26:29.233Z</updated>
+  <updated>2023-06-05T15:44:19.574Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 2101 - Detonate the Maximum Bombs</title>
+    <link href="http://oj.roy4801.tw/2023/06/05/leetcode/2101/"/>
+    <id>http://oj.roy4801.tw/2023/06/05/leetcode/2101/</id>
+    <published>2023-06-05T15:26:08.000Z</published>
+    <updated>2023-06-05T15:44:19.574Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/detonate-the-maximum-bombs/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://assets.leetcode.com/uploads/2021/11/06/desmos-eg-3.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;給你 $n$ 個炸彈， &lt;code&gt;bomb[i] = (x, y, r)&lt;/code&gt;，你可以選擇一枚炸彈引爆，爆炸後在範圍內的炸彈會產生連鎖反應，問你最多一次能炸幾枚炸彈?&lt;/p&gt;
+&lt;h2 id=&quot;測資限制&quot;&gt;測資限制&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="graph" scheme="http://oj.roy4801.tw/tags/graph/"/>
+    
+    <category term="BFS" scheme="http://oj.roy4801.tw/tags/BFS/"/>
+    
+    <category term="geometry" scheme="http://oj.roy4801.tw/tags/geometry/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 1232 - Check If It Is a Straight Line</title>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://oj.roy4801.tw/2023/06/05/leetcode/2101/</loc>
+    
+    <lastmod>2023-06-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://oj.roy4801.tw/2023/06/05/leetcode/1232/</loc>
     
     <lastmod>2023-06-05</lastmod>
@@ -1076,6 +1083,13 @@
   
   <url>
     <loc>http://oj.roy4801.tw/tags/Design/</loc>
+    <lastmod>2023-06-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://oj.roy4801.tw/tags/geometry/</loc>
     <lastmod>2023-06-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
