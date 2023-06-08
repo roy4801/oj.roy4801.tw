@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-06-05T15:44:19.574Z</updated>
+  <updated>2023-06-08T18:05:12.011Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 1351 - Count Negative Numbers in a Sorted Matrix</title>
+    <link href="http://oj.roy4801.tw/2023/06/09/leetcode/1351/"/>
+    <id>http://oj.roy4801.tw/2023/06/09/leetcode/1351/</id>
+    <published>2023-06-08T17:13:53.000Z</published>
+    <updated>2023-06-08T18:05:12.011Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個 &lt;code&gt;mxn&lt;/code&gt; 的二維陣列，每列是遞減排序(non-increasing order)，要你會傳總共有幾個負整數?&lt;/p&gt;
+&lt;h2 id=&quot;測資限制&quot;&gt;測資限制&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 \le m,n \le 100$&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="binary search" scheme="http://oj.roy4801.tw/tags/binary-search/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 2101 - Detonate the Maximum Bombs</title>
