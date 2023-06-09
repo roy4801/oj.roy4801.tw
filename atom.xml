@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-06-08T18:05:12.011Z</updated>
+  <updated>2023-06-09T17:08:32.113Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Leetcode 744 - Find Smallest Letter Greater Than Target</title>
+    <link href="http://oj.roy4801.tw/2023/06/10/leetcode/744/"/>
+    <id>http://oj.roy4801.tw/2023/06/10/leetcode/744/</id>
+    <published>2023-06-09T17:01:32.000Z</published>
+    <updated>2023-06-09T17:08:32.113Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你 $n$ 個遞增排序的字元，要你找第一個大於 &lt;code&gt;target&lt;/code&gt; 的字元是啥&lt;/p&gt;
+&lt;h2 id=&quot;測資限制&quot;&gt;測資限制&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$2 \le n \le 10^4$&lt;/li&gt;
+&lt;li&gt;字元都是小寫、遞增排序&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="binary search" scheme="http://oj.roy4801.tw/tags/binary-search/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode 1351 - Count Negative Numbers in a Sorted Matrix</title>
@@ -46,6 +80,73 @@
     <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
     
     <category term="binary search" scheme="http://oj.roy4801.tw/tags/binary-search/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1318 - Minimum Flips to Make a OR b Equal to c</title>
+    <link href="http://oj.roy4801.tw/2023/06/07/leetcode/1318/"/>
+    <id>http://oj.roy4801.tw/2023/06/07/leetcode/1318/</id>
+    <published>2023-06-07T11:23:15.000Z</published>
+    <updated>2023-06-09T17:10:41.923Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你三個正整數 &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;c&lt;/code&gt;，問你最少 flip &lt;code&gt;a&lt;/code&gt; 或 &lt;code&gt;b&lt;/code&gt; 幾次，使得 &lt;code&gt;a or b == c&lt;/code&gt;？&lt;/p&gt;
+&lt;h2 id=&quot;測資限制&quot;&gt;測資限制&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 \le a, b, c \le 10^9$&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="Bit Manipulation" scheme="http://oj.roy4801.tw/tags/Bit-Manipulation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Leetcode 1502 - Can Make Arithmetic Progression From Sequence</title>
+    <link href="http://oj.roy4801.tw/2023/06/06/leetcode/1502/"/>
+    <id>http://oj.roy4801.tw/2023/06/06/leetcode/1502/</id>
+    <published>2023-06-06T12:26:48.000Z</published>
+    <updated>2023-06-09T17:10:41.924Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem&lt;/h1&gt;
+&lt;p&gt;給你一個陣列 &lt;code&gt;arr&lt;/code&gt; 問你陣列相連的元素相減是否都是一樣&lt;/p&gt;
+&lt;h2 id=&quot;測資限制&quot;&gt;測資限制&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$2 \le n \le 1000$&lt;/li&gt;
+&lt;li&gt;$-10^6 \le arr[i] \le 10^6$&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Easy" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="array" scheme="http://oj.roy4801.tw/tags/array/"/>
     
   </entry>
   
