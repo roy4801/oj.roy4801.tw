@@ -25,7 +25,7 @@
 <meta property="og:description" content="題目 Problem 題目給你一個排序過的整數陣列，要你回傳覆蓋整個陣列的所有區間。 想法 掃一遍，檢查當前跟前一個是否只差一，如果是代表區間繼續；不是則輸出區間並更新目前區間左界。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-28T10:28:52.000Z">
-<meta property="article:modified_time" content="2022-12-30T14:20:37.875Z">
+<meta property="article:modified_time" content="2023-06-12T13:13:08.653Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -129,7 +129,15 @@
 <li>空間複雜度: $\mathcal{O}(N)$</li>
 </ul>
 <h1>AC Code</h1>
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F228.cpp%23L10-L41&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F228.cpp%23L10-L38&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<ul>
+<li>second try
+<ul>
+<li>寫成狀態機的形式，還比較複雜 orz</li>
+</ul>
+</li>
+</ul>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F228.cpp%23L40-L95&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 <h1>賞析</h1>
 <ul>
 <li>改成每次迴圈一定會找出一組區間，外面就不用奇怪的特判
