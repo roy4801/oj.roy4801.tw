@@ -92,6 +92,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/2212" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/21/leetcode/2212/" class="article-date">
+  <time class="dt-published" datetime="2022-03-21T16:34:59.000Z" itemprop="datePublished">2022-03-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/21/leetcode/2212/">Leetcode 2212 - Maximum Points in an Archery Competition</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/maximum-points-in-an-archery-competition/">題目</a></p>
+<h1>Problem</h1>
+<p>有 Alice 和 Bob 比賽射箭，每個人有 <code>numArrows</code> 支箭 ，一人各射 12 局，規則是: 如果第 $i$ 局的分數比另一個人大，$A_i \ge B_i$ 則 A 得到 $i$ 分。<br>
+今天 Alice 先射完了，他的結果是 <code>[aliceArrows_0, aliceArrows_11]</code> ，問你 Bob 的結果長怎樣，他的得分才會是最大的</p>
+<h1>想法</h1>
+<p>這題有兩種做法: 爆搜和 DP。<br>
+之所以可以爆搜是因為局數 只有 12 局，所以能在 $\mathcal{O}(2^12)$ 內做完，bitwise 枚舉也是一樣。DP 則是把箭數當重量、得分當價值的話，問題就變成了 0/1 背包 $\mathcal{O}(nm), n=\text{12}, m=10^5$</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/21/leetcode/2212/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2212/" data-id="clivryhco00491ho5bi4ngihd" data-title="Leetcode 2212 - Maximum Points in an Archery Competition" class="article-share-link">Share</a>
+      
+        <a href="http://oj.roy4801.tw/2022/03/21/leetcode/2212/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/" rel="tag">DP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/backtracking/" rel="tag">backtracking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bitwise-%E6%9E%9A%E8%88%89/" rel="tag">bitwise 枚舉</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9A%B4%E6%90%9C/" rel="tag">暴搜</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%83%8C%E5%8C%85/" rel="tag">背包</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/2211" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/21/leetcode/2211/" class="article-date">
@@ -131,7 +188,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2211/" data-id="cliugyup000461hop48br44p3" data-title="Leetcode 2211 - Count Collisions on a Road" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2211/" data-id="clivryhcl00461ho56ogle43t" data-title="Leetcode 2211 - Count Collisions on a Road" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/21/leetcode/2211/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -186,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/20/leetcode/895/" data-id="cliugyur900991hop83rv3fu8" data-title="Leetcode 895 - Maximum Frequency Stack" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/20/leetcode/895/" data-id="clivryhfd009c1ho54ble7ay8" data-title="Leetcode 895 - Maximum Frequency Stack" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/20/leetcode/895/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -241,7 +298,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/17/leetcode/946/" data-id="cliugyurf009m1hop5wszf2mi" data-title="Leetcode 946 - Validate Stack Sequences" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/17/leetcode/946/" data-id="clivryhfo009q1ho5gbnfdcke" data-title="Leetcode 946 - Validate Stack Sequences" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/17/leetcode/946/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -296,7 +353,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/35/" data-id="cliugyupt005t1hopcv4p2awe" data-title="Leetcode 35 - Search Insert Position" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/35/" data-id="clivryhdl005t1ho5gc9gh9c4" data-title="Leetcode 35 - Search Insert Position" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/15/leetcode/35/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -351,7 +408,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/1249/" data-id="cliugyun9000o1hop7s929exk" data-title="Leetcode 1249 - Minimum Remove to Make Valid Parentheses" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/1249/" data-id="clivryhab000o1ho5gyqacgt6" data-title="Leetcode 1249 - Minimum Remove to Make Valid Parentheses" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/15/leetcode/1249/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -410,7 +467,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2201/" data-id="cliugyuoy00411hop78zzgy52" data-title="Leetcode 2201 - Count Artifacts That Can Be Extracted" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2201/" data-id="clivryhci00411ho51orocho5" data-title="Leetcode 2201 - Count Artifacts That Can Be Extracted" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/14/leetcode/2201/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -470,7 +527,7 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2200/" data-id="cliugyuow003y1hophydc0u4s" data-title="Leetcode 2200 - Find All K-Distant Indices in an Array" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2200/" data-id="clivryhch003y1ho531v4cgjz" data-title="Leetcode 2200 - Find All K-Distant Indices in an Array" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/14/leetcode/2200/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -526,7 +583,7 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/12/leetcode/138/" data-id="cliugyunm001c1hopg2p39g06" data-title="Leetcode 138 - Copy List with Random Pointer" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/12/leetcode/138/" data-id="clivryhaw001c1ho5cj9n0zl7" data-title="Leetcode 138 - Copy List with Random Pointer" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/12/leetcode/138/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -581,71 +638,9 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/09/leetcode/141/" data-id="cliugyunq001i1hop2vwie02b" data-title="Leetcode 141 - Linked List Cycle" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/09/leetcode/141/" data-id="clivryhb0001i1ho5g8e70yd3" data-title="Leetcode 141 - Linked List Cycle" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/09/leetcode/141/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/2196" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/07/leetcode/2196/" class="article-date">
-  <time class="dt-published" datetime="2022-03-07T07:03:50.000Z" itemprop="datePublished">2022-03-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/03/07/leetcode/2196/">Leetcode 2196 - Create Binary Tree From Descriptions</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/create-binary-tree-from-descriptions/">題目</a></p>
-<h1>Problem</h1>
-<p>題目給你一堆邊 <code>edges = [parent, child, isLeft]</code> 要你回傳建出來的圖。<br>
-<code>isLeft==1</code> 代表 child 是 parent 的左子節點；反之 <code>isLeft==0</code>，代表 child 是 parent 的右子節點。</p>
-<ul>
-<li><code>E = edges</code></li>
-<li><code>1 &lt;= E.length &lt;= 104</code></li>
-<li><code>E[i].length == 3</code></li>
-<li><code>1 &lt;= parent, child &lt;= 105</code></li>
-<li><code>0 &lt;= isLeft &lt;= 1</code></li>
-</ul>
-<h1>想法</h1>
-        
-          <p class="article-more-link">
-            <a href="/2022/03/07/leetcode/2196/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/07/leetcode/2196/" data-id="cliugyuov003t1hop6s24elt1" data-title="Leetcode 2196 - Create Binary Tree From Descriptions" class="article-share-link">Share</a>
-      
-        <a href="http://oj.roy4801.tw/2022/03/07/leetcode/2196/#disqus_thread" class="article-comment-link">Comments</a>
       
       
       
@@ -663,7 +658,7 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
+    <a class="extend prev" rel="prev" href="/page/7/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/9/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -716,6 +711,10 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       <ul>
         
           <li>
+            <a href="/2023/06/14/leetcode/530/">Leetcode 530 - Minimum Absolute Difference in BST</a>
+          </li>
+        
+          <li>
             <a href="/2023/06/10/leetcode/744/">Leetcode 744 - Find Smallest Letter Greater Than Target</a>
           </li>
         
@@ -729,10 +728,6 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
         
           <li>
             <a href="/2023/06/06/leetcode/1502/">Leetcode 1502 - Can Make Arithmetic Progression From Sequence</a>
-          </li>
-        
-          <li>
-            <a href="/2023/06/05/leetcode/2101/">Leetcode 2101 - Detonate the Maximum Bombs</a>
           </li>
         
       </ul>
