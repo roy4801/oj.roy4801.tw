@@ -34,9 +34,9 @@ TARGET="./source/_posts/$OJ/$PID.md"
 sed -i "s/PNAME/$PNAME/" $TARGET
 
 if [[ "$OJ" == "leetcode" ]]; then
-    sed -i "s/CATEGORY/\[解題區, Leetcode, $DIFF\]/" $TARGET
+    sed -i "s/CATEGORY/\[解題區\, Leetcode\, $DIFF\]/" $TARGET
 elif [[ "$OJ" == "cses" ]]; then
-    sed -i "s/CATEGORY/\[解題區, CSES, $CAT\]/" $TARGET
+    sed -i "s/CATEGORY/\[解題區\, CSES\, $CAT\]/" $TARGET
 fi
 
 echo "Created: $TARGET"
