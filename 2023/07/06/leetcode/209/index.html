@@ -25,7 +25,7 @@
 <meta property="og:description" content="題目 Problem 給你一個正整數陣列 nums 和一個正整數 target，要求 subarray 總和不超過 target ，要你回傳 subarray 最小的長度，如果找不到則回傳 0 測資限制  $1 \le target \le 10^9$ $1 \le nums \le 10^5$ $1 \le nums[i] \le 10^4$$">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-06T20:25:51.000Z">
-<meta property="article:modified_time" content="2023-07-06T12:41:53.923Z">
+<meta property="article:modified_time" content="2023-07-06T14:25:20.020Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -134,8 +134,8 @@
 <p>能往右就盡量往右，直到 <code>sum &gt;= target</code> 開始縮減左界（往右長）直到 <code>sum &lt; target</code> 又開始增長右界<br>
 每次移動 左界（<code>i</code>）、右界（<code>j</code>） 時去看有沒有 <code>sum &gt;= target</code> 有的話找最小的 <code>j-i+1</code></p>
 <ul>
-<li>時間複雜度: $\mathcal{O}()$</li>
-<li>空間複雜度: $\mathcal{O}()$</li>
+<li>時間複雜度: $\mathcal{O}(n)$</li>
+<li>空間複雜度: $\mathcal{O}(1)$</li>
 </ul>
 <h1>AC Code</h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F209.cpp%23L18-L51&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
@@ -144,7 +144,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/07/06/leetcode/209/" data-id="cljr50nrb003s1hlfgona3hrr" data-title="Leetcode 209 - Minimum Size Subarray Sum" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/07/06/leetcode/209/" data-id="cljr8psoa003s1hp4fz529yte" data-title="Leetcode 209 - Minimum Size Subarray Sum" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/07/06/leetcode/209/#disqus_thread" class="article-comment-link">Comments</a>
       
