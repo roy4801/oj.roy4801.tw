@@ -95,6 +95,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/1663" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/22/leetcode/1663/" class="article-date">
+  <time class="dt-published" datetime="2022-03-22T10:59:20.000Z" itemprop="datePublished">2022-03-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/22/leetcode/1663/">Leetcode 1663 - Smallest String With A Given Numeric Value</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/">題目</a></p>
+<h1>Problem</h1>
+<p>題目給你兩個數字 <code>n</code> 和 <code>k</code> 問你: 由 <code>n</code> 個字母組成，所有字母加起來總和為 <code>k</code> 且字串<strong>字典序最小</strong>。<br>
+a=1, b=2, …, z=26</p>
+<h1>想法</h1>
+<p>最優的答案是後面都是 <code>z</code> 前面都是 <code>a</code>，先貪心找最後的 <code>z</code> 長度: 對於字串 <code>Z = aa...z = 1*(a長度) + 26</code> 假如 k 大於 <code>Z</code> 的話，則最後一定可以擺一個 <code>z</code>，亦即 <code>k &gt;= 1*(n-1) + 26</code>。<br>
+接下來就都擺 <code>a</code> ，中間的字母(夾在 <code>a</code> 和 <code>z</code> 中間 e.g. “aa…x…zz”)，就擺 <code>'a'+(k-1)</code></p>
+        
+          <p class="article-more-link">
+            <a href="/2022/03/22/leetcode/1663/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/03/22/leetcode/1663/" data-id="cll0tlo1q002w1ho38uih4et4" data-title="Leetcode 1663 - Smallest String With A Given Numeric Value" class="article-share-link">Share</a>
+      
+        <a href="http://oj.roy4801.tw/2022/03/22/leetcode/1663/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/greedy/" rel="tag">greedy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/2212" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/21/leetcode/2212/" class="article-date">
@@ -136,7 +193,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2212/" data-id="clkwzkopf00571hmuhdxacxgu" data-title="Leetcode 2212 - Maximum Points in an Archery Competition" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2212/" data-id="cll0tlo2q005c1ho3eddlh5ff" data-title="Leetcode 2212 - Maximum Points in an Archery Competition" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/21/leetcode/2212/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -191,7 +248,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2211/" data-id="clkwzkopd00541hmud15fh2s3" data-title="Leetcode 2211 - Count Collisions on a Road" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2211/" data-id="cll0tlo2p00571ho3f0er8ud6" data-title="Leetcode 2211 - Count Collisions on a Road" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/21/leetcode/2211/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -246,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/20/leetcode/895/" data-id="clkwzkos600b61hmu8yxk12ep" data-title="Leetcode 895 - Maximum Frequency Stack" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/20/leetcode/895/" data-id="cll0tlo5200ba1ho3ep5m5ivr" data-title="Leetcode 895 - Maximum Frequency Stack" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/20/leetcode/895/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -301,7 +358,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/17/leetcode/946/" data-id="clkwzkosb00bk1hmufvc0c7z0" data-title="Leetcode 946 - Validate Stack Sequences" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/17/leetcode/946/" data-id="cll0tlo5700bo1ho3gntm647x" data-title="Leetcode 946 - Validate Stack Sequences" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/17/leetcode/946/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -356,7 +413,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/35/" data-id="clkwzkoqf00741hmu0wdoane7" data-title="Leetcode 35 - Search Insert Position" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/35/" data-id="cll0tlo3g00771ho386ub91wg" data-title="Leetcode 35 - Search Insert Position" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/15/leetcode/35/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -411,7 +468,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/1249/" data-id="clkwzkon3000x1hmub3txc9ns" data-title="Leetcode 1249 - Minimum Remove to Make Valid Parentheses" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/15/leetcode/1249/" data-id="cll0tlo0v000x1ho3hqnl4y82" data-title="Leetcode 1249 - Minimum Remove to Make Valid Parentheses" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/15/leetcode/1249/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -470,7 +527,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2201/" data-id="clkwzkopc004z1hmu86e777f2" data-title="Leetcode 2201 - Count Artifacts That Can Be Extracted" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2201/" data-id="cll0tlo2o00541ho38f9k4k66" data-title="Leetcode 2201 - Count Artifacts That Can Be Extracted" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/14/leetcode/2201/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -530,7 +587,7 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2200/" data-id="clkwzkopa004w1hmu5koo5gwz" data-title="Leetcode 2200 - Find All K-Distant Indices in an Array" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/14/leetcode/2200/" data-id="cll0tlo2m004z1ho3hqwr3mah" data-title="Leetcode 2200 - Find All K-Distant Indices in an Array" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/14/leetcode/2200/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -586,68 +643,13 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/12/leetcode/138/" data-id="clkwzkonf001h1hmu8vv9cptm" data-title="Leetcode 138 - Copy List with Random Pointer" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/12/leetcode/138/" data-id="cll0tlo15001h1ho36euue8op" data-title="Leetcode 138 - Copy List with Random Pointer" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/12/leetcode/138/#disqus_thread" class="article-comment-link">Comments</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hashmap/" rel="tag">hashmap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linked-list/" rel="tag">linked-list</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/141" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/09/leetcode/141/" class="article-date">
-  <time class="dt-published" datetime="2022-03-09T02:21:54.000Z" itemprop="datePublished">2022-03-09</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Easy/">Easy</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/03/09/leetcode/141/">Leetcode 141 - Linked List Cycle</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/linked-list-cycle/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://i.imgur.com/nqGryLZ.png" alt></p>
-<p>題目給你一個單向鏈結串列(Singly linked-list)，問你有沒有存在環(Cycle)?</p>
-<p>follow-up: 可以在 $\mathcal{O}(1)$ 空間複雜度達成?</p>
-        
-          <p class="article-more-link">
-            <a href="/2022/03/09/leetcode/141/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/09/leetcode/141/" data-id="clkwzkonp001q1hmu6m4hhjmv" data-title="Leetcode 141 - Linked List Cycle" class="article-share-link">Share</a>
-      
-        <a href="http://oj.roy4801.tw/2022/03/09/leetcode/141/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -692,7 +694,7 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 12.31px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 11.54px;">Bit Manipulation</a> <a href="/tags/CSES/" style="font-size: 10.77px;">CSES</a> <a href="/tags/DP/" style="font-size: 15.38px;">DP</a> <a href="/tags/Design/" style="font-size: 11.54px;">Design</a> <a href="/tags/LCS/" style="font-size: 10px;">LCS</a> <a href="/tags/Leetcode/" style="font-size: 19.23px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 18.46px;">Uva</a> <a href="/tags/array/" style="font-size: 13.85px;">array</a> <a href="/tags/backtracking/" style="font-size: 15.38px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 11.54px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 13.08px;">binary search</a> <a href="/tags/bitwise-%E6%9E%9A%E8%88%89/" style="font-size: 10px;">bitwise 枚舉</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/cycle/" style="font-size: 10px;">cycle</a> <a href="/tags/dfs/" style="font-size: 16.15px;">dfs</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/disjoint-set/" style="font-size: 11.54px;">disjoint set</a> <a href="/tags/geometry/" style="font-size: 10px;">geometry</a> <a href="/tags/graph/" style="font-size: 17.69px;">graph</a> <a href="/tags/greedy/" style="font-size: 16.92px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 13.08px;">hashmap</a> <a href="/tags/interval/" style="font-size: 11.54px;">interval</a> <a href="/tags/linked-list/" style="font-size: 12.31px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/math/" style="font-size: 11.54px;">math</a> <a href="/tags/monotonic-stack/" style="font-size: 10.77px;">monotonic stack</a> <a href="/tags/ordered-set/" style="font-size: 10px;">ordered set</a> <a href="/tags/prefix-sum/" style="font-size: 10px;">prefix sum</a> <a href="/tags/priority-queue/" style="font-size: 13.08px;">priority queue</a> <a href="/tags/simulation/" style="font-size: 11.54px;">simulation</a> <a href="/tags/sliding-window/" style="font-size: 13.08px;">sliding window</a> <a href="/tags/sorting/" style="font-size: 10.77px;">sorting</a> <a href="/tags/stack/" style="font-size: 12.31px;">stack</a> <a href="/tags/string/" style="font-size: 14.62px;">string</a> <a href="/tags/%E4%BA%8C%E5%88%86%E5%9C%96/" style="font-size: 10px;">二分圖</a> <a href="/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/" style="font-size: 10px;">二分答案</a> <a href="/tags/%E6%9A%B4%E6%90%9C/" style="font-size: 10px;">暴搜</a> <a href="/tags/%E8%83%8C%E5%8C%85/" style="font-size: 10px;">背包</a> <a href="/tags/%E8%91%97%E8%89%B2%E5%95%8F%E9%A1%8C/" style="font-size: 10px;">著色問題</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 13.85px;">雙指標</a>
+      <a href="/tags/2D-%E6%A0%BC%E5%AD%90/" style="font-size: 10px;">2D 格子</a> <a href="/tags/BFS/" style="font-size: 12.14px;">BFS</a> <a href="/tags/Bit-Manipulation/" style="font-size: 11.43px;">Bit Manipulation</a> <a href="/tags/CSES/" style="font-size: 10.71px;">CSES</a> <a href="/tags/DP/" style="font-size: 15.71px;">DP</a> <a href="/tags/Design/" style="font-size: 11.43px;">Design</a> <a href="/tags/LCS/" style="font-size: 10px;">LCS</a> <a href="/tags/Leetcode/" style="font-size: 19.29px;">Leetcode</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/Uva/" style="font-size: 18.57px;">Uva</a> <a href="/tags/array/" style="font-size: 14.29px;">array</a> <a href="/tags/backtracking/" style="font-size: 15.71px;">backtracking</a> <a href="/tags/bfs/" style="font-size: 11.43px;">bfs</a> <a href="/tags/binary-search/" style="font-size: 13.57px;">binary search</a> <a href="/tags/bitwise-%E6%9E%9A%E8%88%89/" style="font-size: 10px;">bitwise 枚舉</a> <a href="/tags/bst/" style="font-size: 10px;">bst</a> <a href="/tags/cycle/" style="font-size: 10px;">cycle</a> <a href="/tags/dfs/" style="font-size: 16.43px;">dfs</a> <a href="/tags/dijkstra/" style="font-size: 10px;">dijkstra</a> <a href="/tags/disjoint-set/" style="font-size: 11.43px;">disjoint set</a> <a href="/tags/geometry/" style="font-size: 10px;">geometry</a> <a href="/tags/graph/" style="font-size: 17.86px;">graph</a> <a href="/tags/greedy/" style="font-size: 17.14px;">greedy</a> <a href="/tags/hashmap/" style="font-size: 12.86px;">hashmap</a> <a href="/tags/interval/" style="font-size: 11.43px;">interval</a> <a href="/tags/linked-list/" style="font-size: 12.14px;">linked list</a> <a href="/tags/linked-list/" style="font-size: 10px;">linked-list</a> <a href="/tags/math/" style="font-size: 11.43px;">math</a> <a href="/tags/monotonic-stack/" style="font-size: 10.71px;">monotonic stack</a> <a href="/tags/ordered-set/" style="font-size: 10px;">ordered set</a> <a href="/tags/prefix-sum/" style="font-size: 10px;">prefix sum</a> <a href="/tags/priority-queue/" style="font-size: 12.86px;">priority queue</a> <a href="/tags/simulation/" style="font-size: 11.43px;">simulation</a> <a href="/tags/sliding-window/" style="font-size: 12.86px;">sliding window</a> <a href="/tags/sorting/" style="font-size: 10.71px;">sorting</a> <a href="/tags/stack/" style="font-size: 12.14px;">stack</a> <a href="/tags/string/" style="font-size: 15px;">string</a> <a href="/tags/%E4%BA%8C%E5%88%86%E5%9C%96/" style="font-size: 10px;">二分圖</a> <a href="/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/" style="font-size: 10px;">二分答案</a> <a href="/tags/%E6%9A%B4%E6%90%9C/" style="font-size: 10px;">暴搜</a> <a href="/tags/%E8%83%8C%E5%8C%85/" style="font-size: 10px;">背包</a> <a href="/tags/%E8%91%97%E8%89%B2%E5%95%8F%E9%A1%8C/" style="font-size: 10px;">著色問題</a> <a href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" style="font-size: 20px;">解題紀錄</a> <a href="/tags/%E9%9B%99%E6%8C%87%E6%A8%99/" style="font-size: 14.29px;">雙指標</a>
     </div>
   </div>
 
@@ -714,6 +716,10 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
       <ul>
         
           <li>
+            <a href="/2023/08/07/leetcode/74/">Leetcode 74 -  Search a 2D Matrix</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/05/leetcode/139/">Leetcode 139 - Word Break</a>
           </li>
         
@@ -727,10 +733,6 @@ e.g. <code>nums=[1, 2, 3, 4], key=2, k=1 =&gt; k-distant = [0, 1, 2]</code>，�
         
           <li>
             <a href="/2023/07/26/leetcode/1870/">Leetcode 1870 - Minimum Speed to Arrive on Time</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/20/leetcode/735/">Leetcode 735 - Asteroid Collision</a>
           </li>
         
       </ul>
