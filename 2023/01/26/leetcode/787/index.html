@@ -17,16 +17,16 @@
   
   <title>Leetcode 787 - Cheapest Flights Within K Stops | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem  有 $n$ 座城市由 flights[i] &#x3D; [fromi, toi, pricei] 個班機來往，給你起始點src和結束點dst以及整數 k (代表最多停留 k 個城市)，問你最便宜要花多少錢，如果沒有這種路徑則回傳 -1。  測資限制:  $1 \le n \le 100$ $0 \le flights.length \le (n * (n - 1) &#x2F; 2)$">
+  <meta name="description" content="題目 Problem#  有 $n$ 座城市由 flights[i] &#x3D; [fromi, toi, pricei] 個班機來往，給你起始點src和結束點dst以及整數 k (代表最多停留 k 個城市)，問你最便宜要花多少錢，如果沒有這種路徑則回傳 -1。  測資限制:  $1 \le n \le 100$ $0 \le flights.length \le (n * (n - 1) &#x2F; 2)$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 787 - Cheapest Flights Within K Stops">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/01/26/leetcode/787/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem  有 $n$ 座城市由 flights[i] &#x3D; [fromi, toi, pricei] 個班機來往，給你起始點src和結束點dst以及整數 k (代表最多停留 k 個城市)，問你最便宜要花多少錢，如果沒有這種路徑則回傳 -1。  測資限制:  $1 \le n \le 100$ $0 \le flights.length \le (n * (n - 1) &#x2F; 2)$">
+<meta property="og:description" content="題目 Problem#  有 $n$ 座城市由 flights[i] &#x3D; [fromi, toi, pricei] 個班機來往，給你起始點src和結束點dst以及整數 k (代表最多停留 k 個城市)，問你最便宜要花多少錢，如果沒有這種路徑則回傳 -1。  測資限制:  $1 \le n \le 100$ $0 \le flights.length \le (n * (n - 1) &#x2F; 2)$">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-3drawio.png">
 <meta property="article:published_time" content="2023-01-26T18:43:58.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.322Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -126,8 +126,8 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/cheapest-flights-within-k-stops/description/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-3drawio.png" alt=""></p>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
+<p><img src="https://assets.leetcode.com/uploads/2022/03/18/cheapest-flights-within-k-stops-3drawio.png" alt></p>
 <p>有 $n$ 座城市由 <code>flights[i] = [fromi, toi, pricei]</code> 個班機來往，給你起始點<code>src</code>和結束點<code>dst</code>以及整數 <code>k</code> (代表最多停留 <code>k</code> 個城市)，問你最便宜要花多少錢，如果沒有這種路徑則回傳 <code>-1</code>。</p>
 <ul>
 <li>測資限制:
@@ -137,7 +137,7 @@
 </ul>
 </li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>dijkstra 但不儲存 distance 改儲存 depth (路徑長度)，也因為每次都挑最小的費用的 node 所以當 current node = dst 時會是最小費。</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(EK\log{EK})$
@@ -151,17 +151,17 @@
 </ul>
 </li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F787.cpp%23L10-L69&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <p>TODO: BFS, bellman ford</p>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>一開始我沒想到是要多維護路徑長  (k)  看解答才想到QQ</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/01/26/leetcode/787/" data-id="cllax6yr800am1hrv7p98cprp" data-title="Leetcode 787 - Cheapest Flights Within K Stops" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/01/26/leetcode/787/" data-id="cllut42ul00ap1xp6akw3adgl" data-title="Leetcode 787 - Cheapest Flights Within K Stops" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/01/26/leetcode/787/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -252,6 +252,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -265,10 +269,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

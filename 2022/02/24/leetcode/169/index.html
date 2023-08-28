@@ -17,15 +17,15 @@
   
   <title>Leetcode 169 - Majority Element | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 題目給你一個陣列 nums，回傳出現次數超過 $\lfloor \frac{n}{2} \rfloor$ 的的那個數字。 想法 直覺做就是先建表紀錄每個數字出現的次數，接著排序拿最大即可">
+  <meta name="description" content="題目 Problem# 題目給你一個陣列 nums，回傳出現次數超過 $\lfloor \frac{n}{2} \rfloor$ 的的那個數字。 想法# 直覺做就是先建表紀錄每個數字出現的次數，接著排序拿最大即可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 169 - Majority Element">
 <meta property="og:url" content="http://oj.roy4801.tw/2022/02/24/leetcode/169/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 題目給你一個陣列 nums，回傳出現次數超過 $\lfloor \frac{n}{2} \rfloor$ 的的那個數字。 想法 直覺做就是先建表紀錄每個數字出現的次數，接著排序拿最大即可">
+<meta property="og:description" content="題目 Problem# 題目給你一個陣列 nums，回傳出現次數超過 $\lfloor \frac{n}{2} \rfloor$ 的的那個數字。 想法# 直覺做就是先建表紀錄每個數字出現的次數，接著排序拿最大即可">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-24T00:11:56.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -122,26 +122,26 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/majority-element/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>題目給你一個陣列 <code>nums</code>，回傳出現次數超過 $\lfloor \frac{n}{2} \rfloor$ 的的那個數字。</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>直覺做就是先建表紀錄每個數字出現的次數，接著排序拿最大即可</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(N\log{N})$</li>
 <li>空間複雜度: $\mathcal{O}(N)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F169.cpp%23L10-L69&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <p>TODO</p>
 <figure class="highlight cpp"><figcaption><span>linenum</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">majorityElement</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="type">int</span> vote = nums[<span class="number">0</span>], cnt = <span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; nums.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == vote) cnt++;</span><br><span class="line">            <span class="keyword">else</span> cnt--;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span>(cnt == <span class="number">0</span>) &#123;</span><br><span class="line">                vote = nums[i+<span class="number">1</span>];</span><br><span class="line">                cnt = <span class="number">1</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> vote;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>原始題目很水，follow-up 沒想到</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/24/leetcode/169/" data-id="cllax6ynw00341hrv9shbhfgz" data-title="Leetcode 169 - Majority Element" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/02/24/leetcode/169/" data-id="cllut42re00381xp65ms4evh1" data-title="Leetcode 169 - Majority Element" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/02/24/leetcode/169/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -232,6 +232,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -245,10 +249,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

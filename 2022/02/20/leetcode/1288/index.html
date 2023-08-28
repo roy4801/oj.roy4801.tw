@@ -17,15 +17,15 @@
   
   <title>Leetcode 1288 - Remove Covered Intervals | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 題目給你一個由正整數構成的區間，intervals[i] &#x3D; [li, ri]，如果區間 [a, b) 被 [c, d) 覆蓋，則代表 $c &lt;&#x3D; a$ 且 $b &lt;&#x3D; d$ 要你回傳刪掉被覆蓋的區間後，剩下區間的個數。  N &#x3D; intervals.size()  $1 \leq N \leq 1000$   區間範圍: $0 \leq l_i \leq r_i">
+  <meta name="description" content="題目 Problem# 題目給你一個由正整數構成的區間，intervals[i] &#x3D; [li, ri]，如果區間 [a, b) 被 [c, d) 覆蓋，則代表 $c &lt;&#x3D; a$ 且 $b &lt;&#x3D; d$ 要你回傳刪掉被覆蓋的區間後，剩下區間的個數。  N &#x3D; intervals.size()  $1 \leq N \leq 1000$   區間範圍: $0 \leq l_i \leq r_">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 1288 - Remove Covered Intervals">
 <meta property="og:url" content="http://oj.roy4801.tw/2022/02/20/leetcode/1288/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 題目給你一個由正整數構成的區間，intervals[i] &#x3D; [li, ri]，如果區間 [a, b) 被 [c, d) 覆蓋，則代表 $c &lt;&#x3D; a$ 且 $b &lt;&#x3D; d$ 要你回傳刪掉被覆蓋的區間後，剩下區間的個數。  N &#x3D; intervals.size()  $1 \leq N \leq 1000$   區間範圍: $0 \leq l_i \leq r_i">
+<meta property="og:description" content="題目 Problem# 題目給你一個由正整數構成的區間，intervals[i] &#x3D; [li, ri]，如果區間 [a, b) 被 [c, d) 覆蓋，則代表 $c &lt;&#x3D; a$ 且 $b &lt;&#x3D; d$ 要你回傳刪掉被覆蓋的區間後，剩下區間的個數。  N &#x3D; intervals.size()  $1 \leq N \leq 1000$   區間範圍: $0 \leq l_i \leq r_">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-20T17:58:40.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.625Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -123,7 +123,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/remove-covered-intervals/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>題目給你一個由正整數構成的區間，<code>intervals[i] = [li, ri]</code>，如果區間 <code>[a, b)</code> 被 <code>[c, d)</code> 覆蓋，則代表 $c &lt;= a$ 且 $b &lt;= d$<br>
 要你回傳刪掉被覆蓋的區間後，剩下區間的個數。</p>
 <ul>
@@ -134,26 +134,26 @@
 </li>
 <li>區間範圍: $0 \leq l_i \leq r_i \leq 10^5$</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>按照左界排序，如果左界相同的話，則右界大的在前、小的在後，如此一來對於每個左界，只要關心右界延伸去哪<br>
 每次去比較右界有沒有包含在最大的右界裏頭，如果有就要減 1。</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(N\log{N})$</li>
 <li>空間複雜度: $\mathcal{O}(N)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F1288.cpp%23L10-L42&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <ul>
 <li>有的作法是用加的</li>
 </ul>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>一開始沒讀題目還以為是要查區間，讀完才發現沒有</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/20/leetcode/1288/" data-id="cllax6yn200121hrv7r58cbva" data-title="Leetcode 1288 - Remove Covered Intervals" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/02/20/leetcode/1288/" data-id="cllut42qh00121xp6fj6qd97q" data-title="Leetcode 1288 - Remove Covered Intervals" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/02/20/leetcode/1288/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -244,6 +244,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -257,10 +261,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

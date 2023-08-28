@@ -17,16 +17,16 @@
   
   <title>Leetcode 2779 - Maximum Beauty of an Array After Applying Operation | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你一個陣列 nums和一個非負整數 k，你可以做以下操作  挑一個數字 $nums[i]$ 其中 $i \in [0, n-1]$ 將 $nums[i]$ 換成 $[nums[i] - k, nums[i] + k]$ 其中的數字  定義一個 array 的美麗值(Beauty)為「相同數字」的最長子序列，問你回傳最大的 beauty 值為多少?">
+  <meta name="description" content="題目 Problem# 給你一個陣列 nums和一個非負整數 k，你可以做以下操作  挑一個數字 $nums[i]$ 其中 $i \in [0, n-1]$ 將 $nums[i]$ 換成 $[nums[i] - k, nums[i] + k]$ 其中的數字  定義一個 array 的美麗值(Beauty)為「相同數字」的最長子序列，問你回傳最大的 beauty 值為多少?">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 2779 - Maximum Beauty of an Array After Applying Operation">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/07/16/leetcode/2779/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你一個陣列 nums和一個非負整數 k，你可以做以下操作  挑一個數字 $nums[i]$ 其中 $i \in [0, n-1]$ 將 $nums[i]$ 換成 $[nums[i] - k, nums[i] + k]$ 其中的數字  定義一個 array 的美麗值(Beauty)為「相同數字」的最長子序列，問你回傳最大的 beauty 值為多少?">
+<meta property="og:description" content="題目 Problem# 給你一個陣列 nums和一個非負整數 k，你可以做以下操作  挑一個數字 $nums[i]$ 其中 $i \in [0, n-1]$ 將 $nums[i]$ 換成 $[nums[i] - k, nums[i] + k]$ 其中的數字  定義一個 array 的美麗值(Beauty)為「相同數字」的最長子序列，問你回傳最大的 beauty 值為多少?">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://hackmd.io/_uploads/HkwA2Ybc2.png">
 <meta property="article:published_time" content="2023-07-16T23:07:41.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -125,7 +125,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個陣列 <code>nums</code>和一個非負整數 <code>k</code>，你可以做以下操作</p>
 <ol>
 <li>挑一個數字 $nums[i]$ 其中 $i \in [0, n-1]$</li>
@@ -133,15 +133,15 @@
 </ol>
 <p>定義一個 array 的美麗值(Beauty)為「相同數字」的最長子序列，問你回傳最大的 beauty 值為多少?</p>
 <p>注意: 對於每個 index 只能執行一次操作</p>
-<h2 id="測資限制">測資限制</h2>
+<h2><span id="ce-zi-xian-zhi">測資限制</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
 <ul>
 <li>$1 \le n \le 10^5$</li>
 <li>$0 \le nums[i], k \le 10^5$</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>將 $nums[i]$ 和其 $+k, -k$ 的範圍畫在數線上，可以發現最大的 beauty 值會出現在線段覆蓋最多的地方，所以此題其實是線段覆蓋問題</p>
 <p>naive: 對每個數字 $nums[i]$ 去掃過一次 $[nums[i] - k, nums[i] + k]$ 統計覆蓋範圍，掃完之後再去掃一次統計的陣列去看最大數字是多少 $O(nk)$ <strong>TLE</strong></p>
-<p><img src="https://hackmd.io/_uploads/HkwA2Ybc2.png" alt=""></p>
+<p><img src="https://hackmd.io/_uploads/HkwA2Ybc2.png" alt></p>
 <p>先 sort 一遍 <code>nums</code>，然後建出 <code>nums[i]-k, nums[i]+k</code> 的陣列，然後雙指標，去看左界的數字有沒有小於等於右界的數字，如果是的話則代表要挑那個範圍(<code>cur++</code>)；反之代表當前數字超過右界，要反選那個範圍(<code>cur--</code>)。<br>
 為什麼?: 如果左界(<code>a[i]</code>)在右界(<code>b[j]</code>)的右邊，則代表在挑 <code>a[i]</code> 之前，要先反選 <code>b[j]</code> 的區間，因為在數字 <code>a[i]</code> 時 <code>a[j], b[j]</code> 的區間並沒有覆蓋到，所以要反選。 (看第一個範例，當 <code>i=3, j=1</code> 時)<br>
 跑完所有左界就夠了，因為我們目標是找最大的 beauty 值，跑完所有右界就只會越來越小而已，對於答案並沒有幫助。</p>
@@ -149,17 +149,17 @@
 <li>時間複雜度: $\mathcal{O}(n\log{n})$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F2779.cpp%23L18-L51&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <p>TODO: 官方題解</p>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>一開始都只想出 $O(n^2)$ 的作法，有想到可以用區間覆蓋解，但是沒想到 $O(n\log{n})$ 的方法QQ</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/07/16/leetcode/2779/" data-id="cllax6ypk006o1hrv4rc62nhd" data-title="Leetcode 2779 - Maximum Beauty of an Array After Applying Operation" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/07/16/leetcode/2779/" data-id="cllut42t6006w1xp6gvjmalvt" data-title="Leetcode 2779 - Maximum Beauty of an Array After Applying Operation" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/07/16/leetcode/2779/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -250,6 +250,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -263,10 +267,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

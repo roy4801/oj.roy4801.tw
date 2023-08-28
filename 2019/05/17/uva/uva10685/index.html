@@ -17,15 +17,15 @@
   
   <title>Uva 10685 - Nature | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 大自然存在著食物鏈，體型大的動物吃小動物，小動物吃植物，死亡的動物被分解，作為植物的養分。 而你的任務是給定一組動物，求出最大的食物鏈動物數量為何？假如A吃B，你可以認定它們在同個食物鏈裡。 輸入 每筆測資開頭有兩個整數 $C$ 代表有幾隻動物和 $R$ 有幾組關係；接著 $C$ 列，每列有一個名字（字串、只有小寫、不超過30字）；再接著有 $R$ 列，每列有兩個名字，代表第">
+  <meta name="description" content="題目 Problem# 大自然存在著食物鏈，體型大的動物吃小動物，小動物吃植物，死亡的動物被分解，作為植物的養分。 而你的任務是給定一組動物，求出最大的食物鏈動物數量為何？假如A吃B，你可以認定它們在同個食物鏈裡。 輸入# 每筆測資開頭有兩個整數 $C$ 代表有幾隻動物和 $R$ 有幾組關係；接著 $C$ 列，每列有一個名字（字串、只有小寫、不超過30字）；再接著有 $R$ 列，每列有兩個名字，代">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Uva 10685 - Nature">
 <meta property="og:url" content="http://oj.roy4801.tw/2019/05/17/uva/uva10685/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 大自然存在著食物鏈，體型大的動物吃小動物，小動物吃植物，死亡的動物被分解，作為植物的養分。 而你的任務是給定一組動物，求出最大的食物鏈動物數量為何？假如A吃B，你可以認定它們在同個食物鏈裡。 輸入 每筆測資開頭有兩個整數 $C$ 代表有幾隻動物和 $R$ 有幾組關係；接著 $C$ 列，每列有一個名字（字串、只有小寫、不超過30字）；再接著有 $R$ 列，每列有兩個名字，代表第">
+<meta property="og:description" content="題目 Problem# 大自然存在著食物鏈，體型大的動物吃小動物，小動物吃植物，死亡的動物被分解，作為植物的養分。 而你的任務是給定一組動物，求出最大的食物鏈動物數量為何？假如A吃B，你可以認定它們在同個食物鏈裡。 輸入# 每筆測資開頭有兩個整數 $C$ 代表有幾隻動物和 $R$ 有幾組關係；接著 $C$ 列，每列有一個名字（字串、只有小寫、不超過30字）；再接著有 $R$ 列，每列有兩個名字，代">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-05-17T23:37:37.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.322Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Uva">
@@ -122,26 +122,26 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;page=show_problem&amp;problem=1626">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>大自然存在著食物鏈，體型大的動物吃小動物，小動物吃植物，死亡的動物被分解，作為植物的養分。<br>
 而你的任務是給定一組動物，求出最大的食物鏈動物數量為何？假如A吃B，你可以認定它們在同個食物鏈裡。</p>
-<h2 id="輸入">輸入</h2>
+<h2><span id="shu-ru">輸入</span><a href="#shu-ru" class="header-anchor">#</a></h2>
 <p>每筆測資開頭有兩個整數 $C$ 代表有幾隻動物和 $R$ 有幾組關係；接著 $C$ 列，每列有一個名字（字串、只有小寫、不超過30字）；再接著有 $R$ 列，每列有兩個名字，代表第二個動物吃第一個動物。<br>
 你可以認定沒有一隻動物是自己的獵食者。<br>
 輸入終止在 $C = R = 0$ ，每筆測資間有空白列。</p>
 <p>$1 \le C \le 5000$<br>
 $0 \le R \le 5000$</p>
-<h2 id="輸出">輸出</h2>
+<h2><span id="shu-chu">輸出</span><a href="#shu-chu" class="header-anchor">#</a></h2>
 <p>對於每筆測資，最大組的食物鏈的大小。</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>disjoint set題，每個動物名稱用 <code>map&lt;string, int&gt;</code> 對應到一個 <code>int</code>，接著就照著輸入合併組，然後找最大的整數。</p>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/uva/10685.cpp">https://github.com/roy4801/solved_problems/blob/master/uva/10685.cpp</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2019/05/17/uva/uva10685/" data-id="cllax6yrz00ce1hrv6nntaco0" data-title="Uva 10685 - Nature" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2019/05/17/uva/uva10685/" data-id="cllut42v600ch1xp67el54zdv" data-title="Uva 10685 - Nature" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2019/05/17/uva/uva10685/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -232,6 +232,10 @@ $0 \le R \le 5000$</p>
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -245,10 +249,6 @@ $0 \le R \le 5000$</p>
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

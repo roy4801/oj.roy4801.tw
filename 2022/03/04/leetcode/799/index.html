@@ -17,16 +17,16 @@
   
   <title>Leetcode 799 - Champagne Tower | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem  題目說有 n 個杯子，從最上面的那個杯子開始倒水，總共倒 p 杯水，每個杯子只要到一杯就滿，往滿的水杯中倒水會往兩側溢出 1&#x2F;2 的水， 給你倒水的總杯數 p 問你第 r 列第 c 個的水杯的狀態。  0 &lt;&#x3D; p &lt;&#x3D; 109 0 &lt;&#x3D; r &lt;&#x3D; c &lt; 100">
+  <meta name="description" content="題目 Problem#  題目說有 n 個杯子，從最上面的那個杯子開始倒水，總共倒 p 杯水，每個杯子只要到一杯就滿，往滿的水杯中倒水會往兩側溢出 1&#x2F;2 的水， 給你倒水的總杯數 p 問你第 r 列第 c 個的水杯的狀態。  0 &lt;&#x3D; p &lt;&#x3D; 109 0 &lt;&#x3D; r &lt;&#x3D; c &lt; 100">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 799 - Champagne Tower">
 <meta property="og:url" content="http://oj.roy4801.tw/2022/03/04/leetcode/799/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem  題目說有 n 個杯子，從最上面的那個杯子開始倒水，總共倒 p 杯水，每個杯子只要到一杯就滿，往滿的水杯中倒水會往兩側溢出 1&#x2F;2 的水， 給你倒水的總杯數 p 問你第 r 列第 c 個的水杯的狀態。  0 &lt;&#x3D; p &lt;&#x3D; 109 0 &lt;&#x3D; r &lt;&#x3D; c &lt; 100">
+<meta property="og:description" content="題目 Problem#  題目說有 n 個杯子，從最上面的那個杯子開始倒水，總共倒 p 杯水，每個杯子只要到一杯就滿，往滿的水杯中倒水會往兩側溢出 1&#x2F;2 的水， 給你倒水的總杯數 p 問你第 r 列第 c 個的水杯的狀態。  0 &lt;&#x3D; p &lt;&#x3D; 109 0 &lt;&#x3D; r &lt;&#x3D; c &lt; 100">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.imgur.com/pGB4eNJ.png">
 <meta property="article:published_time" content="2022-03-04T21:53:59.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.322Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -125,15 +125,15 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/champagne-tower/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://i.imgur.com/pGB4eNJ.png" alt=""></p>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
+<p><img src="https://i.imgur.com/pGB4eNJ.png" alt></p>
 <p>題目說有 <code>n</code> 個杯子，從最上面的那個杯子開始倒水，總共倒 <code>p</code> 杯水，每個杯子只要到一杯就滿，往滿的水杯中倒水會往兩側溢出 <code>1/2</code> 的水，<br>
 給你倒水的總杯數 <code>p</code> 問你第 <code>r</code> 列第 <code>c</code> 個的水杯的狀態。</p>
 <ul>
 <li><code>0 &lt;= p &lt;= 109</code></li>
 <li><code>0 &lt;= r &lt;= c &lt; 100</code></li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>從最上面那杯開始倒水，可以一次倒全部的水，假如一杯水杯超過 <code>1.0</code>，就往兩側倒 <code>(b[i]-1)/2</code> 的水<br>
 可以用一個二維陣列維護 <code>dp[r][c]</code> 的水量，一杯水(<code>dp[i][j]</code>)中的水來自其左上(<code>dp[i-1][j-1]</code>)和右上(<code>dp[i-1][j]</code>)的水漏下來<br>
 接著就模擬一次流水即可。</p>
@@ -145,9 +145,9 @@
 </li>
 <li>空間複雜度: $\mathcal{O}(N^2)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F799.cpp%23L13-L66&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <ul>
 <li>
 <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/champagne-tower/discuss/911964/JavaPython-Top-Down-DP-Clean-and-Concise-O(R-*-C)">top-down 作法</a></p>
@@ -160,13 +160,13 @@
 <figure class="highlight cpp"><figcaption><span>壓縮成 1D array 的作法</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">double</span> <span class="title">champagneTower</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> r, <span class="type">int</span> c)</span> </span>&#123;</span><br><span class="line">    <span class="type">double</span> dp[<span class="number">101</span>] = &#123;<span class="number">0.0</span>&#125;;</span><br><span class="line">    dp[<span class="number">0</span>] = p;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> row = <span class="number">1</span>; row &lt;= r; row++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = row; i &gt;= <span class="number">0</span>; i--)</span><br><span class="line">            dp[i+<span class="number">1</span>] += dp[i] = <span class="built_in">max</span>(<span class="number">0.0</span>, (dp[i]<span class="number">-1</span>)/<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(dp[c], <span class="number">1.0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>一開始想複雜了，一直想著要一杯一杯模擬，看了題解才突破盲點，可以一次倒完全部</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/04/leetcode/799/" data-id="cllax6yra00at1hrv1ko34sgv" data-title="Leetcode 799 - Champagne Tower" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/04/leetcode/799/" data-id="cllut42un00aw1xp66pj77273" data-title="Leetcode 799 - Champagne Tower" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/04/leetcode/799/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -257,6 +257,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -270,10 +274,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

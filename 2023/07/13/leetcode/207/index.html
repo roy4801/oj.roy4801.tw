@@ -17,15 +17,15 @@
   
   <title>Leetcode 207 - Course Schedule | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你一個正整數 $n$ 代表課程數量(從 0&#96;&#96; 到 n-1)，並給你一個 prerequisites[i] &#x3D; [a_i, b_i] (int[m][2])的陣列，代表如果要上課程b_i，一定要先上課程 a_i&#96; 問你能不能上完所有課程? 測資限制  $1 \le n \le 2000$ $0 \le m \le 5000$ $(a_i, b_i)$ 不重複">
+  <meta name="description" content="題目 Problem# 給你一個正整數 $n$ 代表課程數量(從 0&#96;&#96; 到 n-1)，並給你一個 prerequisites[i] &#x3D; [a_i, b_i] (int[m][2])的陣列，代表如果要上課程b_i，一定要先上課程 a_i&#96; 問你能不能上完所有課程? 測資限制#  $1 \le n \le 2000$ $0 \le m \le 5000$ $(a_i, b_i)$ 不重複">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 207 - Course Schedule">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/07/13/leetcode/207/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你一個正整數 $n$ 代表課程數量(從 0&#96;&#96; 到 n-1)，並給你一個 prerequisites[i] &#x3D; [a_i, b_i] (int[m][2])的陣列，代表如果要上課程b_i，一定要先上課程 a_i&#96; 問你能不能上完所有課程? 測資限制  $1 \le n \le 2000$ $0 \le m \le 5000$ $(a_i, b_i)$ 不重複">
+<meta property="og:description" content="題目 Problem# 給你一個正整數 $n$ 代表課程數量(從 0&#96;&#96; 到 n-1)，並給你一個 prerequisites[i] &#x3D; [a_i, b_i] (int[m][2])的陣列，代表如果要上課程b_i，一定要先上課程 a_i&#96; 問你能不能上完所有課程? 測資限制#  $1 \le n \le 2000$ $0 \le m \le 5000$ $(a_i, b_i)$ 不重複">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-13T21:50:49.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -125,16 +125,16 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/course-schedule/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個正整數 $n$ 代表課程數量(從 <code>0`` 到 </code>n-1<code>)，並給你一個 </code>prerequisites[i] = [a_i, b_i] (int[m][2])<code>的陣列，代表如果要上課程</code>b_i<code>，一定要先上課程 </code>a_i`<br>
 問你能不能上完所有課程?</p>
-<h2 id="測資限制">測資限制</h2>
+<h2><span id="ce-zi-xian-zhi">測資限制</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
 <ul>
 <li>$1 \le n \le 2000$</li>
 <li>$0 \le m \le 5000$</li>
 <li>$(a_i, b_i)$ 不重複</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>觀察一下可以發現(第二個 example)，如果課程存在循環依賴，則無法完成所以有課程，反之，不存在環則一定可以完成<br>
 =&gt; 把 <code>prerequisites</code> 轉成 graph，接著用找環的演算法即可。</p>
 <p>DFS 塗顏色，一開始全部都白色(<code>0</code>)，接著開始 dfs，遇到白色的點就塗上紅色(<code>1</code>)，如果在 dfs 的過程遇到紅色(<code>1</code>)的點，代表存在環。<br>
@@ -143,15 +143,15 @@
 <li>時間複雜度: $\mathcal{O}(n+m)$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F207.cpp%23L18-L55&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <p><a target="_blank" rel="noopener" href="https://cp-algorithms.com/graph/finding-cycle.html">https://cp-algorithms.com/graph/finding-cycle.html</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/07/13/leetcode/207/" data-id="cllax6yog00401hrv9atv8onb" data-title="Leetcode 207 - Course Schedule" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/07/13/leetcode/207/" data-id="cllut42rz00441xp6a3uyex93" data-title="Leetcode 207 - Course Schedule" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/07/13/leetcode/207/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -242,6 +242,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -255,10 +259,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

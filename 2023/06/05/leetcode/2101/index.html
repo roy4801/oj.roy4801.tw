@@ -17,16 +17,16 @@
   
   <title>Leetcode 2101 - Detonate the Maximum Bombs | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem  給你 $n$ 個炸彈， bomb[i] &#x3D; (x, y, r)，你可以選擇一枚炸彈引爆，爆炸後在範圍內的炸彈會產生連鎖反應，問你最多一次能炸幾枚炸彈? 測資限制">
+  <meta name="description" content="題目 Problem#  給你 $n$ 個炸彈， bomb[i] &#x3D; (x, y, r)，你可以選擇一枚炸彈引爆，爆炸後在範圍內的炸彈會產生連鎖反應，問你最多一次能炸幾枚炸彈? 測資限制#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 2101 - Detonate the Maximum Bombs">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/06/05/leetcode/2101/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem  給你 $n$ 個炸彈， bomb[i] &#x3D; (x, y, r)，你可以選擇一枚炸彈引爆，爆炸後在範圍內的炸彈會產生連鎖反應，問你最多一次能炸幾枚炸彈? 測資限制">
+<meta property="og:description" content="題目 Problem#  給你 $n$ 個炸彈， bomb[i] &#x3D; (x, y, r)，你可以選擇一枚炸彈引爆，爆炸後在範圍內的炸彈會產生連鎖反應，問你最多一次能炸幾枚炸彈? 測資限制#">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://assets.leetcode.com/uploads/2021/11/06/desmos-eg-3.png">
 <meta property="article:published_time" content="2023-06-05T23:26:08.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -127,15 +127,15 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/detonate-the-maximum-bombs/description/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://assets.leetcode.com/uploads/2021/11/06/desmos-eg-3.png" alt=""></p>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
+<p><img src="https://assets.leetcode.com/uploads/2021/11/06/desmos-eg-3.png" alt></p>
 <p>給你 $n$ 個炸彈， <code>bomb[i] = (x, y, r)</code>，你可以選擇一枚炸彈引爆，爆炸後在範圍內的炸彈會產生連鎖反應，問你最多一次能炸幾枚炸彈?</p>
-<h2 id="測資限制">測資限制</h2>
+<h2><span id="ce-zi-xian-zhi">測資限制</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
 <ul>
 <li>$1 \le n \le 100$</li>
 <li>$1 \le x, y \le 10^5$</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>給定一個炸彈的座標，可以 bfs 紀錄每個炸彈炸了多少顆其他的炸彈，最後統計總共炸了幾顆，接著枚舉座標 <code>i</code> 當第一個爆炸，找最大即可。</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n^3)$
@@ -149,17 +149,17 @@
 </ul>
 </li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F2101.cpp%23L18-L65&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <p>TODO: 題解 DFS</p>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>一開始寫錯，寫成在<a target="_blank" rel="noopener" href="https://leetcode.com/problems/detonate-the-maximum-bombs/submissions/962969808/">範圍內算同一顆爆炸</a> QAQ</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/06/05/leetcode/2101/" data-id="cllax6yot004c1hrvhjhq4j44" data-title="Leetcode 2101 - Detonate the Maximum Bombs" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/06/05/leetcode/2101/" data-id="cllut42s4004g1xp64rbd8pbd" data-title="Leetcode 2101 - Detonate the Maximum Bombs" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/06/05/leetcode/2101/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -250,6 +250,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -263,10 +267,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

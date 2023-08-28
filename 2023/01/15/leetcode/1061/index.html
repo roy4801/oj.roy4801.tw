@@ -17,15 +17,15 @@
   
   <title>Leetcode 1061 - Lexicographically Smallest Equivalent String | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你兩個字串 s1 和 s2 還有一個 baseStr，其中 s1[i] 和 s2[i] 是 equivalent characters，今天給你 baseStr 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?  Equivalence relation:  Reflexivity: &#39;a&#39; &#x3D;&#x3D; &#39;a&#39; Symmetry: &#39;a&#39;">
+  <meta name="description" content="題目 Problem# 給你兩個字串 s1 和 s2 還有一個 baseStr，其中 s1[i] 和 s2[i] 是 equivalent characters，今天給你 baseStr 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?  Equivalence relation:  Reflexivity: &#39;a&#39; &#x3D;&#x3D; &#39;a&#39; Symmetry: &#39;a">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 1061 - Lexicographically Smallest Equivalent String">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/01/15/leetcode/1061/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你兩個字串 s1 和 s2 還有一個 baseStr，其中 s1[i] 和 s2[i] 是 equivalent characters，今天給你 baseStr 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?  Equivalence relation:  Reflexivity: &#39;a&#39; &#x3D;&#x3D; &#39;a&#39; Symmetry: &#39;a&#39;">
+<meta property="og:description" content="題目 Problem# 給你兩個字串 s1 和 s2 還有一個 baseStr，其中 s1[i] 和 s2[i] 是 equivalent characters，今天給你 baseStr 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?  Equivalence relation:  Reflexivity: &#39;a&#39; &#x3D;&#x3D; &#39;a&#39; Symmetry: &#39;a">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-15T22:47:35.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.625Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -123,7 +123,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你兩個字串 <code>s1</code> 和 <code>s2</code> 還有一個 <code>baseStr</code>，其中 <code>s1[i]</code> 和 <code>s2[i]</code> 是 equivalent characters，今天給你 <code>baseStr</code> 問你如果用 equivalence relation 替換掉字母後，字典序最小的字串為何?</p>
 <ul>
 <li>Equivalence relation:
@@ -134,7 +134,7 @@
 </ul>
 </li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p><code>s1[i] == s2[i]</code> 代表 <code>s1[i]</code> 和 <code>s2[i]</code> 是同一組的，維護分組的資料結構，同時遍歷 <code>s1</code> 和 <code>s2</code> 儲存組資訊，接著遍歷一次 <code>baseStr</code> 去找最小字典序的字元即可(利用剛剛維護的資料結構去查詢同組)</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(26(n+m))$
@@ -146,13 +146,13 @@
 </li>
 <li>空間複雜度: $\mathcal{O}(26)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F1061.cpp%23L17-L67&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/01/15/leetcode/1061/" data-id="cllax6ymo000a1hrvg3qmfbvp" data-title="Leetcode 1061 - Lexicographically Smallest Equivalent String" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/01/15/leetcode/1061/" data-id="cllut42q0000a1xp6bfpk5ha0" data-title="Leetcode 1061 - Lexicographically Smallest Equivalent String" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/01/15/leetcode/1061/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -243,6 +243,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -256,10 +260,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

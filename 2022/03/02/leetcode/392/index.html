@@ -17,15 +17,15 @@
   
   <title>Leetcode 392 - Is Subsequence | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給兩個字串 s 和 t 問 s 是不是 t 的子序列(Subsequence)  0 &lt;&#x3D; s.length &lt;&#x3D; 100 0 &lt;&#x3D; t.length &lt;&#x3D; 104  Follow-up: 當 s.length &gt;&#x3D; 10^9 時要怎麼做">
+  <meta name="description" content="題目 Problem# 給兩個字串 s 和 t 問 s 是不是 t 的子序列(Subsequence)  0 &lt;&#x3D; s.length &lt;&#x3D; 100 0 &lt;&#x3D; t.length &lt;&#x3D; 104  Follow-up: 當 s.length &gt;&#x3D; 10^9 時要怎麼做">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 392 - Is Subsequence">
 <meta property="og:url" content="http://oj.roy4801.tw/2022/03/02/leetcode/392/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給兩個字串 s 和 t 問 s 是不是 t 的子序列(Subsequence)  0 &lt;&#x3D; s.length &lt;&#x3D; 100 0 &lt;&#x3D; t.length &lt;&#x3D; 104  Follow-up: 當 s.length &gt;&#x3D; 10^9 時要怎麼做">
+<meta property="og:description" content="題目 Problem# 給兩個字串 s 和 t 問 s 是不是 t 的子序列(Subsequence)  0 &lt;&#x3D; s.length &lt;&#x3D; 100 0 &lt;&#x3D; t.length &lt;&#x3D; 104  Follow-up: 當 s.length &gt;&#x3D; 10^9 時要怎麼做">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-02T20:21:52.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -124,20 +124,20 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/is-subsequence/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給兩個字串 <code>s</code> 和 <code>t</code> 問 <code>s</code> 是不是 <code>t</code> 的子序列(Subsequence)</p>
 <ul>
 <li><code>0 &lt;= s.length &lt;= 100</code></li>
 <li><code>0 &lt;= t.length &lt;= 104</code></li>
 </ul>
 <p>Follow-up: 當 s.length &gt;= 10^9 時要怎麼做</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>當下想到 DP 的作法，看 <code>s</code> 和 <code>t</code> 的 LCS 長度是否跟 <code>s.length()</code> 一樣就好，$\mathcal{O}(NM)$<br>
 另一個做法就是雙指標直接看 <code>s</code> 是否都在 <code>t</code> 裏頭就好 $\mathcal{O}(N+M)$</p>
 <p><code>N=s.length</code>, <code>M=t.length</code></p>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F392.cpp%23L10-L50&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <ul>
 <li>只有三行的雙指標
 <ul>
@@ -145,13 +145,13 @@
 </ul>
 </li>
 </ul>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>看到 subsequence 直覺就想到 LCS 但題目好像不是問這個</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/02/leetcode/392/" data-id="cllax6ypt007j1hrv4lu3535x" data-title="Leetcode 392 - Is Subsequence" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/02/leetcode/392/" data-id="cllut42tk007r1xp6aqo383zd" data-title="Leetcode 392 - Is Subsequence" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/02/leetcode/392/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -242,6 +242,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -255,10 +259,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

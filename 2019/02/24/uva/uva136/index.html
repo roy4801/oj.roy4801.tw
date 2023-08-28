@@ -17,15 +17,15 @@
   
   <title>Uva 136 - Ugly Number | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem Ulgy Number是只有$2$、$3$、$5$質因數的數字。前11項是： $$ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ … $$ 程式必須印出第1500項ugly number 想法 第$n$個數字一定是前$n-1$個數字中，乘$2$、乘$3$、乘$5$得來的。 找數字的時候不用每個都從頭開始找，要找第$n$個數字，而">
+  <meta name="description" content="題目 Problem# Ulgy Number是只有$2$、$3$、$5$質因數的數字。前11項是： $$ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ … $$ 程式必須印出第1500項ugly number 想法# 第$n$個數字一定是前$n-1$個數字中，乘$2$、乘$3$、乘$5$得來的。 找數字的時候不用每個都從頭開始找，要找第$n$個數字">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Uva 136 - Ugly Number">
 <meta property="og:url" content="http://oj.roy4801.tw/2019/02/24/uva/uva136/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem Ulgy Number是只有$2$、$3$、$5$質因數的數字。前11項是： $$ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ … $$ 程式必須印出第1500項ugly number 想法 第$n$個數字一定是前$n-1$個數字中，乘$2$、乘$3$、乘$5$得來的。 找數字的時候不用每個都從頭開始找，要找第$n$個數字，而">
+<meta property="og:description" content="題目 Problem# Ulgy Number是只有$2$、$3$、$5$質因數的數字。前11項是： $$ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ … $$ 程式必須印出第1500項ugly number 想法# 第$n$個數字一定是前$n-1$個數字中，乘$2$、乘$3$、乘$5$得來的。 找數字的時候不用每個都從頭開始找，要找第$n$個數字">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-02-24T13:26:12.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.322Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="DP">
@@ -123,22 +123,22 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;page=show_problem&amp;problem=72">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p><code>Ulgy Number</code>是只有$2$、$3$、$5$質因數的數字。前11項是：<br>
 $$<br>
 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 8,\ 9,\ 10,\ 12,\ 15,\ …<br>
 $$<br>
 程式必須印出第1500項<code>ugly number</code></p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>第$n$個數字一定是前$n-1$個數字中，乘$2$、乘$3$、乘$5$得來的。<br>
 找數字的時候不用每個都從頭開始找，要找第$n$個數字，而這個數字勢必$&gt;$第${n-1}$個數字，所以第<code>i, j, k</code>個數字（分別乘$2$、乘$3$、乘$5$），至少要$&gt;$第$n-1$個數字才有可能成為第$n$個數字。在這三種可能中，挑最小的便是第$n$個數字。</p>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/uva/136.cpp">https://github.com/roy4801/solved_problems/blob/master/uva/136.cpp</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2019/02/24/uva/uva136/" data-id="cllax6ys600d41hrvcyx9akxl" data-title="Uva 136 - Ugly Number" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2019/02/24/uva/uva136/" data-id="cllut42ve00d71xp60sxr21e0" data-title="Uva 136 - Ugly Number" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2019/02/24/uva/uva136/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -229,6 +229,10 @@ $$<br>
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -242,10 +246,6 @@ $$<br>
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

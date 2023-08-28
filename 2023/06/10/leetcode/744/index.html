@@ -17,15 +17,15 @@
   
   <title>Leetcode 744 - Find Smallest Letter Greater Than Target | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你 $n$ 個遞增排序的字元，要你找第一個大於 target 的字元是啥 測資限制  $2 \le n \le 10^4$ 字元都是小寫、遞增排序">
+  <meta name="description" content="題目 Problem# 給你 $n$ 個遞增排序的字元，要你找第一個大於 target 的字元是啥 測資限制#  $2 \le n \le 10^4$ 字元都是小寫、遞增排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 744 - Find Smallest Letter Greater Than Target">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/06/10/leetcode/744/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你 $n$ 個遞增排序的字元，要你找第一個大於 target 的字元是啥 測資限制  $2 \le n \le 10^4$ 字元都是小寫、遞增排序">
+<meta property="og:description" content="題目 Problem# 給你 $n$ 個遞增排序的字元，要你找第一個大於 target 的字元是啥 測資限制#  $2 \le n \le 10^4$ 字元都是小寫、遞增排序">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-06-10T01:01:32.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.322Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -123,21 +123,21 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你 $n$ 個遞增排序的字元，要你找第一個大於 <code>target</code> 的字元是啥</p>
-<h2 id="測資限制">測資限制</h2>
+<h2><span id="ce-zi-xian-zhi">測資限制</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
 <ul>
 <li>$2 \le n \le 10^4$</li>
 <li>字元都是小寫、遞增排序</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>找位置很簡單 $O(n)$，但注意字元是排好序的</p>
 <p>二分搜裸題，注意找的是 <code>upper_bound</code>(第一個 &gt; target 的字元)</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(\log{n})$</li>
 <li>空間複雜度: $\mathcal{O}(1)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <ul>
 <li>可以用 STL 的 <code>upper_bound()</code></li>
 </ul>
@@ -150,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/06/10/leetcode/744/" data-id="cllax6yr200a91hrv9nw2c3gl" data-title="Leetcode 744 - Find Smallest Letter Greater Than Target" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/06/10/leetcode/744/" data-id="cllut42ug00ab1xp69lr56xu8" data-title="Leetcode 744 - Find Smallest Letter Greater Than Target" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/06/10/leetcode/744/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -241,6 +241,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -254,10 +258,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

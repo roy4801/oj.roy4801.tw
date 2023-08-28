@@ -17,15 +17,15 @@
   
   <title>Leetcode 703 - Kth Largest Element in a Stream | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 問你能不能設計一個 class 來在一個 stream 中找到第 k 大的元素。 你要實作兩個 function:  KthLargest(int k, int[] nums) ctor 用來初始化 k 和一開始的數字 nums int add(int val) 將 val 加到資料中，你的 class 應能維護現在第 k 大的數字並回傳">
+  <meta name="description" content="題目 Problem# 問你能不能設計一個 class 來在一個 stream 中找到第 k 大的元素。 你要實作兩個 function:  KthLargest(int k, int[] nums) ctor 用來初始化 k 和一開始的數字 nums int add(int val) 將 val 加到資料中，你的 class 應能維護現在第 k 大的數字並回傳">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 703 - Kth Largest Element in a Stream">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/05/23/leetcode/703/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 問你能不能設計一個 class 來在一個 stream 中找到第 k 大的元素。 你要實作兩個 function:  KthLargest(int k, int[] nums) ctor 用來初始化 k 和一開始的數字 nums int add(int val) 將 val 加到資料中，你的 class 應能維護現在第 k 大的數字並回傳">
+<meta property="og:description" content="題目 Problem# 問你能不能設計一個 class 來在一個 stream 中找到第 k 大的元素。 你要實作兩個 function:  KthLargest(int k, int[] nums) ctor 用來初始化 k 和一開始的數字 nums int add(int val) 將 val 加到資料中，你的 class 應能維護現在第 k 大的數字並回傳">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-05-23T21:13:10.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.322Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -124,18 +124,18 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/kth-largest-element-in-a-stream/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>問你能不能設計一個 class 來在一個 stream 中找到第 <code>k</code> 大的元素。</p>
 <p>你要實作兩個 function:</p>
 <ul>
 <li><code>KthLargest(int k, int[] nums)</code> ctor 用來初始化 <code>k</code> 和一開始的數字 <code>nums</code></li>
 <li><code>int add(int val)</code> 將 <code>val</code> 加到資料中，你的 class 應能維護現在第 <code>k</code> 大的數字並回傳</li>
 </ul>
-<h2 id="測資限制">測資限制:</h2>
+<h2><span id="ce-zi-xian-zhi">測資限制:</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
 <ul>
 <li>$1 \le k \le 10^4$</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>用 minheap (priority queue) 來維護最小的元素，但限制這個 minheap 最多只能有 <code>k</code> 個元素，當 minheap 元素數量小於 k 時，直接 push 進去。<br>
 當 minheap 的元素數量 $\ge$ <code>k</code> 時，在加入時去檢查加入的數字有沒有比 top 還大，如果有，則先 pop 再 push (因為大於目前最小的，如果加入之後會使 minheap 元素數量 $&gt;$ <code>k</code>)<br>
 如此一來，minheap 的 top 就變成了第 k 大的數字</p>
@@ -143,13 +143,13 @@
 <li>時間複雜度: 建立 $\mathcal{O}(n\log{n})$, <code>add</code> 操作 $\mathcal{O}(\log{n})$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F703.cpp%23L17-L47&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/05/23/leetcode/703/" data-id="cllax6yqu009v1hrv0vn71t34" data-title="Leetcode 703 - Kth Largest Element in a Stream" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/05/23/leetcode/703/" data-id="cllut42ub009x1xp677be9jis" data-title="Leetcode 703 - Kth Largest Element in a Stream" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/05/23/leetcode/703/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -240,6 +240,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -253,10 +257,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

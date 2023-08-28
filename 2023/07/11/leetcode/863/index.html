@@ -17,15 +17,15 @@
   
   <title>Leetcode 863 - All Nodes Distance K in Binary Tree | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你一個二元樹，和目標節點(target）以及一個正整數 k ，要你回傳所有與 target 距離 k 的節點 測資限制  number of nodes: $0 \le n \le 500$ $0 \le k \le 1000$$ node value: $0 \le val \le 500$">
+  <meta name="description" content="題目 Problem# 給你一個二元樹，和目標節點(target）以及一個正整數 k ，要你回傳所有與 target 距離 k 的節點 測資限制#  number of nodes: $0 \le n \le 500$ $0 \le k \le 1000$$ node value: $0 \le val \le 500$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 863 - All Nodes Distance K in Binary Tree">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/07/11/leetcode/863/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你一個二元樹，和目標節點(target）以及一個正整數 k ，要你回傳所有與 target 距離 k 的節點 測資限制  number of nodes: $0 \le n \le 500$ $0 \le k \le 1000$$ node value: $0 \le val \le 500$">
+<meta property="og:description" content="題目 Problem# 給你一個二元樹，和目標節點(target）以及一個正整數 k ，要你回傳所有與 target 距離 k 的節點 測資限制#  number of nodes: $0 \le n \le 500$ $0 \le k \le 1000$$ node value: $0 \le val \le 500$">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-11T19:39:37.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.322Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -124,29 +124,29 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個二元樹，和目標節點(<code>target</code>）以及一個正整數 <code>k</code> ，要你回傳所有與 <code>target</code> 距離 <code>k</code> 的節點</p>
-<h2 id="測資限制">測資限制</h2>
+<h2><span id="ce-zi-xian-zhi">測資限制</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
 <ul>
 <li>number of nodes: $0 \le n \le 500$</li>
 <li>$0 \le k \le 1000$$</li>
 <li>node value: $0 \le val \le 500$</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>題目給的是 binary tree ，只能往 leaf 走，並不能往回走，所以可以將題目先轉成 graph，接著在上面遍歷，找距離 $k$ 的節點即可</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n)$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F863.cpp%23L18-L91&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <p>有人作法只記每個點的 parent 這樣還是可以遍歷整棵樹</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/07/11/leetcode/863/" data-id="cllax6yri00b01hrvakxq5rof" data-title="Leetcode 863 - All Nodes Distance K in Binary Tree" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/07/11/leetcode/863/" data-id="cllut42uq00b31xp63n8eg0gh" data-title="Leetcode 863 - All Nodes Distance K in Binary Tree" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/07/11/leetcode/863/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -237,6 +237,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -250,10 +254,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

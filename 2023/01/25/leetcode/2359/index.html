@@ -17,16 +17,16 @@
   
   <title>Leetcode 2359 - Find Closest Node to Given Two Nodes | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem  給你一個有 $n$ 個點的有向圖，每個點只有一條邊，並且給你兩個整數 node1 和 node2，要你回傳一個 node i (node1 和 node2 都到得了) ，其 index 使得 “node1 到 node i 的距離” 和 “node2 到 node i 的距離” 的最大值越小越好 如果有多種解，回傳 index 最小的即可；無解回傳 -1。  測資限制:">
+  <meta name="description" content="題目 Problem#  給你一個有 $n$ 個點的有向圖，每個點只有一條邊，並且給你兩個整數 node1 和 node2，要你回傳一個 node i (node1 和 node2 都到得了) ，其 index 使得 “node1 到 node i 的距離” 和 “node2 到 node i 的距離” 的最大值越小越好 如果有多種解，回傳 index 最小的即可；無解回傳 -1。  測資限制:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 2359 - Find Closest Node to Given Two Nodes">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/01/25/leetcode/2359/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem  給你一個有 $n$ 個點的有向圖，每個點只有一條邊，並且給你兩個整數 node1 和 node2，要你回傳一個 node i (node1 和 node2 都到得了) ，其 index 使得 “node1 到 node i 的距離” 和 “node2 到 node i 的距離” 的最大值越小越好 如果有多種解，回傳 index 最小的即可；無解回傳 -1。  測資限制:">
+<meta property="og:description" content="題目 Problem#  給你一個有 $n$ 個點的有向圖，每個點只有一條邊，並且給你兩個整數 node1 和 node2，要你回傳一個 node i (node1 和 node2 都到得了) ，其 index 使得 “node1 到 node i 的距離” 和 “node2 到 node i 的距離” 的最大值越小越好 如果有多種解，回傳 index 最小的即可；無解回傳 -1。  測資限制:">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-2.png">
 <meta property="article:published_time" content="2023-01-25T22:53:04.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -126,8 +126,8 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-closest-node-to-given-two-nodes/description/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-2.png" alt=""></p>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
+<p><img src="https://assets.leetcode.com/uploads/2022/06/07/graph4drawio-2.png" alt></p>
 <p>給你一個有 $n$ 個點的<strong>有向圖</strong>，每個點只有一條邊，並且給你兩個整數 <code>node1</code> 和 <code>node2</code>，要你回傳一個 <code>node i</code> (<code>node1</code> 和 <code>node2</code> 都到得了) ，其 index 使得 “<code>node1</code> 到 <code>node i</code> 的距離” 和 “<code>node2</code> 到 <code>node i</code> 的距離” 的最大值越小越好<br>
 如果有多種解，回傳 index 最小的即可；無解回傳 <code>-1</code>。</p>
 <ul>
@@ -140,7 +140,7 @@
 </li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">edges = [2,2,3,-1]</span><br><span class="line">代表 node i 連到 edges[i]</span><br></pre></td></tr></table></figure>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>從 <code>node1</code> 和 <code>node2</code> 各自 dfs 一次，記錄各自的以該點為起始點對於所有點的&quot;距離 array&quot; <code>dis[]</code>，接著枚舉 <code>i=0~n</code> 找 <code>max(node1_dis[i], node2_dis[i])</code> 的最小值，紀錄 index 回傳 (dis[i] = -1 代表無法到達 <code>i</code> 點，在找最小值時要忽略)</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n)$
@@ -150,9 +150,9 @@
 </li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F2359.cpp%23L10-L81&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <ul>
 <li>題目 input 的 <code>edges</code> 其實就是圖了(adjacency matrix) 下意識轉成 adjacency list 導致多花 100ms
 <ul>
@@ -164,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/01/25/leetcode/2359/" data-id="cllax6ype00631hrvdxktcuqa" data-title="Leetcode 2359 - Find Closest Node to Given Two Nodes" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/01/25/leetcode/2359/" data-id="cllut42sx006b1xp6bambgk1e" data-title="Leetcode 2359 - Find Closest Node to Given Two Nodes" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/01/25/leetcode/2359/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -255,6 +255,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -268,10 +272,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

@@ -17,15 +17,15 @@
   
   <title>Leetcode 1675 - Minimize Deviation in Array | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 題目給你一列正整數 N ，你可以對數列中的每個元素執行兩種操作:  如果 N[i] 是偶數，可以除 2 如果 N[i] 是奇數，可以乘 2  定義 deviation 是數列中的最大和最小之差 max(N) - min(N) 問你經過幾次操作後，最小的 deviation 是多少?">
+  <meta name="description" content="題目 Problem# 題目給你一列正整數 N ，你可以對數列中的每個元素執行兩種操作:  如果 N[i] 是偶數，可以除 2 如果 N[i] 是奇數，可以乘 2  定義 deviation 是數列中的最大和最小之差 max(N) - min(N) 問你經過幾次操作後，最小的 deviation 是多少?">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 1675 - Minimize Deviation in Array">
 <meta property="og:url" content="http://oj.roy4801.tw/2022/02/20/leetcode/1675/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 題目給你一列正整數 N ，你可以對數列中的每個元素執行兩種操作:  如果 N[i] 是偶數，可以除 2 如果 N[i] 是奇數，可以乘 2  定義 deviation 是數列中的最大和最小之差 max(N) - min(N) 問你經過幾次操作後，最小的 deviation 是多少?">
+<meta property="og:description" content="題目 Problem# 題目給你一列正整數 N ，你可以對數列中的每個元素執行兩種操作:  如果 N[i] 是偶數，可以除 2 如果 N[i] 是奇數，可以乘 2  定義 deviation 是數列中的最大和最小之差 max(N) - min(N) 問你經過幾次操作後，最小的 deviation 是多少?">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-20T05:33:33.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -124,7 +124,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/minimize-deviation-in-array/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>題目給你一列正整數 <code>N</code> ，你可以對數列中的每個元素執行兩種操作:</p>
 <ul>
 <li>如果 <code>N[i]</code> 是偶數，可以除 2</li>
@@ -132,7 +132,7 @@
 </ul>
 <p>定義 <code>deviation</code> 是數列中的最大和最小之差 <code>max(N) - min(N)</code><br>
 問你經過幾次操作後，最小的 <code>deviation</code> 是多少?</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>因為要求相差最小，所以我們希望數列中的最大值<code>maxN</code>越小越好；最小值<code>minN</code>越大越好。<br>
 由於題目沒有限制操作數，可以先將數列中的奇數都先乘2，這樣操作就只剩下偶數除二的情況。(此時數列中每個數字都是最大值)<br>
 接下來就只要看每次數列中最大的數字是不是偶數，如果是就除二，如果最大數字是奇數的話，就代表程式結束，接著就回傳當前最大和最小之差。</p>
@@ -146,18 +146,18 @@
 </li>
 <li>空間複雜度: $\mathcal{O}(N)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F1675.cpp%23L10-L47&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/minimize-deviation-in-array/discuss/955262/C%2B%2B-intuitions-and-flip">https://leetcode.com/problems/minimize-deviation-in-array/discuss/955262/C%2B%2B-intuitions-and-flip</a></p>
 <p>TODO</p>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>一開始毫無頭緒QQ，看了題解後才知道如何解，要常寫 greedy 的題目ㄌ</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/20/leetcode/1675/" data-id="cllax6ynu00301hrv2a65gqxf" data-title="Leetcode 1675 - Minimize Deviation in Array" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/02/20/leetcode/1675/" data-id="cllut42rd00341xp6fcv121n7" data-title="Leetcode 1675 - Minimize Deviation in Array" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/02/20/leetcode/1675/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -248,6 +248,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -261,10 +265,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

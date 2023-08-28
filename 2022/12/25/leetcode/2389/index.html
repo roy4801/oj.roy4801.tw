@@ -17,15 +17,15 @@
   
   <title>Leetcode 2389 - Longest Subsequence With Limited Sum | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你一個整數陣列 nums 長度 n，接著長度 m 的陣列 queries 代表詢問 問你能不能回答一個長度 m 的陣列 answer，answer[i] 代表 nums 中的數字加起來 $\le$ queries[i] 最大的長度 想法 題目沒有問 subsequence 的內容，只問長度，所以可以 sort nums，然後從小的加到大的，當 sum 大於 queries[">
+  <meta name="description" content="題目 Problem# 給你一個整數陣列 nums 長度 n，接著長度 m 的陣列 queries 代表詢問 問你能不能回答一個長度 m 的陣列 answer，answer[i] 代表 nums 中的數字加起來 $\le$ queries[i] 最大的長度 想法# 題目沒有問 subsequence 的內容，只問長度，所以可以 sort nums，然後從小的加到大的，當 sum 大於 querie">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 2389 - Longest Subsequence With Limited Sum">
 <meta property="og:url" content="http://oj.roy4801.tw/2022/12/25/leetcode/2389/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你一個整數陣列 nums 長度 n，接著長度 m 的陣列 queries 代表詢問 問你能不能回答一個長度 m 的陣列 answer，answer[i] 代表 nums 中的數字加起來 $\le$ queries[i] 最大的長度 想法 題目沒有問 subsequence 的內容，只問長度，所以可以 sort nums，然後從小的加到大的，當 sum 大於 queries[">
+<meta property="og:description" content="題目 Problem# 給你一個整數陣列 nums 長度 n，接著長度 m 的陣列 queries 代表詢問 問你能不能回答一個長度 m 的陣列 answer，answer[i] 代表 nums 中的數字加起來 $\le$ queries[i] 最大的長度 想法# 題目沒有問 subsequence 的內容，只問長度，所以可以 sort nums，然後從小的加到大的，當 sum 大於 querie">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-25T23:12:04.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -123,22 +123,22 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/longest-subsequence-with-limited-sum/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個整數陣列 <code>nums</code> 長度 <code>n</code>，接著長度 <code>m</code> 的陣列 <code>queries</code> 代表詢問<br>
 問你能不能回答一個長度 <code>m</code> 的陣列 <code>answer</code>，<code>answer[i]</code> 代表 <code>nums</code> 中的數字加起來 $\le$ <code>queries[i]</code> 最大的長度</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>題目沒有問 subsequence 的內容，只問長度，所以可以 sort <code>nums</code>，然後從小的加到大的，當 sum 大於 <code>queries[i]</code> 時紀錄長度即可</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(nm)$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F2389.cpp%23L17-L38&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/25/leetcode/2389/" data-id="cllax6ypf00681hrvck478zr6" data-title="Leetcode 2389 - Longest Subsequence With Limited Sum" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/25/leetcode/2389/" data-id="cllut42sz006g1xp6bk5r1out" data-title="Leetcode 2389 - Longest Subsequence With Limited Sum" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/25/leetcode/2389/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -229,6 +229,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -242,10 +246,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

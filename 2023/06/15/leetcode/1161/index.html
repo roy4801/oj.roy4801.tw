@@ -17,16 +17,16 @@
   
   <title>Leetcode 1161 - Maximum Level Sum of a Binary Tree | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem  給你一個 Binary Tree 問你能不能回傳一個最小的 depth $x$ 其中 depth $x$ 的所有 node 總和 $y$ 最大 測資限制">
+  <meta name="description" content="題目 Problem#  給你一個 Binary Tree 問你能不能回傳一個最小的 depth $x$ 其中 depth $x$ 的所有 node 總和 $y$ 最大 測資限制#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 1161 - Maximum Level Sum of a Binary Tree">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/06/15/leetcode/1161/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem  給你一個 Binary Tree 問你能不能回傳一個最小的 depth $x$ 其中 depth $x$ 的所有 node 總和 $y$ 最大 測資限制">
+<meta property="og:description" content="題目 Problem#  給你一個 Binary Tree 問你能不能回傳一個最小的 depth $x$ 其中 depth $x$ 的所有 node 總和 $y$ 最大 測資限制#">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://assets.leetcode.com/uploads/2019/05/03/capture.JPG">
 <meta property="article:published_time" content="2023-06-15T19:56:24.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.625Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -126,28 +126,28 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/">題目</a></p>
-<h1>Problem</h1>
-<img src="https://assets.leetcode.com/uploads/2019/05/03/capture.JPG" width="50%"/>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
+<img src="https://assets.leetcode.com/uploads/2019/05/03/capture.JPG" width="50%">
 <p>給你一個 Binary Tree 問你能不能回傳一個<strong>最小</strong>的 depth $x$ 其中 depth $x$ 的所有 node 總和 $y$ <strong>最大</strong></p>
-<h2 id="測資限制">測資限制</h2>
+<h2><span id="ce-zi-xian-zhi">測資限制</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
 <ul>
 <li>$1 \le n \le 10^4$</li>
 <li>$-10^5 \le val \le 10^5$</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>BFS 遍歷，要記得每個 node 的深度，當往下走訪(<code>left</code>, <code>right</code>)時，<code>depth</code> 要加一<br>
 建個 array <code>sum[i]</code> 其中 <code>i</code> 是圖的 depth</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n)$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F1161.cpp%23L18-L41&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/06/15/leetcode/1161/" data-id="cllax6ymt000k1hrv98kcd3bk" data-title="Leetcode 1161 - Maximum Level Sum of a Binary Tree" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/06/15/leetcode/1161/" data-id="cllut42q9000k1xp6e9d97bp0" data-title="Leetcode 1161 - Maximum Level Sum of a Binary Tree" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/06/15/leetcode/1161/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -238,6 +238,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -251,10 +255,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

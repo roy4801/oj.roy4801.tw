@@ -95,6 +95,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-leetcode/739" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/12/18/leetcode/739/" class="article-date">
+  <time class="dt-published" datetime="2022-12-18T22:52:40.000Z" itemprop="datePublished">2022-12-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/12/18/leetcode/739/">Leetcode 739 - Daily Temperatures</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/daily-temperatures/description/">題目</a></p>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
+<p>給你一個整數陣列 $T[i]$ 要你回答一個整數陣列 $ans$ ，其中 $ans[i]$ 代表對於第 $i$ 天的溫度 $T[i]$ 會存在一個溫度 $T[j]$ 且 $j = i + ans[i]$ 使得 $T[i] &lt; T[j]$</p>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
+<p>維護一個 monotonic stack 代表等待比他大的溫度的列表(可以用 <code>pair&lt;int,int&gt;</code> 一起存 <code>(idx, temp)</code>)，接著遍歷 <code>temp[i]</code> 如果大於 stack 頂端的溫度，就代表裏頭的溫度遇到比它大的，所以就計算 <code>ans[i]</code> 接著 pop stack；接著把目前的 idx 和 temp[idx] 堆進 stack 中 (找比它大的溫度距離它多少)</p>
+        
+          <p class="article-more-link">
+            <a href="/2022/12/18/leetcode/739/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://oj.roy4801.tw/2022/12/18/leetcode/739/" data-id="cllut42ue00a41xp6959651p6" data-title="Leetcode 739 - Daily Temperatures" class="article-share-link">Share</a>
+      
+        <a href="http://oj.roy4801.tw/2022/12/18/leetcode/739/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/monotonic-stack/" rel="tag">monotonic stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-leetcode/1143" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/15/leetcode/1143/" class="article-date">
@@ -122,10 +177,10 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/longest-common-subsequence/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你兩個字串 <code>s1</code> 和 <code>s2</code> 問你最常共同子序列(LCS)長度多少?</p>
 <p><code>1 &lt;= s1.size(), s2.size() &lt;= 1000</code></p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
         
           <p class="article-more-link">
             <a href="/2022/12/15/leetcode/1143/#more">Read More</a>
@@ -134,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/15/leetcode/1143/" data-id="cllax6ymt000j1hrv081a518t" data-title="Leetcode 1143 - Longest Common Subsequence Medium" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/15/leetcode/1143/" data-id="cllut42q8000j1xp66qn1e1bj" data-title="Leetcode 1143 - Longest Common Subsequence Medium" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/15/leetcode/1143/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -177,9 +232,9 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/house-robber/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個整數陣列 <code>M[i]</code> 代表 第 $i$ 間房子的價值，你今天是小偷要去偷錢，但是有個限制是不能連續偷(偷第 $i$ 間，第 $i-1$ 和 $i+1$ 都不能偷)，否則會被抓到，問你最大能偷多少?</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>對於 $1$ 到 $i$ 能偷的總價值，假如你挑了第 $i$ 間房子，那一定是和第 $i-2$ 間的房子加總起來($W[i]+W[i-2]$)；如果不挑 $i$ 那必定是 $i-1$ ($W[i-1]$)，而要求兩者最大，所以取 max</p>
         
           <p class="article-more-link">
@@ -189,7 +244,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/14/leetcode/198/" data-id="cllax6yoe003w1hrv9roe1l3t" data-title="Leetcode 198 - House Robber" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/14/leetcode/198/" data-id="cllut42ry00401xp61xiw8ud4" data-title="Leetcode 198 - House Robber" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/14/leetcode/198/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -232,11 +287,11 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/minimum-falling-path-sum/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p><img src="https://assets.leetcode.com/uploads/2021/11/03/failing1-grid.jpg" alt></p>
 <p>給你一個 <code>nxn</code> 的陣列，問你從上面走到最下面<strong>最短路徑總和</strong>為多少?<br>
 可以左右斜著走，但只能往下走，意即對於位置 $(i, j)$ 可以往 $(i+1, j-1)$ (左下),  $(i+1, j)$ (下方),  $(i+1, j-1)$ (右下) 走</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
         
           <p class="article-more-link">
             <a href="/2022/12/14/leetcode/931/#more">Read More</a>
@@ -245,7 +300,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/14/leetcode/931/" data-id="cllax6yrn00bi1hrv664t4i8j" data-title="Leetcode 931 - Minimum Falling Path Sum" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/14/leetcode/931/" data-id="cllut42uw00bk1xp6hn4c43no" data-title="Leetcode 931 - Minimum Falling Path Sum" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/14/leetcode/931/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -288,9 +343,9 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/climbing-stairs/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>有一個 <code>n</code> 階的樓梯，每次可以走 <code>1</code> 階或 <code>2</code> 階，問你有幾種不同的走法</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>當前的走法 $i$ 可以是 $i-1$ 走 1 或是 $i-2$ 走 2 的總和，總共 0 階和 1 階的方法數是 1</p>
         
           <p class="article-more-link">
@@ -300,7 +355,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/12/leetcode/70/" data-id="cllax6yqt009r1hrv99sg3jky" data-title="Leetcode 70 - Climbing Stairs" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/12/leetcode/70/" data-id="cllut42u9009u1xp66ldw9goi" data-title="Leetcode 70 - Climbing Stairs" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/12/leetcode/70/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -343,9 +398,9 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/range-sum-of-bst/description/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個二元搜尋樹，問你加總數值在 <code>[low, high]</code> 之間的 node</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>DFS 加總即可</p>
         
           <p class="article-more-link">
@@ -355,7 +410,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/07/leetcode/938/" data-id="cllax6yro00bl1hrv5b961rxx" data-title="Leetcode 938 - Range Sum of BST" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/07/leetcode/938/" data-id="cllut42ux00bo1xp6aprz3d57" data-title="Leetcode 938 - Range Sum of BST" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/07/leetcode/938/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -398,13 +453,13 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/middle-of-the-linked-list/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個 linked-list 問你能不能回傳中間的 node，如果有兩個中間的，則回傳後者。</p>
 <ul>
 <li>$1 \le N[i] \le 100$</li>
 <li>$1 \le N.size() \le 100$</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
         
           <p class="article-more-link">
             <a href="/2022/12/05/leetcode/876/#more">Read More</a>
@@ -413,7 +468,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/05/leetcode/876/" data-id="cllax6yrj00b41hrvgtnjc2ms" data-title="Leetcode 876 - Middle of the Linked List" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/05/leetcode/876/" data-id="cllut42ur00b61xp687j785ts" data-title="Leetcode 876 - Middle of the Linked List" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/05/leetcode/876/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -456,10 +511,10 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/unique-number-of-occurrences/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個陣列 <code>n</code> 其中 <code>1 &lt;= n.size() &lt;= 1000</code> 且 <code>-1000 &lt;= n[i] &lt;= 1000</code> 問你陣列數字<strong>出現的次數</strong>有沒有重複，沒有重複輸出 <code>true</code> 反之輸出 <code>false</code></p>
 <p>e.g. <code>[1,2,2,1,1,3] = true</code> =&gt; 1 出現 3 次，2 出現 2 次，3 出現 1 次，出現的次數都不重複</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
         
           <p class="article-more-link">
             <a href="/2022/11/30/leetcode/1207/#more">Read More</a>
@@ -468,7 +523,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/11/30/leetcode/1207/" data-id="cllax6ymx000r1hrvf2grhmkk" data-title="Leetcode 1207 - Unique Number of Occurrences" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/11/30/leetcode/1207/" data-id="cllut42qd000r1xp66i5t6v54" data-title="Leetcode 1207 - Unique Number of Occurrences" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/11/30/leetcode/1207/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -511,9 +566,9 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/valid-anagram/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你兩個字串 <code>s</code> 和 <code>t</code> 問你 <code>s</code> 重新排順序能不能變成 <code>t</code></p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>紀錄兩個字串每個字母出現的頻率，接著比較頻率表即可</p>
         
           <p class="article-more-link">
@@ -523,7 +578,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/07/26/leetcode/242/" data-id="cllax6yph006g1hrv51e2fjet" data-title="Leetcode 242 - Valid Anagram" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/07/26/leetcode/242/" data-id="cllut42t2006o1xp62kdpe1yy" data-title="Leetcode 242 - Valid Anagram" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/07/26/leetcode/242/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -566,9 +621,9 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/valid-sudoku/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給一個 <code>9x9</code> 數獨，問你是不是合法的</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>照著規則實作</p>
         
           <p class="article-more-link">
@@ -578,64 +633,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/07/20/leetcode/36/" data-id="cllax6ypr007c1hrvgn7pat9e" data-title="Leetcode 36 - Valid Sudoku" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/07/20/leetcode/36/" data-id="cllut42td007j1xp6g7lcany2" data-title="Leetcode 36 - Valid Sudoku" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/07/20/leetcode/36/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-leetcode/2221" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/20/leetcode/2221/" class="article-date">
-  <time class="dt-published" datetime="2022-07-20T23:34:44.000Z" itemprop="datePublished">2022-07-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/20/leetcode/2221/">Leetcode 2221 - Find Triangular Sum of an Array</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-triangular-sum-of-an-array/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://i.imgur.com/r7HM3Zc.png" alt></p>
-<p>給一個陣列 <code>nums</code> 相鄰的兩個元素加起來 $% 10$ 成為新的元素，問最後剩下的一個元素值為何</p>
-<h1>想法</h1>
-        
-          <p class="article-more-link">
-            <a href="/2022/07/20/leetcode/2221/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/07/20/leetcode/2221/" data-id="cllax6yp8005k1hrvh40n181x" data-title="Leetcode 2221 - Find Triangular Sum of an Array" class="article-share-link">Share</a>
-      
-        <a href="http://oj.roy4801.tw/2022/07/20/leetcode/2221/#disqus_thread" class="article-comment-link">Comments</a>
       
       
       
@@ -706,6 +706,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -719,10 +723,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

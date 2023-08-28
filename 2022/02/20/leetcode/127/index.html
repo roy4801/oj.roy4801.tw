@@ -17,15 +17,15 @@
   
   <title>Leetcode 127 - Word Ladder | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 一個字串能夠從 beginWord 轉換成 endWord 稱作 transformation sequence e.g. beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk，今天題目給你一個 wordList 問你從 beginWord 到 endWord 總共幾個字串，並且要最短的。  其中每個字串只差一個字元 &#x3D;&gt; 相差一">
+  <meta name="description" content="題目 Problem# 一個字串能夠從 beginWord 轉換成 endWord 稱作 transformation sequence e.g. beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk，今天題目給你一個 wordList 問你從 beginWord 到 endWord 總共幾個字串，並且要最短的。  其中每個字串只差一個字元 &#x3D;&gt; 相差">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 127 - Word Ladder">
 <meta property="og:url" content="http://oj.roy4801.tw/2022/02/20/leetcode/127/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 一個字串能夠從 beginWord 轉換成 endWord 稱作 transformation sequence e.g. beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk，今天題目給你一個 wordList 問你從 beginWord 到 endWord 總共幾個字串，並且要最短的。  其中每個字串只差一個字元 &#x3D;&gt; 相差一">
+<meta property="og:description" content="題目 Problem# 一個字串能夠從 beginWord 轉換成 endWord 稱作 transformation sequence e.g. beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk，今天題目給你一個 wordList 問你從 beginWord 到 endWord 總共幾個字串，並且要最短的。  其中每個字串只差一個字元 &#x3D;&gt; 相差">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-02-20T05:07:18.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.625Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -124,7 +124,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/word-ladder/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>一個字串能夠從 <code>beginWord</code> 轉換成 <code>endWord</code> 稱作 <code>transformation sequence</code><br>
 e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目給你一個 <code>wordList</code> 問你從 <code>beginWord</code> 到 <code>endWord</code> 總共幾個字串，並且要<strong>最短</strong>的。</p>
 <ul>
@@ -132,7 +132,7 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
 <li>轉換的字串都在 <code>wordList</code> 裏頭</li>
 <li><code>beginWord</code> 不一定要在 <code>wordList</code> 裏頭</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>可以把每個 word 都想成圖上的 node，字串轉換就變成的從圖上的一個點移動到另一個點，<br>
 問題就變成想辦法建圖，從 <code>beginWord</code> 開始 bfs 即可。</p>
 <p>對於每個字來說 e.g. <code>dog</code>，有三條路可以走: <code>.og</code>, <code>d.g</code>, <code>do.</code>，可以先建個 dictionary 來方便查找 e.g. <code>.og = &#123;dog, log, cog&#125;</code>，<br>
@@ -148,17 +148,17 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
 </li>
 <li>空間複雜度: $\mathcal{O}(N^ \cdot M \cdot N)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F127.cpp%23L10-L189&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <p>TODO</p>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>一開始跟朋友討論時想複雜了= = (inspired by 祥恩)，後來看題解才知道有更簡單的解法</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/02/20/leetcode/127/" data-id="cllax6yn0000z1hrv1xr8bywr" data-title="Leetcode 127 - Word Ladder" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/02/20/leetcode/127/" data-id="cllut42qg000z1xp6gy6d9z62" data-title="Leetcode 127 - Word Ladder" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/02/20/leetcode/127/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -249,6 +249,10 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -262,10 +266,6 @@ e.g. <code>beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk</code>，今天題目�
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

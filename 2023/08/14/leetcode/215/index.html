@@ -17,15 +17,15 @@
   
   <title>Leetcode 215 - Kth Largest Element in an Array | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你一個整數陣列 nums 和整數 k，要你回傳 nums 中第 k 大的整數 限制: 不能用 sort 測資限制  $1 \le k \le n \le 10^5$ $-10^4 \le val \le 10^4$">
+  <meta name="description" content="題目 Problem# 給你一個整數陣列 nums 和整數 k，要你回傳 nums 中第 k 大的整數 限制: 不能用 sort 測資限制#  $1 \le k \le n \le 10^5$ $-10^4 \le val \le 10^4$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 215 - Kth Largest Element in an Array">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/08/14/leetcode/215/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你一個整數陣列 nums 和整數 k，要你回傳 nums 中第 k 大的整數 限制: 不能用 sort 測資限制  $1 \le k \le n \le 10^5$ $-10^4 \le val \le 10^4$">
+<meta property="og:description" content="題目 Problem# 給你一個整數陣列 nums 和整數 k，要你回傳 nums 中第 k 大的整數 限制: 不能用 sort 測資限制#  $1 \le k \le n \le 10^5$ $-10^4 \le val \le 10^4$">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-08-14T21:29:03.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -123,21 +123,21 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/kth-largest-element-in-an-array/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個整數陣列 <code>nums</code> 和整數 <code>k</code>，要你回傳 <code>nums</code> 中第 <code>k</code> 大的整數<br>
 限制: 不能用 sort</p>
-<h2 id="測資限制">測資限制</h2>
+<h2><span id="ce-zi-xian-zhi">測資限制</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
 <ul>
 <li>$1 \le k \le n \le 10^5$</li>
 <li>$-10^4 \le val \le 10^4$</li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>用 max heap 去維護最大值，將 <code>nums</code> 所有數字 push 進去後，pop $k-1$ 個數字，此時 max heap 的 top 就會是 k-th largest element</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n\log{n})$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F215.cpp%23L18-L33&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 <!-- # 賞析
 
@@ -147,7 +147,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/08/14/leetcode/215/" data-id="cllax6yov004j1hrv1rwr3wbb" data-title="Leetcode 215 - Kth Largest Element in an Array" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/08/14/leetcode/215/" data-id="cllut42s7004o1xp6elajdbsm" data-title="Leetcode 215 - Kth Largest Element in an Array" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/08/14/leetcode/215/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -160,6 +160,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2023/08/28/leetcode/225/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Leetcode 225 - Implement Stack using Queues
+        
+      </div>
+    </a>
   
   
     <a href="/2023/08/07/leetcode/74/" id="article-nav-older" class="article-nav-link-wrap">
@@ -229,6 +238,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -242,10 +255,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

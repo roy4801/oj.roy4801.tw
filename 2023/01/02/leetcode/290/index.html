@@ -17,15 +17,15 @@
   
   <title>Leetcode 290 - Word Pattern | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 給你一個字串 pattern 和字串 s 問你 pattern 和 s 是不是 full match 1&quot;abba&quot; -&gt; &quot;dog cat cat dog&quot;  1 &lt;&#x3D; pattern.length &lt;&#x3D; 300 1 &lt;&#x3D; s.length &lt;&#x3D; 3000">
+  <meta name="description" content="題目 Problem# 給你一個字串 pattern 和字串 s 問你 pattern 和 s 是不是 full match 1&quot;abba&quot; -&gt; &quot;dog cat cat dog&quot;  1 &lt;&#x3D; pattern.length &lt;&#x3D; 300 1 &lt;&#x3D; s.length &lt;&#x3D; 3000">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 290 - Word Pattern">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/01/02/leetcode/290/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 給你一個字串 pattern 和字串 s 問你 pattern 和 s 是不是 full match 1&quot;abba&quot; -&gt; &quot;dog cat cat dog&quot;  1 &lt;&#x3D; pattern.length &lt;&#x3D; 300 1 &lt;&#x3D; s.length &lt;&#x3D; 3000">
+<meta property="og:description" content="題目 Problem# 給你一個字串 pattern 和字串 s 問你 pattern 和 s 是不是 full match 1&quot;abba&quot; -&gt; &quot;dog cat cat dog&quot;  1 &lt;&#x3D; pattern.length &lt;&#x3D; 300 1 &lt;&#x3D; s.length &lt;&#x3D; 3000">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-02T19:03:58.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -122,29 +122,29 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/word-pattern/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個字串 <code>pattern</code> 和字串 <code>s</code> 問你 <code>pattern</code> 和 <code>s</code> 是不是 full match</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;abba&quot; -&gt; &quot;dog cat cat dog&quot;</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>1 &lt;= pattern.length &lt;= 300</code></li>
 <li><code>1 &lt;= s.length &lt;= 3000</code></li>
 </ul>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>維護兩個資料結構紀錄 <strong>s 映射到 pattern (A)</strong> 以及 <strong>pattern 映射到 s (B)</strong>。<br>
 把輸入用空白切開，掃過一遍，如果 word 沒出現在 A 中且沒出現在 B 中(代表新的word) 則紀錄。如果沒出現在 A 中但有出現在 B 中，則代表這次的word跟之前紀錄的不同，代表不可能符合 pattern 返回 false。如果 word 有出現在 A 中，則判斷 A 存的字元是否等於 <code>pattern[i]</code></p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n\log{n})$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F290.cpp%23L17-L56&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>這題測資輸入很鳥= =</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/01/02/leetcode/290/" data-id="cllax6ypl006r1hrv0gfi4avf" data-title="Leetcode 290 - Word Pattern" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/01/02/leetcode/290/" data-id="cllut42t7006z1xp609zzcakc" data-title="Leetcode 290 - Word Pattern" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/01/02/leetcode/290/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -235,6 +235,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -248,10 +252,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

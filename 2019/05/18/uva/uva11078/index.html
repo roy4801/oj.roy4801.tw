@@ -17,15 +17,15 @@
   
   <title>Uva 11078 - Open Credit System | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem (簡化) 有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$ 想法 $\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。 只要掃一遍，就得到答案。($\mathcal{O}(n)$)">
+  <meta name="description" content="題目 Problem# (簡化) 有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$ 想法# $\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。 只要掃一遍，就得到答案。($\mathcal{O}(n)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Uva 11078 - Open Credit System">
 <meta property="og:url" content="http://oj.roy4801.tw/2019/05/18/uva/uva11078/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem (簡化) 有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$ 想法 $\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。 只要掃一遍，就得到答案。($\mathcal{O}(n)$)">
+<meta property="og:description" content="題目 Problem# (簡化) 有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$ 想法# $\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。 只要掃一遍，就得到答案。($\mathcal{O}(n)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-05-18T15:29:18.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.322Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Uva">
@@ -122,15 +122,15 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;category=0&amp;problem=2019&amp;mosmsg=Submission+received+with+ID+23355296">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>(簡化)<br>
 有一組數列($a_i$)，對所有$i&lt;j$，求最大的$a_i - a_j$</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>$\mathcal{O}(n^2)$暴力會TLE，但觀察可以發現，對於每個$a_j$，如果$a_i - a_j$要最大，那$a_i$一定越大越好，所以可以直接維護一個最大值($M$)，代表從$1 \sim i$的最大。<br>
 只要掃一遍，就得到答案。($\mathcal{O}(n)$)</p>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp">https://github.com/roy4801/solved_problems/blob/master/uva/11078.cpp</a></p>
-<h2 id="其他解法">其他解法</h2>
+<h2><span id="qi-ta-jie-fa">其他解法</span><a href="#qi-ta-jie-fa" class="header-anchor">#</a></h2>
 <p>單調隊列<br>
 <a target="_blank" rel="noopener" href="https://csy54.github.io/2019/02/UVa-11078/">https://csy54.github.io/2019/02/UVa-11078/</a></p>
 <p><a target="_blank" rel="noopener" href="https://gist.github.com/roy4801/b417a1a65d2e43f3534f580a3bacd78d">https://gist.github.com/roy4801/b417a1a65d2e43f3534f580a3bacd78d</a></p>
@@ -138,7 +138,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2019/05/18/uva/uva11078/" data-id="cllax6ys200cp1hrv38gffz5h" data-title="Uva 11078 - Open Credit System" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2019/05/18/uva/uva11078/" data-id="cllut42v900cs1xp69suwfg2c" data-title="Uva 11078 - Open Credit System" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2019/05/18/uva/uva11078/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -229,6 +229,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -242,10 +246,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

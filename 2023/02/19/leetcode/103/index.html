@@ -17,16 +17,16 @@
   
   <title>Leetcode 103 - Binary Tree Zigzag Level Order Traversal | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem  給你一顆二元樹 root，問你回傳 zigzag 的順序  測資限制:  $0 \le N \le 2000$">
+  <meta name="description" content="題目 Problem#  給你一顆二元樹 root，問你回傳 zigzag 的順序  測資限制:  $0 \le N \le 2000$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 103 - Binary Tree Zigzag Level Order Traversal">
 <meta property="og:url" content="http://oj.roy4801.tw/2023/02/19/leetcode/103/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem  給你一顆二元樹 root，問你回傳 zigzag 的順序  測資限制:  $0 \le N \le 2000$">
+<meta property="og:description" content="題目 Problem#  給你一顆二元樹 root，問你回傳 zigzag 的順序  測資限制:  $0 \le N \le 2000$">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg">
 <meta property="article:published_time" content="2023-02-19T23:35:48.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.625Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -124,8 +124,8 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/">題目</a></p>
-<h1>Problem</h1>
-<p><img src="https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg" alt=""></p>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
+<p><img src="https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg" alt></p>
 <p>給你一顆二元樹 <code>root</code>，問你回傳 zigzag 的順序</p>
 <ul>
 <li>測資限制:
@@ -135,19 +135,19 @@
 </li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: root = [3,9,20,null,null,15,7]</span><br><span class="line">Output: [[3],[20,9],[15,7]]</span><br></pre></td></tr></table></figure>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>DFS w/ 深度，紀錄每層的 node，<code>root</code> 在第 0 層，則奇數層需要反著輸出</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n\log{n})$</li>
 <li>空間複雜度: $\mathcal{O}(n)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F103.cpp%23L17-L48&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/02/19/leetcode/103/" data-id="cllax6ymk00061hrvgl45433k" data-title="Leetcode 103 - Binary Tree Zigzag Level Order Traversal" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/02/19/leetcode/103/" data-id="cllut42pw00061xp6f83ledyg" data-title="Leetcode 103 - Binary Tree Zigzag Level Order Traversal" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/02/19/leetcode/103/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -238,6 +238,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -251,10 +255,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>

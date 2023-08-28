@@ -17,15 +17,15 @@
   
   <title>Leetcode 2211 - Count Collisions on a Road | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem 一條路上有 $n$ 台車，每台車可以有三種方向: S, L, R 分別是靜止、左、右。今天每台車都朝其方向駛去，當相撞時車子留在原地，問你給定一個 directions 序列，有幾台車會撞車。 想法 可以觀察到 RS, SL, RL 這三種狀況一定會撞到，但如果序列是 RRL 則最一開始的 R 不會算到，所以必須要記錄 R 的數量，當遇到前面三種撞車的狀況時，就將目前算到 &#96;">
+  <meta name="description" content="題目 Problem# 一條路上有 $n$ 台車，每台車可以有三種方向: S, L, R 分別是靜止、左、右。今天每台車都朝其方向駛去，當相撞時車子留在原地，問你給定一個 directions 序列，有幾台車會撞車。 想法# 可以觀察到 RS, SL, RL 這三種狀況一定會撞到，但如果序列是 RRL 則最一開始的 R 不會算到，所以必須要記錄 R 的數量，當遇到前面三種撞車的狀況時，就將目前算到">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode 2211 - Count Collisions on a Road">
 <meta property="og:url" content="http://oj.roy4801.tw/2022/03/21/leetcode/2211/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem 一條路上有 $n$ 台車，每台車可以有三種方向: S, L, R 分別是靜止、左、右。今天每台車都朝其方向駛去，當相撞時車子留在原地，問你給定一個 directions 序列，有幾台車會撞車。 想法 可以觀察到 RS, SL, RL 這三種狀況一定會撞到，但如果序列是 RRL 則最一開始的 R 不會算到，所以必須要記錄 R 的數量，當遇到前面三種撞車的狀況時，就將目前算到 &#96;">
+<meta property="og:description" content="題目 Problem# 一條路上有 $n$ 台車，每台車可以有三種方向: S, L, R 分別是靜止、左、右。今天每台車都朝其方向駛去，當相撞時車子留在原地，問你給定一個 directions 序列，有幾台車會撞車。 想法# 可以觀察到 RS, SL, RL 這三種狀況一定會撞到，但如果序列是 RRL 則最一開始的 R 不會算到，所以必須要記錄 R 的數量，當遇到前面三種撞車的狀況時，就將目前算到">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-21T09:57:53.000Z">
-<meta property="article:modified_time" content="2023-08-14T13:37:56.629Z">
+<meta property="article:modified_time" content="2023-08-28T11:38:42.318Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -123,17 +123,17 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/count-collisions-on-a-road/">題目</a></p>
-<h1>Problem</h1>
+<h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>一條路上有 $n$ 台車，每台車可以有三種方向: <code>S</code>, <code>L</code>, <code>R</code> 分別是靜止、左、右。今天每台車都朝其方向駛去，當相撞時車子留在原地，問你給定一個 <code>directions</code> 序列，有幾台車會撞車。</p>
-<h1>想法</h1>
+<h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p>可以觀察到 <code>RS</code>, <code>SL</code>, <code>RL</code> 這三種狀況一定會撞到，但如果序列是 <code>RRL</code> 則最一開始的 R 不會算到，所以必須要記錄 <code>R</code> 的數量，當遇到前面三種撞車的狀況時，就將目前算到 `R 的數量也加到答案中(那些 R 的車也會撞到)</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n)$</li>
 <li>空間複雜度: $\mathcal{O}(1)$</li>
 </ul>
-<h1>AC Code</h1>
+<h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F2211.cpp&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on"></script>
-<h1>賞析</h1>
+<h1><span id="shang-xi">賞析</span><a href="#shang-xi" class="header-anchor">#</a></h1>
 <ul>
 <li>因為我們只在乎撞車的數量，所以只要找最左邊的 <code>R</code> 和最右邊的 <code>L</code>，在這之間的所有 <code>L</code> 和 <code>R</code> 最後都一定會相撞
 <ul>
@@ -141,13 +141,13 @@
 </ul>
 </li>
 </ul>
-<h1>心得</h1>
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>賽中沒想到要把撞到的車改成 <code>S</code>，然後計算沒相撞時 <code>R</code> 的數量，真的要多寫 greedy 的題目</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2211/" data-id="cllax6yp400571hrv3egj1gmo" data-title="Leetcode 2211 - Count Collisions on a Road" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/03/21/leetcode/2211/" data-id="cllut42sl005c1xp6elgf392q" data-title="Leetcode 2211 - Count Collisions on a Road" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/03/21/leetcode/2211/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -238,6 +238,10 @@
       <ul>
         
           <li>
+            <a href="/2023/08/28/leetcode/225/">Leetcode 225 - Implement Stack using Queues</a>
+          </li>
+        
+          <li>
             <a href="/2023/08/14/leetcode/215/">Leetcode 215 - Kth Largest Element in an Array</a>
           </li>
         
@@ -251,10 +255,6 @@
         
           <li>
             <a href="/2023/08/02/leetcode/46/">Leetcode 46 - Permutations</a>
-          </li>
-        
-          <li>
-            <a href="/2023/08/01/leetcode/77/">Leetcode 77 - Combinations</a>
           </li>
         
       </ul>
