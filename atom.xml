@@ -6,7 +6,7 @@
   <link href="http://oj.roy4801.tw/atom.xml" rel="self"/>
   
   <link href="http://oj.roy4801.tw/"/>
-  <updated>2023-09-25T11:42:37.448Z</updated>
+  <updated>2023-10-02T12:14:13.124Z</updated>
   <id>http://oj.roy4801.tw/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Leetcode 2038 - Remove Colored Pieces if Both Neighbors are the Same Color</title>
+    <link href="http://oj.roy4801.tw/2023/10/02/leetcode/2038/"/>
+    <id>http://oj.roy4801.tw/2023/10/02/leetcode/2038/</id>
+    <published>2023-10-02T19:58:24.000Z</published>
+    <updated>2023-10-02T12:14:13.124Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/description/?envType=daily-question&amp;amp;envId=2023-10-02&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;span id=&quot;problem&quot;&gt;Problem&lt;/span&gt;&lt;a href=&quot;#problem&quot; class=&quot;header-anchor&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;給你 &lt;code&gt;n&lt;/code&gt; 個字母，由 &lt;code&gt;A&lt;/code&gt; 和 &lt;code&gt;B&lt;/code&gt; 字元組成 &lt;code&gt;colors[i]&lt;/code&gt; ，今天 Alice 和 Bob 交替從 &lt;code&gt;colors&lt;/code&gt; 刪除各自的代表色：Alice 是 &lt;code&gt;A&lt;/code&gt;、Bob 是 &lt;code&gt;B&lt;/code&gt;，由 Alice 先手。&lt;br&gt;
+規則是只能刪除左右兩邊與自己相同的第 &lt;code&gt;i&lt;/code&gt; 個字元，如果一個玩家沒有東西可刪，則代表是輸家。如果 Alice 贏了則回傳 &lt;code&gt;true&lt;/code&gt;；否則回傳 &lt;code&gt;false&lt;/code&gt;。&lt;/p&gt;
+&lt;h2&gt;&lt;span id=&quot;ce-zi-xian-zhi&quot;&gt;測資限制&lt;/span&gt;&lt;a href=&quot;#ce-zi-xian-zhi&quot; class=&quot;header-anchor&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 &#92;le n &#92;le 10^5$&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="解題區" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/"/>
+    
+    <category term="Medium" scheme="http://oj.roy4801.tw/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/"/>
+    
+    
+    <category term="解題紀錄" scheme="http://oj.roy4801.tw/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/"/>
+    
+    <category term="Leetcode" scheme="http://oj.roy4801.tw/tags/Leetcode/"/>
+    
+    <category term="Game Thoery" scheme="http://oj.roy4801.tw/tags/Game-Thoery/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Leetcode 389 - Find the Difference</title>
     <link href="http://oj.roy4801.tw/2023/09/25/leetcode/389/"/>
     <id>http://oj.roy4801.tw/2023/09/25/leetcode/389/</id>
     <published>2023-09-25T19:31:39.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-the-difference/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -56,7 +90,7 @@
     <link href="http://oj.roy4801.tw/2023/09/18/leetcode/1337/"/>
     <id>http://oj.roy4801.tw/2023/09/18/leetcode/1337/</id>
     <published>2023-09-18T19:47:51.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/description&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -93,7 +127,7 @@
     <link href="http://oj.roy4801.tw/2023/09/15/leetcode/1584/"/>
     <id>http://oj.roy4801.tw/2023/09/15/leetcode/1584/</id>
     <published>2023-09-15T19:41:30.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/min-cost-to-connect-all-points/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -131,7 +165,7 @@
     <link href="http://oj.roy4801.tw/2023/09/12/leetcode/1647/"/>
     <id>http://oj.roy4801.tw/2023/09/12/leetcode/1647/</id>
     <published>2023-09-12T09:25:46.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/description/?envType=daily-question&amp;amp;envId=2023-09-12&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -164,7 +198,7 @@
     <link href="http://oj.roy4801.tw/2023/09/11/leetcode/1282/"/>
     <id>http://oj.roy4801.tw/2023/09/11/leetcode/1282/</id>
     <published>2023-09-11T19:32:55.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -199,7 +233,7 @@
     <link href="http://oj.roy4801.tw/2023/09/07/leetcode/92/"/>
     <id>http://oj.roy4801.tw/2023/09/07/leetcode/92/</id>
     <published>2023-09-07T20:20:57.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reverse-linked-list-ii/description&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -230,7 +264,7 @@
     <link href="http://oj.roy4801.tw/2023/08/29/leetcode/2483/"/>
     <id>http://oj.roy4801.tw/2023/08/29/leetcode/2483/</id>
     <published>2023-08-29T22:36:57.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-penalty-for-a-shop/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -265,7 +299,7 @@
     <link href="http://oj.roy4801.tw/2023/08/28/leetcode/225/"/>
     <id>http://oj.roy4801.tw/2023/08/28/leetcode/225/</id>
     <published>2023-08-28T19:25:11.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/implement-stack-using-queues/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -294,7 +328,7 @@
     <link href="http://oj.roy4801.tw/2023/08/14/leetcode/215/"/>
     <id>http://oj.roy4801.tw/2023/08/14/leetcode/215/</id>
     <published>2023-08-14T21:29:03.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/kth-largest-element-in-an-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -329,7 +363,7 @@
     <link href="http://oj.roy4801.tw/2023/08/07/leetcode/74/"/>
     <id>http://oj.roy4801.tw/2023/08/07/leetcode/74/</id>
     <published>2023-08-07T19:49:52.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/search-a-2d-matrix/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -361,7 +395,7 @@
     <link href="http://oj.roy4801.tw/2023/08/05/leetcode/139/"/>
     <id>http://oj.roy4801.tw/2023/08/05/leetcode/139/</id>
     <published>2023-08-05T03:00:52.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/word-break/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -398,7 +432,7 @@
     <link href="http://oj.roy4801.tw/2023/08/02/leetcode/46/"/>
     <id>http://oj.roy4801.tw/2023/08/02/leetcode/46/</id>
     <published>2023-08-02T09:36:18.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/permutations/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -432,7 +466,7 @@
     <link href="http://oj.roy4801.tw/2023/08/01/leetcode/77/"/>
     <id>http://oj.roy4801.tw/2023/08/01/leetcode/77/</id>
     <published>2023-08-01T20:03:53.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combinations/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -466,7 +500,7 @@
     <link href="http://oj.roy4801.tw/2023/07/26/leetcode/1870/"/>
     <id>http://oj.roy4801.tw/2023/07/26/leetcode/1870/</id>
     <published>2023-07-26T19:54:04.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-speed-to-arrive-on-time/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -505,7 +539,7 @@
     <link href="http://oj.roy4801.tw/2023/07/20/leetcode/735/"/>
     <id>http://oj.roy4801.tw/2023/07/20/leetcode/735/</id>
     <published>2023-07-20T19:48:41.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/asteroid-collision/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -541,7 +575,7 @@
     <link href="http://oj.roy4801.tw/2023/07/17/leetcode/445/"/>
     <id>http://oj.roy4801.tw/2023/07/17/leetcode/445/</id>
     <published>2023-07-17T20:16:24.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/add-two-numbers-ii/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -572,7 +606,7 @@
     <link href="http://oj.roy4801.tw/2023/07/16/leetcode/2779/"/>
     <id>http://oj.roy4801.tw/2023/07/16/leetcode/2779/</id>
     <published>2023-07-16T23:07:41.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -606,7 +640,7 @@
     <link href="http://oj.roy4801.tw/2023/07/16/leetcode/2778/"/>
     <id>http://oj.roy4801.tw/2023/07/16/leetcode/2778/</id>
     <published>2023-07-16T22:56:28.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/sum-of-squares-of-special-elements/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -640,7 +674,7 @@
     <link href="http://oj.roy4801.tw/2023/07/13/leetcode/207/"/>
     <id>http://oj.roy4801.tw/2023/07/13/leetcode/207/</id>
     <published>2023-07-13T21:50:49.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/course-schedule/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -680,7 +714,7 @@
     <link href="http://oj.roy4801.tw/2023/07/11/leetcode/863/"/>
     <id>http://oj.roy4801.tw/2023/07/11/leetcode/863/</id>
     <published>2023-07-11T19:39:37.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -717,7 +751,7 @@
     <link href="http://oj.roy4801.tw/2023/07/10/leetcode/111/"/>
     <id>http://oj.roy4801.tw/2023/07/10/leetcode/111/</id>
     <published>2023-07-10T19:27:49.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-depth-of-binary-tree/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -753,7 +787,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/07/06/leetcode/209/"/>
     <id>http://oj.roy4801.tw/2023/07/06/leetcode/209/</id>
     <published>2023-07-06T20:25:51.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-size-subarray-sum/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -790,7 +824,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/07/05/leetcode/1493/"/>
     <id>http://oj.roy4801.tw/2023/07/05/leetcode/1493/</id>
     <published>2023-07-05T20:30:22.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -825,7 +859,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/07/03/leetcode/859/"/>
     <id>http://oj.roy4801.tw/2023/07/03/leetcode/859/</id>
     <published>2023-07-03T22:43:42.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/buddy-strings/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -860,7 +894,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/07/01/leetcode/2305/"/>
     <id>http://oj.roy4801.tw/2023/07/01/leetcode/2305/</id>
     <published>2023-07-01T23:15:21.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/fair-distribution-of-cookies/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -896,7 +930,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/23/cses/1071/"/>
     <id>http://oj.roy4801.tw/2023/06/23/cses/1071/</id>
     <published>2023-06-23T01:02:21.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cses.fi/problemset/task/1071&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -927,7 +961,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/20/leetcode/2090/"/>
     <id>http://oj.roy4801.tw/2023/06/20/leetcode/2090/</id>
     <published>2023-06-20T21:55:08.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/k-radius-subarray-averages/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -961,7 +995,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/19/cses/1068/"/>
     <id>http://oj.roy4801.tw/2023/06/19/cses/1068/</id>
     <published>2023-06-19T22:29:13.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cses.fi/problemset/task/1068&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -993,7 +1027,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/19/leetcode/1732/"/>
     <id>http://oj.roy4801.tw/2023/06/19/leetcode/1732/</id>
     <published>2023-06-19T21:03:41.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-the-highest-altitude/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1027,7 +1061,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/15/leetcode/1161/"/>
     <id>http://oj.roy4801.tw/2023/06/15/leetcode/1161/</id>
     <published>2023-06-15T19:56:24.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1060,7 +1094,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/14/leetcode/530/"/>
     <id>http://oj.roy4801.tw/2023/06/14/leetcode/530/</id>
     <published>2023-06-14T20:11:38.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1093,7 +1127,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/10/leetcode/744/"/>
     <id>http://oj.roy4801.tw/2023/06/10/leetcode/744/</id>
     <published>2023-06-10T01:01:32.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1127,7 +1161,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/09/leetcode/1351/"/>
     <id>http://oj.roy4801.tw/2023/06/09/leetcode/1351/</id>
     <published>2023-06-09T01:13:53.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1160,7 +1194,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/07/leetcode/1318/"/>
     <id>http://oj.roy4801.tw/2023/06/07/leetcode/1318/</id>
     <published>2023-06-07T19:23:15.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1193,7 +1227,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/06/leetcode/1502/"/>
     <id>http://oj.roy4801.tw/2023/06/06/leetcode/1502/</id>
     <published>2023-06-06T20:26:48.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1227,7 +1261,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/05/leetcode/2101/"/>
     <id>http://oj.roy4801.tw/2023/06/05/leetcode/2101/</id>
     <published>2023-06-05T23:26:08.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/detonate-the-maximum-bombs/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1262,7 +1296,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/05/leetcode/1232/"/>
     <id>http://oj.roy4801.tw/2023/06/05/leetcode/1232/</id>
     <published>2023-06-05T21:15:04.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/check-if-it-is-a-straight-line/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1296,7 +1330,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/04/leetcode/547/"/>
     <id>http://oj.roy4801.tw/2023/06/04/leetcode/547/</id>
     <published>2023-06-04T20:19:04.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/number-of-provinces/description&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1330,7 +1364,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/06/01/leetcode/1091/"/>
     <id>http://oj.roy4801.tw/2023/06/01/leetcode/1091/</id>
     <published>2023-06-01T23:29:14.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/shortest-path-in-binary-matrix/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1363,7 +1397,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/31/leetcode/1396/"/>
     <id>http://oj.roy4801.tw/2023/05/31/leetcode/1396/</id>
     <published>2023-05-31T21:07:08.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/design-underground-system/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1416,7 +1450,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/29/leetcode/1603/"/>
     <id>http://oj.roy4801.tw/2023/05/29/leetcode/1603/</id>
     <published>2023-05-29T09:04:53.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/design-parking-system/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1453,7 +1487,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/28/leetcode/1547/"/>
     <id>http://oj.roy4801.tw/2023/05/28/leetcode/1547/</id>
     <published>2023-05-28T18:32:45.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1487,7 +1521,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/23/leetcode/703/"/>
     <id>http://oj.roy4801.tw/2023/05/23/leetcode/703/</id>
     <published>2023-05-23T21:13:10.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/kth-largest-element-in-a-stream/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1523,7 +1557,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/22/leetcode/347/"/>
     <id>http://oj.roy4801.tw/2023/05/22/leetcode/347/</id>
     <published>2023-05-22T17:05:49.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/top-k-frequent-elements/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1560,7 +1594,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/20/leetcode/399/"/>
     <id>http://oj.roy4801.tw/2023/05/20/leetcode/399/</id>
     <published>2023-05-20T18:22:15.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/evaluate-division/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1603,7 +1637,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/17/leetcode/2130/"/>
     <id>http://oj.roy4801.tw/2023/05/17/leetcode/2130/</id>
     <published>2023-05-17T20:02:38.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1641,7 +1675,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/10/leetcode/59/"/>
     <id>http://oj.roy4801.tw/2023/05/10/leetcode/59/</id>
     <published>2023-05-10T19:47:37.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/spiral-matrix-ii/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1680,7 +1714,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/09/leetcode/54/"/>
     <id>http://oj.roy4801.tw/2023/05/09/leetcode/54/</id>
     <published>2023-05-09T23:22:04.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/spiral-matrix/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1720,7 +1754,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/08/leetcode/1572/"/>
     <id>http://oj.roy4801.tw/2023/05/08/leetcode/1572/</id>
     <published>2023-05-08T09:09:26.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/matrix-diagonal-sum/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1757,7 +1791,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/05/leetcode/1456/"/>
     <id>http://oj.roy4801.tw/2023/05/05/leetcode/1456/</id>
     <published>2023-05-05T21:19:47.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1794,7 +1828,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/05/03/leetcode/2215/"/>
     <id>http://oj.roy4801.tw/2023/05/03/leetcode/2215/</id>
     <published>2023-05-03T20:30:30.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-the-difference-of-two-arrays/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1826,7 +1860,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/03/13/leetcode/1523/"/>
     <id>http://oj.roy4801.tw/2023/03/13/leetcode/1523/</id>
     <published>2023-03-13T23:23:04.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-odd-numbers-in-an-interval-range&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1861,7 +1895,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/02/20/leetcode/50/"/>
     <id>http://oj.roy4801.tw/2023/02/20/leetcode/50/</id>
     <published>2023-02-20T00:29:45.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/powx-n/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1898,7 +1932,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/02/19/leetcode/103/"/>
     <id>http://oj.roy4801.tw/2023/02/19/leetcode/103/</id>
     <published>2023-02-19T23:35:48.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1933,7 +1967,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/02/06/leetcode/1470/"/>
     <id>http://oj.roy4801.tw/2023/02/06/leetcode/1470/</id>
     <published>2023-02-06T20:58:33.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/shuffle-the-array/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -1969,7 +2003,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/02/05/leetcode/438/"/>
     <id>http://oj.roy4801.tw/2023/02/05/leetcode/438/</id>
     <published>2023-02-05T20:40:30.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-all-anagrams-in-a-string/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2010,7 +2044,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/02/05/leetcode/567/"/>
     <id>http://oj.roy4801.tw/2023/02/05/leetcode/567/</id>
     <published>2023-02-05T00:11:58.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/permutation-in-string/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2051,7 +2085,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/26/leetcode/787/"/>
     <id>http://oj.roy4801.tw/2023/01/26/leetcode/787/</id>
     <published>2023-01-26T18:43:58.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/cheapest-flights-within-k-stops/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2091,7 +2125,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/25/leetcode/2359/"/>
     <id>http://oj.roy4801.tw/2023/01/25/leetcode/2359/</id>
     <published>2023-01-25T22:53:04.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-closest-node-to-given-two-nodes/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2133,7 +2167,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/21/leetcode/491/"/>
     <id>http://oj.roy4801.tw/2023/01/21/leetcode/491/</id>
     <published>2023-01-21T03:02:53.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/non-decreasing-subsequences/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2173,7 +2207,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/17/leetcode/57/"/>
     <id>http://oj.roy4801.tw/2023/01/17/leetcode/57/</id>
     <published>2023-01-17T00:11:04.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/insert-interval/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2211,7 +2245,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/15/leetcode/1061/"/>
     <id>http://oj.roy4801.tw/2023/01/15/leetcode/1061/</id>
     <published>2023-01-15T22:47:35.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2250,7 +2284,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/09/leetcode/144/"/>
     <id>http://oj.roy4801.tw/2023/01/09/leetcode/144/</id>
     <published>2023-01-09T22:31:48.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/binary-tree-preorder-traversal/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2281,7 +2315,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/08/leetcode/134/"/>
     <id>http://oj.roy4801.tw/2023/01/08/leetcode/134/</id>
     <published>2023-01-08T04:24:02.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/gas-station/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2313,7 +2347,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/06/leetcode/1833/"/>
     <id>http://oj.roy4801.tw/2023/01/06/leetcode/1833/</id>
     <published>2023-01-06T21:42:43.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-ice-cream-bars/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2344,7 +2378,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/04/leetcode/2244/"/>
     <id>http://oj.roy4801.tw/2023/01/04/leetcode/2244/</id>
     <published>2023-01-04T22:58:16.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-rounds-to-complete-all-tasks/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2382,7 +2416,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/03/leetcode/944/"/>
     <id>http://oj.roy4801.tw/2023/01/03/leetcode/944/</id>
     <published>2023-01-03T23:40:14.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/delete-columns-to-make-sorted/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2420,7 +2454,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/02/leetcode/290/"/>
     <id>http://oj.roy4801.tw/2023/01/02/leetcode/290/</id>
     <published>2023-01-02T19:03:58.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/word-pattern/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2452,7 +2486,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2023/01/02/leetcode/520/"/>
     <id>http://oj.roy4801.tw/2023/01/02/leetcode/520/</id>
     <published>2023-01-02T17:21:52.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/detect-capital/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2483,7 +2517,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/30/leetcode/797/"/>
     <id>http://oj.roy4801.tw/2022/12/30/leetcode/797/</id>
     <published>2022-12-30T23:44:39.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/all-paths-from-source-to-target/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2516,7 +2550,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/28/leetcode/1962/"/>
     <id>http://oj.roy4801.tw/2022/12/28/leetcode/1962/</id>
     <published>2022-12-28T22:28:10.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/remove-stones-to-minimize-the-total/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2561,7 +2595,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/27/leetcode/2279/"/>
     <id>http://oj.roy4801.tw/2022/12/27/leetcode/2279/</id>
     <published>2022-12-27T23:05:40.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2592,7 +2626,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/26/leetcode/55/"/>
     <id>http://oj.roy4801.tw/2022/12/26/leetcode/55/</id>
     <published>2022-12-26T22:52:56.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/jump-game/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2625,7 +2659,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/25/leetcode/886/"/>
     <id>http://oj.roy4801.tw/2022/12/25/leetcode/886/</id>
     <published>2022-12-25T23:22:36.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/possible-bipartition/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2663,7 +2697,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/25/leetcode/2389/"/>
     <id>http://oj.roy4801.tw/2022/12/25/leetcode/2389/</id>
     <published>2022-12-25T23:12:04.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-subsequence-with-limited-sum/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2695,7 +2729,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/19/leetcode/1971/"/>
     <id>http://oj.roy4801.tw/2022/12/19/leetcode/1971/</id>
     <published>2022-12-19T23:07:19.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-if-path-exists-in-graph/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2732,7 +2766,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/19/leetcode/150/"/>
     <id>http://oj.roy4801.tw/2022/12/19/leetcode/150/</id>
     <published>2022-12-19T00:20:32.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/evaluate-reverse-polish-notation/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2763,7 +2797,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/18/leetcode/739/"/>
     <id>http://oj.roy4801.tw/2022/12/18/leetcode/739/</id>
     <published>2022-12-18T22:52:40.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/daily-temperatures/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2794,7 +2828,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/15/leetcode/1143/"/>
     <id>http://oj.roy4801.tw/2022/12/15/leetcode/1143/</id>
     <published>2022-12-15T21:11:27.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/longest-common-subsequence/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2827,7 +2861,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/14/leetcode/198/"/>
     <id>http://oj.roy4801.tw/2022/12/14/leetcode/198/</id>
     <published>2022-12-14T22:07:20.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/house-robber/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2858,7 +2892,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/14/leetcode/931/"/>
     <id>http://oj.roy4801.tw/2022/12/14/leetcode/931/</id>
     <published>2022-12-14T01:09:59.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-falling-path-sum/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2890,7 +2924,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/12/leetcode/70/"/>
     <id>http://oj.roy4801.tw/2022/12/12/leetcode/70/</id>
     <published>2022-12-12T22:31:20.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/climbing-stairs/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2919,7 +2953,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/07/leetcode/938/"/>
     <id>http://oj.roy4801.tw/2022/12/07/leetcode/938/</id>
     <published>2022-12-07T21:50:30.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/range-sum-of-bst/description/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2950,7 +2984,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/12/05/leetcode/876/"/>
     <id>http://oj.roy4801.tw/2022/12/05/leetcode/876/</id>
     <published>2022-12-05T21:58:54.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/middle-of-the-linked-list/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -2984,7 +3018,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/11/30/leetcode/1207/"/>
     <id>http://oj.roy4801.tw/2022/11/30/leetcode/1207/</id>
     <published>2022-11-30T23:09:36.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/unique-number-of-occurrences/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3013,7 +3047,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/07/26/leetcode/242/"/>
     <id>http://oj.roy4801.tw/2022/07/26/leetcode/242/</id>
     <published>2022-07-26T00:54:01.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/valid-anagram/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3042,7 +3076,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/07/20/leetcode/36/"/>
     <id>http://oj.roy4801.tw/2022/07/20/leetcode/36/</id>
     <published>2022-07-20T23:59:34.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/valid-sudoku/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3071,7 +3105,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/07/20/leetcode/2221/"/>
     <id>http://oj.roy4801.tw/2022/07/20/leetcode/2221/</id>
     <published>2022-07-20T23:34:44.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-triangular-sum-of-an-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3100,7 +3134,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/07/20/leetcode/119/"/>
     <id>http://oj.roy4801.tw/2022/07/20/leetcode/119/</id>
     <published>2022-07-20T20:01:53.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/pascals-triangle-ii/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3129,7 +3163,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/07/20/leetcode/118/"/>
     <id>http://oj.roy4801.tw/2022/07/20/leetcode/118/</id>
     <published>2022-07-20T19:52:45.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/pascals-triangle/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3158,7 +3192,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/07/19/leetcode/566/"/>
     <id>http://oj.roy4801.tw/2022/07/19/leetcode/566/</id>
     <published>2022-07-19T00:21:20.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reshape-the-matrix/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3189,7 +3223,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/07/14/leetcode/217/"/>
     <id>http://oj.roy4801.tw/2022/07/14/leetcode/217/</id>
     <published>2022-07-14T16:48:04.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/contains-duplicate/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3218,7 +3252,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/26/leetcode/557/"/>
     <id>http://oj.roy4801.tw/2022/03/26/leetcode/557/</id>
     <published>2022-03-26T23:55:02.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reverse-words-in-a-string-iii/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3251,7 +3285,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/26/leetcode/344/"/>
     <id>http://oj.roy4801.tw/2022/03/26/leetcode/344/</id>
     <published>2022-03-26T23:51:29.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/reverse-string/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3284,7 +3318,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/26/leetcode/991/"/>
     <id>http://oj.roy4801.tw/2022/03/26/leetcode/991/</id>
     <published>2022-03-26T23:20:26.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/broken-calculator/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3315,7 +3349,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/26/leetcode/1029/"/>
     <id>http://oj.roy4801.tw/2022/03/26/leetcode/1029/</id>
     <published>2022-03-26T00:33:12.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/two-city-scheduling/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3347,7 +3381,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/24/leetcode/881/"/>
     <id>http://oj.roy4801.tw/2022/03/24/leetcode/881/</id>
     <published>2022-03-24T11:33:08.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/boats-to-save-people/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3383,7 +3417,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/24/leetcode/763/"/>
     <id>http://oj.roy4801.tw/2022/03/24/leetcode/763/</id>
     <published>2022-03-24T00:07:43.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/partition-labels/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3412,7 +3446,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/22/leetcode/167/"/>
     <id>http://oj.roy4801.tw/2022/03/22/leetcode/167/</id>
     <published>2022-03-22T13:53:07.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3444,7 +3478,7 @@ minimum depth 為根節點(Root)到最近的葉節點(Leaf)的深度&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/22/leetcode/1663/"/>
     <id>http://oj.roy4801.tw/2022/03/22/leetcode/1663/</id>
     <published>2022-03-22T10:59:20.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3477,7 +3511,7 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/21/leetcode/2212/"/>
     <id>http://oj.roy4801.tw/2022/03/21/leetcode/2212/</id>
     <published>2022-03-21T16:34:59.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-points-in-an-archery-competition/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3518,7 +3552,7 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/21/leetcode/2211/"/>
     <id>http://oj.roy4801.tw/2022/03/21/leetcode/2211/</id>
     <published>2022-03-21T09:57:53.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-collisions-on-a-road/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3549,7 +3583,7 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/20/leetcode/895/"/>
     <id>http://oj.roy4801.tw/2022/03/20/leetcode/895/</id>
     <published>2022-03-20T04:55:18.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-frequency-stack/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3584,7 +3618,7 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/17/leetcode/946/"/>
     <id>http://oj.roy4801.tw/2022/03/17/leetcode/946/</id>
     <published>2022-03-17T10:03:35.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/validate-stack-sequences/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3615,7 +3649,7 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/15/leetcode/35/"/>
     <id>http://oj.roy4801.tw/2022/03/15/leetcode/35/</id>
     <published>2022-03-15T11:42:25.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/search-insert-position/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3646,7 +3680,7 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/15/leetcode/1249/"/>
     <id>http://oj.roy4801.tw/2022/03/15/leetcode/1249/</id>
     <published>2022-03-15T11:04:50.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3677,7 +3711,7 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/14/leetcode/2201/"/>
     <id>http://oj.roy4801.tw/2022/03/14/leetcode/2201/</id>
     <published>2022-03-14T01:25:41.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/count-artifacts-that-can-be-extracted/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3712,7 +3746,7 @@ a=1, b=2, …, z=26&lt;/p&gt;
     <link href="http://oj.roy4801.tw/2022/03/14/leetcode/2200/"/>
     <id>http://oj.roy4801.tw/2022/03/14/leetcode/2200/</id>
     <published>2022-03-14T00:43:24.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3746,7 +3780,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/12/leetcode/138/"/>
     <id>http://oj.roy4801.tw/2022/03/12/leetcode/138/</id>
     <published>2022-03-12T22:13:34.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/copy-list-with-random-pointer/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3780,7 +3814,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/09/leetcode/141/"/>
     <id>http://oj.roy4801.tw/2022/03/09/leetcode/141/</id>
     <published>2022-03-09T02:21:54.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/linked-list-cycle/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3809,7 +3843,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/07/leetcode/2196/"/>
     <id>http://oj.roy4801.tw/2022/03/07/leetcode/2196/</id>
     <published>2022-03-07T07:03:50.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/create-binary-tree-from-descriptions/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3845,7 +3879,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/07/leetcode/2194/"/>
     <id>http://oj.roy4801.tw/2022/03/07/leetcode/2194/</id>
     <published>2022-03-07T06:51:30.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3879,7 +3913,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/04/leetcode/799/"/>
     <id>http://oj.roy4801.tw/2022/03/04/leetcode/799/</id>
     <published>2022-03-04T21:53:59.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/champagne-tower/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3914,7 +3948,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/02/leetcode/56/"/>
     <id>http://oj.roy4801.tw/2022/03/02/leetcode/56/</id>
     <published>2022-03-02T22:23:14.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/merge-intervals/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3946,7 +3980,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/02/leetcode/392/"/>
     <id>http://oj.roy4801.tw/2022/03/02/leetcode/392/</id>
     <published>2022-03-02T20:21:52.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/is-subsequence/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -3982,7 +4016,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/01/leetcode/338/"/>
     <id>http://oj.roy4801.tw/2022/03/01/leetcode/338/</id>
     <published>2022-03-01T13:16:41.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/counting-bits/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4018,7 +4052,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/03/01/leetcode/1/"/>
     <id>http://oj.roy4801.tw/2022/03/01/leetcode/1/</id>
     <published>2022-03-01T02:04:12.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/two-sum&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4050,7 +4084,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/28/leetcode/228/"/>
     <id>http://oj.roy4801.tw/2022/02/28/leetcode/228/</id>
     <published>2022-02-28T18:28:52.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/summary-ranges/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4081,7 +4115,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/25/leetcode/165/"/>
     <id>http://oj.roy4801.tw/2022/02/25/leetcode/165/</id>
     <published>2022-02-25T22:03:00.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/compare-version-numbers/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4112,7 +4146,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/24/leetcode/169/"/>
     <id>http://oj.roy4801.tw/2022/02/24/leetcode/169/</id>
     <published>2022-02-24T00:11:56.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/majority-element/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4141,7 +4175,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/23/leetcode/133/"/>
     <id>http://oj.roy4801.tw/2022/02/23/leetcode/133/</id>
     <published>2022-02-23T21:52:52.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/clone-graph/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4174,7 +4208,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/22/leetcode/171/"/>
     <id>http://oj.roy4801.tw/2022/02/22/leetcode/171/</id>
     <published>2022-02-22T17:01:42.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/excel-sheet-column-number/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4203,7 +4237,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/20/leetcode/1288/"/>
     <id>http://oj.roy4801.tw/2022/02/20/leetcode/1288/</id>
     <published>2022-02-20T17:58:40.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/remove-covered-intervals/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4242,7 +4276,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/20/leetcode/1675/"/>
     <id>http://oj.roy4801.tw/2022/02/20/leetcode/1675/</id>
     <published>2022-02-20T05:33:33.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/minimize-deviation-in-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4279,7 +4313,7 @@ e.g. &lt;code&gt;nums=[1, 2, 3, 4], key=2, k=1 =&amp;gt; k-distant = [0, 1, 2]&l
     <link href="http://oj.roy4801.tw/2022/02/20/leetcode/127/"/>
     <id>http://oj.roy4801.tw/2022/02/20/leetcode/127/</id>
     <published>2022-02-20T05:07:18.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/word-ladder/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4317,7 +4351,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2022/02/19/leetcode/39/"/>
     <id>http://oj.roy4801.tw/2022/02/19/leetcode/39/</id>
     <published>2022-02-19T04:17:09.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/combination-sum/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4352,7 +4386,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2022/02/19/leetcode/402/"/>
     <id>http://oj.roy4801.tw/2022/02/19/leetcode/402/</id>
     <published>2022-02-19T02:10:49.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/remove-k-digits/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4383,7 +4417,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2022/02/17/leetcode/104/"/>
     <id>http://oj.roy4801.tw/2022/02/17/leetcode/104/</id>
     <published>2022-02-17T15:34:14.000Z</published>
-    <updated>2023-09-25T11:42:37.444Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/maximum-depth-of-binary-tree&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4417,7 +4451,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2022/02/16/leetcode/24/"/>
     <id>http://oj.roy4801.tw/2022/02/16/leetcode/24/</id>
     <published>2022-02-16T15:31:32.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/swap-nodes-in-pairs/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4448,7 +4482,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2022/02/13/leetcode/78/"/>
     <id>http://oj.roy4801.tw/2022/02/13/leetcode/78/</id>
     <published>2022-02-13T21:55:26.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/subsets/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4479,7 +4513,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2021/05/06/uva/uva679/"/>
     <id>http://oj.roy4801.tw/2021/05/06/uva/uva679/</id>
     <published>2021-05-06T23:03:09.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://onlinejudge.org/index.php?option=onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=620&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4506,7 +4540,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2021/03/03/leetcode/977/"/>
     <id>http://oj.roy4801.tw/2021/03/03/leetcode/977/</id>
     <published>2021-03-03T03:42:12.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/squares-of-a-sorted-array/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4537,7 +4571,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2021/03/03/leetcode/1295/"/>
     <id>http://oj.roy4801.tw/2021/03/03/leetcode/1295/</id>
     <published>2021-03-03T03:26:28.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.124Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/find-numbers-with-even-number-of-digits/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4573,7 +4607,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2021/03/03/leetcode/485/"/>
     <id>http://oj.roy4801.tw/2021/03/03/leetcode/485/</id>
     <published>2021-03-03T00:17:00.000Z</published>
-    <updated>2023-09-25T11:42:37.448Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/max-consecutive-ones/&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4602,7 +4636,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/09/11/uva/uva1587/"/>
     <id>http://oj.roy4801.tw/2019/09/11/uva/uva1587/</id>
     <published>2019-09-11T23:56:25.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=4462&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4629,7 +4663,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/09/10/uva/uva202/"/>
     <id>http://oj.roy4801.tw/2019/09/10/uva/uva202/</id>
     <published>2019-09-10T22:22:48.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4656,7 +4690,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/09/10/uva/uva275/"/>
     <id>http://oj.roy4801.tw/2019/09/10/uva/uva275/</id>
     <published>2019-09-10T22:16:22.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=211&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4685,7 +4719,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/06/26/uva/uva10226/"/>
     <id>http://oj.roy4801.tw/2019/06/26/uva/uva10226/</id>
     <published>2019-06-26T15:52:43.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;category=24&amp;amp;page=show_problem&amp;amp;problem=1167&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4712,7 +4746,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/06/26/uva/uva793/"/>
     <id>http://oj.roy4801.tw/2019/06/26/uva/uva793/</id>
     <published>2019-06-26T15:43:05.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=734&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4744,7 +4778,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/06/24/uva/uva10033/"/>
     <id>http://oj.roy4801.tw/2019/06/24/uva/uva10033/</id>
     <published>2019-06-24T15:23:00.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=974&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4771,7 +4805,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/06/23/uva/uva10004/"/>
     <id>http://oj.roy4801.tw/2019/06/23/uva/uva10004/</id>
     <published>2019-06-23T00:28:43.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=945&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4804,7 +4838,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/06/22/uva/uva1203/"/>
     <id>http://oj.roy4801.tw/2019/06/22/uva/uva1203/</id>
     <published>2019-06-22T23:54:21.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=3644&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4834,7 +4868,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/06/14/uva/uva526/"/>
     <id>http://oj.roy4801.tw/2019/06/14/uva/uva526/</id>
     <published>2019-06-14T18:30:55.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=467&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4864,7 +4898,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/05/18/uva/uva11059/"/>
     <id>http://oj.roy4801.tw/2019/05/18/uva/uva11059/</id>
     <published>2019-05-18T21:40:29.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;Itemid=99999999&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2000&amp;amp;mosmsg=Submission+received+with+ID+23356954&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4891,7 +4925,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/05/18/uva/uva11078/"/>
     <id>http://oj.roy4801.tw/2019/05/18/uva/uva11078/</id>
     <published>2019-05-18T15:29:18.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=0&amp;amp;problem=2019&amp;amp;mosmsg=Submission+received+with+ID+23355296&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4920,7 +4954,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/05/17/uva/uva10685/"/>
     <id>http://oj.roy4801.tw/2019/05/17/uva/uva10685/</id>
     <published>2019-05-17T23:37:37.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=1626&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4950,7 +4984,7 @@ e.g. &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&
     <link href="http://oj.roy4801.tw/2019/02/24/uva/uva136/"/>
     <id>http://oj.roy4801.tw/2019/02/24/uva/uva136/</id>
     <published>2019-02-24T13:26:12.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=72&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -4984,7 +5018,7 @@ $$&lt;br&gt;
     <link href="http://oj.roy4801.tw/2019/02/08/uva/uva12100/"/>
     <id>http://oj.roy4801.tw/2019/02/08/uva/uva12100/</id>
     <published>2019-02-08T14:34:58.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=&amp;amp;problem=3252&amp;amp;mosmsg=Submission+received+with+ID+22756147&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -5016,7 +5050,7 @@ $$&lt;br&gt;
     <link href="http://oj.roy4801.tw/2019/02/07/uva/uva11995/"/>
     <id>http://oj.roy4801.tw/2019/02/07/uva/uva11995/</id>
     <published>2019-02-07T20:42:47.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=3146&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -5045,7 +5079,7 @@ $$&lt;br&gt;
     <link href="http://oj.roy4801.tw/2019/02/03/uva/uva10935/"/>
     <id>http://oj.roy4801.tw/2019/02/03/uva/uva10935/</id>
     <published>2019-02-03T00:22:42.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;problem=1876&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
@@ -5072,7 +5106,7 @@ $$&lt;br&gt;
     <link href="http://oj.roy4801.tw/2019/02/02/uva/uva402/"/>
     <id>http://oj.roy4801.tw/2019/02/02/uva/uva402/</id>
     <published>2019-02-02T23:54:28.000Z</published>
-    <updated>2023-09-25T11:42:37.452Z</updated>
+    <updated>2023-10-02T12:14:13.128Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;amp;page=show_problem&amp;amp;problem=343&quot;&gt;題目&lt;/a&gt;&lt;/p&gt;
