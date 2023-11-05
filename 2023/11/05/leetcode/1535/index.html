@@ -15,20 +15,21 @@
 <!-- End Google Analytics -->
 
   
-  <title>Uva 10226 - Hardwood Species | Roy 的解題紀錄</title>
+  <title>Leetcode 1535 - Find the Winner of an Array Game | Roy 的解題紀錄</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="題目 Problem# 有多種樹的名字，你要輸出每種樹佔的比例（按名稱字典序） 想法# map練習題">
+  <meta name="description" content="題目 Problem# 給你一個數字不重複的整數陣列 arr 和一個整數 k，每次比較陣列第一個(arr[0])與第二個元素(arr[1])的大小，贏的數字會在 index 0，輸的數字則移動到 arr 的最後，其他數字依序往前移動一格。當有個數字連續贏 k 場時比賽結束，回傳贏的數字。 測資限制#  $2 \le \text{len(arr)} \le 10^5$ $1 \le \text{ar">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uva 10226 - Hardwood Species">
-<meta property="og:url" content="http://oj.roy4801.tw/2019/06/26/uva/uva10226/index.html">
+<meta property="og:title" content="Leetcode 1535 - Find the Winner of an Array Game">
+<meta property="og:url" content="http://oj.roy4801.tw/2023/11/05/leetcode/1535/index.html">
 <meta property="og:site_name" content="Roy 的解題紀錄">
-<meta property="og:description" content="題目 Problem# 有多種樹的名字，你要輸出每種樹佔的比例（按名稱字典序） 想法# map練習題">
+<meta property="og:description" content="題目 Problem# 給你一個數字不重複的整數陣列 arr 和一個整數 k，每次比較陣列第一個(arr[0])與第二個元素(arr[1])的大小，贏的數字會在 index 0，輸的數字則移動到 arr 的最後，其他數字依序往前移動一格。當有個數字連續贏 k 場時比賽結束，回傳贏的數字。 測資限制#  $2 \le \text{len(arr)} \le 10^5$ $1 \le \text{ar">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2019-06-26T15:52:43.000Z">
-<meta property="article:modified_time" content="2023-11-05T11:58:41.423Z">
+<meta property="article:published_time" content="2023-11-05T19:14:16.000Z">
+<meta property="article:modified_time" content="2023-11-05T11:58:41.419Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
-<meta property="article:tag" content="Uva">
+<meta property="article:tag" content="Leetcode">
+<meta property="article:tag" content="simulation">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Roy 的解題紀錄" type="application/atom+xml">
@@ -95,14 +96,14 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-uva/uva10226" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-leetcode/1535" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2019/06/26/uva/uva10226/" class="article-date">
-  <time class="dt-published" datetime="2019-06-26T15:52:43.000Z" itemprop="datePublished">2019-06-26</time>
+    <a href="/2023/11/05/leetcode/1535/" class="article-date">
+  <time class="dt-published" datetime="2023-11-05T19:14:16.000Z" itemprop="datePublished">2023-11-05</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Uva/">Uva</a>
+    <a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/">解題區</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/">Leetcode</a>►<a class="article-category-link" href="/categories/%E8%A7%A3%E9%A1%8C%E5%8D%80/Leetcode/Medium/">Medium</a>
   </div>
 
   </div>
@@ -113,7 +114,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Uva 10226 - Hardwood Species
+      Leetcode 1535 - Find the Winner of an Array Game
     </h1>
   
 
@@ -121,24 +122,42 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><a target="_blank" rel="noopener" href="https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;category=24&amp;page=show_problem&amp;problem=1167">題目</a></p>
+        <p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/find-the-winner-of-an-array-game/description/">題目</a></p>
 <h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
-<p>有多種樹的名字，你要輸出每種樹佔的比例（按名稱字典序）</p>
+<p>給你一個數字不重複的整數陣列 <code>arr</code> 和一個整數 <code>k</code>，每次比較陣列第一個(<code>arr[0]</code>)與第二個元素(<code>arr[1]</code>)的大小，贏的數字會在 index 0，輸的數字則移動到 <code>arr</code> 的最後，其他數字依序往前移動一格。當有個數字連續贏 <code>k</code> 場時比賽結束，回傳贏的數字。</p>
+<h2><span id="ce-zi-xian-zhi">測資限制</span><a href="#ce-zi-xian-zhi" class="header-anchor">#</a></h2>
+<ul>
+<li>$2 \le \text{len(arr)} \le 10^5$</li>
+<li>$1 \le \text{arr[i]} \le 10^6$</li>
+<li>$1 \le k \le 10^9$</li>
+<li>保證每場比賽一定會有贏者</li>
+</ul>
 <h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
-<p><code>map</code>練習題</p>
+<ol>
+<li>Naive: 直接模擬 $n$ 個數字去比賽，直到某個數字勝出 $k$ 次，且真的去模擬所有數字往左移動 $\rightarrow$ TLE $O(n^2k)$</li>
+<li>因為每次比賽都是比較大的勝出，如果 $n &gt;= k$ 則可以確定的是此時陣列第一個元素(<code>arr[0]</code>)一定會是陣列中最大的數字(也就是 <code>max(arr[0] ... arr[n-1])</code>)，因為每次都是找最大的，所以陣列每個數字都比過賽的話，自然贏者就是最大的數字 $\rightarrow$ 依舊 TLE $O(n^2)$ (因為 $n$ 蠻大)</li>
+<li>每次模擬比賽可以不用真的模擬數字移動，透過觀察不難發現，數字是從左往右依序與當前最大的去比較，因此可以用 index $[2, n)$ 掃過陣列，去跟當前最大比賽，如果當前最大贏了，則勝場 +1；如果當前最大輸了，則最大換人，且勝場數重設回 1，如果勝場數 $&gt;= k$ 時回傳當前最大數字。如果迴圈都掃完了，還沒有數字的勝場 $&gt;= k$ 時，此時答案依舊是當前最大數字。</li>
+</ol>
 <h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
-<p><a target="_blank" rel="noopener" href="https://github.com/roy4801/solved_problems/blob/master/uva/10226.cpp">https://github.com/roy4801/solved_problems/blob/master/uva/10226.cpp</a></p>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F1535.cpp%23L18-L53&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<ul>
+<li>時間複雜度: $\mathcal{O}(n)$</li>
+<li>空間複雜度: $\mathcal{O}(1)$</li>
+</ul>
+<!-- # 賞析 -->
+<h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
+<p>這題比想像中的麻煩</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2019/06/26/uva/uva10226/" data-id="clolf73nv00e71gs15dsxeglu" data-title="Uva 10226 - Hardwood Species" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/11/05/leetcode/1535/" data-id="clolf73jc00381gs106xc6ja7" data-title="Leetcode 1535 - Find the Winner of an Array Game" class="article-share-link">Share</a>
       
-        <a href="http://oj.roy4801.tw/2019/06/26/uva/uva10226/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://oj.roy4801.tw/2023/11/05/leetcode/1535/#disqus_thread" class="article-comment-link">Comments</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Uva/" rel="tag">Uva</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Leetcode/" rel="tag">Leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/simulation/" rel="tag">simulation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/" rel="tag">解題紀錄</a></li></ul>
 
     </footer>
   </div>
@@ -146,19 +165,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/09/10/uva/uva275/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Uva 275 - Expanding Fractions
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/06/26/uva/uva793/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/11/05/leetcode/1503/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Uva 793 - Network Connections</div>
+      <div class="article-nav-title">Leetcode 1503 - Last Moment Before All Ants Fall Out of a Plank</div>
     </a>
   
 </nav>
@@ -275,7 +285,7 @@
 <script>
   var disqus_shortname = 'oj-roy4801-tw';
   
-  var disqus_url = 'http://oj.roy4801.tw/2019/06/26/uva/uva10226/';
+  var disqus_url = 'http://oj.roy4801.tw/2023/11/05/leetcode/1535/';
   
   (function(){
     var dsq = document.createElement('script');
