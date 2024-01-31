@@ -135,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/25/leetcode/2389/" data-id="clrggh01p00cm1jlk3x59bnyy" data-title="Leetcode 2389 - Longest Subsequence With Limited Sum" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/25/leetcode/2389/" data-id="cls1qcplr00cm1yox6o756bsq" data-title="Leetcode 2389 - Longest Subsequence With Limited Sum" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/25/leetcode/2389/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -194,7 +194,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/19/leetcode/1971/" data-id="clrggh00p009e1jlk7hn641tg" data-title="Leetcode 1971 - Find if Path Exists in Graph" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/19/leetcode/1971/" data-id="cls1qcpkt009e1yox715p5ika" data-title="Leetcode 1971 - Find if Path Exists in Graph" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/19/leetcode/1971/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -249,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/19/leetcode/150/" data-id="clrgggzzw005z1jlkd57c382z" data-title="Leetcode 150 - Evaluate Reverse Polish Notation" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/19/leetcode/150/" data-id="cls1qcpjq005r1yox23neavhi" data-title="Leetcode 150 - Evaluate Reverse Polish Notation" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/19/leetcode/150/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -295,7 +295,7 @@
 <h1><span id="problem">Problem</span><a href="#problem" class="header-anchor">#</a></h1>
 <p>給你一個整數陣列 $T[i]$ 要你回答一個整數陣列 $ans$ ，其中 $ans[i]$ 代表對於第 $i$ 天的溫度 $T[i]$ 會存在一個溫度 $T[j]$ 且 $j = i + ans[i]$ 使得 $T[i] &lt; T[j]$</p>
 <h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
-<p>維護一個 monotonic stack 代表等待比他大的溫度的列表(可以用 <code>pair&lt;int,int&gt;</code> 一起存 <code>(idx, temp)</code>)，接著遍歷 <code>temp[i]</code> 如果大於 stack 頂端的溫度，就代表裏頭的溫度遇到比它大的，所以就計算 <code>ans[i]</code> 接著 pop stack；接著把目前的 idx 和 temp[idx] 堆進 stack 中 (找比它大的溫度距離它多少)</p>
+<p>naive: 對每個數字往後去找第一個比它大的 $O(n^2)$ TLE</p>
         
           <p class="article-more-link">
             <a href="/2022/12/18/leetcode/739/#more">Read More</a>
@@ -304,7 +304,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/18/leetcode/739/" data-id="clrggh02y00hj1jlk6ejwbxeq" data-title="Leetcode 739 - Daily Temperatures" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/18/leetcode/739/" data-id="cls1qcpn200ho1yox47k2dhie" data-title="Leetcode 739 - Daily Temperatures" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/18/leetcode/739/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -359,7 +359,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/15/leetcode/1143/" data-id="clrgggzyp002b1jlk4grg3c1n" data-title="Leetcode 1143 - Longest Common Subsequence Medium" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/15/leetcode/1143/" data-id="cls1qcpio002b1yoxbijdabur" data-title="Leetcode 1143 - Longest Common Subsequence Medium" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/15/leetcode/1143/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -414,7 +414,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/14/leetcode/198/" data-id="clrggh00r009i1jlk4m33fsbb" data-title="Leetcode 198 - House Robber" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/14/leetcode/198/" data-id="cls1qcpkv009i1yoxfkih0aqa" data-title="Leetcode 198 - House Robber" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/14/leetcode/198/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -470,7 +470,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/14/leetcode/931/" data-id="clrggh03j00jd1jlkdlkbd478" data-title="Leetcode 931 - Minimum Falling Path Sum" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/14/leetcode/931/" data-id="cls1qcpnm00je1yoxffqe4i3e" data-title="Leetcode 931 - Minimum Falling Path Sum" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/14/leetcode/931/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -525,7 +525,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/12/leetcode/70/" data-id="clrggh02x00hc1jlk21u6amgn" data-title="Leetcode 70 - Climbing Stairs" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/12/leetcode/70/" data-id="cls1qcpmx00hd1yox3xcidts7" data-title="Leetcode 70 - Climbing Stairs" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/12/leetcode/70/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -580,7 +580,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/07/leetcode/938/" data-id="clrggh03l00jk1jlk1pbn9n84" data-title="Leetcode 938 - Range Sum of BST" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/07/leetcode/938/" data-id="cls1qcpno00jl1yoxh8ulemgm" data-title="Leetcode 938 - Range Sum of BST" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/07/leetcode/938/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -638,7 +638,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2022/12/05/leetcode/876/" data-id="clrggh03e00iw1jlkef56heyq" data-title="Leetcode 876 - Middle of the Linked List" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2022/12/05/leetcode/876/" data-id="cls1qcpni00ix1yoxhmqx4rm4" data-title="Leetcode 876 - Middle of the Linked List" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2022/12/05/leetcode/876/#disqus_thread" class="article-comment-link">Comments</a>
       
