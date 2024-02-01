@@ -18,11 +18,13 @@ date: {{ date }}
 
 # 想法
 
-- 時間複雜度: $\mathcal{O}()$
-- 空間複雜度: $\mathcal{O}()$
 
 # AC Code
 
+
+
+- 時間複雜度: $\mathcal{O}()$
+- 空間複雜度: $\mathcal{O}()$
 
 # 賞析
 
