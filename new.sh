@@ -5,7 +5,7 @@
 leetcode_info=()
 function get_leetcode_info() {
 	pid=$1
-	difficulty=("Easy" "Medium" "Hard")
+	difficulty=("" "Easy" "Medium" "Hard")
 	problem_set=`curl -sS https://leetcode.com/api/problems/algorithms/`
 	#problem=`echo $problem_set | jq '.stat_status_pairs[].stat | select( .frontend_question_id == 3)'`
 	problem=`echo $problem_set | jq ".stat_status_pairs[] | select( .stat.frontend_question_id == $pid )"`
