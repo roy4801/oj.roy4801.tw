@@ -26,7 +26,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.imgur.com/STbZPa2.png">
 <meta property="article:published_time" content="2023-01-17T00:11:04.000Z">
-<meta property="article:modified_time" content="2024-03-15T11:51:24.247Z">
+<meta property="article:modified_time" content="2024-03-17T16:03:05.641Z">
 <meta property="article:author" content="Roy">
 <meta property="article:tag" content="解題紀錄">
 <meta property="article:tag" content="Leetcode">
@@ -138,8 +138,8 @@
 <h1><span id="xiang-fa">想法</span><a href="#xiang-fa" class="header-anchor">#</a></h1>
 <p><img src="https://i.imgur.com/STbZPa2.png" alt></p>
 <p>重疊要怎麼判斷: 兩種情況疊左邊或是疊右邊 <code>a[1] &gt;= b[0] &amp;&amp; b[1] &gt;= a[0]</code>。<br>
-先掃過一遍，重疊的話紀錄 index 以及最小 <code>interval[0]</code> 最大 <code>interval[1]</code>代表重疊後剩下的區間 $k$<br>
-接著再掃一遍 interval ($i = [1, n)$) ，如果有重疊則把區間 $k$加到解中(一個就好)，如果沒有則直接把區間 $i$加到解中。<br>
+先掃過一遍，重疊的話紀錄 index 以及最小左界 <code>interval[0]</code> 和最大右界 <code>interval[1]</code> 和代表重疊後剩下的區間 $k$<br>
+接著再掃一遍 interval ($i = [1, n)$) ，如果有重疊則把區間 $k$ 加到解中(一個就好)，如果沒有則直接把區間 $i$ 加到解中。<br>
 注意邊界條件: 如果重疊的區間，記得把 <code>newInterval</code> 也加到解中，懶得寫插入可以直接 sort 一下</p>
 <ul>
 <li>時間複雜度: $\mathcal{O}(n)$ 如果掃一次插入，懶人 sort $\mathcal{O}(n\log{n})$</li>
@@ -147,13 +147,15 @@
 </ul>
 <h1><span id="ac-code">AC Code</span><a href="#ac-code" class="header-anchor">#</a></h1>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F57.cpp%23L17-L76&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<p>2024/03/18: 2nd try 用 <code>bitset</code></p>
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Froy4801%2Fsolved_problems%2Fblob%2Fmaster%2Fleetcode%2F57.cpp%23L78-L122&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 <h1><span id="xin-de">心得</span><a href="#xin-de" class="header-anchor">#</a></h1>
 <p>原本卡在最後蒐集解區間，後來發現直接紀錄有重疊的 index i.e. <code>overlap[i]</code> 代表第 i 個區間是跟別人重疊的，用於後面判斷。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://oj.roy4801.tw/2023/01/17/leetcode/57/" data-id="cltslm9w300ik1ioa7w4s32s4" data-title="Leetcode 57 - Insert Interval" class="article-share-link">Share</a>
+      <a data-url="http://oj.roy4801.tw/2023/01/17/leetcode/57/" data-id="cltvphnrv00ik1iqu0oiy785g" data-title="Leetcode 57 - Insert Interval" class="article-share-link">Share</a>
       
         <a href="http://oj.roy4801.tw/2023/01/17/leetcode/57/#disqus_thread" class="article-comment-link">Comments</a>
       
