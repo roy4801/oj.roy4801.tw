@@ -4,24 +4,23 @@
 
 leetcode_info=()
 function get_leetcode_info() {
-	pid=$1
-	difficulty=("" "Easy" "Medium" "Hard")
-	problem_set=`curl -sS https://leetcode.com/api/problems/algorithms/`
-	#problem=`echo $problem_set | jq '.stat_status_pairs[].stat | select( .frontend_question_id == 3)'`
-	problem=`echo $problem_set | jq ".stat_status_pairs[] | select( .stat.frontend_question_id == $pid )"`
-	
-	#echo $problem
-	
-	leetcode_info=()
+    pid=$1
+    query=$(cat query | sed "s/{PID}/$pid/")
+    jq_query=".data.problemsetQuestionList.questions[] | select( .frontendQuestionId == \"$pid\" )"
+    problem=`curl -sS 'https://leetcode.com/graphql/' --header 'Content-Type: application/json' --data "$query" | jq "$jq_query"`
+    # echo "$problem"
+
+    difficulty=("" "Easy" "Medium" "Hard")
+    leetcode_info=()
     # 0 = problem id
     # 1 = difficulty
     # 2 = problem title
     # 3 = url
 	leetcode_info+=("$pid")
-	leetcode_info+=("${difficulty[`echo $problem | jq '.difficulty.level'`]}")
-	leetcode_info+=("`echo $problem | jq '.stat.question__title'`")
+	leetcode_info+=("`echo $problem | jq '.difficulty'`")
+	leetcode_info+=("`echo $problem | jq '.title'`")
 
-	question_title_slug=`echo $problem | jq '.stat.question__title_slug'`
+	question_title_slug=`echo $problem | jq '.titleSlug'`
 	question_title_slug=${question_title_slug//\"/}
 	leetcode_info+=("https://leetcode.com/problems/${question_title_slug}")
 }
@@ -63,8 +62,9 @@ if [[ "$OJ" == "leetcode" ]]; then
 
     if [[ "${PNAME}" == "" ]]; then
         get_leetcode_info $PID
-        PNAME=${leetcode_info[2]//\"/}
-        DIFF=${leetcode_info[1]}
+
+        PNAME="${leetcode_info[2]//\"/}"
+        DIFF=${leetcode_info[1]//\"/}
         URL="${leetcode_info[3]}"
     fi
 elif [[ "$OJ" == "cses" ]]; then
